@@ -18,7 +18,7 @@
         <header class="app-header">
             <div class="header-main">
                 <h1>✈️ Dashboard 2026</h1>
-                <p class="subtitle">Estado Financiero & Itinerarios</p>
+                <p class="subtitle">Estado Financiero & Itinerarios (Estricto)</p>
             </div>
             
             <!-- Widget de Cuenta Regresiva Global -->
@@ -38,34 +38,24 @@
             <div id="tab-home" class="tab-pane active">
                 <div class="section-title">
                     <h2>🏠 Visión General</h2>
-                    <p>Viajes Restantes del 2026</p>
+                    <p>Inventario de Viajes Confirmados 2026</p>
                 </div>
 
                 <div class="timeline-global">
                     <div class="trip-card">
                         <h3>🇨🇴 Cali, Colombia</h3>
                         <p>02 Jul - 06 Jul | Cumpleaños Familiar</p>
-                        <span class="status confirm">Confirmado</span>
-                    </div>
-                    <div class="trip-card">
-                        <h3>🇵🇪 Lima / Cusco, Perú</h3>
-                        <p>04 Ago - 11 Ago | Turismo</p>
-                        <span class="status confirm">Confirmado</span>
-                    </div>
-                    <div class="trip-card">
-                        <h3>🇨🇴 Bogotá, Colombia</h3>
-                        <p>11 Sep - 14 Sep | Festival Cordillera VIP</p>
-                        <span class="status alert">Vuelos Pendientes</span>
-                    </div>
-                    <div class="trip-card">
-                        <h3>🇪🇺 Europa (Multi-ciudad)</h3>
-                        <p>12 Oct - 28 Oct | Grand Tour</p>
-                        <span class="status alert">Reservas Pendientes</span>
+                        <span class="status confirm">Confirmado (Pagado)</span>
                     </div>
                     <div class="trip-card">
                         <h3>🇨🇴 Cali, Colombia</h3>
                         <p>22 Dic - 04 Ene | Fin de Año</p>
-                        <span class="status alert">Logística Pendiente</span>
+                        <span class="status alert">En Planificación</span>
+                    </div>
+                    <div class="trip-card" style="opacity: 0.6;">
+                        <h3>🌍 Históricos / Otros</h3>
+                        <p>Sin registro disponible</p>
+                        <span class="status" style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Pendiente</span>
                     </div>
                 </div>
             </div>
@@ -73,17 +63,14 @@
             <!-- PESTAÑA 2: ITINERARIOS -->
             <div id="tab-itinerary" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Itinerarios</h2>
-                    <p>Detalles operativos día a día</p>
+                    <h2>📅 Itinerarios Maestros</h2>
+                    <p>Agenda reconstruida detallada</p>
                 </div>
                 
                 <!-- Selector de Viajes -->
                 <div class="trip-selector scrollable-x">
-                    <button class="trip-btn active" data-trip="cali-jul">Cali (Jul)</button>
-                    <button class="trip-btn" data-trip="cusco">Cusco (Ago)</button>
-                    <button class="trip-btn" data-trip="bogota">Bogotá (Sep)</button>
-                    <button class="trip-btn" data-trip="europa">Europa (Oct)</button>
-                    <button class="trip-btn" data-trip="cali-dic">Cali (Dic)</button>
+                    <button class="trip-btn active" data-trip="cali-jul">Cali (Julio)</button>
+                    <button class="trip-btn" data-trip="cali-dic">Cali (Diciembre)</button>
                 </div>
 
                 <!-- Contenido de los Itinerarios -->
@@ -101,112 +88,35 @@
                                     <div class="time">02 Jul</div>
                                     <div class="timeline-content">
                                         <h4>✈️ Llegada a Cali</h4>
-                                        <p>Vuelo LATAM (Carry-on 10kg). Check-in Estancia Chipichape.</p>
+                                        <p>15:50 Vuelo LIM-CLO (LATAM). Llegada 22:35. Check-in Hotel Ibis Cali. Desconexión (23:30 - 01:30).</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time">03 Jul</div>
+                                    <div class="timeline-content">
+                                        <h4>☕ Café y Familia</h4>
+                                        <p>10:30 Café Camila Paredes. Almuerzo Papás. Noche: Las Lozada.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time">04 Jul</div>
+                                    <div class="timeline-content">
+                                        <h4>🍹 Encuentros</h4>
+                                        <p>Almuerzo Pandémicos. Café Angélica/Unicornio. 20:00 Bourbon Héctor/Cartel.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="time">05 Jul</div>
                                     <div class="timeline-content">
-                                        <h4>🎉 Cena de Cumpleaños</h4>
-                                        <p>Con Aura, Mario, Mario Andrés, Antonella, Victoria.</p>
+                                        <h4>🎉 Cena Familiar</h4>
+                                        <p>Cena con Victoria, Aura, Mario, Mario Andrés, Antonella. Noche: Laura Marulanda.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="time">06 Jul</div>
                                     <div class="timeline-content">
                                         <h4>✈️ Retorno</h4>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CUSCO / LIMA AGOSTO -->
-                    <div class="trip-content" id="content-cusco">
-                        <div class="day-card active">
-                            <div class="day-header">
-                                <span class="day-number">4-11 Ago</span>
-                                <h3>Operación Turismo (con Angélica)</h3>
-                            </div>
-                            <ul class="timeline">
-                                <li>
-                                    <div class="time">04 Ago</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Llegada Angélica</h4>
-                                        <p>Llegada a Lima. Cena en Larcomar.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">05 Ago</div>
-                                    <div class="timeline-content">
-                                        <h4>🏜️ Paracas/Ica</h4>
-                                        <p>Tour Angélica. José: Grounding C1.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">07 Ago</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Vuelo LIM-CUZ</h4>
-                                        <p>21:10 - 22:35. Check-in Casa Encuentro San Blas.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">08-09 Ago</div>
-                                    <div class="timeline-content">
-                                        <h4>⛰️ Machu Picchu</h4>
-                                        <p>Valle Sagrado, Tren Vistadome, MP (Circuito 3).</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">10-11 Ago</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Retorno</h4>
-                                        <p>Retorno a Lima. Vuelo Angélica a Cali.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- BOGOTA SEPTIEMBRE -->
-                    <div class="trip-content" id="content-bogota">
-                        <div class="day-card active">
-                            <div class="day-header">
-                                <span class="day-number">11-14 Sep</span>
-                                <h3>Festival Cordillera VIP</h3>
-                            </div>
-                            <ul class="timeline">
-                                <li>
-                                    <div class="time">11 Sep</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Llegada a Bogotá</h4>
-                                        <p>Hotel Premium proyectado.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">Sep</div>
-                                    <div class="timeline-content">
-                                        <h4>🎸 Festival Cordillera</h4>
-                                        <p>Asistencia al evento.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- EUROPA OCTUBRE -->
-                    <div class="trip-content" id="content-europa">
-                        <div class="day-card active">
-                            <div class="day-header">
-                                <span class="day-number">12-28 Oct</span>
-                                <h3>Grand Tour con Marisol</h3>
-                            </div>
-                            <ul class="timeline">
-                                <li>
-                                    <div class="time">12 Oct</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Inicio de Grand Tour</h4>
-                                        <p>Barcelona, Roma, Praga, Ámsterdam, París.</p>
+                                        <p>09:00 Check-out. 11:30 Traslado a CLO. 14:35 Vuelo CLO-LIM.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -218,28 +128,42 @@
                         <div class="day-card active">
                             <div class="day-header">
                                 <span class="day-number">22 Dic - 4 Ene</span>
-                                <h3>Fin de Año en Familia</h3>
+                                <h3>Fin de Año en Cali</h3>
                             </div>
                             <ul class="timeline">
                                 <li>
-                                    <div class="time">22 Dic</div>
+                                    <div class="time">Días 1-2 (22-23 Dic)</div>
                                     <div class="timeline-content">
-                                        <h4>✈️ Llegada a Cali</h4>
-                                        <p>Check-in hotel. [Reservas Pendientes]</p>
+                                        <h4>✈️ Llegada y Adaptación</h4>
+                                        <p>Vuelo LIM-CLO. Instalación en destino.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">24-25 Dic</div>
+                                    <div class="time">Días 3-4 (24-25 Dic)</div>
                                     <div class="timeline-content">
                                         <h4>🎄 Navidad</h4>
-                                        <p>Festividades en familia.</p>
+                                        <p>Eventos de Nochebuena y Navidad en familia. Logística y compras.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">31 Dic</div>
+                                    <div class="time">Días 5-9 (26-30 Dic)</div>
+                                    <div class="timeline-content">
+                                        <h4>🛋️ Ventana Operativa Plana</h4>
+                                        <p>Visitas, amigos y descanso.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time">Días 10-11 (31 Dic-1 Ene)</div>
                                     <div class="timeline-content">
                                         <h4>🎆 Fin de Año</h4>
-                                        <p>Feria de Cali y celebraciones.</p>
+                                        <p>Eventos y festividades locales de Fin de Año.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time">Días 12-14 (2-4 Ene)</div>
+                                    <div class="timeline-content">
+                                        <h4>✈️ Recuperación y Retorno</h4>
+                                        <p>Descanso y vuelo de retorno a Lima.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -252,35 +176,31 @@
             <div id="tab-finance" class="tab-pane">
                 <div class="section-title">
                     <h2>💰 Estado Financiero</h2>
-                    <p>Dashboard Ejecutivo - 13 Jun 2026</p>
+                    <p>Dashboard Consolidado (Realista)</p>
                 </div>
                 
                 <div class="finance-card">
-                    <h3>🛡️ Liquidez Blindada</h3>
-                    <div class="amount highlight" style="font-size: 2rem; color: #10b981; font-weight: bold; margin: 10px 0;">S/ 11,000</div>
-                    <p class="desc">Reservado para Europa.</p>
+                    <h3>📊 Gasto Total Anual Proyectado</h3>
+                    <div class="amount highlight" style="font-size: 2rem; color: #10b981; font-weight: bold; margin: 10px 0;">~$3,465 USD</div>
+                    <p class="desc">Distribución: Transporte 35% | Hospedaje 25% | Alimentación/Eventos 30% | Contingencia 10%</p>
                 </div>
 
                 <div class="finance-card">
-                    <h3>📊 Alertas y Riesgos</h3>
+                    <h3>⚠️ Alertas Críticas</h3>
                     <div class="alert-box critical" style="background: rgba(239, 68, 68, 0.2); border-left: 4px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-                        <h4 style="color: #fca5a5; margin-bottom: 4px;">⚠️ Fricción en Agosto</h4>
-                        <p style="font-size: 0.85rem;">Vencimiento Ticketmaster (28 Ago) por $1.38M COP ocurre antes del cobro de Cadena (30 Ago) por $2.9M COP. Cubrir con tarjeta o negociar adelanto.</p>
-                    </div>
-                    <div class="alert-box warning" style="background: rgba(245, 158, 11, 0.2); border-left: 4px solid #f59e0b; padding: 10px; border-radius: 4px;">
-                        <h4 style="color: #fcd34d; margin-bottom: 4px;">⚠️ Riesgo Diciembre</h4>
-                        <p style="font-size: 0.85rem;">Vuelos Cali Dic/Ene no emitidos. Riesgo de alza 40% a partir de Septiembre. Sugerido emitir ya (Estándar: $600 USD).</p>
+                        <h4 style="color: #fca5a5; margin-bottom: 4px;">[!] Emisión Vuelos 22 DIC</h4>
+                        <p style="font-size: 0.85rem;">Temporada altísima. Riesgo de sobreprecio por no emisión. Requiere cabina Premium Economy por ergonomía de altura (2.00m).</p>
                     </div>
                 </div>
 
                 <div class="finance-card">
-                    <h3>💵 Obligaciones y Presupuestos</h3>
+                    <h3>💵 Presupuesto Detallado</h3>
                     <ul class="finance-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span>Juntas Confirmadas:</span> <strong>S/ 16,700</strong></li>
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span>Cadena COP:</span> <strong>$700,000 COP</strong></li>
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span>Viaje Cali (Jul):</span> <strong>$1,120 USD</strong></li>
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span>Viaje Cusco (Ago):</span> <strong>S/ 4,545 + Vuelos</strong></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Viaje Bogotá (Sep):</span> <strong>$800 USD + TM</strong></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span><strong>Viaje Julio:</strong></span> <strong>$1,065.00 USD</strong></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Ejecutado (Sunk Costs):</span> <span>$630.00 USD</span></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Pendiente (Viáticos):</span> <span>$435.00 USD</span></li>
+                        <li style="display: flex; justify-content: space-between; margin-top: 8px;"><span><strong>Viaje Diciembre:</strong></span> <strong>~$2,400.00 USD</strong></li>
+                        <li style="display: flex; justify-content: space-between; padding-left: 10px; font-size: 0.85rem;"><span>‣ Proyectado (Realista):</span> <span>$2,400.00 USD</span></li>
                     </ul>
                 </div>
             </div>

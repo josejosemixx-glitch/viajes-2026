@@ -5,9 +5,6 @@
 // Definición de todos los viajes para la cuenta regresiva global
 const TRIPS = [
     { id: "cali-jul", name: "Cali, Colombia", date: new Date("2026-07-02T15:00:00").getTime() },
-    { id: "cusco", name: "Lima / Cusco, Perú", date: new Date("2026-08-04T15:00:00").getTime() },
-    { id: "bogota", name: "Bogotá, Colombia", date: new Date("2026-09-11T15:00:00").getTime() },
-    { id: "europa", name: "Grand Tour Europa", date: new Date("2026-10-12T15:00:00").getTime() },
     { id: "cali-dic", name: "Cali, Colombia (Fin de Año)", date: new Date("2026-12-22T15:00:00").getTime() }
 ];
 
