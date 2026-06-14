@@ -9,7 +9,7 @@
     <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Archivo de Estilos -->
-    <link rel="stylesheet" href="style.css?v=1.0.0">
+    <link rel="stylesheet" href="style.css?v=1.0.3">
 </head>
 <body>
     <div class="app-container">
@@ -18,7 +18,7 @@
         <header class="app-header">
             <div class="header-main">
                 <h1>✈️ Dashboard 2026</h1>
-                <p class="subtitle">Estado Financiero & Itinerarios (Estricto)</p>
+                <p class="subtitle">Estado Financiero & Itinerarios (Premium)</p>
             </div>
             
             <!-- Widget de Cuenta Regresiva Global -->
@@ -52,121 +52,301 @@
                         <p>22 Dic - 04 Ene | Fin de Año</p>
                         <span class="status alert">En Planificación</span>
                     </div>
-                    <div class="trip-card" style="opacity: 0.6;">
-                        <h3>🌍 Históricos / Otros</h3>
-                        <p>Sin registro disponible</p>
-                        <span class="status" style="background: rgba(255,255,255,0.1); color: var(--text-secondary);">Pendiente</span>
-                    </div>
                 </div>
             </div>
 
             <!-- PESTAÑA 2: ITINERARIOS -->
             <div id="tab-itinerary" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Itinerarios Maestros</h2>
-                    <p>Agenda reconstruida detallada</p>
+                    <h2>📅 Cronograma Detallado</h2>
+                    <p>Operativa minuto a minuto</p>
                 </div>
                 
                 <!-- Selector de Viajes -->
                 <div class="trip-selector scrollable-x">
-                    <button class="trip-btn active" data-trip="cali-jul">Cali (Julio)</button>
-                    <button class="trip-btn" data-trip="cali-dic">Cali (Diciembre)</button>
+                    <button class="trip-btn active" data-trip="cali-jul">Julio: Cali</button>
+                    <button class="trip-btn" data-trip="cali-dic">Diciembre: Cali</button>
                 </div>
 
                 <!-- Contenido de los Itinerarios -->
                 <div class="itineraries-container">
                     
-                    <!-- CALI JULIO -->
+                    <!-- CALI JULIO DETALLADO -->
                     <div class="trip-content active" id="content-cali-jul">
                         <div class="day-card active">
                             <div class="day-header">
                                 <span class="day-number">2-6 Jul</span>
-                                <h3>Cumpleaños Familiar</h3>
+                                <h3>Cumpleaños Familiar en Cali</h3>
+                                <span class="day-desc">Agenda social y encuentros locales</span>
                             </div>
-                            <ul class="timeline">
+                            
+                            <!-- 02 JULIO -->
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Jueves 02 de Julio</div>
+                            <ul class="timeline detailed-timeline">
                                 <li>
-                                    <div class="time">02 Jul</div>
+                                    <span class="time-badge">03:50 PM (LIM)</span>
                                     <div class="timeline-content">
-                                        <h4>✈️ Llegada a Cali</h4>
-                                        <p>15:50 Vuelo LIM-CLO (LATAM). Llegada 22:35. Check-in Hotel Ibis Cali. Desconexión (23:30 - 01:30).</p>
+                                        <div class="content-header">
+                                            <h4>✈️ Vuelo Lima ➔ Cali</h4>
+                                            <span class="weather-tag"><i class="fa-solid fa-cloud"></i> 18°C</span>
+                                        </div>
+                                        <p>Vuelo operado por LATAM (Tarifa Light). Carry-on de 10kg incluído y asiento con Estatus Elite.</p>
+                                        <span class="event-location"><i class="fa-solid fa-plane-departure"></i> Aeropuerto Internacional Jorge Chávez (LIM)</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">03 Jul</div>
+                                    <span class="time-badge">10:35 PM (CLO)</span>
                                     <div class="timeline-content">
-                                        <h4>☕ Café y Familia</h4>
-                                        <p>10:30 Café Camila Paredes. Almuerzo Papás. Noche: Las Lozada.</p>
+                                        <div class="content-header">
+                                            <h4>🎒 Aterrizaje en Cali</h4>
+                                            <span class="weather-tag-danger"><i class="fa-solid fa-moon"></i> 22°C Noche tropical</span>
+                                        </div>
+                                        <p>Llegada al terminal internacional. Coordinación de Uber Taxi hacia el hotel. Costo aproximado $110 USD presupuestados para movilidad en el viaje.</p>
+                                        <span class="event-location"><i class="fa-solid fa-plane-arrival"></i> Aeropuerto Alfonso Bonilla Aragón (CLO)</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">04 Jul</div>
+                                    <span class="time-badge">11:15 PM</span>
                                     <div class="timeline-content">
-                                        <h4>🍹 Encuentros</h4>
-                                        <p>Almuerzo Pandémicos. Café Angélica/Unicornio. 20:00 Bourbon Héctor/Cartel.</p>
+                                        <div class="content-header">
+                                            <h4>🏨 Check-in en Hotel Ibis</h4>
+                                        </div>
+                                        <p>Registro y acceso a la habitación (4 noches, reserva confirmada y no reembolsable).</p>
+                                        <span class="event-location"><i class="fa-solid fa-bed"></i> Hotel Ibis Cali</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">05 Jul</div>
+                                    <span class="time-badge">11:30 PM - 01:30 AM</span>
                                     <div class="timeline-content">
-                                        <h4>🎉 Cena Familiar</h4>
-                                        <p>Cena con Victoria, Aura, Mario, Mario Andrés, Antonella. Noche: Laura Marulanda.</p>
+                                        <h4>🌙 Desconexión</h4>
+                                        <p>Ventana de tiempo para organizar la habitación, aseo personal y relajación tras el vuelo.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- 03 JULIO -->
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Viernes 03 de Julio</div>
+                            <div class="alert alert-info">
+                                <i class="fa-solid fa-calendar-check"></i> <strong>Enfoque del día:</strong> Encuentros personales y familiares en un ambiente relajado.
+                            </div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">10:30 AM</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>☕ Café con Camila Paredes</h4>
+                                        </div>
+                                        <p>Reunión matutina programada. Espacio para ponerse al día.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="time">06 Jul</div>
+                                    <span class="time-badge">01:00 PM</span>
                                     <div class="timeline-content">
-                                        <h4>✈️ Retorno</h4>
-                                        <p>09:00 Check-out. 11:30 Traslado a CLO. 14:35 Vuelo CLO-LIM.</p>
+                                        <div class="content-header">
+                                            <h4>🍽️ Almuerzo con Papás</h4>
+                                            <span class="weather-tag"><i class="fa-solid fa-sun"></i> 28°C Cálido</span>
+                                        </div>
+                                        <p>Reencuentro central del día y almuerzo familiar.</p>
+                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Ropa ligera, clima cálido caleño.</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">Noche</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🍸 Salida Nocturna</h4>
+                                        </div>
+                                        <p>Plan nocturno junto a Las Lozada.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- 04 JULIO -->
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Sábado 04 de Julio</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">Mediodía</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🍔 Almuerzo "Pandémicos"</h4>
+                                        </div>
+                                        <p>Reunión social con el grupo de amigos para almorzar.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">Tarde</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>☕ Café de Tarde</h4>
+                                        </div>
+                                        <p>Encuentro programado con Angélica / Unicornio.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">08:00 PM</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🥃 Salida a Bourbon</h4>
+                                        </div>
+                                        <p>Reunión con Héctor y el grupo Cartel en un gran ambiente.</p>
+                                        <span class="event-location"><i class="fa-solid fa-martini-glass"></i> Bourbon</span>
+                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Outfit casual de noche.</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- 05 JULIO -->
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Domingo 05 de Julio</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">Tarde/Noche</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🎉 Cena de Cumpleaños Familiar</h4>
+                                            <span class="weather-tag"><i class="fa-solid fa-cake-candles"></i> Evento Principal</span>
+                                        </div>
+                                        <p>Celebración de cumpleaños con Victoria, Aura, Mario, Mario Andrés y Antonella. El eje central del viaje.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">Late Night</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🌙 Cierre del Día</h4>
+                                        </div>
+                                        <p>Encuentro nocturno programado con Laura Marulanda.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- 06 JULIO -->
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Lunes 06 de Julio</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">09:00 AM</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🎒 Check-out Ibis</h4>
+                                        </div>
+                                        <p>Preparación del equipaje (Carry-on 10kg) y entrega de la habitación.</p>
+                                        <span class="event-location"><i class="fa-solid fa-key"></i> Hotel Ibis Cali</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">11:30 AM</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🚕 Traslado al Aeropuerto</h4>
+                                        </div>
+                                        <p>Salida desde la casa de los papás hacia el terminal aéreo.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">02:35 PM (CLO)</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>✈️ Vuelo Cali ➔ Lima</h4>
+                                        </div>
+                                        <p>Vuelo de retorno operado por LATAM. Aterrizaje en Lima estimado a las 08:20 PM.</p>
+                                        <span class="event-location"><i class="fa-solid fa-plane-departure"></i> Aeropuerto Alfonso Bonilla Aragón (CLO)</span>
+                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Llevar capa de abrigo para la llegada a la humedad limeña.</div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- CALI DICIEMBRE -->
+                    <!-- CALI DICIEMBRE DETALLADO -->
                     <div class="trip-content" id="content-cali-dic">
                         <div class="day-card active">
                             <div class="day-header">
                                 <span class="day-number">22 Dic - 4 Ene</span>
-                                <h3>Fin de Año en Cali</h3>
+                                <h3>Fin de Año Caleño</h3>
+                                <span class="day-desc">Fiestas, familia y feria</span>
                             </div>
-                            <ul class="timeline">
+
+                            <div class="alert alert-info">
+                                <i class="fa-solid fa-lightbulb"></i> <strong>Estrategia Logística:</strong> Presupuesto asegurado bajo el escenario realista (Vuelo en Premium Economy + Airbnb). ¡Prioridad: Comprar vuelo antes del 15 de Julio!
+                            </div>
+                            
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 1-2: 22 y 23 de Diciembre</div>
+                            <ul class="timeline detailed-timeline">
                                 <li>
-                                    <div class="time">Días 1-2 (22-23 Dic)</div>
+                                    <span class="time-badge">22 Dic</span>
                                     <div class="timeline-content">
-                                        <h4>✈️ Llegada y Adaptación</h4>
-                                        <p>Vuelo LIM-CLO. Instalación en destino.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">Días 3-4 (24-25 Dic)</div>
-                                    <div class="timeline-content">
-                                        <h4>🎄 Navidad</h4>
-                                        <p>Eventos de Nochebuena y Navidad en familia. Logística y compras.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">Días 5-9 (26-30 Dic)</div>
-                                    <div class="timeline-content">
-                                        <h4>🛋️ Ventana Operativa Plana</h4>
-                                        <p>Visitas, amigos y descanso.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">Días 10-11 (31 Dic-1 Ene)</div>
-                                    <div class="timeline-content">
-                                        <h4>🎆 Fin de Año</h4>
-                                        <p>Eventos y festividades locales de Fin de Año.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="time">Días 12-14 (2-4 Ene)</div>
-                                    <div class="timeline-content">
-                                        <h4>✈️ Recuperación y Retorno</h4>
-                                        <p>Descanso y vuelo de retorno a Lima.</p>
+                                        <div class="content-header">
+                                            <h4>✈️ Llegada y Adaptación</h4>
+                                            <span class="weather-tag"><i class="fa-solid fa-wind"></i> Brisa de Diciembre</span>
+                                        </div>
+                                        <p>Despliegue logístico desde Lima en Premium Economy (para confort de rodillas). Llegada a Cali y traslado a Airbnb.</p>
+                                        <div class="clothing-tips-warning"><i class="fa-solid fa-suitcase"></i> Airbnb presupuestado en $650 USD total.</div>
                                     </div>
                                 </li>
                             </ul>
+
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 3-4: 24 y 25 de Diciembre</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">24 Dic</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🎄 Festividades de Nochebuena</h4>
+                                        </div>
+                                        <p>Logística de regalos, reuniones familiares, cena de gala de Nochebuena y brindis de medianoche.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="time-badge">25 Dic</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🎁 Navidad y Descanso</h4>
+                                        </div>
+                                        <p>Día de recalentado, tranquilidad y compartir en familia.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 5-9: 26 al 30 de Diciembre</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">Feria</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>💃 Ventana Operativa & Feria de Cali</h4>
+                                            <span class="weather-tag-danger"><i class="fa-solid fa-fire"></i> Calor Festivo</span>
+                                        </div>
+                                        <p>Agenda plana para visita de amigos, rumbas, eventos de la Feria y descanso general en el alojamiento.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 10-11: 31 Dic y 1 de Enero</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">31 Dic</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>🎆 Celebración de Fin de Año</h4>
+                                        </div>
+                                        <p>Gran cena para despedir el 2026. Rumba caleña y tradiciones para recibir el 2027.</p>
+                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Outfit de gala para fin de año.</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 12-14: 2 al 4 de Enero</div>
+                            <ul class="timeline detailed-timeline">
+                                <li>
+                                    <span class="time-badge">04 Ene</span>
+                                    <div class="timeline-content">
+                                        <div class="content-header">
+                                            <h4>✈️ Recuperación y Retorno</h4>
+                                        </div>
+                                        <p>Desintoxicación post-fiestas. Preparación de maletas, check-out del Airbnb y vuelo de retorno a Lima (Premium Economy).</p>
+                                    </div>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -200,12 +380,12 @@
                         <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Ejecutado (Sunk Costs):</span> <span>$630.00 USD</span></li>
                         <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Pendiente (Viáticos):</span> <span>$435.00 USD</span></li>
                         <li style="display: flex; justify-content: space-between; margin-top: 8px;"><span><strong>Viaje Diciembre:</strong></span> <strong>~$2,750.00 USD</strong></li>
-                        <li style="display: flex; justify-content: space-between; padding-left: 10px; font-size: 0.85rem;"><span>‣ Proyectado (Airbnb + Premium Economy):</span> <span>$2,750.00 USD</span></li>
+                        <li style="display: flex; justify-content: space-between; padding-left: 10px; font-size: 0.85rem;"><span>‣ Proyectado (Airbnb + PE):</span> <span>$2,750.00 USD</span></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- PESTAÑA 4: MALETA (CHECKLIST GLOBAL) -->
+            <!-- PESTAÑA 4: MALETA -->
             <div id="tab-packing" class="tab-pane">
                 <div class="section-title">
                     <h2>🎒 Control de Equipaje</h2>
@@ -222,7 +402,6 @@
 
         </main>
 
-        <!-- Barra de Navegación Inferior Móvil -->
         <nav class="bottom-nav">
             <button class="nav-item active" data-target="tab-home">
                 <i class="fa-solid fa-house"></i>
