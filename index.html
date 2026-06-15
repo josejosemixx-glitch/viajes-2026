@@ -102,6 +102,11 @@
                         <div class="val-desc" id="ceo-kpi-readiness-desc">--</div>
                     </div>
                     <div class="ceo-kpi-card">
+                        <small>System Health Score</small>
+                        <div class="val text-emerald" id="ceo-kpi-health-score">-- / 100</div>
+                        <div class="val-desc" id="ceo-kpi-health-desc">--</div>
+                    </div>
+                    <div class="ceo-kpi-card">
                         <small>Riesgos Activos</small>
                         <div class="val text-red" id="ceo-kpi-risks">0</div>
                     </div>
@@ -114,6 +119,19 @@
                 <div class="cfo-dashboard-grid" style="margin-top: 20px;">
                     <!-- Columna Izquierda: Respuestas e Ejecución -->
                     <div class="cfo-dashboard-col">
+                        <!-- Centro de Decisiones: Acciones Recomendadas Hoy -->
+                        <div class="cfo-card" id="decision-center-card" style="margin-bottom: 20px;">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-bolt" style="color: var(--warning);"></i>
+                                <h3>Centro de Decisiones (Acciones Recomendadas Hoy)</h3>
+                            </div>
+                            <div class="cfo-card-body">
+                                <div id="decision-center-actions" style="display: flex; flex-direction: column; gap: 10px;">
+                                    <p class="desc">Cargando acciones recomendadas...</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Respuestas Ejecutivas Inmediatas -->
                         <div class="cfo-card cfo-qna-card">
                             <div class="cfo-card-header">
@@ -200,6 +218,17 @@
                                 <div class="alert-box warning" id="urgent-payments">
                                     <p class="desc">Buscando alertas operativas...</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Control de Viaje: Cali Diciembre -->
+                        <div class="cfo-card" id="december-trip-card" style="margin-top: 20px;">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-plane-departure" style="color: var(--primary);"></i>
+                                <h3>Control de Viaje: Cali Diciembre</h3>
+                            </div>
+                            <div class="cfo-card-body" id="december-trip-widget-content">
+                                <p class="desc">Cargando preparación del viaje...</p>
                             </div>
                         </div>
 
@@ -291,7 +320,8 @@
                 
                 <!-- Selector de Viajes -->
                 <div class="trip-selector scrollable-x">
-                    <button class="trip-btn active" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali</button>
+                    <button class="trip-btn active" data-trip="VIAJE-2026-06-18-LOCAL">Junio: Eventos Lima</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali</button>
                     <button class="trip-btn" data-trip="VIAJE-2026-08-04-CUSCO">Agosto: Cusco</button>
                     <button class="trip-btn" data-trip="VIAJE-2026-09-11-BOGOTA">Septiembre: Cordillera</button>
                     <button class="trip-btn" data-trip="VIAJE-2026-10-01-EUROPA">Octubre: Europa</button>
@@ -396,6 +426,16 @@
                             <input type="number" id="config-cash-cop" class="cfo-select" style="width: 100%;" value="1500000">
                         </div>
                     </div>
+                </div>
+
+                <!-- Estado del Crédito Europa -->
+                <div class="finance-card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-landmark"></i> Estado del Crédito Europa</h3>
+                    <p class="desc" style="margin-bottom: 15px;">Control de estado para la solicitud del préstamo de S/. 22,000:</p>
+                    <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.9rem;">
+                        <input type="checkbox" id="config-loan-requested" style="width: 18px; height: 18px;">
+                        <span>Crédito Bancario de S/. 22,000 Solicitado y Aprobado</span>
+                    </label>
                 </div>
 
                 <div class="finance-card" style="margin-top: 20px;">

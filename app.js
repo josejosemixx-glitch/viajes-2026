@@ -4,6 +4,19 @@
 
 const DEFAULT_TRIPS = [
     {
+        id: "VIAJE-2026-06-18-LOCAL",
+        name: "Eventos Lima",
+        destination: "Teatro Canout (Lima)",
+        startDate: "2026-06-18",
+        endDate: "2026-06-18",
+        budget: 61.14,
+        status: "confirmed",
+        riskLevel: "Bajo",
+        advanceLevel: 100,
+        pax: 1,
+        days: 1
+    },
+    {
         id: "VIAJE-2026-07-02-CALI",
         name: "Cali Julio",
         destination: "Cali, Colombia",
@@ -71,6 +84,9 @@ const DEFAULT_TRIPS = [
 ];
 
 const DEFAULT_PAYMENTS = [
+    // --- EVENTOS LOCALES ---
+    { id: "FIN-LOC-JUN-001", tripId: "VIAJE-2026-06-18-LOCAL", concept: "Metallica Sinfónico - Nico Borie", amount: 229.00, currency: "PEN", status: "paid", dueDate: "2026-06-09", classification: "CONFIRMADA", category: "Entretenimiento", notes: "Teatro Canout. Asiento: Platinum 1 6. Orden: 24267104." },
+
     // --- CALI JULIO ---
     { id: "FIN-CAL-JUL-001", tripId: "VIAJE-2026-07-02-CALI", concept: "Vuelo LATAM", amount: 465.00, currency: "USD", status: "paid", dueDate: "2026-06-05", classification: "CONFIRMADA", category: "Logística", notes: "Tarifa Light. Carry-on incluido." },
     { id: "FIN-CAL-JUL-002", tripId: "VIAJE-2026-07-02-CALI", concept: "Airbnb Cali", amount: 178.22, currency: "USD", status: "committed", dueDate: "2026-06-23", classification: "PROYECTADA", category: "Logística", notes: "Reserva activa. Débito automático programado." },
@@ -93,6 +109,9 @@ const DEFAULT_PAYMENTS = [
 
     // --- EUROPA OCTUBRE ---
     { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Presupuesto ciego Europa (Ahorro Junta Dorada)", amount: 11000.00, currency: "PEN", status: "committed", dueDate: "2026-06-30", classification: "CONFIRMADA", category: "Logística", notes: "Fondo blindado proveniente de la Junta Dorada." },
+    { id: "FIN-EUR-OCT-002", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 1/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2026-11-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
+    { id: "FIN-EUR-OCT-003", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 2/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2026-12-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
+    { id: "FIN-EUR-OCT-004", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 3/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2027-01-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
 
     // --- CALI DICIEMBRE ---
     { id: "FIN-CAL-DIC-001", tripId: "VIAJE-2026-12-22-CALI", concept: "Vuelo Cali Diciembre", amount: 1300.00, currency: "USD", status: "pending", dueDate: "2026-07-15", classification: "ESTIMADA", category: "Logística", notes: "Vuelos Premium Economy (LATAM). Requiere espacio ergonómico." },
@@ -109,8 +128,8 @@ const DEFAULT_RISKS = [
         concept: "Cali Diciembre sin emitir",
         status: "Sin emitir",
         level: "CRÍTICO",
-        probability: "Alta",
-        impact: "Muy Alto",
+        probability: 5,
+        impact: 5,
         mitigation: "Comprar pasajes antes del 15 de julio para evitar incrementos esperados del 40-60%."
     },
     {
@@ -119,9 +138,9 @@ const DEFAULT_RISKS = [
         concept: "Europa sin reservas",
         status: "Reservas sin emitir",
         level: "CRÍTICO",
-        probability: "Alta",
-        impact: "Alto",
-        mitigation: "Iniciar cotizaciones y bloqueos de hoteles/vuelos en Europa antes del 15 de agosto usando el fondo Junta Dorada."
+        probability: 4,
+        impact: 5,
+        mitigation: "Iniciar cotizaciones y bloqueos de hoteles/vuelos en Europa antes del 15 de agosto usando el fondo Junta Dorada y el crédito planificado."
     },
     {
         id: "RISK-003",
@@ -129,13 +148,16 @@ const DEFAULT_RISKS = [
         concept: "Cordillera saldo pendiente",
         status: "Saldo pendiente en Armatuvaca",
         level: "ALTO",
-        probability: "Media",
-        impact: "Alto",
+        probability: 3,
+        impact: 4,
         mitigation: "Liquidar el saldo de COP 1.382.400 antes del 28 de agosto con los fondos de la Cadena Colombia."
     }
 ];
 
 const ACTIVITIES = [
+    // --- EVENTOS LOCALES ---
+    { id: "act-loc-1-metallica", tripId: "VIAJE-2026-06-18-LOCAL", day: 1, name: "🤘 Metallica Sinfónico - Nico Borie", startTime: "20:00", endTime: "22:30", priority: "Alta", location: "Teatro Canout (Miraflores)", category: "Ocio", owner: "jose", status: "Confirmado" },
+
     // --- CALI JULIO ---
     { id: "act-jul-1-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "✈️ Vuelo de salida LIM ➔ CLO (LATAM LA2242)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-jul-1-checkin", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🏠 Check-in Loft Cali (Av. 8 Norte #23-94 Piso 2)", startTime: "23:30", endTime: "23:59", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Confirmado" },
@@ -317,6 +339,11 @@ const EXCHANGE_RATES = {
 // ==========================================
 
 let SYSTEM_STATE = {
+    cash: {
+        USD: 2200,
+        PEN: 5150,
+        COP: 1500000
+    },
     trips: DEFAULT_TRIPS,
     payments: DEFAULT_PAYMENTS,
     reservations: {
@@ -337,14 +364,10 @@ let SYSTEM_STATE = {
     },
     packingList: DEFAULT_PACKING_LIST,
     settings: {
-        selectedTripId: "VIAJE-2026-07-02-CALI",
+        selectedTripId: "VIAJE-2026-06-18-LOCAL",
         selectedDay: 1,
         selectedFinanceTripFilter: "all",
-        cashAvailable: {
-            USD: 2200,
-            PEN: 5150,
-            COP: 1500000
-        }
+        loanRequested: false
     },
     auditLog: []
 };
@@ -430,6 +453,7 @@ function loadState() {
             if (parsed.risks) SYSTEM_STATE.risks = parsed.risks;
             if (parsed.sleep) SYSTEM_STATE.sleep = { ...SYSTEM_STATE.sleep, ...parsed.sleep };
             if (parsed.settings) SYSTEM_STATE.settings = { ...SYSTEM_STATE.settings, ...parsed.settings };
+            if (parsed.cash) SYSTEM_STATE.cash = parsed.cash;
             if (parsed.packingList) SYSTEM_STATE.packingList = parsed.packingList;
             if (parsed.auditLog) SYSTEM_STATE.auditLog = parsed.auditLog;
         }
@@ -555,28 +579,37 @@ function setupConfigInputs() {
     const cashUsd = document.getElementById("config-cash-usd");
     const cashPen = document.getElementById("config-cash-pen");
     const cashCop = document.getElementById("config-cash-cop");
+    const loanReq = document.getElementById("config-loan-requested");
     
     if (cashUsd) {
-        cashUsd.value = SYSTEM_STATE.settings.cashAvailable.USD;
+        cashUsd.value = SYSTEM_STATE.cash.USD;
         cashUsd.addEventListener("change", (e) => {
-            SYSTEM_STATE.settings.cashAvailable.USD = parseFloat(e.target.value) || 0;
+            SYSTEM_STATE.cash.USD = parseFloat(e.target.value) || 0;
             logAction(`Caja USD actualizada a $${e.target.value}`, "SUCCESS");
             renderAll();
         });
     }
     if (cashPen) {
-        cashPen.value = SYSTEM_STATE.settings.cashAvailable.PEN;
+        cashPen.value = SYSTEM_STATE.cash.PEN;
         cashPen.addEventListener("change", (e) => {
-            SYSTEM_STATE.settings.cashAvailable.PEN = parseFloat(e.target.value) || 0;
+            SYSTEM_STATE.cash.PEN = parseFloat(e.target.value) || 0;
             logAction(`Caja PEN actualizada a S/.${e.target.value}`, "SUCCESS");
             renderAll();
         });
     }
     if (cashCop) {
-        cashCop.value = SYSTEM_STATE.settings.cashAvailable.COP;
+        cashCop.value = SYSTEM_STATE.cash.COP;
         cashCop.addEventListener("change", (e) => {
-            SYSTEM_STATE.settings.cashAvailable.COP = parseFloat(e.target.value) || 0;
+            SYSTEM_STATE.cash.COP = parseFloat(e.target.value) || 0;
             logAction(`Caja COP actualizada a COP$${e.target.value}`, "SUCCESS");
+            renderAll();
+        });
+    }
+    if (loanReq) {
+        loanReq.checked = !!SYSTEM_STATE.settings.loanRequested;
+        loanReq.addEventListener("change", (e) => {
+            SYSTEM_STATE.settings.loanRequested = e.target.checked;
+            logAction(`Estado del crédito Europa actualizado: ${e.target.checked ? "Solicitado/Aprobado" : "Pendiente"}`, "SUCCESS");
             renderAll();
         });
     }
@@ -614,7 +647,8 @@ function setupResetButton() {
                 });
                 SYSTEM_STATE.packingList = DEFAULT_PACKING_LIST;
                 SYSTEM_STATE.auditLog = [];
-                SYSTEM_STATE.settings.cashAvailable = { USD: 2200, PEN: 5150, COP: 1500000 };
+                SYSTEM_STATE.cash = { USD: 2200, PEN: 5150, COP: 1500000 };
+                SYSTEM_STATE.settings.loanRequested = false;
                 
                 logAction("Estado completo restablecido a valores por defecto", "WARNING");
                 renderAll();
@@ -663,14 +697,17 @@ function calculateSleepMetrics() {
     if (!trip) return;
     
     let totalDeficit = 0;
+    let totalSleepHours = 0;
     for (let d = 1; d <= trip.days; d++) {
         const key = `${trip.id}-${d}`;
         const bedtime = SYSTEM_STATE.sleep.bedtimes[key] || "23:00";
         const waketime = SYSTEM_STATE.sleep.wakeTimes[key] || "07:00";
         const duration = getSleepDuration(bedtime, waketime);
+        totalSleepHours += duration;
         totalDeficit += Math.max(0, 8.0 - duration);
     }
     SYSTEM_STATE.sleep.accumulatedDeficit = totalDeficit;
+    SYSTEM_STATE.sleep.averageSleep = totalSleepHours / trip.days;
     
     // Day deficit
     const key = `${trip.id}-${SYSTEM_STATE.settings.selectedDay}`;
@@ -702,6 +739,8 @@ function getFatigueLabel(val) {
 function renderAll() {
     calculateSleepMetrics();
     renderExecutiveDashboard();
+    renderDecisionCenter();
+    renderDecemberTripWidget();
     renderTraceabilityMatrix();
     renderCashFlowTab();
     renderFinancesLedgerTab();
@@ -777,6 +816,71 @@ function calculateTravelReadinessScore() {
     return { score: finalScore, desc };
 }
 
+function calculateSystemHealthScore() {
+    // 1. Liquidez (20%): 100% if remainingLiquidityUsd >= 0, else 0%
+    const cash = SYSTEM_STATE.cash;
+    const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
+    let commitments30Usd = 0;
+    SYSTEM_STATE.payments.forEach(p => {
+        if (p.status === "paid" || !p.dueDate) return;
+        const diffDays = getDaysToDate(p.dueDate);
+        if (diffDays >= 0 && diffDays <= 30) {
+            commitments30Usd += p.amount * (EXCHANGE_RATES[p.currency] || 1);
+        }
+    });
+    const liquidityScore = (totalCashUsd - commitments30Usd) >= 0 ? 100 : 0;
+
+    // 2. Riesgos (20%): Penalty based on severe risks (Risk Score >= 15)
+    let riskPenalty = 0;
+    SYSTEM_STATE.risks.forEach(r => {
+        const prob = parseInt(r.probability) || 1;
+        const imp = parseInt(r.impact) || 1;
+        const score = prob * imp;
+        if (score >= 15) {
+            riskPenalty += 35; 
+        } else if (score >= 8) {
+            riskPenalty += 15; 
+        }
+    });
+    const riskScore = Math.max(0, 100 - riskPenalty);
+
+    // 3. Reservas (20%): % of logistics items that are paid, committed, or reserved
+    const logistics = SYSTEM_STATE.payments.filter(p => p.category === "Logística");
+    const reservedCount = logistics.filter(p => p.status === "paid" || p.status === "committed" || p.status === "reserved").length;
+    const reservationsScore = logistics.length > 0 ? (reservedCount / logistics.length) * 100 : 100;
+
+    // 4. Pagos (20%): % of payment execution progress in USD
+    let totalUsd = 0;
+    let paidUsd = 0;
+    SYSTEM_STATE.payments.forEach(p => {
+        const val = p.amount * (EXCHANGE_RATES[p.currency] || 1.0);
+        totalUsd += val;
+        if (p.status === "paid") {
+            paidUsd += val;
+        }
+    });
+    const paymentsScore = totalUsd > 0 ? (paidUsd / totalUsd) * 100 : 100;
+
+    // 5. Descanso (20%): sleep debt control (100 - fatigue index)
+    const fatigue = SYSTEM_STATE.sleep.projectedFatigue || 0;
+    const sleepScore = Math.max(0, 100 - fatigue);
+
+    const finalScore = Math.round(
+        (liquidityScore * 0.20) +
+        (riskScore * 0.20) +
+        (reservationsScore * 0.20) +
+        (paymentsScore * 0.20) +
+        (sleepScore * 0.20)
+    );
+
+    let desc = "Salud Crítica";
+    if (finalScore >= 85) desc = "Sistema Estable";
+    else if (finalScore >= 70) desc = "Atención Requerida";
+    else if (finalScore >= 50) desc = "Riesgo Operativo";
+
+    return { score: finalScore, desc };
+}
+
 function renderExecutiveDashboard() {
     // 1. Next Trip count
     const baseDate = new Date("2026-06-14");
@@ -830,6 +934,18 @@ function renderExecutiveDashboard() {
     const readiness = calculateTravelReadinessScore();
     document.getElementById("ceo-kpi-readiness-score").textContent = `${readiness.score} / 100`;
     document.getElementById("ceo-kpi-readiness-desc").textContent = readiness.desc;
+
+    // 4.1. System Health Score
+    const health = calculateSystemHealthScore();
+    const healthScoreEl = document.getElementById("ceo-kpi-health-score");
+    const healthDescEl = document.getElementById("ceo-kpi-health-desc");
+    if (healthScoreEl) {
+        healthScoreEl.textContent = `${health.score} / 100`;
+        healthScoreEl.className = "val " + (health.score >= 85 ? "text-emerald" : (health.score >= 70 ? "text-yellow" : "text-red"));
+    }
+    if (healthDescEl) {
+        healthDescEl.textContent = health.desc;
+    }
 
     // 5. Active Risks Count
     const activeRisks = SYSTEM_STATE.risks.length;
@@ -888,7 +1004,7 @@ function renderExecutiveDashboard() {
     document.getElementById("exec-pct-pending").textContent = `${pendingPct}%`;
 
     // 9. Liquidity module calculation
-    const cash = SYSTEM_STATE.settings.cashAvailable;
+    const cash = SYSTEM_STATE.cash;
     const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
     
     // Commitments in next 30 days
@@ -986,6 +1102,302 @@ function renderCriticalAlerts() {
     `;
 }
 
+// --- NEW PHASE II WIDGETS ---
+
+function renderDecisionCenter() {
+    const container = document.getElementById("decision-center-actions");
+    if (!container) return;
+
+    const actions = [];
+
+    // 1. Airbnb Cali (Julio)
+    const airbnbCali = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-JUL-002");
+    if (airbnbCali && airbnbCali.status !== "paid") {
+        actions.push({
+            id: "dec-airbnb-cali",
+            title: "Pagar Airbnb Cali (Julio)",
+            desc: `Vence el 23 de junio (${airbnbCali.currency} ${airbnbCali.amount.toLocaleString()}). Débito automático programado.`,
+            dueDate: "2026-06-23"
+        });
+    }
+
+    // 2. Confirmar Cordillera Saldo
+    const cordilleraSaldo = SYSTEM_STATE.payments.find(p => p.id === "FIN-BOG-SEP-002");
+    if (cordilleraSaldo && cordilleraSaldo.status !== "paid") {
+        actions.push({
+            id: "dec-cordillera-saldo",
+            title: "Confirmar Cordillera (Saldo)",
+            desc: `Pagar saldo restante (COP 1,382,400) en Armatuvaca con fondos de Cadena Colombia. Vence el 28 de agosto.`,
+            dueDate: "2026-08-28"
+        });
+    }
+
+    // 3. Solicitar crédito de S/. 22,000 para Europa
+    if (!SYSTEM_STATE.settings.loanRequested) {
+        actions.push({
+            id: "dec-loan-europa",
+            title: "Solicitar Crédito Europa (S/. 22,000)",
+            desc: "Iniciar trámite bancario para amortización de 14 meses (S/. 1,571.43/mes). Recomendado completar en septiembre.",
+            dueDate: "2026-09-15"
+        });
+    }
+
+    // 4. Emitir vuelo Cali Dic
+    const vueloCaliDic = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-DIC-001");
+    if (vueloCaliDic && vueloCaliDic.status !== "paid") {
+        actions.push({
+            id: "dec-vuelo-dic",
+            title: "Emitir Vuelo Cali (Diciembre)",
+            desc: `Vuelo Premium Economy (USD ${vueloCaliDic.amount.toLocaleString()}) para evitar incremento inflacionario de +35% en septiembre.`,
+            dueDate: "2026-07-15"
+        });
+    }
+
+    // 5. Reservar Europa
+    const europaTrip = SYSTEM_STATE.trips.find(t => t.id === "VIAJE-2026-10-01-EUROPA");
+    const reservationsPending = SYSTEM_STATE.reservations["vuelo_europa"] === "Pendiente" || SYSTEM_STATE.reservations["hotel_europa"] === "Pendiente";
+    if (europaTrip && (europaTrip.status === "planned" || reservationsPending)) {
+        actions.push({
+            id: "dec-res-europa",
+            title: "Completar Reservas de Europa",
+            desc: "Cotizar y bloquear hoteles y vuelos para el Grand Tour usando el fondo de la Junta Dorada y el crédito bancario.",
+            dueDate: "2026-08-15"
+        });
+    }
+
+    // Sort by due date ascending
+    actions.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
+
+    if (actions.length === 0) {
+        container.innerHTML = `
+            <div class="alert-box safe" style="padding: 12px; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                    <strong>¡Todo al día!</strong> No hay acciones recomendadas para hoy.
+                </div>
+            </div>
+        `;
+        return;
+    }
+
+    let html = "";
+    actions.forEach(act => {
+        const diffDays = getDaysToDate(act.dueDate);
+        let badgeColor = "var(--info)";
+        if (diffDays <= 10) badgeColor = "var(--danger)";
+        else if (diffDays <= 30) badgeColor = "var(--warning)";
+
+        html += `
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 8px;">
+                <div style="flex: 1;">
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <span style="font-size: 0.7rem; font-weight: bold; background: ${badgeColor}; color: #000; padding: 2px 6px; border-radius: 4px;">
+                            ${diffDays < 0 ? 'VENCIDO' : (diffDays === 0 ? 'HOY' : `Faltan ${diffDays} días`)}
+                        </span>
+                        <h4 style="font-size: 0.85rem; font-weight: bold; color: #fff; margin: 0;">${act.title}</h4>
+                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); margin: 4px 0 0 0; line-height: 1.3;">${act.desc}</p>
+                </div>
+                <button onclick="executeDecisionAction('${act.id}')" class="btn btn-sm" style="background: var(--primary); font-size: 0.7rem; padding: 4px 8px; border-radius: 4px; border: none; color: #fff; cursor: pointer; white-space: nowrap;">
+                    <i class="fa-solid fa-check"></i> Resolver
+                </button>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+window.executeDecisionAction = function(id) {
+    if (id === "dec-airbnb-cali") {
+        const p = SYSTEM_STATE.payments.find(x => x.id === "FIN-CAL-JUL-002");
+        if (p) {
+            p.status = "paid";
+            logAction("Airbnb Cali marcado como PAGADO desde el Centro de Decisiones.", "SUCCESS");
+        }
+    } else if (id === "dec-cordillera-saldo") {
+        const p = SYSTEM_STATE.payments.find(x => x.id === "FIN-BOG-SEP-002");
+        if (p) {
+            p.status = "paid";
+            logAction("Saldo de Cordillera marcado como PAGADO desde el Centro de Decisiones.", "SUCCESS");
+        }
+    } else if (id === "dec-loan-europa") {
+        SYSTEM_STATE.settings.loanRequested = true;
+        logAction("Crédito bancario de S/. 22,000 para Europa marcado como SOLICITADO y APROBADO.", "SUCCESS");
+        const checkbox = document.getElementById("config-loan-requested");
+        if (checkbox) checkbox.checked = true;
+    } else if (id === "dec-vuelo-dic") {
+        const p = SYSTEM_STATE.payments.find(x => x.id === "FIN-CAL-DIC-001");
+        if (p) {
+            p.status = "paid";
+            logAction("Vuelo Cali Diciembre marcado como EMITIDO/PAGADO desde el Centro de Decisiones.", "SUCCESS");
+        }
+    } else if (id === "dec-res-europa") {
+        const t = SYSTEM_STATE.trips.find(x => x.id === "VIAJE-2026-10-01-EUROPA");
+        if (t) t.status = "confirmed";
+        SYSTEM_STATE.reservations["vuelo_europa"] = "Emitido";
+        SYSTEM_STATE.reservations["hotel_europa"] = "Emitido";
+        logAction("Reservas de Europa (vuelo y hotel) marcadas como EMITIDAS desde el Centro de Decisiones.", "SUCCESS");
+    }
+    renderAll();
+};
+
+function renderDecemberTripWidget() {
+    const container = document.getElementById("december-trip-widget-content");
+    if (!container) return;
+
+    const pVuelo = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-DIC-001");
+    const pAirbnb = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-DIC-002");
+    const pSeguro = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-DIC-004");
+    const pTraslado = SYSTEM_STATE.payments.find(p => p.id === "FIN-CAL-DIC-005");
+
+    const vueloStatus = pVuelo && pVuelo.status === "paid";
+    const airbnbStatus = pAirbnb && pAirbnb.status === "paid";
+    const seguroStatus = pSeguro && pSeguro.status === "paid";
+    const trasladoStatus = pTraslado && pTraslado.status === "paid";
+
+    let itemsCount = 4;
+    let emittedCount = 0;
+    if (vueloStatus) emittedCount++;
+    if (airbnbStatus) emittedCount++;
+    if (seguroStatus) emittedCount++;
+    if (trasladoStatus) emittedCount++;
+    const readinessPct = Math.round((emittedCount / itemsCount) * 100);
+
+    let alertHtml = "";
+    if (!vueloStatus) {
+        alertHtml = `
+            <div class="alert-box critical" style="margin-top: 12px; padding: 8px 10px; font-size: 0.75rem;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <strong>RIESGO DE INFLACIÓN (+35%):</strong> Vuelo sin emitir. Comprar antes de <strong>septiembre</strong> para asegurar espacio ergonómico y tarifa base.
+            </div>
+        `;
+    } else {
+        alertHtml = `
+            <div class="alert-box safe" style="margin-top: 12px; padding: 8px 10px; font-size: 0.75rem;">
+                <i class="fa-solid fa-circle-check"></i>
+                <strong>Vuelo asegurado:</strong> Tarifa y espacio ergonómico (Premium Economy) blindados.
+            </div>
+        `;
+    }
+
+    container.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-size: 0.8rem; color: var(--text-secondary);">Progreso de Preparación:</span>
+            <strong style="font-size: 0.95rem; color: ${readinessPct >= 80 ? 'var(--success)' : (readinessPct >= 50 ? 'var(--warning)' : 'var(--danger)')};">${readinessPct}%</strong>
+        </div>
+        <div style="height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; margin-bottom: 15px;">
+            <div style="width: ${readinessPct}%; height: 100%; background: ${readinessPct >= 80 ? 'var(--success)' : (readinessPct >= 50 ? 'var(--warning)' : 'var(--danger)')};"></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;">
+                <span>✈️ Vuelo Cali (Premium Economy)</span>
+                <span class="status-cfo ${vueloStatus ? 'green' : 'red'}" style="font-size: 0.65rem;">
+                    ${vueloStatus ? 'EMITIDO' : 'PENDIENTE'}
+                </span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;">
+                <span>🏠 Airbnb Cali (13 noches)</span>
+                <span class="status-cfo ${airbnbStatus ? 'green' : 'red'}" style="font-size: 0.65rem;">
+                    ${airbnbStatus ? 'EMITIDO' : 'PENDIENTE'}
+                </span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;">
+                <span>🛡️ Seguro de viaje Cali</span>
+                <span class="status-cfo ${seguroStatus ? 'green' : 'red'}" style="font-size: 0.65rem;">
+                    ${seguroStatus ? 'EMITIDO' : 'PENDIENTE'}
+                </span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;">
+                <span>🚕 Traslados (Uber Comfort)</span>
+                <span class="status-cfo ${trasladoStatus ? 'green' : 'red'}" style="font-size: 0.65rem;">
+                    ${trasladoStatus ? 'EMITIDO' : 'PENDIENTE'}
+                </span>
+            </div>
+        </div>
+        ${alertHtml}
+    `;
+}
+
+function renderBurnForecast() {
+    const months = [
+        { name: "Junio 2026", key: "2026-06" },
+        { name: "Julio 2026", key: "2026-07" },
+        { name: "Agosto 2026", key: "2026-08" },
+        { name: "Septiembre 2026", key: "2026-09" },
+        { name: "Octubre 2026", key: "2026-10" },
+        { name: "Noviembre 2026", key: "2026-11" },
+        { name: "Diciembre 2026", key: "2026-12" },
+        { name: "Enero 2027", key: "2027-01" }
+    ];
+
+    let html = `
+        <div class="finance-card" style="margin-top: 20px;">
+            <h3><i class="fa-solid fa-fire-flame-curved" style="color: var(--danger);"></i> Pronóstico de Velocidad de Gasto (Cash Burn Forecast)</h3>
+            <p class="desc" style="margin-bottom: 15px;">Proyección mensual de egresos consolidados en el ledger. Integra las amortizaciones del crédito de S/. 22,000 PEN (S/. 1,571.43 / mes) a partir de noviembre.</p>
+            <div class="scrollable-x">
+                <table class="cfo-table">
+                    <thead>
+                        <tr>
+                            <th>Mes</th>
+                            <th>Egresos Ejecutados</th>
+                            <th>Egresos Proyectados</th>
+                            <th>Total Flujo Salida</th>
+                            <th>Progreso del Mes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+
+    months.forEach(m => {
+        const monthItems = SYSTEM_STATE.payments.filter(p => p.dueDate && p.dueDate.startsWith(m.key));
+        let executedUsd = 0;
+        let projectedUsd = 0;
+
+        monthItems.forEach(item => {
+            const val = item.amount * (EXCHANGE_RATES[item.currency] || 1);
+            if (item.status === "paid") {
+                executedUsd += val;
+            } else {
+                projectedUsd += val;
+            }
+        });
+
+        const totalUsd = executedUsd + projectedUsd;
+        const totalPen = totalUsd / EXCHANGE_RATES.PEN;
+        
+        let progressPercent = 0;
+        if (totalUsd > 0) {
+            progressPercent = Math.round((executedUsd / totalUsd) * 100);
+        }
+
+        html += `
+            <tr>
+                <td><strong>${m.name}</strong></td>
+                <td style="color: var(--success); font-weight: 500;">$${Math.round(executedUsd).toLocaleString()} USD</td>
+                <td style="color: var(--warning); font-weight: 500;">$${Math.round(projectedUsd).toLocaleString()} USD</td>
+                <td style="font-weight: bold; color: #fff;">$${Math.round(totalUsd).toLocaleString()} USD <span style="font-size:0.75rem; color:var(--text-secondary); font-weight:normal;">(S/. ${Math.round(totalPen).toLocaleString()} PEN)</span></td>
+                <td>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; min-width: 80px;">
+                            <div style="width: ${progressPercent}%; height: 100%; background: var(--success);"></div>
+                        </div>
+                        <span style="font-size: 0.75rem; font-weight: bold; color: var(--text-secondary);">${progressPercent}%</span>
+                    </div>
+                </td>
+            </tr>
+        `;
+    });
+
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    return html;
+}
+
 // --- PESTAÑA 2: VIAJES ---
 
 function renderTraceabilityMatrix() {
@@ -1061,7 +1473,7 @@ function renderCashFlowTab() {
         { name: "Enero 2027", key: "2027-01" }
     ];
 
-    const cash = SYSTEM_STATE.settings.cashAvailable;
+    const cash = SYSTEM_STATE.cash;
     const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
 
     let html = `
@@ -1104,6 +1516,9 @@ function renderCashFlowTab() {
 
         <!-- Proyecciones temporales -->
         ${renderCashProjectionWidget()}
+
+        <!-- Pronóstico de Velocidad de Gasto -->
+        ${renderBurnForecast()}
 
         <!-- Timeline Gantt Financiero -->
         <div class="finance-card" style="margin-top: 20px;">
@@ -1430,41 +1845,97 @@ function renderRisksTab() {
     const container = document.getElementById("risks-render-tab");
     if (!container) return;
 
-    let html = `
-        <div class="finance-card">
-            <h3 style="margin-bottom: 15px;"><i class="fa-solid fa-triangle-exclamation"></i> Matriz de Riesgos y Mitigación</h3>
-            <p class="desc" style="margin-bottom: 15px;">Identificación de riesgos del control de caja con probabilidad e impacto:</p>
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-    `;
-
-    SYSTEM_STATE.risks.forEach(risk => {
-        // Evaluate if resolved
-        const correspondingPayment = SYSTEM_STATE.payments.find(p => p.concept.toLowerCase().includes(risk.concept.toLowerCase()) || risk.concept.toLowerCase().includes(p.concept.toLowerCase()));
+    // First calculate score for each risk and sort descending
+    const risksWithScore = SYSTEM_STATE.risks.map(r => {
+        const prob = parseInt(r.probability) || 1;
+        const imp = parseInt(r.impact) || 1;
+        const score = prob * imp;
+        
+        // Find corresponding payment to see if resolved
+        const correspondingPayment = SYSTEM_STATE.payments.find(p => p.concept.toLowerCase().includes(r.concept.toLowerCase()) || r.concept.toLowerCase().includes(p.concept.toLowerCase()));
         const isResolved = correspondingPayment && correspondingPayment.status === "paid";
         
-        const levelClass = risk.level === "CRÍTICO" ? "red" : (risk.level === "ALTO" ? "yellow" : "blue");
+        return {
+            ...r,
+            prob,
+            imp,
+            score,
+            isResolved
+        };
+    });
+
+    // Sort by score descending (active first, resolved last)
+    risksWithScore.sort((a, b) => {
+        if (a.isResolved !== b.isResolved) {
+            return a.isResolved ? 1 : -1;
+        }
+        return b.score - a.score;
+    });
+
+    let html = `
+        <div class="finance-card">
+            <h3 style="margin-bottom: 15px;"><i class="fa-solid fa-triangle-exclamation" style="color: var(--danger);"></i> Matriz de Riesgos Cuantitativa (Risk Scoring)</h3>
+            <p class="desc" style="margin-bottom: 20px;">Los riesgos se calculan como <strong>Score = Probabilidad (1-5) &times; Impacto (1-5)</strong>. Ordenados automáticamente por nivel de severidad.</p>
+            <div class="scrollable-x">
+                <table class="cfo-table">
+                    <thead>
+                        <tr>
+                            <th>Riesgo</th>
+                            <th>Viaje Asociado</th>
+                            <th>Probabilidad</th>
+                            <th>Impacto</th>
+                            <th>Risk Score</th>
+                            <th>Nivel</th>
+                            <th>Mitigación Propuesta</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+
+    risksWithScore.forEach(r => {
+        const trip = SYSTEM_STATE.trips.find(t => t.id === r.tripId);
+        const tripName = trip ? trip.name : "N/A";
+        
+        let scoreColor = "var(--success)";
+        let levelText = "BAJO";
+        if (r.score >= 15) {
+            scoreColor = "var(--danger)";
+            levelText = "CRÍTICO";
+        } else if (r.score >= 8) {
+            scoreColor = "var(--warning)";
+            levelText = "MEDIO / ALTO";
+        }
+        
+        if (r.isResolved) {
+            scoreColor = "var(--text-secondary)";
+            levelText = "MITIGADO";
+        }
+
+        const opacity = r.isResolved ? 0.5 : 1.0;
+        const textDecoration = r.isResolved ? "line-through" : "none";
 
         html += `
-            <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-glass); border-radius: 12px; padding: 15px; border-left: 5px solid ${risk.level === 'CRÍTICO' ? '#ef4444' : '#f59e0b'}; opacity: ${isResolved ? '0.4' : '1'};">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
-                    <div>
-                        <span class="status-cfo ${levelClass}" style="font-size: 0.65rem; margin-bottom: 5px;">${risk.level}</span>
-                        <h4 style="font-size: 0.95rem; font-weight: bold; color: #fff; margin-top: 4px; ${isResolved ? 'text-decoration: line-through;' : ''}">${risk.concept}</h4>
-                        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 3px;">Estado: <strong>${isResolved ? 'Mitigado / Completado' : risk.status}</strong></p>
-                    </div>
-                    <div style="text-align: right; font-size: 0.75rem; color: var(--text-secondary);">
-                        <div>Probabilidad: <strong style="color: #fff;">${risk.probability}</strong></div>
-                        <div style="margin-top: 2px;">Impacto: <strong style="color: #fff;">${risk.impact}</strong></div>
-                    </div>
-                </div>
-                <div style="margin-top: 10px; background: rgba(0,0,0,0.1); border-radius: 6px; padding: 10px; font-size: 0.8rem; color: #f3f4f6;">
-                    <strong style="color: var(--primary);"><i class="fa-solid fa-shield-halved"></i> Estrategia de Mitigación:</strong> ${risk.mitigation}
-                </div>
-            </div>
+            <tr style="opacity: ${opacity};">
+                <td style="font-weight: bold; color: #fff; text-decoration: ${textDecoration};">${r.concept}</td>
+                <td><span style="font-size: 0.8rem; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px;">${tripName}</span></td>
+                <td style="text-align: center; font-weight: bold;">${r.prob} / 5</td>
+                <td style="text-align: center; font-weight: bold;">${r.imp} / 5</td>
+                <td style="text-align: center; font-weight: bold; font-size: 1.1rem; color: ${scoreColor};">${r.score}</td>
+                <td>
+                    <span class="status-cfo ${r.isResolved ? 'green' : (r.score >= 15 ? 'red' : (r.score >= 8 ? 'yellow' : 'blue'))}" style="font-size: 0.65rem; font-weight: bold;">
+                        ${levelText}
+                    </span>
+                </td>
+                <td style="font-size: 0.8rem; max-width: 250px; line-height: 1.3;">${r.mitigation}</td>
+                <td style="font-size: 0.8rem; font-weight: bold;">${r.isResolved ? "✅ Mitigado" : "⚠️ Activo"}</td>
+            </tr>
         `;
     });
 
     html += `
+                    </tbody>
+                </table>
             </div>
         </div>
     `;
@@ -1651,7 +2122,41 @@ function renderItinerariesTab() {
         itineraryHtml += `</ul>`;
     }
 
-    renderContainer.innerHTML = itineraryHtml + diagnosisHtml + sleepAlertHtml;
+    const fatigue = SYSTEM_STATE.sleep.projectedFatigue || 0;
+    const debt = SYSTEM_STATE.sleep.accumulatedDeficit || 0;
+    let fatigueColor = "var(--success)";
+    let fatigueDesc = "Óptima (Déficit controlado)";
+    if (fatigue > 80) {
+        fatigueColor = "var(--danger)";
+        fatigueDesc = "Crítica (Riesgo alto de agotamiento)";
+    } else if (fatigue > 50) {
+        fatigueColor = "var(--warning)";
+        fatigueDesc = "Media (Fatiga moderada)";
+    } else if (fatigue > 20) {
+        fatigueColor = "var(--info)";
+        fatigueDesc = "Baja (Cansancio leve)";
+    }
+
+    const fatigueHtml = `
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+            <div>
+                <span style="font-size: 0.75rem; color: var(--text-secondary); display: block;">Estado de Fatiga & Adaptabilidad (Día ${SYSTEM_STATE.settings.selectedDay}):</span>
+                <strong style="font-size: 0.95rem; color: #fff;">${fatigueDesc}</strong>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <div style="text-align: right;">
+                    <span style="font-size: 0.7rem; color: var(--text-secondary); display: block;">Fatiga:</span>
+                    <strong style="color: ${fatigueColor}; font-size: 1.1rem;">${fatigue}%</strong>
+                </div>
+                <div style="text-align: right;">
+                    <span style="font-size: 0.7rem; color: var(--text-secondary); display: block;">Deuda de Sueño:</span>
+                    <strong style="color: ${debt > 0 ? 'var(--danger)' : 'var(--success)'}; font-size: 1.1rem;">${debt.toFixed(1)}h</strong>
+                </div>
+            </div>
+        </div>
+    `;
+
+    renderContainer.innerHTML = fatigueHtml + itineraryHtml + diagnosisHtml + sleepAlertHtml;
 }
 
 // --- PESTAÑA 7: DESCANSO ---
@@ -1709,6 +2214,8 @@ function renderSleepTab() {
         }
     }
     
+    const avgSleep = SYSTEM_STATE.sleep.averageSleep || 0;
+    
     sleepOutput.innerHTML = `
         <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 15px; margin-top: 15px;">
             <div>
@@ -1720,7 +2227,11 @@ function renderSleepTab() {
                 <div style="font-size: 1.25rem; font-weight: bold; color: ${deficit > 0 ? 'var(--danger)' : 'var(--success)'}; margin-top: 5px;">${deficit.toFixed(1)} hrs</div>
             </div>
             <div>
-                <small style="font-size: 0.75rem; color: var(--text-secondary);">Déficit Acumulado:</small>
+                <small style="font-size: 0.75rem; color: var(--text-secondary);">Promedio Viaje:</small>
+                <div style="font-size: 1.25rem; font-weight: bold; color: ${avgSleep < 8 ? 'var(--warning)' : 'var(--success)'}; margin-top: 5px;">${avgSleep.toFixed(1)} hrs</div>
+            </div>
+            <div>
+                <small style="font-size: 0.75rem; color: var(--text-secondary);">Deuda de Sueño:</small>
                 <div style="font-size: 1.25rem; font-weight: bold; color: ${SYSTEM_STATE.sleep.accumulatedDeficit > 0 ? 'var(--danger)' : 'var(--success)'}; margin-top: 5px;">${SYSTEM_STATE.sleep.accumulatedDeficit.toFixed(1)} hrs</div>
             </div>
             <div>
@@ -1787,6 +2298,10 @@ function renderPackingTab() {
 // --- PESTAÑA 9: CONFIGURACIÓN & AUDITORÍA ---
 
 function renderConfigTab() {
+    const loanReq = document.getElementById("config-loan-requested");
+    if (loanReq) {
+        loanReq.checked = !!SYSTEM_STATE.settings.loanRequested;
+    }
     const container = document.getElementById("audit-log-render");
     if (!container) return;
     
