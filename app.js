@@ -151,6 +151,26 @@ const DEFAULT_RISKS = [
         probability: 3,
         impact: 4,
         mitigation: "Liquidar el saldo de COP 1.382.400 antes del 28 de agosto con los fondos de la Cadena Colombia."
+    },
+    {
+        id: "RISK-004",
+        tripId: "VIAJE-2026-09-11-BOGOTA",
+        concept: "Cotización de Viaje a Bogotá",
+        status: "Pendiente de cotización",
+        level: "MEDIO",
+        probability: 4,
+        impact: 3,
+        mitigation: "Solicitar cotización completa (vuelos, alojamiento final y viáticos exactos) antes de finalizar julio."
+    },
+    {
+        id: "RISK-005",
+        tripId: "VIAJE-2026-12-22-CALI",
+        concept: "Cotización Cali Diciembre",
+        status: "Pendiente de cotización",
+        level: "ALTO",
+        probability: 5,
+        impact: 4,
+        mitigation: "Establecer presupuesto detallado para pasajes, estadía y eventos de feria antes de quincena de agosto."
     }
 ];
 
@@ -716,9 +736,9 @@ function calculateSleepMetrics() {
     const duration = getSleepDuration(bedtime, waketime);
     const dayDeficit = Math.max(0, 8.0 - duration);
     
-    // Density of activities for next day
+    // Density of activities for next day (only counting Jose's or shared activities)
     const nextDay = SYSTEM_STATE.settings.selectedDay + 1;
-    const nextDayActs = ACTIVITIES.filter(a => a.tripId === trip.id && a.day === nextDay);
+    const nextDayActs = ACTIVITIES.filter(a => a.tripId === trip.id && a.day === nextDay && a.owner !== "angelica");
     const criticalActsCount = nextDayActs.filter(a => a.priority === "Critical" || a.priority === "Alta").length;
     
     let fatigue = (totalDeficit * 8) + (dayDeficit * 12) + (criticalActsCount * 12);
