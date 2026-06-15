@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✈️ Global Travel Dashboard 2026</title>
+    <title>✈️ Global Travel Control Center 2026-2027</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Archivo de Estilos -->
-    <link rel="stylesheet" href="style.css?v=1.0.3">
+    <link rel="stylesheet" href="style.css?v=1.2.0">
 </head>
 <body>
     <div class="app-container">
@@ -17,411 +17,456 @@
         <!-- CABECERA GLOBAL -->
         <header class="app-header">
             <div class="header-main">
-                <h1>✈️ Dashboard 2026</h1>
-                <p class="subtitle">Estado Financiero & Itinerarios (Premium)</p>
+                <h1>✈️ Global Travel Control Center</h1>
+                <p class="subtitle">CFO Personal, Director de Operaciones & Travel Manager Ejecutivo</p>
             </div>
             
-            <!-- Widget de Cuenta Regresiva Global -->
-            <div class="countdown-card" id="countdown-widget">
-                <div class="countdown-header" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">Próximo Viaje: <span id="next-trip-name" style="color: var(--primary); font-weight: bold;">Cargando...</span></div>
-                <div class="countdown-grid">
-                    <div class="time-block"><span id="countdown-days">00</span><small>Días</small></div>
-                    <div class="time-block"><span id="countdown-hours">00</span><small>Horas</small></div>
-                    <div class="time-block"><span id="countdown-mins">00</span><small>Mins</small></div>
+            <!-- Reloj Local y Zonas Horarias -->
+            <div class="header-right-widgets">
+                <div class="clock-card">
+                    <div id="clock-city" class="clock-city"><i class="fa-solid fa-clock"></i> Bogotá / Lima</div>
+                    <div id="clock-hms" class="clock-hms">00:00:00 (UTC-5)</div>
                 </div>
             </div>
         </header>
 
+        <!-- BARRA DE NAVEGACIÓN PRINCIPAL (9 TABS) -->
+        <nav class="top-nav-tabs">
+            <button class="nav-item active" data-target="tab-resumen">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Resumen</span>
+            </button>
+            <button class="nav-item" data-target="tab-viajes">
+                <i class="fa-solid fa-route"></i>
+                <span>Viajes</span>
+            </button>
+            <button class="nav-item" data-target="tab-caja">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Flujo de Caja</span>
+            </button>
+            <button class="nav-item" data-target="tab-finanzas">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finanzas</span>
+            </button>
+            <button class="nav-item" data-target="tab-riesgos">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Riesgos</span>
+            </button>
+            <button class="nav-item" data-target="tab-agenda">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Agenda</span>
+            </button>
+            <button class="nav-item" data-target="tab-descanso">
+                <i class="fa-solid fa-moon"></i>
+                <span>Descanso</span>
+            </button>
+            <button class="nav-item" data-target="tab-equipaje">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+                <span>Equipaje</span>
+            </button>
+            <button class="nav-item" data-target="tab-configuracion">
+                <i class="fa-solid fa-gears"></i>
+                <span>Config</span>
+            </button>
+        </nav>
+
         <main class="app-content">
             
-            <!-- PESTAÑA 1: RESUMEN (HOME) -->
-            <div id="tab-home" class="tab-pane active">
+            <!-- PESTAÑA 1: RESUMEN (CEO DASHBOARD) -->
+            <div id="tab-resumen" class="tab-pane active">
                 <div class="section-title">
-                    <h2>🏠 Visión General</h2>
-                    <p>Inventario de Viajes Confirmados 2026</p>
+                    <h2>🏠 Resumen Ejecutivo (CEO Dashboard)</h2>
+                    <p>Estado operacional y financiero inmediato</p>
                 </div>
 
-                <div class="timeline-global">
-                    <div class="trip-card">
-                        <h3>🇨🇴 Cali, Colombia</h3>
-                        <p>02 Jul - 06 Jul | Cumpleaños Familiar</p>
-                        <span class="status confirm">Confirmado (Pagado)</span>
+                <!-- CEO Dashboard Grid -->
+                <div class="ceo-dashboard-grid-kpi">
+                    <div class="ceo-kpi-card">
+                        <small>Próximo Viaje</small>
+                        <div class="val-title" id="ceo-kpi-next-trip-dest">Cargando...</div>
+                        <div class="val-desc" id="ceo-kpi-next-trip-days">-- días</div>
                     </div>
-                    <div class="trip-card">
-                        <h3>🇨🇴 Cali, Colombia</h3>
-                        <p>22 Dic - 04 Ene | Fin de Año</p>
-                        <span class="status alert">En Planificación</span>
+                    <div class="ceo-kpi-card">
+                        <small>Próximo Pago</small>
+                        <div class="val-title" id="ceo-kpi-next-payment-concept">Cargando...</div>
+                        <div class="val-desc" id="ceo-kpi-next-payment-details">--</div>
+                    </div>
+                    <div class="ceo-kpi-card">
+                        <small>Exposición Consolidada</small>
+                        <div class="val text-blue" id="ceo-kpi-total-exposure">Cargando...</div>
+                        <div class="val-desc" id="ceo-kpi-total-exposure-pen">Cargando...</div>
+                    </div>
+                    <div class="ceo-kpi-card">
+                        <small>Travel Readiness Score</small>
+                        <div class="val text-emerald" id="ceo-kpi-readiness-score">-- / 100</div>
+                        <div class="val-desc" id="ceo-kpi-readiness-desc">--</div>
+                    </div>
+                    <div class="ceo-kpi-card">
+                        <small>Riesgos Activos</small>
+                        <div class="val text-red" id="ceo-kpi-risks">0</div>
+                    </div>
+                    <div class="ceo-kpi-card">
+                        <small>Reservas sin Emitir</small>
+                        <div class="val text-yellow" id="ceo-kpi-unissued">0</div>
+                    </div>
+                </div>
+
+                <div class="cfo-dashboard-grid" style="margin-top: 20px;">
+                    <!-- Columna Izquierda: Respuestas e Ejecución -->
+                    <div class="cfo-dashboard-col">
+                        <!-- Respuestas Ejecutivas Inmediatas -->
+                        <div class="cfo-card cfo-qna-card">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-clipboard-question"></i>
+                                <h3>Respuestas de Caja Inmediatas</h3>
+                            </div>
+                            <div class="cfo-card-body">
+                                <div class="qna-item">
+                                    <span class="q">¿Cuál es el próximo pago?</span>
+                                    <span class="a" id="q-next-payment">Cargando...</span>
+                                </div>
+                                <div class="qna-item">
+                                    <span class="q">¿Cuánto dinero necesito este mes?</span>
+                                    <span class="a" id="q-money-this-month">Cargando...</span>
+                                </div>
+                                <div class="qna-item">
+                                    <span class="q">¿Cuánto dinero necesito hasta enero 2027?</span>
+                                    <span class="a" id="q-money-until-dec">Cargando...</span>
+                                </div>
+                                <div class="qna-item">
+                                    <span class="q">¿Cuál es el viaje más costoso?</span>
+                                    <span class="a" id="q-most-expensive-trip">Cargando...</span>
+                                </div>
+                                <div class="qna-item">
+                                    <span class="q">¿Qué reservas faltan?</span>
+                                    <span class="a" id="q-missing-reservations">Cargando...</span>
+                                </div>
+                                <div class="qna-item font-bold">
+                                    <span class="q">¿Exposición financiera total?</span>
+                                    <span class="a" id="q-total-exposure">Cargando...</span>
+                                </div>
+                                <div class="qna-item font-bold">
+                                    <span class="q">¿Cuánto tengo comprometido?</span>
+                                    <span class="a" id="q-total-committed">Cargando...</span>
+                                </div>
+                                <div class="qna-item font-bold">
+                                    <span class="q">¿Cuánto ya ejecuté?</span>
+                                    <span class="a" id="q-total-executed">Cargando...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ejecución Financiera -->
+                        <div class="cfo-card" style="margin-top: 20px;">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <h3>Ejecución Financiera</h3>
+                            </div>
+                            <div class="cfo-card-body">
+                                <div class="financial-execution-summary" style="display: flex; flex-direction: column; gap: 10px;">
+                                    <div class="financial-stacked-bar" style="height: 24px; display: flex; border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.05); margin-bottom: 15px;">
+                                        <div id="exec-bar-paid" style="width: 0%; background: var(--success); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #000;">0%</div>
+                                        <div id="exec-bar-committed" style="width: 0%; background: var(--warning); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #000;">0%</div>
+                                        <div id="exec-bar-pending" style="width: 0%; background: var(--info); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: #fff;">0%</div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-size: 0.8rem; text-align: center;">
+                                        <div style="background: rgba(16, 185, 129, 0.05); padding: 8px; border-radius: 8px;">
+                                            <span style="color: var(--success); display: block; font-weight: bold;">Pagado</span>
+                                            <strong id="exec-pct-paid" style="font-size: 1.1rem;">0%</strong>
+                                        </div>
+                                        <div style="background: rgba(245, 158, 11, 0.05); padding: 8px; border-radius: 8px;">
+                                            <span style="color: var(--warning); display: block; font-weight: bold;">Comprometido</span>
+                                            <strong id="exec-pct-committed" style="font-size: 1.1rem;">0%</strong>
+                                        </div>
+                                        <div style="background: rgba(59, 130, 246, 0.05); padding: 8px; border-radius: 8px;">
+                                            <span style="color: var(--info); display: block; font-weight: bold;">Pendiente</span>
+                                            <strong id="exec-pct-pending" style="font-size: 1.1rem;">0%</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Alertas y Liquidez -->
+                    <div class="cfo-dashboard-col">
+                        <!-- Alertas Críticas de Finanzas -->
+                        <div class="cfo-card">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                <h3>Alertas de Egresos & Logística</h3>
+                            </div>
+                            <div class="cfo-card-body">
+                                <div class="alert-box warning" id="urgent-payments">
+                                    <p class="desc">Buscando alertas operativas...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auditoría de Liquidez -->
+                        <div class="cfo-card" style="margin-top: 20px;">
+                            <div class="cfo-card-header">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <h3>Auditoría de Liquidez (30 Días)</h3>
+                            </div>
+                            <div class="cfo-card-body">
+                                <div class="liquidity-details" style="display: flex; flex-direction: column; gap: 12px;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Caja Disponible:</span>
+                                        <span style="font-size: 1rem; font-weight: bold; color: var(--success);" id="liq-cash-available">$0 USD</span>
+                                    </div>
+                                    <div style="font-size: 0.75rem; color: var(--text-secondary); display: flex; gap: 10px; justify-content: space-between;" id="liq-cash-breakdown">
+                                        <span>USD: $0</span>
+                                        <span>PEN: S/.0</span>
+                                        <span>COP: $0</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px;">
+                                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Compromisos (Próximos 30 días):</span>
+                                        <span style="font-size: 1rem; font-weight: bold; color: var(--danger);" id="liq-commitments-30">$0 USD</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px; font-weight: bold;">
+                                        <span style="font-size: 0.85rem; color: var(--text-primary);">Liquidez Restante:</span>
+                                        <span style="font-size: 1.1rem; color: var(--success);" id="liq-remaining-status">$0 USD</span>
+                                    </div>
+                                    <div id="liquidity-alert-box" style="margin-top: 5px;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PESTAÑA 2: ITINERARIOS -->
-            <div id="tab-itinerary" class="tab-pane">
+            <!-- PESTAÑA 2: VIAJES -->
+            <div id="tab-viajes" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Cronograma Detallado</h2>
-                    <p>Operativa minuto a minuto</p>
+                    <h2>📅 Matriz de Trazabilidad Maestro</h2>
+                    <p>Trazabilidad física y financiera consolidada de todos tus traslados</p>
+                </div>
+                <div class="cfo-card">
+                    <div id="traceability-matrix-render">
+                        <!-- Renderizado dinámico vía JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- PESTAÑA 3: FLUJO DE CAJA -->
+            <div id="tab-caja" class="tab-pane">
+                <div class="section-title">
+                    <h2>📈 Flujo de Caja y Proyecciones</h2>
+                    <p>Ahorro programado, egresos cronológicos y liquidez de caja</p>
+                </div>
+                <div id="cash-flow-render-content">
+                    <!-- Renderizado dinámico (Tabla de ahorro, proyección de caja, outflows calendar) -->
+                </div>
+            </div>
+
+            <!-- PESTAÑA 4: FINANZAS -->
+            <div id="tab-finanzas" class="tab-pane">
+                <div class="section-title">
+                    <h2>💰 Libro Mayor y Control de Emisiones</h2>
+                    <p>Detalle de todas las transacciones financieras y emisión de reservas</p>
+                </div>
+                <div id="finances-ledger-content">
+                    <!-- Renderizado dinámico (Toggles de diciembre y tabla de transacciones ledger) -->
+                </div>
+            </div>
+
+            <!-- PESTAÑA 5: RIESGOS -->
+            <div id="tab-riesgos" class="tab-pane">
+                <div class="section-title">
+                    <h2>⚠️ Matriz de Riesgos y Mitigación</h2>
+                    <p>Riesgos operacionales y financieros identificados con impacto y probabilidad</p>
+                </div>
+                <div id="risks-render-tab">
+                    <!-- Renderizado dinámico vía JS -->
+                </div>
+            </div>
+
+            <!-- PESTAÑA 6: AGENDA INTELIGENTE -->
+            <div id="tab-agenda" class="tab-pane">
+                <div class="section-title">
+                    <h2>📅 Agenda Inteligente</h2>
+                    <p>Operativa y logística diaria, diagnóstico de conflictos de agenda</p>
                 </div>
                 
                 <!-- Selector de Viajes -->
                 <div class="trip-selector scrollable-x">
-                    <button class="trip-btn active" data-trip="cali-jul">Julio: Cali</button>
-                    <button class="trip-btn" data-trip="cali-dic">Diciembre: Cali</button>
+                    <button class="trip-btn active" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-08-04-CUSCO">Agosto: Cusco</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-09-11-BOGOTA">Septiembre: Cordillera</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-10-01-EUROPA">Octubre: Europa</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-12-22-CALI">Diciembre: Cali</button>
+                </div>
+
+                <!-- Selector de Días Dinámico -->
+                <div class="day-selector scrollable-x" id="day-selector-container">
+                    <!-- Se renderiza vía JS según el viaje activo -->
                 </div>
 
                 <!-- Contenido de los Itinerarios -->
-                <div class="itineraries-container">
-                    
-                    <!-- CALI JULIO DETALLADO -->
-                    <div class="trip-content active" id="content-cali-jul">
-                        <div class="day-card active">
-                            <div class="day-header">
-                                <span class="day-number">2-6 Jul</span>
-                                <h3>Cumpleaños Familiar en Cali</h3>
-                                <span class="day-desc">Agenda social y encuentros locales</span>
-                            </div>
-                            
-                            <!-- 02 JULIO -->
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Jueves 02 de Julio</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">03:50 PM (LIM)</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>✈️ Vuelo Lima ➔ Cali</h4>
-                                            <span class="weather-tag"><i class="fa-solid fa-cloud"></i> 18°C</span>
-                                        </div>
-                                        <p>Vuelo operado por LATAM (Tarifa Light). Carry-on de 10kg incluído y asiento con Estatus Elite.</p>
-                                        <span class="event-location"><i class="fa-solid fa-plane-departure"></i> Aeropuerto Internacional Jorge Chávez (LIM)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">10:35 PM (CLO)</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎒 Aterrizaje en Cali</h4>
-                                            <span class="weather-tag-danger"><i class="fa-solid fa-moon"></i> 22°C Noche tropical</span>
-                                        </div>
-                                        <p>Llegada al terminal internacional. Coordinación de Uber Taxi hacia el hotel. Costo aproximado $110 USD presupuestados para movilidad en el viaje.</p>
-                                        <span class="event-location"><i class="fa-solid fa-plane-arrival"></i> Aeropuerto Alfonso Bonilla Aragón (CLO)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">11:15 PM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🏨 Check-in en Hotel Ibis</h4>
-                                        </div>
-                                        <p>Registro y acceso a la habitación (4 noches, reserva confirmada y no reembolsable).</p>
-                                        <span class="event-location"><i class="fa-solid fa-bed"></i> Hotel Ibis Cali</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">11:30 PM - 01:30 AM</span>
-                                    <div class="timeline-content">
-                                        <h4>🌙 Desconexión</h4>
-                                        <p>Ventana de tiempo para organizar la habitación, aseo personal y relajación tras el vuelo.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <!-- 03 JULIO -->
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Viernes 03 de Julio</div>
-                            <div class="alert alert-info">
-                                <i class="fa-solid fa-calendar-check"></i> <strong>Enfoque del día:</strong> Encuentros personales y familiares en un ambiente relajado.
-                            </div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">10:30 AM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>☕ Café con Camila Paredes</h4>
-                                        </div>
-                                        <p>Reunión matutina programada. Espacio para ponerse al día.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">01:00 PM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🍽️ Almuerzo con Papás</h4>
-                                            <span class="weather-tag"><i class="fa-solid fa-sun"></i> 28°C Cálido</span>
-                                        </div>
-                                        <p>Reencuentro central del día y almuerzo familiar.</p>
-                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Ropa ligera, clima cálido caleño.</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">Noche</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🍸 Salida Nocturna</h4>
-                                        </div>
-                                        <p>Plan nocturno junto a Las Lozada.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <!-- 04 JULIO -->
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Sábado 04 de Julio</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">Mediodía</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🍔 Almuerzo "Pandémicos"</h4>
-                                        </div>
-                                        <p>Reunión social con el grupo de amigos para almorzar.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">Tarde</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>☕ Café de Tarde</h4>
-                                        </div>
-                                        <p>Encuentro programado con Angélica / Unicornio.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">08:00 PM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🥃 Salida a Bourbon</h4>
-                                        </div>
-                                        <p>Reunión con Héctor y el grupo Cartel en un gran ambiente.</p>
-                                        <span class="event-location"><i class="fa-solid fa-martini-glass"></i> Bourbon</span>
-                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Outfit casual de noche.</div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <!-- 05 JULIO -->
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Domingo 05 de Julio</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">Tarde/Noche</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎉 Cena de Cumpleaños Familiar</h4>
-                                            <span class="weather-tag"><i class="fa-solid fa-cake-candles"></i> Evento Principal</span>
-                                        </div>
-                                        <p>Celebración de cumpleaños con Victoria, Aura, Mario, Mario Andrés y Antonella. El eje central del viaje.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">Late Night</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🌙 Cierre del Día</h4>
-                                        </div>
-                                        <p>Encuentro nocturno programado con Laura Marulanda.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <!-- 06 JULIO -->
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Lunes 06 de Julio</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">09:00 AM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎒 Check-out Ibis</h4>
-                                        </div>
-                                        <p>Preparación del equipaje (Carry-on 10kg) y entrega de la habitación.</p>
-                                        <span class="event-location"><i class="fa-solid fa-key"></i> Hotel Ibis Cali</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">11:30 AM</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🚕 Traslado al Aeropuerto</h4>
-                                        </div>
-                                        <p>Salida desde la casa de los papás hacia el terminal aéreo.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">02:35 PM (CLO)</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>✈️ Vuelo Cali ➔ Lima</h4>
-                                        </div>
-                                        <p>Vuelo de retorno operado por LATAM. Aterrizaje en Lima estimado a las 08:20 PM.</p>
-                                        <span class="event-location"><i class="fa-solid fa-plane-departure"></i> Aeropuerto Alfonso Bonilla Aragón (CLO)</span>
-                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Llevar capa de abrigo para la llegada a la humedad limeña.</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- CALI DICIEMBRE DETALLADO -->
-                    <div class="trip-content" id="content-cali-dic">
-                        <div class="day-card active">
-                            <div class="day-header">
-                                <span class="day-number">22 Dic - 4 Ene</span>
-                                <h3>Fin de Año Caleño</h3>
-                                <span class="day-desc">Fiestas, familia y feria</span>
-                            </div>
-
-                            <div class="alert alert-info">
-                                <i class="fa-solid fa-lightbulb"></i> <strong>Estrategia Logística:</strong> Presupuesto asegurado bajo el escenario realista (Vuelo en Premium Economy + Airbnb). ¡Prioridad: Comprar vuelo antes del 15 de Julio!
-                            </div>
-                            
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 1-2: 22 y 23 de Diciembre</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">22 Dic</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>✈️ Llegada y Adaptación</h4>
-                                            <span class="weather-tag"><i class="fa-solid fa-wind"></i> Brisa de Diciembre</span>
-                                        </div>
-                                        <p>Despliegue logístico desde Lima en Premium Economy (para confort de rodillas). Llegada a Cali y traslado a Airbnb.</p>
-                                        <div class="clothing-tips-warning"><i class="fa-solid fa-suitcase"></i> Airbnb presupuestado en $650 USD total.</div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 3-4: 24 y 25 de Diciembre</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">24 Dic</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎄 Festividades de Nochebuena</h4>
-                                        </div>
-                                        <p>Logística de regalos, reuniones familiares, cena de gala de Nochebuena y brindis de medianoche.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="time-badge">25 Dic</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎁 Navidad y Descanso</h4>
-                                        </div>
-                                        <p>Día de recalentado, tranquilidad y compartir en familia.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 5-9: 26 al 30 de Diciembre</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">Feria</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>💃 Ventana Operativa & Feria de Cali</h4>
-                                            <span class="weather-tag-danger"><i class="fa-solid fa-fire"></i> Calor Festivo</span>
-                                        </div>
-                                        <p>Agenda plana para visita de amigos, rumbas, eventos de la Feria y descanso general en el alojamiento.</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 10-11: 31 Dic y 1 de Enero</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">31 Dic</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>🎆 Celebración de Fin de Año</h4>
-                                        </div>
-                                        <p>Gran cena para despedir el 2026. Rumba caleña y tradiciones para recibir el 2027.</p>
-                                        <div class="clothing-tips"><i class="fa-solid fa-shirt"></i> Outfit de gala para fin de año.</div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="day-divider"><i class="fa-regular fa-calendar"></i> Días 12-14: 2 al 4 de Enero</div>
-                            <ul class="timeline detailed-timeline">
-                                <li>
-                                    <span class="time-badge">04 Ene</span>
-                                    <div class="timeline-content">
-                                        <div class="content-header">
-                                            <h4>✈️ Recuperación y Retorno</h4>
-                                        </div>
-                                        <p>Desintoxicación post-fiestas. Preparación de maletas, check-out del Airbnb y vuelo de retorno a Lima (Premium Economy).</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
+                <div class="itineraries-container" id="itineraries-render" style="margin-top: 20px;">
+                    <!-- Se renderiza dinámicamente vía JS -->
                 </div>
             </div>
 
-            <!-- PESTAÑA 3: FINANZAS -->
-            <div id="tab-finance" class="tab-pane">
+            <!-- PESTAÑA 7: DESCANSO -->
+            <div id="tab-descanso" class="tab-pane">
                 <div class="section-title">
-                    <h2>💰 Estado Financiero</h2>
-                    <p>Dashboard Consolidado (Realista)</p>
+                    <h2>🌙 Motor de Descanso Dinámico</h2>
+                    <p>Optimización del sueño y cálculo de ventanas de recuperación</p>
                 </div>
                 
-                <div class="finance-card">
-                    <h3>📊 Gasto Total Anual Proyectado</h3>
-                    <div class="amount highlight" style="font-size: 2rem; color: #10b981; font-weight: bold; margin: 10px 0;">~$3,815 USD</div>
-                    <p class="desc">Distribución: Transporte 35% | Hospedaje 25% | Alimentación/Eventos 30% | Contingencia 10%</p>
-                </div>
-
-                <div class="finance-card">
-                    <h3>⚠️ Alertas Críticas</h3>
-                    <div class="alert-box critical" style="background: rgba(239, 68, 68, 0.2); border-left: 4px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-                        <h4 style="color: #fca5a5; margin-bottom: 4px;">[!] Emisión Vuelos 22 DIC</h4>
-                        <p style="font-size: 0.85rem;">Temporada altísima. Riesgo de sobreprecio por no emisión. Requiere cabina Premium Economy por ergonomía de altura (2.00m).</p>
+                <div class="sleep-engine-card">
+                    <h3><i class="fa-solid fa-moon"></i> Proyección de Rest y Desconexión</h3>
+                    <p class="desc">Define tu hora de acostarte y despertar para evaluar la fatiga y el déficit acumulado:</p>
+                    <div class="sleep-inputs" style="margin-top: 15px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; width: 100%;">
+                        <div>
+                            <label for="sleep-bedtime-input" style="font-size: 0.85rem; display: block; margin-bottom: 5px; color: var(--text-secondary);">Hora de acostarse hoy:</label>
+                            <input type="time" id="sleep-bedtime-input" class="cfo-select" style="width: 100%;">
+                        </div>
+                        <div>
+                            <label for="sleep-waketime-input" style="font-size: 0.85rem; display: block; margin-bottom: 5px; color: var(--text-secondary);">Hora de despertar mañana:</label>
+                            <input type="time" id="sleep-waketime-input" class="cfo-select" style="width: 100%;">
+                        </div>
                     </div>
-                </div>
-
-                <div class="finance-card">
-                    <h3>💵 Presupuesto Detallado</h3>
-                    <ul class="finance-list" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px;"><span><strong>Viaje Julio:</strong></span> <strong>$1,065.00 USD</strong></li>
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Ejecutado (Sunk Costs):</span> <span>$630.00 USD</span></li>
-                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; padding-left: 10px; font-size: 0.85rem;"><span>‣ Pendiente (Viáticos):</span> <span>$435.00 USD</span></li>
-                        <li style="display: flex; justify-content: space-between; margin-top: 8px;"><span><strong>Viaje Diciembre:</strong></span> <strong>~$2,750.00 USD</strong></li>
-                        <li style="display: flex; justify-content: space-between; padding-left: 10px; font-size: 0.85rem;"><span>‣ Proyectado (Airbnb + PE):</span> <span>$2,750.00 USD</span></li>
-                    </ul>
+                    <div id="sleep-engine-output" style="margin-top: 15px;">
+                        <!-- Se calcula vía JS -->
+                    </div>
                 </div>
             </div>
 
-            <!-- PESTAÑA 4: MALETA -->
-            <div id="tab-packing" class="tab-pane">
+            <!-- PESTAÑA 8: EQUIPAJE -->
+            <div id="tab-equipaje" class="tab-pane">
                 <div class="section-title">
                     <h2>🎒 Control de Equipaje</h2>
-                    <p>Checklist universal y persistente</p>
+                    <p>Checklist ergonómico adaptado a tu contextura (2.00m y 110kg) y requerimientos de Angélica</p>
                 </div>
-                
-                <div class="checklist-card">
-                    <h3>🩺 Documentos e Imprevistos</h3>
-                    <ul class="checklist-items" id="docs-checklist">
-                        <!-- Renderizado vía JS -->
-                    </ul>
+                <div class="packing-list-card">
+                    <div id="packing-list-render">
+                        <!-- Renderizado dinámico vía JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- PESTAÑA 9: CONFIGURACIÓN -->
+            <div id="tab-configuracion" class="tab-pane">
+                <div class="section-title">
+                    <h2>⚙️ Configuración del Sistema</h2>
+                    <p>Control de datos, tipos de cambio y registros de auditoría del Centro de Control</p>
+                </div>
+
+                <div class="finance-card">
+                    <h3><i class="fa-solid fa-coins"></i> Tipos de Cambio del Ledger</h3>
+                    <p class="desc" style="margin-bottom: 15px;">Factores de conversión a USD utilizados para la consolidación financiera:</p>
+                    <div class="exchange-rates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px;">
+                        <div class="kpi-card" style="padding: 10px; text-align: center;">
+                            <small>USD</small>
+                            <div style="font-size: 1rem; font-weight: bold; margin-top: 3px;">1.00</div>
+                        </div>
+                        <div class="kpi-card" style="padding: 10px; text-align: center;">
+                            <small>PEN (S/.)</small>
+                            <div style="font-size: 1rem; font-weight: bold; margin-top: 3px;">0.267</div>
+                        </div>
+                        <div class="kpi-card" style="padding: 10px; text-align: center;">
+                            <small>COP ($)</small>
+                            <div style="font-size: 1rem; font-weight: bold; margin-top: 3px;">0.00025</div>
+                        </div>
+                        <div class="kpi-card" style="padding: 10px; text-align: center;">
+                            <small>EUR (€)</small>
+                            <div style="font-size: 1rem; font-weight: bold; margin-top: 3px;">1.08</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuración de Caja Disponible -->
+                <div class="finance-card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-money-bill-wave"></i> Configuración de Caja Disponible</h3>
+                    <p class="desc" style="margin-bottom: 15px;">Modifica los saldos de tu caja disponible para los cálculos de liquidez:</p>
+                    <div class="cash-inputs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+                        <div>
+                            <label for="config-cash-usd" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Caja USD:</label>
+                            <input type="number" id="config-cash-usd" class="cfo-select" style="width: 100%;" value="2200">
+                        </div>
+                        <div>
+                            <label for="config-cash-pen" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Caja PEN (S/.):</label>
+                            <input type="number" id="config-cash-pen" class="cfo-select" style="width: 100%;" value="5150">
+                        </div>
+                        <div>
+                            <label for="config-cash-cop" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Caja COP ($):</label>
+                            <input type="number" id="config-cash-cop" class="cfo-select" style="width: 100%;" value="1500000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finance-card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-circle-info"></i> Enlaces y Guías Operativas</h3>
+                    <p class="desc" style="margin-bottom: 15px;">Acceso rápido a información de viaje y protocolos de migración:</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <button onclick="document.getElementById('wifi-dialog').showModal()" class="btn btn-sm" style="border: 1px solid var(--primary); background: rgba(99,102,241,0.08); color: #fff;">
+                            <i class="fa-solid fa-wifi"></i> Ver Guía de Conectividad Wi-Fi
+                        </button>
+                        <button onclick="document.getElementById('migration-dialog').showModal()" class="btn btn-sm" style="border: 1px solid var(--primary); background: rgba(99,102,241,0.08); color: #fff;">
+                            <i class="fa-solid fa-passport"></i> Ver Info Migración Perú
+                        </button>
+                    </div>
+                </div>
+
+                <div class="finance-card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-list-check"></i> Registro de Auditoría Operativa</h3>
+                    <p class="desc" style="margin-bottom: 12px;">Historial de todas las transacciones, decisiones y cambios guardados en la sesión:</p>
+                    <div class="audit-log-container" id="audit-log-render" style="max-height: 250px; overflow-y: auto; background: rgba(0,0,0,0.15); padding: 12px; border-radius: 8px; border: 1px solid var(--border-glass);">
+                        <!-- Renderizado dinámico vía JS -->
+                    </div>
+                </div>
+
+                <div class="finance-card" style="margin-top: 20px; border: 1px solid rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.02);">
+                    <h3 style="color: var(--danger);"><i class="fa-solid fa-trash-can"></i> Zona de Peligro</h3>
+                    <p class="desc" style="margin-bottom: 15px; color: var(--text-secondary);">Restablecer el estado borrará toda la persistencia de pagos y logs del localStorage.</p>
+                    <button id="btn-reset-state" class="btn btn-sm btn-danger" style="background: var(--danger); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Restablecer Estado Completo
+                    </button>
                 </div>
             </div>
 
         </main>
-
-        <nav class="bottom-nav">
-            <button class="nav-item active" data-target="tab-home">
-                <i class="fa-solid fa-house"></i>
-                <span>Resumen</span>
-            </button>
-            <button class="nav-item" data-target="tab-itinerary">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>Itinerarios</span>
-            </button>
-            <button class="nav-item" data-target="tab-finance">
-                <i class="fa-solid fa-wallet"></i>
-                <span>Finanzas</span>
-            </button>
-            <button class="nav-item" data-target="tab-packing">
-                <i class="fa-solid fa-suitcase-rolling"></i>
-                <span>Maleta</span>
-            </button>
-        </nav>
     </div>
 
-    <script src="app.js?v=1.0.0"></script>
+    <!-- Guías y Modales Reutilizables -->
+    <dialog id="wifi-dialog" class="cfo-dialog">
+        <div class="dialog-header">
+            <h3>📡 Conectividad Wi-Fi Fuera de Colombia</h3>
+            <button onclick="document.getElementById('wifi-dialog').close()" class="btn-close">&times;</button>
+        </div>
+        <div class="dialog-body">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 15px;">Dentro de Colombia puedes usar tus datos móviles normales. Sigue esta guía detallada para mantenerte conectada cuando salgas del país:</p>
+            <ol style="font-size: 0.8rem; padding-left: 20px; display: flex; flex-direction: column; gap: 10px;">
+                <li><strong>Durante el Vuelo (LATAM Play - Gratis para WhatsApp):</strong> Activa el Modo Avión ➔ Conéctate a <code>LATAM Play</code> ➔ Abre <code>latamplay.com</code> en tu navegador ➔ Selecciona el paquete gratuito de mensajería (WhatsApp/iMessage).</li>
+                <li><strong>Aeropuerto de Lima (LIM):</strong> Conéctate a <code>WIFI_AEROPUERTO_LIMA</code>. Acepta los términos para 60 minutos gratis e ilimitados tras ver un video promocional.</li>
+                <li><strong>Aeropuerto de Cusco (CUZ):</strong> Conéctate a <code>Cusco Airport Free WiFi</code> en la sala de embarque.</li>
+            </ol>
+        </div>
+    </dialog>
+
+    <dialog id="migration-dialog" class="cfo-dialog">
+        <div class="dialog-header">
+            <h3>📋 Control Migratorio (Perú)</h3>
+            <button onclick="document.getElementById('migration-dialog').close()" class="btn-close">&times;</button>
+        </div>
+        <div class="dialog-body">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Dirección de hospedaje a declarar al ingresar a Perú:</p>
+            <div class="pnrs-box" style="margin-bottom: 15px;">
+                <strong>Dirección:</strong> Av. Alfredo Benavides 1130, Miraflores, Lima, Perú.
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Preguntas comunes:</p>
+            <ul style="font-size: 0.8rem; padding-left: 15px; display: flex; flex-direction: column; gap: 8px;">
+                <li><strong>¿Propósito del viaje?</strong> Turismo y vacaciones.</li>
+                <li><strong>¿Tiempo de estadía?</strong> 7 días (04 al 11 de agosto).</li>
+                <li><strong>¿Hospedaje?</strong> Hospedaje en apartamento privado ubicado en Miraflores.</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <!-- Archivo JS Lógico -->
+    <script src="app.js?v=1.2.0"></script>
 </body>
 </html>
