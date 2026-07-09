@@ -4,69 +4,17 @@
 
 const DEFAULT_TRIPS = [
     {
-        id: "VIAJE-2026-06-18-LOCAL",
-        name: "Eventos Lima",
-        destination: "Teatro Canout (Lima)",
-        startDate: "2026-06-18",
-        endDate: "2026-06-18",
-        budget: 61.14,
-        status: "confirmed",
-        riskLevel: "Bajo",
-        advanceLevel: 100,
-        pax: 1,
-        days: 1
-    },
-    {
         id: "VIAJE-2026-07-02-CALI",
         name: "Cali Julio",
         destination: "Cali, Colombia",
         startDate: "2026-07-02",
         endDate: "2026-07-06",
         budget: 1078.22,
-        status: "confirmed",
+        status: "completed",
         riskLevel: "Bajo",
-        advanceLevel: 43,
+        advanceLevel: 100,
         pax: 1,
         days: 5
-    },
-    {
-        id: "VIAJE-2026-08-04-CUSCO",
-        name: "Cusco Agosto",
-        destination: "Lima & Cusco, Perú",
-        startDate: "2026-08-04",
-        endDate: "2026-08-11",
-        budget: 1858.09,
-        status: "confirmed",
-        riskLevel: "Bajo",
-        advanceLevel: 32,
-        pax: 2,
-        days: 8
-    },
-    {
-        id: "VIAJE-2026-09-11-BOGOTA",
-        name: "Bogotá Septiembre",
-        destination: "Bogotá, Colombia",
-        startDate: "2026-09-11",
-        endDate: "2026-09-14",
-        budget: 1017.63,
-        status: "confirmed",
-        riskLevel: "Medio",
-        advanceLevel: 10,
-        pax: 1,
-        days: 4
-    },
-    {
-        id: "VIAJE-2026-10-01-EUROPA",
-        name: "Europa Octubre",
-        destination: "Europa (Grand Tour)",
-        startDate: "2026-10-01",
-        endDate: "2026-10-21",
-        budget: 2937.00, // Equiv S/ 11,000
-        status: "planned",
-        riskLevel: "Alto",
-        advanceLevel: 0,
-        pax: 1,
-        days: 21
     },
     {
         id: "VIAJE-2026-12-22-CALI",
@@ -84,34 +32,11 @@ const DEFAULT_TRIPS = [
 ];
 
 const DEFAULT_PAYMENTS = [
-    // --- EVENTOS LOCALES ---
-    { id: "FIN-LOC-JUN-001", tripId: "VIAJE-2026-06-18-LOCAL", concept: "Metallica Sinfónico - Nico Borie", amount: 229.00, currency: "PEN", status: "paid", dueDate: "2026-06-09", classification: "CONFIRMADA", category: "Entretenimiento", notes: "Teatro Canout. Asiento: Platinum 1 6. Orden: 24267104." },
-
     // --- CALI JULIO ---
     { id: "FIN-CAL-JUL-001", tripId: "VIAJE-2026-07-02-CALI", concept: "Vuelo LATAM", amount: 465.00, currency: "USD", status: "paid", dueDate: "2026-06-05", classification: "CONFIRMADA", category: "Logística", notes: "Tarifa Light. Carry-on incluido." },
-    { id: "FIN-CAL-JUL-002", tripId: "VIAJE-2026-07-02-CALI", concept: "Airbnb Cali", amount: 178.22, currency: "USD", status: "committed", dueDate: "2026-06-23", classification: "PROYECTADA", category: "Logística", notes: "Reserva activa. Débito automático programado." },
-    { id: "FIN-CAL-JUL-003", tripId: "VIAJE-2026-07-02-CALI", concept: "Alimentación y Eventos", amount: 325.00, currency: "USD", status: "pending", dueDate: "2026-07-02", classification: "ESTIMADA", category: "Entretenimiento", notes: "$175.00 viáticos + $150.00 cena cumpleaños Victoria." },
-    { id: "FIN-CAL-JUL-004", tripId: "VIAJE-2026-07-02-CALI", concept: "Movilidad Uber", amount: 110.00, currency: "USD", status: "pending", dueDate: "2026-07-02", classification: "ESTIMADA", category: "Logística", notes: "Vehículos tipo Comfort o superior por ergonomía (2.00m)." },
-
-    // --- CUSCO AGOSTO ---
-    { id: "FIN-CUZ-AUG-001", tripId: "VIAJE-2026-08-04-CUSCO", concept: "Vuelos Cali-Lima-Cali (Angélica)", amount: 454.09, currency: "USD", status: "paid", dueDate: "2026-06-05", classification: "CONFIRMADA", category: "Logística", notes: "Comprado y emitido. PNR: ITSNNN." },
-    { id: "FIN-CUZ-AUG-002", tripId: "VIAJE-2026-08-04-CUSCO", concept: "Vuelos Cusco (Angélica)", amount: 110.00, currency: "USD", status: "paid", dueDate: "2026-06-07", classification: "CONFIRMADA", category: "Logística", notes: "COP 444.500 pagados. PNR: KDIKGN." },
-    { id: "FIN-CUZ-AUG-003", tripId: "VIAJE-2026-08-04-CUSCO", concept: "Vuelos Cusco (José - Millas)", amount: 39.00, currency: "USD", status: "paid", dueDate: "2026-06-07", classification: "CONFIRMADA", category: "Logística", notes: "10.621 Millas + COP 155.100 copago. PNR: KMTEYF." },
-    { id: "FIN-CUZ-AUG-004", tripId: "VIAJE-2026-08-04-CUSCO", concept: "Apu Andino Saldo", amount: 2335.00, currency: "PEN", status: "pending", dueDate: "2026-08-04", classification: "PROYECTADA", category: "Entretenimiento", notes: "Saldo 50% restante directo en Cusco (Apu Andino)." },
-    { id: "FIN-CUZ-AUG-005", tripId: "VIAJE-2026-08-04-CUSCO", concept: "Ubers & Comidas Lima/Cusco", amount: 2360.00, currency: "PEN", status: "pending", dueDate: "2026-08-04", classification: "ESTIMADA", category: "Entretenimiento", notes: "Cenas Larcomar/Maketto/7Sopas, movilidad y entradas." },
-
-    // --- BOGOTÁ CORDILLERA ---
-    { id: "FIN-BOG-SEP-001", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Cordillera Abono", amount: 345600, currency: "COP", status: "paid", dueDate: "2026-06-11", classification: "CONFIRMADA", category: "Entretenimiento", notes: "Abono inicial en Alcancía Armatuvaca. Transacción #76208345." },
-    { id: "FIN-BOG-SEP-002", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Cordillera Saldo", amount: 1382400, currency: "COP", status: "pending", dueDate: "2026-08-28", classification: "PROYECTADA", category: "Entretenimiento", notes: "Saldo restante en Armatuvaca. Liquidación vía Cadena Colombia." },
-    { id: "FIN-BOG-SEP-003", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Airbnb Bogotá", amount: 135.63, currency: "USD", status: "reserved", dueDate: "2026-09-02", classification: "PENDIENTE DE VALIDACIÓN", category: "Logística", notes: "3 noches de alojamiento. Débito programado." },
-    { id: "FIN-BOG-SEP-004", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Vuelo Lima-Bogotá", amount: 250.00, currency: "USD", status: "pending", dueDate: "2026-08-15", classification: "ESTIMADA", category: "Logística", notes: "Vuelo proyectado. Monitorear tarifas en julio." },
-    { id: "FIN-BOG-SEP-005", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Viáticos Bogotá", amount: 200.00, currency: "USD", status: "pending", dueDate: "2026-09-11", classification: "ESTIMADA", category: "Entretenimiento", notes: "Comidas y movilidad en Bogotá." },
-
-    // --- EUROPA OCTUBRE ---
-    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Presupuesto ciego Europa (Ahorro Junta Dorada)", amount: 11000.00, currency: "PEN", status: "committed", dueDate: "2026-06-30", classification: "CONFIRMADA", category: "Logística", notes: "Fondo blindado proveniente de la Junta Dorada." },
-    { id: "FIN-EUR-OCT-002", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 1/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2026-11-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
-    { id: "FIN-EUR-OCT-003", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 2/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2026-12-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
-    { id: "FIN-EUR-OCT-004", tripId: "VIAJE-2026-10-01-EUROPA", concept: "Crédito Banco Europa - Cuota 3/14", amount: 1571.43, currency: "PEN", status: "pending", dueDate: "2027-01-15", classification: "PROYECTADA", category: "Financiación", notes: "Amortización de préstamo de S/. 22,000 por 14 meses." },
+    { id: "FIN-CAL-JUL-002", tripId: "VIAJE-2026-07-02-CALI", concept: "Airbnb Cali", amount: 178.22, currency: "USD", status: "paid", dueDate: "2026-06-23", classification: "CONFIRMADA", category: "Logística", notes: "Reserva activa. Débito automático programado." },
+    { id: "FIN-CAL-JUL-003", tripId: "VIAJE-2026-07-02-CALI", concept: "Alimentación y Eventos", amount: 325.00, currency: "USD", status: "paid", dueDate: "2026-07-02", classification: "CONFIRMADA", category: "Entretenimiento", notes: "$175.00 viáticos + $150.00 cena cumpleaños Victoria." },
+    { id: "FIN-CAL-JUL-004", tripId: "VIAJE-2026-07-02-CALI", concept: "Movilidad Uber", amount: 110.00, currency: "USD", status: "paid", dueDate: "2026-07-02", classification: "CONFIRMADA", category: "Logística", notes: "Vehículos tipo Comfort o superior por ergonomía (2.00m)." },
 
     // --- CALI DICIEMBRE ---
     { id: "FIN-CAL-DIC-001", tripId: "VIAJE-2026-12-22-CALI", concept: "Vuelo Cali Diciembre", amount: 1300.00, currency: "USD", status: "pending", dueDate: "2026-07-15", classification: "ESTIMADA", category: "Logística", notes: "Vuelos Premium Economy (LATAM). Requiere espacio ergonómico." },
@@ -133,36 +58,6 @@ const DEFAULT_RISKS = [
         mitigation: "Comprar pasajes antes del 15 de julio para evitar incrementos esperados del 40-60%."
     },
     {
-        id: "RISK-002",
-        tripId: "VIAJE-2026-10-01-EUROPA",
-        concept: "Europa sin reservas",
-        status: "Reservas sin emitir",
-        level: "CRÍTICO",
-        probability: 4,
-        impact: 5,
-        mitigation: "Iniciar cotizaciones y bloqueos de hoteles/vuelos en Europa antes del 15 de agosto usando el fondo Junta Dorada y el crédito planificado."
-    },
-    {
-        id: "RISK-003",
-        tripId: "VIAJE-2026-09-11-BOGOTA",
-        concept: "Cordillera saldo pendiente",
-        status: "Saldo pendiente en Armatuvaca",
-        level: "ALTO",
-        probability: 3,
-        impact: 4,
-        mitigation: "Liquidar el saldo de COP 1.382.400 antes del 28 de agosto con los fondos de la Cadena Colombia."
-    },
-    {
-        id: "RISK-004",
-        tripId: "VIAJE-2026-09-11-BOGOTA",
-        concept: "Cotización de Viaje a Bogotá",
-        status: "Pendiente de cotización",
-        level: "MEDIO",
-        probability: 4,
-        impact: 3,
-        mitigation: "Solicitar cotización completa (vuelos, alojamiento final y viáticos exactos) antes de finalizar julio."
-    },
-    {
         id: "RISK-005",
         tripId: "VIAJE-2026-12-22-CALI",
         concept: "Cotización Cali Diciembre",
@@ -175,92 +70,25 @@ const DEFAULT_RISKS = [
 ];
 
 const ACTIVITIES = [
-    // --- EVENTOS LOCALES ---
-    { id: "act-loc-1-metallica", tripId: "VIAJE-2026-06-18-LOCAL", day: 1, name: "🤘 Metallica Sinfónico - Nico Borie", startTime: "20:00", endTime: "22:30", priority: "Alta", location: "Teatro Canout (Miraflores)", category: "Ocio", owner: "jose", status: "Confirmado" },
-
     // --- CALI JULIO ---
-    { id: "act-jul-1-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "✈️ Vuelo de salida LIM ➔ CLO (LATAM LA2242)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-1-checkin", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🏠 Check-in Loft Cali (Av. 8 Norte #23-94 Piso 2)", startTime: "23:30", endTime: "23:59", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-1-desconn", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "📱 Ventana de desconexión", startTime: "23:30", endTime: "01:30", priority: "Baja", location: "Airbnb Loft Cali", category: "Descanso", owner: "jose", status: "Confirmado" },
+    { id: "act-jul-1-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "✈️ Vuelo de salida LIM ➔ CLO (LATAM LA2242)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Completado" },
+    { id: "act-jul-1-checkin", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🏠 Check-in Loft Cali (Av. 8 Norte #23-94 Piso 2)", startTime: "23:30", endTime: "23:59", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Completado" },
+    { id: "act-jul-1-desconn", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "📱 Ventana de desconexión", startTime: "23:30", endTime: "01:30", priority: "Baja", location: "Airbnb Loft Cali", category: "Descanso", owner: "jose", status: "Completado" },
     
-    { id: "act-jul-2-cafe", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "☕ Café con Camila Paredes", startTime: "10:30", endTime: "12:00", priority: "Media", location: "Starbucks Granada", category: "Reuniones", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-2-almuerzo", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "🍽️ Almuerzo en casa de los papás", startTime: "13:30", endTime: "16:30", priority: "Alta", location: "Casa de los papás (Cali)", category: "Familiar", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-2-lozada", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "🍹 Encuentro con las Lozada (Límite 23:00)", startTime: "20:00", endTime: "23:00", priority: "Media", location: "Restobar San Antonio", category: "Ocio", owner: "jose", status: "Confirmado" },
+    { id: "act-jul-2-cafe", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "☕ Café con Camila Paredes", startTime: "10:30", endTime: "12:00", priority: "Media", location: "Starbucks Granada", category: "Reuniones", owner: "jose", status: "Completado" },
+    { id: "act-jul-2-almuerzo", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "🍽️ Almuerzo en casa de los papás", startTime: "13:30", endTime: "16:30", priority: "Alta", location: "Casa de los papás (Cali)", category: "Familiar", owner: "jose", status: "Completado" },
+    { id: "act-jul-2-lozada", tripId: "VIAJE-2026-07-02-CALI", day: 2, name: "🍹 Encuentro con las Lozada (Límite 23:00)", startTime: "20:00", endTime: "23:00", priority: "Media", location: "Restobar San Antonio", category: "Ocio", owner: "jose", status: "Completado" },
 
-    { id: "act-jul-3-pandem", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🍽️ Almuerzo con los pandémicos", startTime: "13:00", endTime: "15:30", priority: "Media", location: "Restaurante El Peñón", category: "Reuniones", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-3-angelica", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🦄 Café con Angélica y el unicornio", startTime: "17:00", endTime: "18:30", priority: "Alta", location: "Juan Valdez Granada", category: "Ocio", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-3-bourbon", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🥃 Bourbon con Héctor y el cartel (Límite 01:00)", startTime: "20:00", endTime: "01:00", priority: "Media", location: "Bourbon Club Peñón", category: "Ocio", owner: "jose", status: "Confirmado" },
+    { id: "act-jul-3-pandem", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🍽️ Almuerzo con los pandémicos", startTime: "13:00", endTime: "15:30", priority: "Media", location: "Restaurante El Peñón", category: "Reuniones", owner: "jose", status: "Completado" },
+    { id: "act-jul-3-angelica", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🦄 Café con Angélica y el unicornio", startTime: "17:00", endTime: "18:30", priority: "Alta", location: "Juan Valdez Granada", category: "Ocio", owner: "jose", status: "Completado" },
+    { id: "act-jul-3-bourbon", tripId: "VIAJE-2026-07-02-CALI", day: 3, name: "🥃 Bourbon con Héctor y el cartel (Límite 01:00)", startTime: "20:00", endTime: "01:00", priority: "Media", location: "Bourbon Club Peñón", category: "Ocio", owner: "jose", status: "Completado" },
 
-    { id: "act-jul-4-familiar", tripId: "VIAJE-2026-07-02-CALI", day: 4, name: "🌳 Espacio familiar y cena", startTime: "12:00", endTime: "17:00", priority: "Alta", location: "Casa familiar Cali", category: "Familiar", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-4-cena", tripId: "VIAJE-2026-07-02-CALI", day: 4, name: "🍽️ Cena de despedida familiar", startTime: "20:00", endTime: "22:30", priority: "Alta", location: "Restaurante Ringlete", category: "Familiar", owner: "jose", status: "Confirmado" },
+    { id: "act-jul-4-familiar", tripId: "VIAJE-2026-07-02-CALI", day: 4, name: "🌳 Espacio familiar y cena", startTime: "12:00", endTime: "17:00", priority: "Alta", location: "Casa familiar Cali", category: "Familiar", owner: "jose", status: "Completado" },
+    { id: "act-jul-4-cena", tripId: "VIAJE-2026-07-02-CALI", day: 4, name: "🍽️ Cena de despedida familiar", startTime: "20:00", endTime: "22:30", priority: "Alta", location: "Restaurante Ringlete", category: "Familiar", owner: "jose", status: "Completado" },
 
-    { id: "act-jul-5-checkout", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "🚪 Check-out Airbnb 'Loft en Cali'", startTime: "09:00", endTime: "09:30", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-5-traslado", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "🚕 Traslado al aeropuerto CLO", startTime: "11:30", endTime: "12:30", priority: "Alta", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-jul-5-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "✈️ Vuelo de retorno CLO ➔ LIM (LATAM LA2243)", startTime: "14:35", endTime: "20:20", priority: "Critical", location: "Aeropuerto Internacional Jorge Chávez", category: "Vuelos", owner: "jose", status: "Confirmado" },
-
-    // --- CUSCO AGOSTO ---
-    { id: "act-aug-1-arribo", tripId: "VIAJE-2026-08-04-CUSCO", day: 1, name: "✈️ Arribo de Angélica a Lima (LA 4906)", startTime: "15:00", endTime: "15:30", priority: "Critical", location: "Aeropuerto Jorge Chávez (LIM)", category: "Vuelos", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-1-migra", tripId: "VIAJE-2026-08-04-CUSCO", day: 1, name: "📋 Control Migratorio (Angélica)", startTime: "15:30", endTime: "16:00", priority: "Critical", location: "Aeropuerto Jorge Chávez (LIM)", category: "Traslados", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-1-traslado", tripId: "VIAJE-2026-08-04-CUSCO", day: 1, name: "🚕 Traslado a Miraflores (Uber Comfort)", startTime: "16:00", endTime: "17:00", priority: "Alta", location: "Av. Alfredo Benavides 1130", category: "Traslados", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-1-malecon", tripId: "VIAJE-2026-08-04-CUSCO", day: 1, name: "🌅 Tarde en el Malecón & Barranco", startTime: "17:30", endTime: "19:30", priority: "Media", location: "Puente de los Suspiros (Barranco)", category: "Ocio", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-1-cena", tripId: "VIAJE-2026-08-04-CUSCO", day: 1, name: "🍽️ Cena de Bienvenida en Larcomar (Mangos)", startTime: "20:00", endTime: "22:30", priority: "Alta", location: "Larcomar (Miraflores)", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-2-joseday", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "💻 José: Jornada Laboral Remota", startTime: "09:00", endTime: "16:00", priority: "Alta", location: "Apartamento Miraflores", category: "Reuniones", owner: "jose", status: "Confirmado" },
-    { id: "act-aug-2-ground", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "💻 José: Sesión de Grounding C1", startTime: "20:00", endTime: "21:00", priority: "Critical", location: "Apartamento Miraflores", category: "Reuniones", owner: "jose", status: "Confirmado" },
-    { id: "act-aug-2-tour", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "🚐 Angélica: Full-Day Paracas & Ica", startTime: "04:30", endTime: "08:00", priority: "Alta", location: "Av. Alfredo Benavides 1130", category: "Tours", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-2-ballestas", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "🌊 Angélica: Islas Ballestas", startTime: "08:00", endTime: "11:00", priority: "Alta", location: "Puerto de Paracas", category: "Tours", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-2-almuerzo", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "🍷 Angélica: Almuerzo en Ica (Viñedo)", startTime: "13:00", endTime: "14:30", priority: "Media", location: "Viñedo artesanal en Ica", category: "Restaurantes", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-2-huaca", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "🏜️ Angélica: Aventura en Huacachina & Sandboard", startTime: "14:30", endTime: "17:00", priority: "Alta", location: "Huacachina Oasis", category: "Tours", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-2-retorno", tripId: "VIAJE-2026-08-04-CUSCO", day: 2, name: "🚐 Angélica: Retorno a Lima", startTime: "17:00", endTime: "22:00", priority: "Alta", location: "Av. Alfredo Benavides 1130", category: "Traslados", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-3-centro", tripId: "VIAJE-2026-08-04-CUSCO", day: 3, name: "🏛️ Centro Histórico de Lima", startTime: "16:30", endTime: "18:30", priority: "Media", location: "Plaza Mayor de Lima", category: "Ocio", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-3-agua", tripId: "VIAJE-2026-08-04-CUSCO", day: 3, name: "⛲ Circuito Mágico del Agua (Show Luces)", startTime: "19:00", endTime: "20:30", priority: "Alta", location: "Parque de la Reserva", category: "Ocio", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-3-maketto", tripId: "VIAJE-2026-08-04-CUSCO", day: 3, name: "🍜 Cena en Maketto (Ramen/Baos)", startTime: "20:45", endTime: "22:45", priority: "Alta", location: "Restaurante Maketto", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-4-azul", tripId: "VIAJE-2026-08-04-CUSCO", day: 4, name: "🐟 Almuerzo Marino en Punto Azul", startTime: "13:00", endTime: "14:30", priority: "Alta", location: "Punto Azul Miraflores", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-4-aero", tripId: "VIAJE-2026-08-04-CUSCO", day: 4, name: "🚕 Traslado al Aeropuerto de Lima", startTime: "18:15", endTime: "19:15", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-4-seg", tripId: "VIAJE-2026-08-04-CUSCO", day: 4, name: "🎒 Check-in counters y Seguridad", startTime: "19:15", endTime: "21:10", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-4-vuelo", tripId: "VIAJE-2026-08-04-CUSCO", day: 4, name: "✈️ Vuelo Lima ➔ Cusco (LATAM LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto Velasco Astete (CUZ)", category: "Vuelos", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-4-hotel", tripId: "VIAJE-2026-08-04-CUSCO", day: 4, name: "🏨 Traslado al Hotel Cusco (Apu Andino)", startTime: "22:35", endTime: "23:15", priority: "Alta", location: "Hotel en Cusco", category: "Traslados", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-5-valle", tripId: "VIAJE-2026-08-04-CUSCO", day: 5, name: "🏔️ Tour Valle Sagrado VIP (Pisac/Ollanta)", startTime: "08:00", endTime: "16:30", priority: "Alta", location: "Valle Sagrado", category: "Tours", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-5-tren", tripId: "VIAJE-2026-08-04-CUSCO", day: 5, name: "🏨 Tren Vistadome & Check-in Aguas Calientes", startTime: "18:30", endTime: "19:30", priority: "Alta", location: "Hotel Aguas Calientes", category: "Alojamiento", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-5-cena", tripId: "VIAJE-2026-08-04-CUSCO", day: 5, name: "🍽️ Cena libre en Aguas Calientes Pueblo", startTime: "20:00", endTime: "21:30", priority: "Media", location: "Aguas Calientes Pueblo", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-6-mp", tripId: "VIAJE-2026-08-04-CUSCO", day: 6, name: "🏛️ Visita Guiada de Machu Picchu (Privada)", startTime: "08:30", endTime: "12:30", priority: "Critical", location: "Santuario de Machu Picchu", category: "Tours", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-6-almuerzo", tripId: "VIAJE-2026-08-04-CUSCO", day: 6, name: "🍔 Almuerzo en Aguas Calientes Pueblo", startTime: "12:30", endTime: "14:00", priority: "Media", location: "Aguas Calientes Pueblo", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-6-retorno", tripId: "VIAJE-2026-08-04-CUSCO", day: 6, name: "🍲 Retorno terrestre & Cena ligera Cusco", startTime: "20:30", endTime: "21:30", priority: "Alta", location: "Hotel Cusco", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-7-taxi", tripId: "VIAJE-2026-08-04-CUSCO", day: 7, name: "🚕 Traslado al Aeropuerto de Cusco", startTime: "08:30", endTime: "08:50", priority: "Alta", location: "Aeropuerto de Cusco (CUZ)", category: "Traslados", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-7-seg", tripId: "VIAJE-2026-08-04-CUSCO", day: 7, name: "🎒 Llegada al aeropuerto y Seguridad", startTime: "08:50", endTime: "10:40", priority: "Alta", location: "Aeropuerto de Cusco (CUZ)", category: "Traslados", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-7-vuelo", tripId: "VIAJE-2026-08-04-CUSCO", day: 7, name: "✈️ Vuelo Cusco ➔ Lima (LATAM LA2014)", startTime: "10:40", endTime: "12:15", priority: "Critical", location: "Aeropuerto Jorge Chávez", category: "Vuegos", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-7-lima", tripId: "VIAJE-2026-08-04-CUSCO", day: 7, name: "🏠 Llegada a Lima & Uber a Miraflores", startTime: "12:15", endTime: "13:15", priority: "Alta", location: "Av. Alfredo Benavides 1130", category: "Traslados", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-7-7sopas", tripId: "VIAJE-2026-08-04-CUSCO", day: 7, name: "🍲 Cena de Despedida en 7 Sopas", startTime: "20:00", endTime: "21:30", priority: "Alta", location: "7 Sopas Parque Kennedy", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-
-    { id: "act-aug-8-desayuno", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "🍳 Desayuno en el Apartamento", startTime: "07:30", endTime: "08:30", priority: "Media", location: "Av. Alfredo Benavides 1130", category: "Restaurantes", owner: "shared", status: "Confirmado" },
-    { id: "act-aug-8-joseday", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "💻 José: Jornada Laboral Oficina", startTime: "09:00", endTime: "15:00", priority: "Alta", location: "Miraflores Oficina", category: "Reuniones", owner: "jose", status: "Confirmado" },
-    { id: "act-aug-8-aeroang", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "🚕 Uber de Angélica al Aeropuerto", startTime: "10:00", endTime: "10:50", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-8-vueloang", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "✈️ Angélica: Vuelo Lima ➔ Bogotá (LA2386)", startTime: "13:00", endTime: "16:15", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-8-migraang", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "📋 Angélica: Inmigración y Conexión (BOG)", startTime: "16:15", endTime: "18:15", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Traslados", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-8-vuelocali", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "✈️ Angélica: Vuelo Bogotá ➔ Cali (LA4079)", startTime: "18:15", endTime: "19:20", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "angelica", status: "Confirmado" },
-    { id: "act-aug-8-casacali", tripId: "VIAJE-2026-08-04-CUSCO", day: 8, name: "🏠 Angélica: Llegada a Villa del Prado (Cali)", startTime: "19:50", endTime: "20:30", priority: "Alta", location: "Villa del Prado (Cali)", category: "Traslados", owner: "angelica", status: "Confirmado" },
-
-    // --- BOGOTÁ CORDILLERA ---
-    { id: "act-sep-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LA2384)", startTime: "10:00", endTime: "13:00", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-sep-1-hotel", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🏠 Traslado y Check-in Airbnb", startTime: "13:00", endTime: "14:30", priority: "Alta", location: "Airbnb Chapinero Alto", category: "Alojamiento", owner: "jose", status: "Confirmado" },
-    { id: "act-sep-1-cena", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🍽️ Cena tranquila en Bogotá", startTime: "19:00", endTime: "21:00", priority: "Media", location: "Zona G Bogotá", category: "Restaurantes", owner: "jose", status: "Confirmado" },
-
-    { id: "act-sep-2-cord1", tripId: "VIAJE-2026-09-11-BOGOTA", day: 2, name: "🎸 Festival Cordillera 2026 - Día 1", startTime: "13:00", endTime: "23:00", priority: "Critical", location: "Parque Simón Bolívar", category: "Tours", owner: "jose", status: "Confirmado" },
-    { id: "act-sep-3-cord2", tripId: "VIAJE-2026-09-11-BOGOTA", day: 3, name: "🎸 Festival Cordillera 2026 - Día 2", startTime: "13:00", endTime: "23:00", priority: "Critical", location: "Parque Simón Bolívar", category: "Tours", owner: "jose", status: "Confirmado" },
-
-    { id: "act-sep-4-compras", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "🛍️ Compras y almuerzo rápido", startTime: "10:00", endTime: "12:00", priority: "Media", location: "C.C. Unicentro Bogotá", category: "Ocio", owner: "jose", status: "Confirmado" },
-    { id: "act-sep-4-tras", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "🚕 Traslado al Aeropuerto El Dorado", startTime: "14:30", endTime: "15:30", priority: "Alta", location: "Aeropuerto El Dorado (BOG)", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-sep-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LA2385)", startTime: "18:00", endTime: "21:15", priority: "Critical", location: "Aeropuerto Jorge Chávez", category: "Vuegos", owner: "jose", status: "Confirmado" },
-
-    // --- EUROPA GRAND TOUR ---
-    { id: "act-eur-1-vuelo", tripId: "VIAJE-2026-10-01-EUROPA", day: 1, name: "✈️ Vuelo Internacional LIM ➔ MAD (Salida)", startTime: "18:00", endTime: "23:59", priority: "Critical", location: "Aeropuerto Jorge Chávez (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-eur-2-arribo", tripId: "VIAJE-2026-10-01-EUROPA", day: 2, name: "🏨 Arribo a Madrid & Check-in Hotel", startTime: "13:00", endTime: "15:00", priority: "Alta", location: "Hotel Riu Plaza España (Madrid)", category: "Alojamiento", owner: "jose", status: "Confirmado" },
-    { id: "act-eur-21-retorno", tripId: "VIAJE-2026-10-01-EUROPA", day: 21, name: "✈️ Vuelo de Retorno MAD ➔ LIM", startTime: "12:00", endTime: "20:00", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-jul-5-checkout", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "🚪 Check-out Airbnb 'Loft en Cali'", startTime: "09:00", endTime: "09:30", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Completado" },
+    { id: "act-jul-5-traslado", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "🚕 Traslado al aeropuerto CLO", startTime: "11:30", endTime: "12:30", priority: "Alta", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Traslados", owner: "jose", status: "Completado" },
+    { id: "act-jul-5-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "✈️ Vuelo de retorno CLO ➔ LIM (LATAM LA2243)", startTime: "14:35", endTime: "20:20", priority: "Critical", location: "Aeropuerto Internacional Jorge Chávez", category: "Vuelos", owner: "jose", status: "Completado" },
 
     // --- CALI DICIEMBRE ---
     { id: "act-dic-1-vuelo", tripId: "VIAJE-2026-12-22-CALI", day: 1, name: "✈️ Vuelo Lima ➔ Cali (PE - LATAM)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Confirmado" },
@@ -278,7 +106,7 @@ const ACTIVITIES = [
     { id: "act-dic-12-visitas", tripId: "VIAJE-2026-12-22-CALI", day: 12, name: "🚗 Visitas Familiares Pendientes", startTime: "15:00", endTime: "19:00", priority: "Media", location: "Cali Norte", category: "Familiar", owner: "jose", status: "Confirmado" },
     { id: "act-dic-13-maletas", tripId: "VIAJE-2026-12-22-CALI", day: 13, name: "🧳 Organización y Empaque de Maletas", startTime: "14:00", endTime: "16:30", priority: "Alta", location: "Airbnb Feria de Cali", category: "Descanso", owner: "jose", status: "Confirmado" },
     { id: "act-dic-14-checkout", tripId: "VIAJE-2026-12-22-CALI", day: 14, name: "🚪 Check-out Airbnb & Traslados", startTime: "09:00", endTime: "10:00", priority: "Alta", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-dic-14-vuelo", tripId: "VIAJE-2026-12-22-CALI", day: 14, name: "✈️ Vuelo de Retorno CLO ➔ LIM (Premium Economy)", startTime: "14:35", endTime: "20:20", priority: "Critical", location: "Aeropuerto Internacional Jorge Chávez", category: "Vuegos", owner: "jose", status: "Confirmado" }
+    { id: "act-dic-14-vuelo", tripId: "VIAJE-2026-12-22-CALI", day: 14, name: "✈️ Vuelo de Retorno CLO ➔ LIM (Premium Economy)", startTime: "14:35", endTime: "20:20", priority: "Critical", location: "Aeropuerto Internacional Jorge Chávez", category: "Vuelos", owner: "jose", status: "Confirmado" }
 ];
 
 const BOG_DIC_DIARY_BUDGET = {
@@ -384,7 +212,7 @@ let SYSTEM_STATE = {
     },
     packingList: DEFAULT_PACKING_LIST,
     settings: {
-        selectedTripId: "VIAJE-2026-06-18-LOCAL",
+        selectedTripId: "VIAJE-2026-12-22-CALI",
         selectedDay: 1,
         selectedFinanceTripFilter: "all",
         loanRequested: false
