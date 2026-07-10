@@ -1825,6 +1825,10 @@ function renderItinerariesTab() {
     const trip = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
     if (!trip) return;
 
+    if (typeof window.CountdownEngine !== 'undefined') {
+        window.CountdownEngine.clearAll();
+    }
+
     let daySelectorHtml = "";
     for (let d = 1; d <= trip.days; d++) {
         const isActive = d === SYSTEM_STATE.settings.selectedDay ? "active" : "";
@@ -1976,23 +1980,52 @@ function renderItinerariesTab() {
                 }
             }
 
+            let countdownHtml = "";
+            let isoTarget = null;
+            if ((priorityClass === 'critical' || priorityClass === 'alta') && act.status !== "Completado") {
+                try {
+                    const start = new Date(trip.startDate);
+                    start.setDate(start.getDate() + (act.day - 1));
+                    const [h, m] = act.startTime.split(':');
+                    start.setHours(parseInt(h) + 5, parseInt(m), 0); // Convertir hora local a UTC asumiendo UTC-5
+                    isoTarget = start.toISOString();
+                    
+                    if (start.getTime() > Date.now()) {
+                        countdownHtml = `
+                            <div class="cfo-countdown-widget" style="margin-top: 10px; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 6px; font-size: 0.85rem; font-family: monospace; display: flex; align-items: center; gap: 10px;">
+                                <i class="fa-solid fa-stopwatch"></i>
+                                <span id="countdown-${act.id}" class="status-calma">Calculando...</span>
+                            </div>
+                        `;
+                    }
+                } catch(e) {}
+            }
+
             itineraryHtml += `
                 <li style="opacity: ${isReprog ? '0.5' : '1'};">
                     <span class="time-badge ${priorityClass}">${act.startTime} - ${act.endTime}</span>
                     <span class="status-cfo ${priorityClass === 'critical' || priorityClass === 'alta' ? 'red' : 'yellow'}" style="float: right; font-size: 0.65rem;">
-                        ${isReprog ? 'REPROGRAMADO' : act.priority.toUpperCase()}
+                        ${isReprog ? 'REPROGRAMADO' : (act.status === 'Completado' ? 'COMPLETADO' : act.priority.toUpperCase())}
                     </span>
                     <div class="timeline-content">
                         <div class="content-header">
-                            <h4 style="${isReprog ? 'text-decoration: line-through;' : ''}">${act.name}</h4>
+                            <h4 style="${isReprog || act.status === 'Completado' ? 'text-decoration: line-through;' : ''}">${act.name}</h4>
                         </div>
                         <p style="margin-top: 5px; font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-solid fa-location-dot"></i> ${act.location}</p>
                         ${budgetBadge}
+                        ${countdownHtml}
                     </div>
                 </li>
             `;
+            
+            if (isoTarget && countdownHtml && typeof window.CountdownEngine !== 'undefined') {
+                // Registrar después de que el DOM se haya pintado
+                requestAnimationFrame(() => {
+                    window.CountdownEngine.register(\`countdown-\${act.id}\`, isoTarget, act.id);
+                });
+            }
         });
-        itineraryHtml += `</ul>`;
+        itineraryHtml += \`</ul>\`;
     }
 
     const fatigue = SYSTEM_STATE.sleep.projectedFatigue || 0;
