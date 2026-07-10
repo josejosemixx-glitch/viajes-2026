@@ -2021,11 +2021,11 @@ function renderItinerariesTab() {
             if (isoTarget && countdownHtml && typeof window.CountdownEngine !== 'undefined') {
                 // Registrar después de que el DOM se haya pintado
                 requestAnimationFrame(() => {
-                    window.CountdownEngine.register(\`countdown-\${act.id}\`, isoTarget, act.id);
+                    window.CountdownEngine.register(`countdown-${act.id}`, isoTarget, act.id);
                 });
             }
         });
-        itineraryHtml += \`</ul>\`;
+        itineraryHtml += `</ul>`;
     }
 
     const fatigue = SYSTEM_STATE.sleep.projectedFatigue || 0;
