@@ -35,6 +35,8 @@ jobs:
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+          HOTMAIL_USER: ${{ secrets.HOTMAIL_USER }}
+          HOTMAIL_APP_PASS: ${{ secrets.HOTMAIL_APP_PASS }}
         run: python gtd_scripts/ingest.py
 
       - name: Cazador de Péndulos (Auditor y Alertas)

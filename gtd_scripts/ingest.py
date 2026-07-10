@@ -11,11 +11,9 @@ from datetime import datetime, timedelta
 # ==========================================
 GMAIL_USER = os.environ.get("GMAIL_USER")
 GMAIL_PASS = os.environ.get("GMAIL_APP_PASS")
+HOTMAIL_USER = os.environ.get("HOTMAIL_USER")
+HOTMAIL_PASS = os.environ.get("HOTMAIL_APP_PASS")
 LEDGER_FILE = "data/ledger.json"
-
-if not GMAIL_USER or not GMAIL_PASS:
-    print("[ERROR] Credenciales no detectadas. Abortando ingesta.")
-    exit(1)
 
 def load_ledger():
     if os.path.exists(LEDGER_FILE):
@@ -52,15 +50,31 @@ def fetch_emails():
     ledger = load_ledger()
     processed_ids = set(ledger.get("message_ids", []))
     
-    try:
-        mail = imaplib.IMAP4_SSL("imap.gmail.com")
-        mail.login(GMAIL_USER, GMAIL_PASS)
+    accounts = []
+    if GMAIL_USER and GMAIL_PASS:
+        accounts.append({"host": "imap.gmail.com", "user": GMAIL_USER, "pass": GMAIL_PASS, "type": "GMAIL"})
+    if HOTMAIL_USER and HOTMAIL_PASS:
+        accounts.append({"host": "outlook.office365.com", "user": HOTMAIL_USER, "pass": HOTMAIL_PASS, "type": "HOTMAIL"})
         
-        # Buscar en Todos / All Mail
-        status, _ = mail.select('"[Gmail]/All Mail"')
-        if status != "OK":
-            status, _ = mail.select('"[Gmail]/Todos"')
-            if status != "OK":
+    if not accounts:
+        print("[ERROR] Credenciales no detectadas en ninguna cuenta. Abortando.")
+        exit(1)
+        
+    new_transactions = 0
+    
+    for acc in accounts:
+        try:
+            print(f"[*] Conectando a {acc['type']} ({acc['user']})...")
+            mail = imaplib.IMAP4_SSL(acc["host"])
+            mail.login(acc["user"], acc["pass"])
+            
+            if acc["type"] == "GMAIL":
+                status, _ = mail.select('"[Gmail]/All Mail"')
+                if status != "OK":
+                    status, _ = mail.select('"[Gmail]/Todos"')
+                    if status != "OK":
+                        mail.select("INBOX")
+            else:
                 mail.select("INBOX")
                 
         # Buscar correos de las últimas 48 horas (redundancia de seguridad)
@@ -123,15 +137,15 @@ def fetch_emails():
                 processed_ids.add(msg_id)
                 ledger["message_ids"].append(msg_id)
                 
-        mail.logout()
-        
-        ledger["last_run"] = datetime.now().isoformat()
-        save_ledger(ledger)
-        print(f"[SUCCESS] Ingesta completada. {new_transactions} transacciones nuevas registradas.")
-        
-    except Exception as e:
-        print(f"[CRITICAL] Fallo en la ingesta IMAP: {str(e)}")
-        exit(1)
+            mail.logout()
+            
+        except Exception as e:
+            print(f"[CRITICAL] Fallo en la ingesta IMAP para {acc['user']}: {str(e)}")
+            continue
+            
+    ledger["last_run"] = datetime.now().isoformat()
+    save_ledger(ledger)
+    print(f"[SUCCESS] Ingesta completada. {new_transactions} transacciones nuevas registradas.")
 
 if __name__ == "__main__":
     print(f"[{datetime.now().isoformat()}] Iniciando Motor de Ingesta Autónoma...")
