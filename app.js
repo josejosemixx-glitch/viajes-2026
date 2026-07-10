@@ -272,8 +272,8 @@ Object.keys(PREV_BEDTIMES).forEach(key => {
 // STARTUP AND BINDINGS
 // ==========================================
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadState();
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadState();
     setupTabs();
     setupTripSelector();
     setupClock();
@@ -288,9 +288,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // STATE MANAGEMENT & PERSISTENCE
 // ==========================================
 
-function loadState() {
+async function loadState() {
     try {
-        const saved = localStorage.getItem("cfo_control_center_state");
+        const saved = await Promise.resolve(localStorage.getItem("cfo_control_center_state"));
         if (saved) {
             const parsed = JSON.parse(saved);
             
@@ -306,15 +306,25 @@ function loadState() {
             if (parsed.auditLog) SYSTEM_STATE.auditLog = parsed.auditLog;
         }
     } catch (e) {
-        console.warn("No se pudo leer localStorage:", e);
+        console.warn("No se pudo leer el estado (Persistence Error):", e);
     }
 }
 
-function saveState() {
+async function saveState() {
     try {
-        localStorage.setItem("cfo_control_center_state", JSON.stringify(SYSTEM_STATE));
+        // Escritura asíncrona (Optimistic UI)
+        await Promise.resolve().then(() => {
+            localStorage.setItem("cfo_control_center_state", JSON.stringify(SYSTEM_STATE));
+        });
+        
+        // Background Sync hook (preparación para Service Worker PWA)
+        if ('serviceWorker' in navigator && 'SyncManager' in window) {
+            navigator.serviceWorker.ready.then(reg => {
+                // reg.sync.register('sync-cfo-ledger').catch(() => {});
+            }).catch(() => {});
+        }
     } catch (e) {
-        console.warn("No se pudo escribir localStorage:", e);
+        console.warn("No se pudo escribir el estado (Persistence Error):", e);
     }
 }
 
@@ -564,12 +574,17 @@ function calculateSleepMetrics() {
     const duration = getSleepDuration(bedtime, waketime);
     const dayDeficit = Math.max(0, 8.0 - duration);
     
-    // Density of activities for next day (only counting Jose's or shared activities)
+    // Density of activities for next day
     const nextDay = SYSTEM_STATE.settings.selectedDay + 1;
     const nextDayActs = ACTIVITIES.filter(a => a.tripId === trip.id && a.day === nextDay && a.owner !== "angelica");
     const criticalActsCount = nextDayActs.filter(a => a.priority === "Critical" || a.priority === "Alta").length;
     
-    let fatigue = (totalDeficit * 8) + (dayDeficit * 12) + (criticalActsCount * 12);
+    // MODELO DE FATIGA EXPONENCIAL (Contextura Biomecánica 2.00m / 110kg)
+    const WEIGHT_PENALTY_FACTOR = 1.15;
+    let fatigue = (Math.pow(1.5, dayDeficit) * 10) 
+                + (totalDeficit * 5) 
+                + (criticalActsCount * 15 * WEIGHT_PENALTY_FACTOR);
+    
     SYSTEM_STATE.sleep.projectedFatigue = Math.min(100, Math.max(0, Math.round(fatigue)));
 }
 
@@ -585,19 +600,29 @@ function getFatigueLabel(val) {
 // ==========================================
 
 function renderAll() {
-    calculateSleepMetrics();
-    renderExecutiveDashboard();
-    renderDecisionCenter();
-    renderDecemberTripWidget();
-    renderTraceabilityMatrix();
-    renderCashFlowTab();
-    renderFinancesLedgerTab();
-    renderRisksTab();
-    renderItinerariesTab();
-    renderSleepTab();
-    renderPackingTab();
-    renderConfigTab();
-    saveState();
+    // Renderizado Asíncrono mediante requestAnimationFrame (Evita bloqueos de UI)
+    requestAnimationFrame(() => {
+        calculateSleepMetrics();
+        renderExecutiveDashboard();
+        
+        // Lazy rendering: Pestañas secundarias
+        requestAnimationFrame(() => {
+            renderDecisionCenter();
+            renderDecemberTripWidget();
+            renderTraceabilityMatrix();
+            renderCashFlowTab();
+            renderFinancesLedgerTab();
+            renderRisksTab();
+            
+            requestAnimationFrame(() => {
+                renderItinerariesTab();
+                renderSleepTab();
+                renderPackingTab();
+                renderConfigTab();
+                saveState(); // Sincronización optimista final
+            });
+        });
+    });
 }
 
 // --- PESTAÑA 1: RESUMEN (HOME) ---

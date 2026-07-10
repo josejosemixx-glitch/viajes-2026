@@ -1,0 +1,52 @@
+name: Cerebro Digital Autónomo (Cazador de Péndulos)
+
+on:
+  schedule:
+    # Ejecución 7 veces al día en horarios orgánicos (hora UTC)
+    - cron: '15 12 * * *'  # 07:15 UTC-5
+    - cron: '30 15 * * *'  # 10:30 UTC-5
+    - cron: '45 18 * * *'  # 13:45 UTC-5
+    - cron: '20 21 * * *'  # 16:20 UTC-5
+    - cron: '0 0 * * *'    # 19:00 UTC-5
+    - cron: '40 2 * * *'   # 21:40 UTC-5
+    - cron: '55 4 * * *'   # 23:55 UTC-5
+  workflow_dispatch: # Permite ejecución manual
+
+jobs:
+  auditoria:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para hacer commit en GitOps
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4
+
+      - name: Ingesta de Datos (Extractor IMAP)
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: python gtd_scripts/ingest.py
+
+      - name: Cazador de Péndulos (Auditor y Alertas)
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
+        run: python gtd_scripts/cazador.py
+
+      - name: Guardar Ledger (GitOps Commit)
+        run: |
+          git config --global user.name "CFO Digital Brain"
+          git config --global user.email "bot@cfo-brain.local"
+          git add data/ledger.json || true
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-audit: Consolidación financiera y actualización de Ledger"
+          git push
