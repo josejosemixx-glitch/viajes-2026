@@ -4,7 +4,7 @@
  * Ciclo: requestAnimationFrame
  */
 
-const CountdownEngine = (function() {
+window.CountdownEngine = (function() {
     let activeCountdowns = new Map();
     let isRunning = false;
 
