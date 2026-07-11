@@ -1,0 +1,40 @@
+name: Agente Autónomo de Vuelos (Cazador de Precios)
+
+on:
+  schedule:
+    # Se ejecuta cada 4 horas (6 veces al día)
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Permite ejecución manual
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Run Agente Vuelos
+      env:
+        AMADEUS_API_KEY: ${{ secrets.AMADEUS_API_KEY }}
+        AMADEUS_API_SECRET: ${{ secrets.AMADEUS_API_SECRET }}
+      run: |
+        python gtd_scripts/agente_vuelos.py
+
+    - name: Push Ledger Updates (Caja Fuerte)
+      run: |
+        git config --global user.name "CFO Bot (Agente Vuelos)"
+        git config --global user.email "bot@cfo-intelligence.local"
+        git add data/ledger.json
+        # Only commit if there are changes
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Reporte de Vuelos y Logs de Agente Inteligente"
+        git push origin main

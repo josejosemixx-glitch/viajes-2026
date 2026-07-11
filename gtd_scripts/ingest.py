@@ -39,7 +39,21 @@ def extract_amount_and_currency(text):
     for pattern, currency in patterns:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
-            clean_val = match.group(1).replace(',', '')
+            raw_val = match.group(1).strip()
+            # Inteligencia de parseo: 20,19 vs 2,019
+            if ',' in raw_val and '.' in raw_val:
+                if raw_val.rfind(',') > raw_val.rfind('.'):
+                    clean_val = raw_val.replace('.', '').replace(',', '.')
+                else:
+                    clean_val = raw_val.replace(',', '')
+            elif ',' in raw_val:
+                if len(raw_val.split(',')[-1]) == 2: # Ej. 20,19 (decimal)
+                    clean_val = raw_val.replace(',', '.')
+                else:
+                    clean_val = raw_val.replace(',', '') # Ej. 2,019 (miles)
+            else:
+                clean_val = raw_val
+            
             try:
                 return float(clean_val), currency
             except:
@@ -90,7 +104,10 @@ def fetch_emails():
                     msg_id = ""
                     for response_part in msg_data:
                         if isinstance(response_part, tuple):
-                            msg_id = response_part[1].decode(errors='ignore').strip()
+                            raw_msg_id = response_part[1].decode(errors='ignore').strip().lower()
+                            # Extraer solo el contenido dentro de los brackets < >
+                            m = re.search(r'<(.+?)>', raw_msg_id)
+                            msg_id = m.group(1) if m else raw_msg_id
                     
                     if msg_id in processed_ids or not msg_id:
                         continue
