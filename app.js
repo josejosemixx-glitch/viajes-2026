@@ -299,6 +299,35 @@ Object.keys(PREV_BEDTIMES).forEach(key => {
 
 document.addEventListener("DOMContentLoaded", async () => {
     await loadState();
+
+    // --- NUEVO: Sincronización Caja Negra (Agente Vuelos) ---
+    try {
+        const resp = await fetch('data/ledger.json?t=' + Date.now());
+        if (resp.ok) {
+            const remoteLedger = await resp.json();
+            if (remoteLedger.auditLog && remoteLedger.auditLog.length > 0) {
+                const flightLogs = remoteLedger.auditLog.filter(l => l.action.includes("[AGENTE-VUELOS]"));
+                if (flightLogs.length > 0) {
+                    const lastLog = flightLogs[flightLogs.length - 1];
+                    SYSTEM_STATE.flightTrackerStatus = lastLog.action.replace("[AGENTE-VUELOS] ", "");
+                    SYSTEM_STATE.flightTrackerTime = new Date(lastLog.timestamp).toLocaleTimeString("es-PE", { hour: '2-digit', minute: '2-digit' });
+                }
+                
+                // Fusionar al audit local evitando duplicados exactos
+                remoteLedger.auditLog.forEach(remoteLog => {
+                    const exists = SYSTEM_STATE.auditLog.find(l => l.timestamp === remoteLog.timestamp && l.action === remoteLog.action);
+                    if (!exists) {
+                        SYSTEM_STATE.auditLog.push(remoteLog);
+                    }
+                });
+                SYSTEM_STATE.auditLog = SYSTEM_STATE.auditLog.slice(-50);
+            }
+        }
+    } catch(e) {
+        console.warn("Caja negra offline o no accesible localmente", e);
+    }
+    // ------------------------------------------------
+
     setupTabs();
     setupTripSelector();
     setupClock();
@@ -833,16 +862,17 @@ function renderExecutiveDashboard() {
     document.getElementById("ceo-kpi-readiness-score").textContent = `${readiness.score} / 100`;
     document.getElementById("ceo-kpi-readiness-desc").textContent = readiness.desc;
 
-    // 4.1. System Health Score
-    const health = calculateSystemHealthScore();
-    const healthScoreEl = document.getElementById("ceo-kpi-health-score");
-    const healthDescEl = document.getElementById("ceo-kpi-health-desc");
-    if (healthScoreEl) {
-        healthScoreEl.textContent = `${health.score} / 100`;
-        healthScoreEl.className = "val " + (health.score >= 85 ? "text-emerald" : (health.score >= 70 ? "text-yellow" : "text-red"));
-    }
-    if (healthDescEl) {
-        healthDescEl.textContent = health.desc;
+    // 4.1. Flight Tracker Status
+    const trackerStatusEl = document.getElementById("ceo-kpi-flight-tracker-status");
+    const trackerDescEl = document.getElementById("ceo-kpi-flight-tracker-desc");
+    if (trackerStatusEl && trackerDescEl) {
+        if (SYSTEM_STATE.flightTrackerStatus) {
+            trackerStatusEl.textContent = SYSTEM_STATE.flightTrackerStatus;
+            trackerDescEl.textContent = "Última act. " + (SYSTEM_STATE.flightTrackerTime || "--:--");
+        } else {
+            trackerStatusEl.textContent = "Sin datos recientes";
+            trackerDescEl.textContent = "Agente en espera";
+        }
     }
 
     // 5. Active Risks Count
