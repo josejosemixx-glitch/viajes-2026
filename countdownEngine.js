@@ -40,18 +40,10 @@ window.CountdownEngine = (function() {
                     el.classList.remove('status-calma', 'status-zozobra');
                     el.classList.add('status-peligro');
                     
-                    // Callback Irreversible: Actualización en System State
+                    // Callback Irreversible: Dispatch custom event
                     const actId = el.dataset.actId;
-                    if (actId && window.SYSTEM_STATE) {
-                        const tripId = window.SYSTEM_STATE.settings.selectedTripId;
-                        const act = window.ACTIVITIES.find(a => a.id === actId);
-                        if (act && act.status !== "Completado") {
-                            act.status = "Completado";
-                            if (typeof window.logAction === 'function') {
-                                window.logAction(`[T-0] Actividad '${act.name}' completada automáticamente.`, "SUCCESS");
-                                window.renderAll(); // Forzar re-render para reflejar estado
-                            }
-                        }
+                    if (actId) {
+                        window.dispatchEvent(new CustomEvent('countdown-expired', { detail: { activityId: actId } }));
                     }
                 }
             } else {

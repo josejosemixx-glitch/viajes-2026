@@ -50,5 +50,8 @@ jobs:
           git config --global user.name "CFO Digital Brain"
           git config --global user.email "bot@cfo-brain.local"
           git add data/ledger.json || true
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-audit: Consolidación financiera y actualización de Ledger"
-          git push
+          git diff --quiet && git diff --staged --quiet || {
+            git commit -m "Auto-audit: Consolidación financiera y actualización de Ledger"
+            git pull --rebase origin main
+            git push origin main
+          }

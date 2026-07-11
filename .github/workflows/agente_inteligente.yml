@@ -35,6 +35,8 @@ jobs:
         git config --global user.name "CFO Bot (Agente Vuelos)"
         git config --global user.email "bot@cfo-intelligence.local"
         git add data/ledger.json
-        # Only commit if there are changes
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Reporte de Vuelos y Logs de Agente Inteligente"
-        git push origin main
+        git diff --quiet && git diff --staged --quiet || {
+          git commit -m "Auto: Reporte de Vuelos y Logs de Agente Inteligente"
+          git pull --rebase origin main
+          git push origin main
+        }

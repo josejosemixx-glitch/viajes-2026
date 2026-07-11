@@ -23,9 +23,9 @@ jobs:
 
     - name: Run Email Ingestor
       env:
-        GMAIL_USER: "Jose.josemixx@gmail.com"
+        GMAIL_USER: ${{ secrets.GMAIL_USER }}
         GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-        HOTMAIL_USER: "josemixx@hotmail.com"
+        HOTMAIL_USER: ${{ secrets.HOTMAIL_USER }}
         HOTMAIL_PASS: ${{ secrets.HOTMAIL_PASS }}
       run: |
         python gtd_scripts/email_ingestor.py
@@ -35,6 +35,8 @@ jobs:
         git config --global user.name "CFO Bot (Agente de Correos)"
         git config --global user.email "bot@cfo-intelligence.local"
         git add data/dynamic_data.json
-        # Only commit if there are changes
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Sincronización de Itinerarios desde Correos"
-        git push origin main
+        git diff --quiet && git diff --staged --quiet || {
+          git commit -m "Auto: Sincronización de Itinerarios desde Correos"
+          git pull --rebase origin main
+          git push origin main
+        }
