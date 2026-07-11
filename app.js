@@ -352,6 +352,42 @@ Object.keys(PREV_BEDTIMES).forEach(key => {
 document.addEventListener("DOMContentLoaded", async () => {
     await loadState();
 
+    // --- NUEVO: Sincronización Dynamic Data (Correos) ---
+    try {
+        const dResp = await fetch('data/dynamic_data.json?t=' + Date.now());
+        if (dResp.ok) {
+            const dynData = await dResp.json();
+            
+            // Merge trips
+            if (dynData.trips && Array.isArray(dynData.trips)) {
+                dynData.trips.forEach(newTrip => {
+                    const existingIndex = SYSTEM_STATE.trips.findIndex(t => t.id === newTrip.id);
+                    if (existingIndex > -1) {
+                        SYSTEM_STATE.trips[existingIndex] = newTrip; // overwrite
+                    } else {
+                        SYSTEM_STATE.trips.push(newTrip);
+                    }
+                });
+            }
+            
+            // Merge activities (we don't store activities in SYSTEM_STATE right now, they are in ACTIVITIES array)
+            // Wait, ACTIVITIES is a const! We need to make it a let or push to it.
+            // Since ACTIVITIES is a const array, we can push to it.
+            if (dynData.activities && Array.isArray(dynData.activities)) {
+                dynData.activities.forEach(newAct => {
+                    const existingIndex = ACTIVITIES.findIndex(a => a.id === newAct.id);
+                    if (existingIndex > -1) {
+                        ACTIVITIES[existingIndex] = newAct;
+                    } else {
+                        ACTIVITIES.push(newAct);
+                    }
+                });
+            }
+        }
+    } catch (e) {
+        console.warn("No se pudo sincronizar dynamic_data.json:", e);
+    }
+
     // --- NUEVO: Sincronización Caja Negra (Agente Vuelos) ---
     try {
         const resp = await fetch('data/ledger.json?t=' + Date.now());
