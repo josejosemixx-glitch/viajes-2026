@@ -1,4 +1,18 @@
 {
     "trips": [],
-    "activities": []
+    "activities": [
+        {
+            "id": "ACT-SYNC-100",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: Jose Luis, recuerda evaluar tu...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: ['06/07/2026', '13/07/2026', '06/07/2026', '13/07/2026', '07/06/2026', '07/13/2026']",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
+        }
+    ]
 }
