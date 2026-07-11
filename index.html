@@ -53,8 +53,8 @@
                 <span>Riesgos</span>
             </button>
             <button class="nav-item" data-target="tab-agenda">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>Agenda</span>
+                <i class="fa-solid fa-table-list"></i>
+                <span>Trazabilidad</span>
             </button>
             <button class="nav-item" data-target="tab-descanso">
                 <i class="fa-solid fa-moon"></i>
@@ -267,13 +267,27 @@
             <!-- PESTAÑA 2: VIAJES -->
             <div id="tab-viajes" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Matriz de Trazabilidad Maestro</h2>
-                    <p>Trazabilidad física y financiera consolidada de todos tus traslados</p>
+                    <h2>✈️ Viajes e Itinerarios</h2>
+                    <p>Control de vuelos, hospedaje y cuenta regresiva de eventos</p>
                 </div>
-                <div class="cfo-card">
-                    <div id="traceability-matrix-render">
-                        <!-- Renderizado dinámico vía JS -->
-                    </div>
+                
+                <!-- Selector de Viajes -->
+                <div class="trip-selector scrollable-x">
+                    <button class="trip-btn active" data-trip="VIAJE-2026-08-07-CUSCO">Agosto: Cusco</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-09-15-BOGOTA">Sept: Bogotá</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-10-10-EUROPA">Oct: Europa</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-12-22-CALI">Diciembre: Cali</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali (Histórico)</button>
+                </div>
+
+                <!-- Selector de Días Dinámico -->
+                <div class="day-selector scrollable-x" id="day-selector-container">
+                    <!-- Se renderiza vía JS según el viaje activo -->
+                </div>
+
+                <!-- Contenido de los Itinerarios -->
+                <div class="itineraries-container" id="itineraries-render" style="margin-top: 20px;">
+                    <!-- Se renderiza dinámicamente vía JS -->
                 </div>
             </div>
 
@@ -313,25 +327,13 @@
             <!-- PESTAÑA 6: AGENDA INTELIGENTE -->
             <div id="tab-agenda" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Agenda Inteligente</h2>
-                    <p>Operativa y logística diaria, diagnóstico de conflictos de agenda</p>
+                    <h2>📅 Matriz de Trazabilidad Maestro</h2>
+                    <p>Trazabilidad física y financiera consolidada de todos tus traslados</p>
                 </div>
-                
-                <!-- Selector de Viajes -->
-                <div class="trip-selector scrollable-x">
-                    <button class="trip-btn active" data-trip="VIAJE-2026-08-07-CUSCO">Agosto: Cusco</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-12-22-CALI">Diciembre: Cali</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali (Histórico)</button>
-                </div>
-
-                <!-- Selector de Días Dinámico -->
-                <div class="day-selector scrollable-x" id="day-selector-container">
-                    <!-- Se renderiza vía JS según el viaje activo -->
-                </div>
-
-                <!-- Contenido de los Itinerarios -->
-                <div class="itineraries-container" id="itineraries-render" style="margin-top: 20px;">
-                    <!-- Se renderiza dinámicamente vía JS -->
+                <div class="cfo-card">
+                    <div id="traceability-matrix-render">
+                        <!-- Renderizado dinámico vía JS -->
+                    </div>
                 </div>
             </div>
 

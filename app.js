@@ -41,6 +41,32 @@ const DEFAULT_TRIPS = [
         advanceLevel: 0,
         pax: 1,
         days: 14
+    },
+    {
+        id: "VIAJE-2026-09-15-BOGOTA",
+        name: "Bogotá Septiembre",
+        destination: "Bogotá, Colombia",
+        startDate: "2026-09-15",
+        endDate: "2026-09-20",
+        budget: 1500.00,
+        status: "planned",
+        riskLevel: "Medio",
+        advanceLevel: 0,
+        pax: 1,
+        days: 6
+    },
+    {
+        id: "VIAJE-2026-10-10-EUROPA",
+        name: "Europa Octubre",
+        destination: "Europa (Múltiples)",
+        startDate: "2026-10-10",
+        endDate: "2026-10-25",
+        budget: 5000.00,
+        status: "planned",
+        riskLevel: "Alto",
+        advanceLevel: 0,
+        pax: 1,
+        days: 16
     }
 ];
 
@@ -83,6 +109,32 @@ const DEFAULT_RISKS = [
 ];
 
 const ACTIVITIES = [
+    {
+        id: "ACT-BOG-001",
+        tripId: "VIAJE-2026-09-15-BOGOTA",
+        day: 1,
+        type: "info",
+        time: "00:00",
+        title: "Bogotá Pendiente",
+        description: "Itinerario pendiente de sincronización.",
+        location: "Bogotá",
+        status: "pending",
+        icon: "fa-solid fa-clock",
+        outfit: "Casual"
+    },
+    {
+        id: "ACT-EUR-001",
+        tripId: "VIAJE-2026-10-10-EUROPA",
+        day: 1,
+        type: "info",
+        time: "00:00",
+        title: "Europa Pendiente",
+        description: "Itinerario pendiente de sincronización.",
+        location: "Europa",
+        status: "pending",
+        icon: "fa-solid fa-clock",
+        outfit: "Casual"
+    },
     // --- CUSCO AGOSTO ---
     { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alejandro Velasco Astete (CUZ)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-1-hotel", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🏠 Llegada a Casa Andina Catedral", startTime: "23:00", endTime: "23:59", priority: "Alta", location: "Cusco, Perú", category: "Alojamiento", owner: "jose", status: "Confirmado" },
@@ -1357,7 +1409,7 @@ function renderTraceabilityMatrix() {
         const riskClass = t.riskLevel === "Alto" ? "red" : (t.riskLevel === "Medio" ? "yellow" : "green");
 
         html += `
-            <tr style="cursor: pointer;" onclick="document.querySelector('[data-trip=\\'${t.id}\\']').click(); document.querySelector('[data-target=\\'tab-agenda\\']').click();">
+            <tr style="cursor: pointer;" onclick="document.querySelector('[data-trip=\\'${t.id}\\']').click(); document.querySelector('[data-target=\\'tab-viajes\\']').click();">
                 <td><code>${t.id}</code></td>
                 <td><strong>${t.name}</strong><br><small style="color: var(--text-secondary);">${t.destination}</small></td>
                 <td>${formatDateShort(t.startDate)} al ${formatDateShort(t.endDate)}</td>
