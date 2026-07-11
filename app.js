@@ -9,10 +9,10 @@ const DEFAULT_TRIPS = [
         destination: "Cusco, Perú",
         startDate: "2026-08-07",
         endDate: "2026-08-10",
-        budget: 2500.00,
-        status: "planned",
-        riskLevel: "Alto",
-        advanceLevel: 100,
+        budget: 4585.00,
+        status: "confirmed",
+        riskLevel: "Medio",
+        advanceLevel: 52,
         pax: 2,
         days: 4
     },
@@ -85,7 +85,15 @@ const DEFAULT_PAYMENTS = [
     { id: "FIN-CAL-DIC-005", tripId: "VIAJE-2026-12-22-CALI", concept: "Traslado Aeropuerto Cali", amount: 150.00, currency: "USD", status: "pending", dueDate: "2026-12-22", classification: "ESTIMADA", category: "Logística", notes: "Movilidad local en Uber Comfort." },
     
     // --- EUROPA OCTUBRE ---
-    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo de Madrid (Plus Ultra)", amount: 1251.12, currency: "EUR", status: "paid", dueDate: "2026-06-24", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: SDXSFJ. Incluye maletas y comida." }
+    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo de Madrid (Plus Ultra)", amount: 1251.12, currency: "EUR", status: "paid", dueDate: "2026-06-24", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: SDXSFJ. Incluye maletas y comida." },
+
+    // --- CUSCO AGOSTO (NUEVO) ---
+    { id: "FIN-CUZ-AGO-001", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Paquete Cusco (Apu Andino)", amount: 2375.00, currency: "PEN", status: "paid", dueDate: "2026-07-08", classification: "CONFIRMADA", category: "Logística", notes: "Prepagado a IZI*Peru Expeditions Travel. Visa Signature ****8778 (3 cuotas)." },
+    { id: "FIN-CUZ-AGO-002", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Tour Paracas/Ica (Angelica)", amount: 280.00, currency: "PEN", status: "pending", dueDate: "2026-08-05", classification: "ESTIMADA", category: "Actividades", notes: "Tour de un día completo para Angelica." },
+    { id: "FIN-CUZ-AGO-003", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Traslados Aeropuerto (Lima)", amount: 340.00, currency: "PEN", status: "pending", dueDate: "2026-08-07", classification: "PROYECTADA", category: "Logística", notes: "4 tramos (ida y vuelta del aeropuerto en Uber/Cabify Black)." },
+    { id: "FIN-CUZ-AGO-004", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Ubers/Cabify Locales (Lima)", amount: 180.00, currency: "PEN", status: "pending", dueDate: "2026-08-07", classification: "PROYECTADA", category: "Logística", notes: "Ubers rápidos de traslado interno." },
+    { id: "FIN-CUZ-AGO-005", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Viáticos Cusco (Comidas/Ocio)", amount: 760.00, currency: "PEN", status: "pending", dueDate: "2026-08-08", classification: "ESTIMADA", category: "Alimentación", notes: "Cenas libres en Cusco y Aguas Calientes." },
+    { id: "FIN-CUZ-AGO-006", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Viáticos Lima (Comidas/Ocio)", amount: 650.00, currency: "PEN", status: "pending", dueDate: "2026-08-04", classification: "ESTIMADA", category: "Alimentación", notes: "Cena de bienvenida, Punto Azul, 7 Sopas, etc." }
 ];
 
 const DEFAULT_RISKS = [
