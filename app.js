@@ -437,7 +437,14 @@ async function loadState() {
             const parsed = JSON.parse(saved);
             
             // Restore structural objects
-            if (parsed.trips) SYSTEM_STATE.trips = parsed.trips;
+            if (parsed.trips) {
+                SYSTEM_STATE.trips = parsed.trips;
+                DEFAULT_TRIPS.forEach(dt => {
+                    if (!SYSTEM_STATE.trips.find(t => t.id === dt.id)) {
+                        SYSTEM_STATE.trips.push(dt);
+                    }
+                });
+            }
             if (parsed.payments) SYSTEM_STATE.payments = parsed.payments;
             if (parsed.reservations) SYSTEM_STATE.reservations = parsed.reservations;
             if (parsed.risks) SYSTEM_STATE.risks = parsed.risks;
