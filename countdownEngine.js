@@ -58,11 +58,14 @@ window.CountdownEngine = (function() {
                 activeCount++;
                 
                 // Matemáticas seguras
-                const h = Math.floor(diff / (1000 * 60 * 60));
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
                 const m = Math.floor((diff / 1000 / 60) % 60);
                 const s = Math.floor((diff / 1000) % 60);
                 
-                const text = `T-${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+                const text = d > 0 
+                    ? `T-${d}D ${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+                    : `T-${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
                 
                 let cssClass = 'status-calma';
                 if (diff <= THRESHOLD_PELIGRO) {
