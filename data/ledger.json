@@ -75,7 +75,9 @@
         "mrfo1w2b.1f5ezn0v2cao@express.medallia.com",
         "69a9b515-7acd-4ece-896b-3a7d4eec8e33@smtp-relay.sendinblue.com",
         "6a51b4fc.743400b0.2067c9.7f0e@mx.google.com",
-        "6a51d217.54d7c073.3ecfe.5625@mx.google.com"
+        "6a51d217.54d7c073.3ecfe.5625@mx.google.com",
+        "6a51d47a.52749c36.369117.0c46@mx.google.com",
+        "f81caa384dc9927ba4c0233ee4bffbd43d7bde8a-20058712-110319239@google.com"
     ],
     "transactions": [
         {
@@ -343,7 +345,7 @@
             "timestamp": "2026-07-10T21:29:00.543166"
         }
     ],
-    "last_run": "2026-07-11T05:28:25.219135",
+    "last_run": "2026-07-11T07:07:34.580774",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
