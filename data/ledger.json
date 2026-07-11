@@ -448,6 +448,16 @@
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1299.06",
             "status": "INFO",
             "timestamp": "2026-07-11T13:41:57.580127"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-11T17:05:01.141862"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1202.08",
+            "status": "INFO",
+            "timestamp": "2026-07-11T17:05:01.141879"
         }
     ]
 }
