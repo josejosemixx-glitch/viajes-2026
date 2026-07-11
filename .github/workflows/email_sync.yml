@@ -1,0 +1,40 @@
+name: Automated Email Itinerary Sync
+
+on:
+  schedule:
+    # 7 times a day (every 3 hours roughly)
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+jobs:
+  email-sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Run Email Ingestor
+      env:
+        GMAIL_USER: "Jose.josemixx@gmail.com"
+        GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+        HOTMAIL_USER: "josemixx@hotmail.com"
+        HOTMAIL_PASS: ${{ secrets.HOTMAIL_PASS }}
+      run: |
+        python gtd_scripts/email_ingestor.py
+
+    - name: Push Dynamic Data Updates
+      run: |
+        git config --global user.name "CFO Bot (Agente de Correos)"
+        git config --global user.email "bot@cfo-intelligence.local"
+        git add data/dynamic_data.json
+        # Only commit if there are changes
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Sincronización de Itinerarios desde Correos"
+        git push origin main
