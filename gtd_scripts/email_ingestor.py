@@ -40,8 +40,8 @@ def fetch_itineraries():
             mail.login(account['user'], account['pass'])
             mail.select("inbox")
             
-            # Buscar correos de los últimos 7 días
-            date = (datetime.now() - timedelta(days=7)).strftime("%d-%b-%Y")
+            # Buscar correos de los últimos 30 días
+            date = (datetime.now() - timedelta(days=30)).strftime("%d-%b-%Y")
             status, messages = mail.search(None, f'(SINCE "{date}")')
             
             email_ids = messages[0].split()
@@ -76,7 +76,7 @@ def fetch_itineraries():
                             trip_id = "VIAJE-2026-09-15-BOGOTA"
                             loc = "Bogotá"
                         elif "europa" in combined or "madrid" in combined or "paris" in combined:
-                            trip_id = "VIAJE-2026-10-10-EUROPA"
+                            trip_id = "VIAJE-2026-10-12-EUROPA"
                             loc = "Europa"
                         
                         if trip_id and ("vuelo" in combined or "reserva" in combined or "itinerario" in combined or "latam" in combined or "avianca" in combined):
