@@ -56,17 +56,17 @@ const DEFAULT_TRIPS = [
         days: 6
     },
     {
-        id: "VIAJE-2026-10-10-EUROPA",
-        name: "Europa Octubre",
+        id: "VIAJE-2026-10-12-EUROPA",
+        name: "Europa Octubre-Noviembre",
         destination: "Europa (Múltiples)",
-        startDate: "2026-10-10",
-        endDate: "2026-10-25",
+        startDate: "2026-10-12",
+        endDate: "2026-11-01",
         budget: 5000.00,
-        status: "planned",
-        riskLevel: "Alto",
-        advanceLevel: 0,
+        status: "confirmed",
+        riskLevel: "Medio", // risk decreases since flight is bought
+        advanceLevel: 35,
         pax: 1,
-        days: 16
+        days: 21
     }
 ];
 
@@ -82,7 +82,10 @@ const DEFAULT_PAYMENTS = [
     { id: "FIN-CAL-DIC-002", tripId: "VIAJE-2026-12-22-CALI", concept: "Airbnb Cali Diciembre", amount: 650.00, currency: "USD", status: "pending", dueDate: "2026-08-30", classification: "PROYECTADA", category: "Logística", notes: "Alojamiento Airbnb (13 noches). Temporada de Feria de Cali." },
     { id: "FIN-CAL-DIC-003", tripId: "VIAJE-2026-12-22-CALI", concept: "Viáticos Feria Cali", amount: 600.00, currency: "USD", status: "pending", dueDate: "2026-12-22", classification: "ESTIMADA", category: "Entretenimiento", notes: "Salsódromo, conciertos, eventos y comidas en Cali." },
     { id: "FIN-CAL-DIC-004", tripId: "VIAJE-2026-12-22-CALI", concept: "Seguro de viaje Cali", amount: 50.00, currency: "USD", status: "pending", dueDate: "2026-12-15", classification: "ESTIMADA", category: "Logística", notes: "Seguro médico de asistencia en viaje." },
-    { id: "FIN-CAL-DIC-005", tripId: "VIAJE-2026-12-22-CALI", concept: "Traslado Aeropuerto Cali", amount: 150.00, currency: "USD", status: "pending", dueDate: "2026-12-22", classification: "ESTIMADA", category: "Logística", notes: "Movilidad local en Uber Comfort." }
+    { id: "FIN-CAL-DIC-005", tripId: "VIAJE-2026-12-22-CALI", concept: "Traslado Aeropuerto Cali", amount: 150.00, currency: "USD", status: "pending", dueDate: "2026-12-22", classification: "ESTIMADA", category: "Logística", notes: "Movilidad local en Uber Comfort." },
+    
+    // --- EUROPA OCTUBRE ---
+    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo de Madrid (Plus Ultra)", amount: 1251.12, currency: "EUR", status: "paid", dueDate: "2026-06-24", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: SDXSFJ. Incluye maletas y comida." }
 ];
 
 const DEFAULT_RISKS = [
@@ -123,17 +126,30 @@ const ACTIVITIES = [
         outfit: "Casual"
     },
     {
-        id: "ACT-EUR-001",
-        tripId: "VIAJE-2026-10-10-EUROPA",
+        id: "act-eur-1-vuelo",
+        tripId: "VIAJE-2026-10-12-EUROPA",
         day: 1,
-        type: "info",
-        time: "00:00",
-        title: "Europa Pendiente",
-        description: "Itinerario pendiente de sincronización.",
-        location: "Europa",
-        status: "pending",
-        icon: "fa-solid fa-clock",
-        outfit: "Casual"
+        name: "✈️ Vuelo Lima ➔ Madrid (PU 302)",
+        startTime: "18:10",
+        endTime: "13:05",
+        priority: "Critical",
+        location: "Aeropuerto Internacional Jorge Chávez (LIM)",
+        category: "Vuelos",
+        owner: "jose",
+        status: "Confirmado"
+    },
+    {
+        id: "act-eur-21-vuelo",
+        tripId: "VIAJE-2026-10-12-EUROPA",
+        day: 21,
+        name: "✈️ Vuelo Madrid ➔ Lima (PU 301)",
+        startTime: "11:00",
+        endTime: "17:10",
+        priority: "Critical",
+        location: "Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)",
+        category: "Vuelos",
+        owner: "jose",
+        status: "Confirmado"
     },
     // --- CUSCO AGOSTO ---
     { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alejandro Velasco Astete (CUZ)", category: "Vuelos", owner: "jose", status: "Confirmado" },
@@ -473,14 +489,22 @@ async function loadState() {
             
             // Restore structural objects
             if (parsed.trips) {
-                SYSTEM_STATE.trips = parsed.trips;
+                // Filter out obsolete Europe IDs to force updates
+                SYSTEM_STATE.trips = parsed.trips.filter(t => t.id !== "VIAJE-2026-10-10-EUROPA" && t.id !== "VIAJE-2026-10-01-EUROPA");
                 DEFAULT_TRIPS.forEach(dt => {
                     if (!SYSTEM_STATE.trips.find(t => t.id === dt.id)) {
                         SYSTEM_STATE.trips.push(dt);
                     }
                 });
             }
-            if (parsed.payments) SYSTEM_STATE.payments = parsed.payments;
+            if (parsed.payments) {
+                SYSTEM_STATE.payments = parsed.payments;
+                DEFAULT_PAYMENTS.forEach(dp => {
+                    if (!SYSTEM_STATE.payments.find(p => p.id === dp.id)) {
+                        SYSTEM_STATE.payments.push(dp);
+                    }
+                });
+            }
             if (parsed.reservations) SYSTEM_STATE.reservations = parsed.reservations;
             if (parsed.risks) SYSTEM_STATE.risks = parsed.risks;
             if (parsed.sleep) SYSTEM_STATE.sleep = { ...SYSTEM_STATE.sleep, ...parsed.sleep };
@@ -1252,7 +1276,7 @@ function renderDecisionCenter() {
     }
 
     // 5. Reservar Europa
-    const europaTrip = SYSTEM_STATE.trips.find(t => t.id === "VIAJE-2026-10-10-EUROPA");
+    const europaTrip = SYSTEM_STATE.trips.find(t => t.id === "VIAJE-2026-10-12-EUROPA");
     const reservationsPending = SYSTEM_STATE.reservations["vuelo_europa"] === "Pendiente" || SYSTEM_STATE.reservations["hotel_europa"] === "Pendiente";
     if (europaTrip && (europaTrip.status === "planned" || reservationsPending)) {
         actions.push({
@@ -1331,7 +1355,7 @@ window.executeDecisionAction = function(id) {
             logAction("Vuelo Cali Diciembre marcado como EMITIDO/PAGADO desde el Centro de Decisiones.", "SUCCESS");
         }
     } else if (id === "dec-res-europa") {
-        const t = SYSTEM_STATE.trips.find(x => x.id === "VIAJE-2026-10-10-EUROPA");
+        const t = SYSTEM_STATE.trips.find(x => x.id === "VIAJE-2026-10-12-EUROPA");
         if (t) t.status = "confirmed";
         SYSTEM_STATE.reservations["vuelo_europa"] = "Emitido";
         SYSTEM_STATE.reservations["hotel_europa"] = "Emitido";
@@ -2086,10 +2110,10 @@ function renderItinerariesTab() {
     const dayActs = ACTIVITIES.filter(a => a.tripId === SYSTEM_STATE.settings.selectedTripId && a.day === SYSTEM_STATE.settings.selectedDay);
     
     // Europe trip dynamic placeholder fallback
-    if (dayActs.length === 0 && SYSTEM_STATE.settings.selectedTripId === "VIAJE-2026-10-10-EUROPA") {
+    if (dayActs.length === 0 && SYSTEM_STATE.settings.selectedTripId === "VIAJE-2026-10-12-EUROPA") {
         dayActs.push({
             id: `act-eur-${SYSTEM_STATE.settings.selectedDay}-placeholder`,
-            tripId: "VIAJE-2026-10-10-EUROPA",
+            tripId: "VIAJE-2026-10-12-EUROPA",
             day: SYSTEM_STATE.settings.selectedDay,
             name: "🌍 Turismo y Recorrido libre (París / Roma / Florencia)",
             startTime: "09:00",
