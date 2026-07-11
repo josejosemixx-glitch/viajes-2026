@@ -81,7 +81,12 @@
         "6a524702.4a342cbc.ca844.9fc8@mx.google.com",
         "6a524b75.9c25d69c.254349.cc83@mx.google.com",
         "mgdzspywtgs7afciuabdtw@geopod-ismtpd-3",
-        "9f1a5625-f90e-571f-92bd-f2dd5ef10c0a@mail.uber.com"
+        "9f1a5625-f90e-571f-92bd-f2dd5ef10c0a@mail.uber.com",
+        "6a526be6.5cacff2a.73bba.d017@mx.google.com",
+        "plvgkshnr_cthv3zdqiguq@geopod-ismtpd-53",
+        "6a528f2f.9e118ab0.35c101.8abe@mx.google.com",
+        "26.ae.48634.9b3925a6@i-0537b47541c000b24.mta1vrest.sd.prd.sparkpost",
+        "0100019f529aeeab-3aca282f-48c3-447f-8be1-50c421269df0-000000@email.amazonses.com"
     ],
     "transactions": [
         {
@@ -357,7 +362,7 @@
             "timestamp": "2026-07-11T16:14:27.719820"
         }
     ],
-    "last_run": "2026-07-11T16:14:29.355443",
+    "last_run": "2026-07-11T19:51:26.224088",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
