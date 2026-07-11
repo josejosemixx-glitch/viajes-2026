@@ -383,6 +383,13 @@ body {
 .status-cfo.green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
 .status-cfo.yellow { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
 .status-cfo.red { background: rgba(239, 68, 68, 0.15); color: #fca5a5; }
+.status-cfo.blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+
+/* Countdown Engine Status Classes */
+.status-calma { background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 3px 8px; border-radius: 4px; }
+.status-zozobra { background: rgba(245, 158, 11, 0.15); color: #fbbf24; padding: 3px 8px; border-radius: 4px; }
+.status-peligro { background: rgba(239, 68, 68, 0.15); color: #fca5a5; padding: 3px 8px; border-radius: 4px; }
+.mono { font-family: monospace; }
 
 /* Pestaña Itinerario Selector de Viajes y Días */
 .trip-selector, .day-selector {

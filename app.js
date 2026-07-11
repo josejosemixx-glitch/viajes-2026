@@ -259,6 +259,22 @@ const EXCHANGE_RATES = {
     "EUR": 1.08
 };
 
+const FISCAL_MONTHS = [
+    { name: "Junio 2026", key: "2026-06" },
+    { name: "Julio 2026", key: "2026-07" },
+    { name: "Agosto 2026", key: "2026-08" },
+    { name: "Septiembre 2026", key: "2026-09" },
+    { name: "Octubre 2026", key: "2026-10" },
+    { name: "Noviembre 2026", key: "2026-11" },
+    { name: "Diciembre 2026", key: "2026-12" },
+    { name: "Enero 2027", key: "2027-01" }
+];
+
+function getTotalCashUsd() {
+    const cash = SYSTEM_STATE.cash;
+    return cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
+}
+
 // ==========================================
 // CENTRALIZED STATE MASTER SYSTEM
 // ==========================================
@@ -294,7 +310,9 @@ let SYSTEM_STATE = {
         selectedFinanceTripFilter: "all",
         loanRequested: false
     },
-    auditLog: []
+    auditLog: [],
+    completedActivityIds: [],
+    dynamicActivities: []
 };
 
 // Initialize bedtimes and wakeTimes for all trip days
@@ -313,18 +331,14 @@ const PREV_BEDTIMES = {
     "VIAJE-2026-07-02-CALI-3": "01:00",
     "VIAJE-2026-07-02-CALI-4": "23:00",
     "VIAJE-2026-07-02-CALI-5": "22:00",
-    "VIAJE-2026-08-04-CUSCO-1": "22:30",
-    "VIAJE-2026-08-04-CUSCO-2": "22:30",
-    "VIAJE-2026-08-04-CUSCO-3": "23:00",
-    "VIAJE-2026-08-04-CUSCO-4": "23:00",
-    "VIAJE-2026-08-04-CUSCO-5": "21:30",
-    "VIAJE-2026-08-04-CUSCO-6": "22:00",
-    "VIAJE-2026-08-04-CUSCO-7": "22:30",
-    "VIAJE-2026-08-04-CUSCO-8": "22:00",
-    "VIAJE-2026-09-11-BOGOTA-1": "22:30",
-    "VIAJE-2026-09-11-BOGOTA-2": "23:00",
-    "VIAJE-2026-09-11-BOGOTA-3": "23:00",
-    "VIAJE-2026-09-11-BOGOTA-4": "22:00",
+    "VIAJE-2026-08-07-CUSCO-1": "22:30",
+    "VIAJE-2026-08-07-CUSCO-2": "22:30",
+    "VIAJE-2026-08-07-CUSCO-3": "23:00",
+    "VIAJE-2026-08-07-CUSCO-4": "23:00",
+    "VIAJE-2026-09-15-BOGOTA-1": "22:30",
+    "VIAJE-2026-09-15-BOGOTA-2": "23:00",
+    "VIAJE-2026-09-15-BOGOTA-3": "23:00",
+    "VIAJE-2026-09-15-BOGOTA-4": "22:00",
     "VIAJE-2026-12-22-CALI-1": "23:00",
     "VIAJE-2026-12-22-CALI-2": "23:00",
     "VIAJE-2026-12-22-CALI-3": "02:00",
@@ -374,6 +388,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Wait, ACTIVITIES is a const! We need to make it a let or push to it.
             // Since ACTIVITIES is a const array, we can push to it.
             if (dynData.activities && Array.isArray(dynData.activities)) {
+                SYSTEM_STATE.dynamicActivities = dynData.activities;
                 dynData.activities.forEach(newAct => {
                     const existingIndex = ACTIVITIES.findIndex(a => a.id === newAct.id);
                     if (existingIndex > -1) {
@@ -383,6 +398,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     }
                 });
             }
+            saveState();
         }
     } catch (e) {
         console.warn("No se pudo sincronizar dynamic_data.json:", e);
@@ -422,6 +438,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     setupInteractionListeners();
     setupResetButton();
     setupConfigInputs();
+    window.addEventListener('countdown-expired', (e) => {
+        const actId = e.detail.activityId;
+        const act = ACTIVITIES.find(a => a.id === actId);
+        if (act && act.status !== "Completado") {
+            act.status = "Completado";
+            if (SYSTEM_STATE.completedActivityIds && !SYSTEM_STATE.completedActivityIds.includes(actId)) {
+                SYSTEM_STATE.completedActivityIds.push(actId);
+            }
+            logAction(`[T-0] Actividad '${act.name}' completada automáticamente.`, "SUCCESS");
+            if (!window.renderScheduled) {
+                window.renderScheduled = true;
+                requestAnimationFrame(() => {
+                    window.renderScheduled = false;
+                    renderAll();
+                });
+            }
+        }
+    });
+
     logAction("Centro de Control de Viajes inicializado", "SUCCESS");
     renderAll();
 });
@@ -432,7 +467,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function loadState() {
     try {
-        const saved = await Promise.resolve(localStorage.getItem("cfo_control_center_state"));
+        const saved = localStorage.getItem("cfo_control_center_state");
         if (saved) {
             const parsed = JSON.parse(saved);
             
@@ -453,6 +488,30 @@ async function loadState() {
             if (parsed.cash) SYSTEM_STATE.cash = parsed.cash;
             if (parsed.packingList) SYSTEM_STATE.packingList = parsed.packingList;
             if (parsed.auditLog) SYSTEM_STATE.auditLog = parsed.auditLog;
+
+            // Restore dynamic activities
+            if (parsed.dynamicActivities) {
+                SYSTEM_STATE.dynamicActivities = parsed.dynamicActivities;
+                parsed.dynamicActivities.forEach(act => {
+                    const existingIndex = ACTIVITIES.findIndex(a => a.id === act.id);
+                    if (existingIndex > -1) {
+                        ACTIVITIES[existingIndex] = act;
+                    } else {
+                        ACTIVITIES.push(act);
+                    }
+                });
+            }
+
+            // Restore completed activity statuses
+            if (parsed.completedActivityIds) {
+                SYSTEM_STATE.completedActivityIds = parsed.completedActivityIds;
+                SYSTEM_STATE.completedActivityIds.forEach(id => {
+                    const act = ACTIVITIES.find(a => a.id === id);
+                    if (act) act.status = "Completado";
+                });
+            } else {
+                SYSTEM_STATE.completedActivityIds = [];
+            }
         }
     } catch (e) {
         console.warn("No se pudo leer el estado (Persistence Error):", e);
@@ -461,10 +520,7 @@ async function loadState() {
 
 async function saveState() {
     try {
-        // Escritura asíncrona (Optimistic UI)
-        await Promise.resolve().then(() => {
-            localStorage.setItem("cfo_control_center_state", JSON.stringify(SYSTEM_STATE));
-        });
+        localStorage.setItem("cfo_control_center_state", JSON.stringify(SYSTEM_STATE));
         
         // Background Sync hook (preparación para Service Worker PWA)
         if ('serviceWorker' in navigator && 'SyncManager' in window) {
@@ -774,15 +830,27 @@ function renderAll() {
     });
 }
 
-// --- PESTAÑA 1: RESUMEN (HOME) ---
+const PAYMENT_TO_RESERVATION_KEY = {
+    "FIN-CAL-DIC-001": "vuelo",
+    "FIN-CAL-DIC-002": "airbnb",
+    "FIN-CAL-DIC-004": "seguro",
+    "FIN-CAL-DIC-005": "traslado"
+};
+
+function getReservationState(payment) {
+    const key = PAYMENT_TO_RESERVATION_KEY[payment.id];
+    if (key && SYSTEM_STATE.reservations[key]) {
+        return SYSTEM_STATE.reservations[key];
+    }
+    return payment.status;
+}
 
 function calculateTravelReadinessScore() {
     // 1. Crucial reservations emit (vuelo/lodge) (40%)
     const crucialItems = SYSTEM_STATE.payments.filter(p => p.category === "Logística" && (p.concept.toLowerCase().includes("vuelo") || p.concept.toLowerCase().includes("airbnb") || p.concept.toLowerCase().includes("hotel") || p.concept.toLowerCase().includes("hospedaje")));
     const crucialCount = crucialItems.length;
     const crucialEmitted = crucialItems.reduce((acc, curr) => {
-        const itemKey = curr.id.split("-").pop().toLowerCase();
-        const decState = SYSTEM_STATE.reservations[itemKey] || curr.status;
+        const decState = getReservationState(curr);
         if (decState === "Emitido" || decState === "paid" || curr.status === "paid") return acc + 1.0;
         if (decState === "En Proceso" || decState === "committed" || decState === "reserved") return acc + 0.5;
         return acc;
@@ -796,8 +864,7 @@ function calculateTravelReadinessScore() {
         const rate = EXCHANGE_RATES[p.currency] || 1.0;
         const val = p.amount * rate;
         totalUsd += val;
-        const itemKey = p.id.split("-").pop().toLowerCase();
-        const decState = SYSTEM_STATE.reservations[itemKey] || p.status;
+        const decState = getReservationState(p);
         if (decState === "Emitido" || decState === "paid" || p.status === "paid") {
             paidUsd += val;
         }
@@ -839,9 +906,7 @@ function calculateTravelReadinessScore() {
 }
 
 function calculateSystemHealthScore() {
-    // 1. Liquidez (20%): 100% if remainingLiquidityUsd >= 0, else 0%
-    const cash = SYSTEM_STATE.cash;
-    const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
+    const totalCashUsd = getTotalCashUsd();
     let commitments30Usd = 0;
     SYSTEM_STATE.payments.forEach(p => {
         if (p.status === "paid" || !p.dueDate) return;
@@ -905,8 +970,9 @@ function calculateSystemHealthScore() {
 
 function renderExecutiveDashboard() {
     // 1. Next Trip count
-    const baseDate = new Date("2026-06-14");
-    const nextTrip = SYSTEM_STATE.trips.filter(t => new Date(t.startDate) >= baseDate).sort((a,b) => new Date(a.startDate) - new Date(b.startDate))[0];
+    const baseDate = new Date();
+    baseDate.setHours(0,0,0,0);
+    const nextTrip = SYSTEM_STATE.trips.filter(t => new Date(t.startDate + "T00:00:00") >= baseDate).sort((a,b) => new Date(a.startDate) - new Date(b.startDate))[0];
     
     if (nextTrip) {
         const diffDays = getDaysToDate(nextTrip.startDate);
@@ -957,6 +1023,16 @@ function renderExecutiveDashboard() {
     document.getElementById("ceo-kpi-readiness-score").textContent = `${readiness.score} / 100`;
     document.getElementById("ceo-kpi-readiness-desc").textContent = readiness.desc;
 
+    // 4.2. System Health Score
+    const health = calculateSystemHealthScore();
+    const healthScoreEl = document.getElementById("ceo-kpi-health-score");
+    const healthDescEl = document.getElementById("ceo-kpi-health-desc");
+    if (healthScoreEl && healthDescEl) {
+        healthScoreEl.textContent = `${health.score} / 100`;
+        healthDescEl.textContent = health.desc;
+        healthScoreEl.className = "val " + (health.score >= 85 ? "text-emerald" : (health.score >= 70 ? "text-yellow" : "text-red"));
+    }
+
     // 4.1. Flight Tracker Status
     const trackerStatusEl = document.getElementById("ceo-kpi-flight-tracker-status");
     const trackerDescEl = document.getElementById("ceo-kpi-flight-tracker-desc");
@@ -983,8 +1059,8 @@ function renderExecutiveDashboard() {
     document.getElementById("q-next-payment").innerHTML = nextPayment 
         ? `<span style='color: var(--primary); font-weight: bold;'>${formatDateShort(nextPayment.dueDate)}</span> - ${nextPayment.concept} (<strong>${nextPayment.currency} ${nextPayment.amount.toLocaleString()}</strong>)`
         : "Ninguno pendiente.";
-    // Q2: Money this month
-    const thisMonthPayments = SYSTEM_STATE.payments.filter(p => p.status !== "paid" && p.dueDate && p.dueDate.startsWith("2026-06"));
+    const currentYearMonth = new Date().toISOString().slice(0, 7);
+    const thisMonthPayments = SYSTEM_STATE.payments.filter(p => p.status !== "paid" && p.dueDate && p.dueDate.startsWith(currentYearMonth));
     const thisMonthTotalUsd = thisMonthPayments.reduce((acc, curr) => acc + (curr.amount * (EXCHANGE_RATES[curr.currency] || 1)), 0);
     document.getElementById("q-money-this-month").innerHTML = `<strong style="color: #f8fafc;">$${thisMonthTotalUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD</strong> (~S/. ${(thisMonthTotalUsd / EXCHANGE_RATES.PEN).toLocaleString('es-PE', { maximumFractionDigits: 0 })} PEN)`;
     
@@ -1027,8 +1103,7 @@ function renderExecutiveDashboard() {
     document.getElementById("exec-pct-pending").textContent = `${pendingPct}%`;
 
     // 9. Liquidity module calculation
-    const cash = SYSTEM_STATE.cash;
-    const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
+    const totalCashUsd = getTotalCashUsd();
     
     // Commitments in next 30 days
     let commitments30Usd = 0;
@@ -1177,7 +1252,7 @@ function renderDecisionCenter() {
     }
 
     // 5. Reservar Europa
-    const europaTrip = SYSTEM_STATE.trips.find(t => t.id === "VIAJE-2026-10-01-EUROPA");
+    const europaTrip = SYSTEM_STATE.trips.find(t => t.id === "VIAJE-2026-10-10-EUROPA");
     const reservationsPending = SYSTEM_STATE.reservations["vuelo_europa"] === "Pendiente" || SYSTEM_STATE.reservations["hotel_europa"] === "Pendiente";
     if (europaTrip && (europaTrip.status === "planned" || reservationsPending)) {
         actions.push({
@@ -1256,7 +1331,7 @@ window.executeDecisionAction = function(id) {
             logAction("Vuelo Cali Diciembre marcado como EMITIDO/PAGADO desde el Centro de Decisiones.", "SUCCESS");
         }
     } else if (id === "dec-res-europa") {
-        const t = SYSTEM_STATE.trips.find(x => x.id === "VIAJE-2026-10-01-EUROPA");
+        const t = SYSTEM_STATE.trips.find(x => x.id === "VIAJE-2026-10-10-EUROPA");
         if (t) t.status = "confirmed";
         SYSTEM_STATE.reservations["vuelo_europa"] = "Emitido";
         SYSTEM_STATE.reservations["hotel_europa"] = "Emitido";
@@ -1343,16 +1418,7 @@ function renderDecemberTripWidget() {
 }
 
 function renderBurnForecast() {
-    const months = [
-        { name: "Junio 2026", key: "2026-06" },
-        { name: "Julio 2026", key: "2026-07" },
-        { name: "Agosto 2026", key: "2026-08" },
-        { name: "Septiembre 2026", key: "2026-09" },
-        { name: "Octubre 2026", key: "2026-10" },
-        { name: "Noviembre 2026", key: "2026-11" },
-        { name: "Diciembre 2026", key: "2026-12" },
-        { name: "Enero 2027", key: "2027-01" }
-    ];
+    const months = FISCAL_MONTHS;
 
     let html = `
         <div class="finance-card" style="margin-top: 20px;">
@@ -1485,19 +1551,9 @@ function renderCashFlowTab() {
     if (!container) return;
 
     // Build timeline grouped by month
-    const months = [
-        { name: "Junio 2026", key: "2026-06" },
-        { name: "Julio 2026", key: "2026-07" },
-        { name: "Agosto 2026", key: "2026-08" },
-        { name: "Septiembre 2026", key: "2026-09" },
-        { name: "Octubre 2026", key: "2026-10" },
-        { name: "Noviembre 2026", key: "2026-11" },
-        { name: "Diciembre 2026", key: "2026-12" },
-        { name: "Enero 2027", key: "2027-01" }
-    ];
+    const months = FISCAL_MONTHS;
 
-    const cash = SYSTEM_STATE.cash;
-    const totalCashUsd = cash.USD + (cash.PEN * EXCHANGE_RATES.PEN) + (cash.COP * EXCHANGE_RATES.COP);
+    const totalCashUsd = getTotalCashUsd();
 
     let html = `
         <!-- Flujo de Caja y Ahorros -->
@@ -1809,7 +1865,7 @@ function renderFinancesLedgerTab() {
 }
 
 function renderDecemberEmissionControl() {
-    const decItems = SYSTEM_STATE.payments.filter(item => item.tripId === "VIAJE-2026-12-22-CALI");
+    const decItems = SYSTEM_STATE.payments.filter(item => item.tripId === "VIAJE-2026-12-22-CALI" && PAYMENT_TO_RESERVATION_KEY[item.id]);
     
     let html = `
         <div class="finance-card">
@@ -1829,7 +1885,7 @@ function renderDecemberEmissionControl() {
     `;
 
     decItems.forEach(item => {
-        const itemKey = item.id.split("-").pop().toLowerCase();
+        const itemKey = PAYMENT_TO_RESERVATION_KEY[item.id];
         const currentEmissionState = SYSTEM_STATE.reservations[itemKey] || "Pendiente";
         
         const isPaid = item.status === "paid";
@@ -2030,10 +2086,10 @@ function renderItinerariesTab() {
     const dayActs = ACTIVITIES.filter(a => a.tripId === SYSTEM_STATE.settings.selectedTripId && a.day === SYSTEM_STATE.settings.selectedDay);
     
     // Europe trip dynamic placeholder fallback
-    if (dayActs.length === 0 && SYSTEM_STATE.settings.selectedTripId === "VIAJE-2026-10-01-EUROPA") {
+    if (dayActs.length === 0 && SYSTEM_STATE.settings.selectedTripId === "VIAJE-2026-10-10-EUROPA") {
         dayActs.push({
             id: `act-eur-${SYSTEM_STATE.settings.selectedDay}-placeholder`,
-            tripId: "VIAJE-2026-10-01-EUROPA",
+            tripId: "VIAJE-2026-10-10-EUROPA",
             day: SYSTEM_STATE.settings.selectedDay,
             name: "🌍 Turismo y Recorrido libre (París / Roma / Florencia)",
             startTime: "09:00",
@@ -2394,7 +2450,7 @@ function renderConfigTab() {
 
 function getDaysToDate(dateStr) {
     const due = new Date(dateStr);
-    const today = new Date("2026-06-14"); // Base System date context
+    const today = new Date(); // Dynamic system date context
     due.setHours(0,0,0,0);
     today.setHours(0,0,0,0);
     

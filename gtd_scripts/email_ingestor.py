@@ -104,17 +104,43 @@ def fetch_itineraries():
         except Exception as e:
             print(f"Error con la cuenta {account['user']}: {e}")
 
-    # Guardar en dynamic_data.json
-    data = {
-        "trips": [],
-        "activities": activities
-    }
-    
+    # Guardar de forma incremental en dynamic_data.json
     file_path = "data/dynamic_data.json"
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
     
-    print(f"Sincronizados {len(activities)} eventos a dynamic_data.json.")
+    # Cargar datos existentes
+    existing_data = {"trips": [], "activities": []}
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+                if not isinstance(existing_data, dict):
+                    existing_data = {"trips": [], "activities": []}
+                if "trips" not in existing_data:
+                    existing_data["trips"] = []
+                if "activities" not in existing_data:
+                    existing_data["activities"] = []
+        except Exception as e:
+            print(f"Error leyendo {file_path}: {e}")
+
+    # Evitar duplicados por título de actividad
+    existing_names = {act["name"] for act in existing_data["activities"] if "name" in act}
+    existing_ids = {act["id"] for act in existing_data["activities"] if "id" in act}
+
+    new_added = 0
+    for act in activities:
+        if act["name"] not in existing_names:
+            while f"ACT-SYNC-{act_counter}" in existing_ids:
+                act_counter += 1
+            act["id"] = f"ACT-SYNC-{act_counter}"
+            existing_data["activities"].append(act)
+            existing_ids.add(act["id"])
+            existing_names.add(act["name"])
+            new_added += 1
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(existing_data, f, indent=4, ensure_ascii=False)
+    
+    print(f"Sincronizados {new_added} nuevos eventos ({len(existing_data['activities'])} totales) a dynamic_data.json.")
 
 if __name__ == "__main__":
     fetch_itineraries()
