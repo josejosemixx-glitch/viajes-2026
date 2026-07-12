@@ -116,7 +116,10 @@
         "ep6mw7v9qpej0h0yfwpwtg@geopod-ismtpd-6",
         "kfnkce4kq_skw8rjx9f50q@geopod-ismtpd-6",
         "iicbbt0fsaoehva8s7a99g@geopod-ismtpd-1",
-        "bd1e0327-3980-5899-a9bb-1b799de151b8@mail.uber.com"
+        "bd1e0327-3980-5899-a9bb-1b799de151b8@mail.uber.com",
+        "6a53c008.fceff8a7.20b165.99c7@mx.google.com",
+        "6a53e216.3cce8983.225732.fb7c@mx.google.com",
+        "mudt-stmrkauangknpon3q@geopod-ismtpd-18"
     ],
     "transactions": [
         {
@@ -526,9 +529,17 @@
             "amount": 9.1,
             "currency": "PEN",
             "timestamp": "2026-07-12T16:25:42.499952"
+        },
+        {
+            "msg_id": "mudt-stmrkauangknpon3q@geopod-ismtpd-18",
+            "date": "Sun, 12 Jul 2026 18:57:27 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.05,
+            "currency": "USD",
+            "timestamp": "2026-07-12T19:49:42.417948"
         }
     ],
-    "last_run": "2026-07-12T16:25:43.221505",
+    "last_run": "2026-07-12T19:49:42.945713",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
