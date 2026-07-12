@@ -111,7 +111,12 @@
         "g2fftllhszgxcptj0jz85w@geopod-ismtpd-17",
         "darqzheqtyki0r_bslsebq@geopod-ismtpd-13",
         "04c83e53-5645-5d28-8ea7-654f82e4149b@mail.uber.com",
-        "135025484.12334511783862057724.javamail.app@ap91-ca-ue1.prod.awspr"
+        "135025484.12334511783862057724.javamail.app@ap91-ca-ue1.prod.awspr",
+        "6a539d50.8925209f.f156a.5740@mx.google.com",
+        "ep6mw7v9qpej0h0yfwpwtg@geopod-ismtpd-6",
+        "kfnkce4kq_skw8rjx9f50q@geopod-ismtpd-6",
+        "iicbbt0fsaoehva8s7a99g@geopod-ismtpd-1",
+        "bd1e0327-3980-5899-a9bb-1b799de151b8@mail.uber.com"
     ],
     "transactions": [
         {
@@ -497,9 +502,33 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-07-12T13:57:34.524648"
+        },
+        {
+            "msg_id": "ep6mw7v9qpej0h0yfwpwtg@geopod-ismtpd-6",
+            "date": "Sun, 12 Jul 2026 14:08:45 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-12T16:25:41.995027"
+        },
+        {
+            "msg_id": "kfnkce4kq_skw8rjx9f50q@geopod-ismtpd-6",
+            "date": "Sun, 12 Jul 2026 14:26:40 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-12T16:25:42.238940"
+        },
+        {
+            "msg_id": "iicbbt0fsaoehva8s7a99g@geopod-ismtpd-1",
+            "date": "Sun, 12 Jul 2026 14:26:37 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.1,
+            "currency": "PEN",
+            "timestamp": "2026-07-12T16:25:42.499952"
         }
     ],
-    "last_run": "2026-07-12T13:57:35.856678",
+    "last_run": "2026-07-12T16:25:43.221505",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
