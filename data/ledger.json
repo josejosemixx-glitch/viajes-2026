@@ -602,6 +602,16 @@
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1321.33). Sugerencia: Evaluar compra inmediata.",
             "status": "WARNING",
             "timestamp": "2026-07-12T06:41:51.912945"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-12T09:58:04.309826"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1189.91",
+            "status": "INFO",
+            "timestamp": "2026-07-12T09:58:04.309843"
         }
     ]
 }
