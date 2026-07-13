@@ -747,6 +747,16 @@
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1156.5)",
             "status": "SUCCESS",
             "timestamp": "2026-07-12T20:59:20.049882"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-13T03:39:00.015340"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1205.19",
+            "status": "INFO",
+            "timestamp": "2026-07-13T03:39:00.015355"
         }
     ]
 }
