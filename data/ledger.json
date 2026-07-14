@@ -175,7 +175,13 @@
         "6a563f86.212a1814.37d8b8.e32d@mx.google.com",
         "9cd34333-bd80-422b-ba36-48af72de022f@atl1s07mta0354.xt.local",
         "6a56447f.0723ad33.7267e.8f6b@mx.google.com",
-        "nm608b124f90ab63435bcp_mid_prod6@email.bcp.com.pe"
+        "nm608b124f90ab63435bcp_mid_prod6@email.bcp.com.pe",
+        "6a5666f3.9018c7c6.4803c.6437@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklpkicto1kljpmhlfub8iyh/g4nvub4s24konxgsatzcdn+e+t8alb0ugr1m/vb3sn93mq6k1go485oapipirxjr@nws.atrapalo.pe",
+        "ikxqpvmtqa-yumdcfv0kyg@geopod-ismtpd-15",
+        "1221c381-1447-49c8-b74e-8f2126199f94@smtp-relay.sendinblue.com",
+        "6a5687d4.9352724e.ac20f.e26a@mx.google.com",
+        "nmffdae35a2670-7207-4977-8fb5-4343cc06e04b01b77e01samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -737,9 +743,25 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-07-14T16:42:25.878363"
+        },
+        {
+            "msg_id": "ikxqpvmtqa-yumdcfv0kyg@geopod-ismtpd-15",
+            "date": "Tue, 14 Jul 2026 17:23:55 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 18.12,
+            "currency": "USD",
+            "timestamp": "2026-07-14T19:55:00.031901"
+        },
+        {
+            "msg_id": "nmffdae35a2670-7207-4977-8fb5-4343cc06e04b01b77e01samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Tue, 14 Jul 2026 19:32:37 GMT",
+            "sender": "\"samsung\" <samsunglatam@latam.email.samsung.com>",
+            "amount": 220.825,
+            "currency": "USD",
+            "timestamp": "2026-07-14T19:55:02.296210"
         }
     ],
-    "last_run": "2026-07-14T16:42:26.299191",
+    "last_run": "2026-07-14T19:55:02.926621",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
