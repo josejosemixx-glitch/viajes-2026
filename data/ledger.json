@@ -165,7 +165,15 @@
         "6a55a40f.5cacff2a.73bba.3085@mx.google.com",
         "zocjyf_isgg7_z-tcb5nvw@geopod-ismtpd-4",
         "6a55c175.35a78cc2.3c1b6f.6007@mx.google.com",
-        "6a55c62d.433f7c1d.287d2d.41d3@mx.google.com"
+        "6a55c62d.433f7c1d.287d2d.41d3@mx.google.com",
+        "6a55dfc3.6f9aa017.13f14.a943@mx.google.com",
+        "6a562680.35b683e3.5f22b.c58b@mx.google.com",
+        "a3f23ceb9f0f36355037563e68fc34c4447c84d8-10035039-111282348@google.com",
+        "nm6083865af0ab603f7bcp_mid_prod6@email.bcp.com.pe",
+        "ojmxijextiabrmw7ird6jq@geopod-ismtpd-5",
+        "azrwggfkq1sj3bkkxddyna@geopod-ismtpd-17",
+        "6a563f86.212a1814.37d8b8.e32d@mx.google.com",
+        "9cd34333-bd80-422b-ba36-48af72de022f@atl1s07mta0354.xt.local"
     ],
     "transactions": [
         {
@@ -695,9 +703,33 @@
             "amount": 22.37,
             "currency": "USD",
             "timestamp": "2026-07-14T05:16:27.306506"
+        },
+        {
+            "msg_id": "nm6083865af0ab603f7bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Mon, 13 Jul 2026 15:41:01 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 54000.0,
+            "currency": "USD",
+            "timestamp": "2026-07-14T14:15:23.913281"
+        },
+        {
+            "msg_id": "ojmxijextiabrmw7ird6jq@geopod-ismtpd-5",
+            "date": "Tue, 14 Jul 2026 13:49:25 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-14T14:15:24.502576"
+        },
+        {
+            "msg_id": "azrwggfkq1sj3bkkxddyna@geopod-ismtpd-17",
+            "date": "Tue, 14 Jul 2026 13:51:43 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-14T14:15:25.102103"
         }
     ],
-    "last_run": "2026-07-14T07:05:38.878638",
+    "last_run": "2026-07-14T14:15:26.596467",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
