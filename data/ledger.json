@@ -173,7 +173,9 @@
         "ojmxijextiabrmw7ird6jq@geopod-ismtpd-5",
         "azrwggfkq1sj3bkkxddyna@geopod-ismtpd-17",
         "6a563f86.212a1814.37d8b8.e32d@mx.google.com",
-        "9cd34333-bd80-422b-ba36-48af72de022f@atl1s07mta0354.xt.local"
+        "9cd34333-bd80-422b-ba36-48af72de022f@atl1s07mta0354.xt.local",
+        "6a56447f.0723ad33.7267e.8f6b@mx.google.com",
+        "nm608b124f90ab63435bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -727,9 +729,17 @@
             "amount": 8.9,
             "currency": "PEN",
             "timestamp": "2026-07-14T14:15:25.102103"
+        },
+        {
+            "msg_id": "nm608b124f90ab63435bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Tue, 14 Jul 2026 11:25:48 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-14T16:42:25.878363"
         }
     ],
-    "last_run": "2026-07-14T14:15:26.596467",
+    "last_run": "2026-07-14T16:42:26.299191",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
