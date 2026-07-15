@@ -128,7 +128,8 @@ const DEFAULT_PAYMENTS = [
     { id: "FIN-CUZ-AGO-003", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Traslados Aeropuerto (Lima)", amount: 340.00, currency: "PEN", status: "pending", dueDate: "2026-08-07", classification: "PROYECTADA", category: "Logística", notes: "4 tramos (ida y vuelta del aeropuerto en Uber/Cabify Black)." },
     { id: "FIN-CUZ-AGO-004", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Ubers/Cabify Locales (Lima)", amount: 180.00, currency: "PEN", status: "pending", dueDate: "2026-08-07", classification: "PROYECTADA", category: "Logística", notes: "Ubers rápidos de traslado interno." },
     { id: "FIN-CUZ-AGO-005", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Viáticos Cusco (Comidas/Ocio)", amount: 760.00, currency: "PEN", status: "pending", dueDate: "2026-08-08", classification: "ESTIMADA", category: "Alimentación", notes: "Cenas libres en Cusco y Aguas Calientes." },
-    { id: "FIN-CUZ-AGO-006", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Viáticos Lima (Comidas/Ocio)", amount: 650.00, currency: "PEN", status: "pending", dueDate: "2026-08-04", classification: "ESTIMADA", category: "Alimentación", notes: "Cena de bienvenida, Punto Azul, 7 Sopas, etc." }
+    { id: "FIN-CUZ-AGO-006", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Viáticos Lima (Comidas/Ocio)", amount: 650.00, currency: "PEN", status: "pending", dueDate: "2026-08-04", classification: "ESTIMADA", category: "Alimentación", notes: "Cena de bienvenida, Punto Azul, 7 Sopas, etc." },
+    { id: "FIN-CUZ-AGO-007", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Vuelo LIM-CUZ-LIM (LATAM)", amount: 155100.00, currency: "COP", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Pagado con 10,621 Millas LATAM Pass + Tasas COP 155,100. Localizador: KMTEYF." }
 ];
 
 const DEFAULT_RISKS = [
@@ -191,7 +192,7 @@ const ACTIVITIES = [
         status: "Confirmado"
     },
     // --- CUSCO AGOSTO ---
-    { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alejandro Velasco Astete (CUZ)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LATAM LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto LIM (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-1-hotel", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🏠 Llegada a Casa Andina Catedral", startTime: "23:00", endTime: "23:59", priority: "Alta", location: "Cusco, Perú", category: "Alojamiento", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-valle", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚐 Tour Valle Sagrado (Pisac, Ollantaytambo)", startTime: "08:30", endTime: "16:00", priority: "Critical", location: "Valle Sagrado", category: "Tours", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-tren", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚂 Tren Expedition a Aguas Calientes", startTime: "19:00", endTime: "20:45", priority: "Critical", location: "Estación Ollantaytambo", category: "Traslados", owner: "jose", status: "Confirmado" },
@@ -200,7 +201,7 @@ const ACTIVITIES = [
     { id: "act-cuz-3-mp", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "⛰️ Visita a Machu Picchu", startTime: "07:00", endTime: "11:00", priority: "Critical", location: "Santuario Histórico", category: "Tours", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-3-retorno", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "🚂 Retorno a Cusco (Tren + Bus)", startTime: "14:30", endTime: "19:00", priority: "Critical", location: "Estación de Tren", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-4-traslado", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "🚕 Traslado al Aeropuerto (Evitar Tráfico)", startTime: "08:00", endTime: "08:45", priority: "Alta", location: "Hotel Casa Andina", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-4-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "✈️ Vuelo Cusco ➔ Lima (LA2014)", startTime: "10:40", endTime: "12:15", priority: "Critical", location: "Aeropuerto (CUZ)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-4-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "✈️ Vuelo Cusco ➔ Lima (LATAM LA2014)", startTime: "10:40", endTime: "12:15", priority: "Critical", location: "Aeropuerto CUZ (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
     // --- CALI JULIO ---
     { id: "act-jul-1-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "✈️ Vuelo de salida LIM ➔ CLO (LATAM LA2242)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Completado" },

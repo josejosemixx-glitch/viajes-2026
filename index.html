@@ -99,12 +99,12 @@
                         <div class="val text-blue" id="ceo-kpi-total-exposure">Cargando...</div>
                         <div class="val-desc" id="ceo-kpi-total-exposure-pen">Cargando...</div>
                     </div>
-                    <div class="ceo-kpi-card">
+                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-riesgos\']').click();">
                         <small>Travel Readiness Score</small>
                         <div class="val text-emerald" id="ceo-kpi-readiness-score">-- / 100</div>
                         <div class="val-desc" id="ceo-kpi-readiness-desc">--</div>
                     </div>
-                    <div class="ceo-kpi-card" style="background: rgba(99,102,241,0.05); border-left: 3px solid var(--primary);">
+                    <div class="ceo-kpi-card clickable" style="background: rgba(99,102,241,0.05); border-left: 3px solid var(--primary);" onclick="document.querySelector('[data-target=\'tab-viajes\']').click();">
                         <small>Rastreador de Vuelos <i class="fa-solid fa-satellite-dish" style="color: var(--primary);"></i></small>
                         <div class="val-title" id="ceo-kpi-flight-tracker-status" style="font-size: 0.85rem; margin-top: 5px;">Sincronizando...</div>
                         <div class="val-desc" id="ceo-kpi-flight-tracker-desc" style="color: var(--primary);">Esperando datos de la caja negra</div>
