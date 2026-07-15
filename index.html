@@ -109,7 +109,7 @@
                         <div class="val-title" id="ceo-kpi-flight-tracker-status" style="font-size: 0.85rem; margin-top: 5px;">Sincronizando...</div>
                         <div class="val-desc" id="ceo-kpi-flight-tracker-desc" style="color: var(--primary);">Esperando datos de la caja negra</div>
                     </div>
-                    <div class="ceo-kpi-card">
+                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-riesgos\']').click();" title="Ver riesgos del sistema">
                         <small>Riesgos Activos</small>
                         <div class="val text-red" id="ceo-kpi-risks">0</div>
                     </div>
@@ -117,7 +117,7 @@
                         <small>Reservas sin Emitir</small>
                         <div class="val text-yellow" id="ceo-kpi-unissued">0</div>
                     </div>
-                    <div class="ceo-kpi-card">
+                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-caja\']').click();" title="Ver proyecciones de flujo de caja">
                         <small>Runway Operativo</small>
                         <div class="val text-emerald" id="ceo-kpi-runway-score">-- Días</div>
                         <div class="val-desc" id="ceo-kpi-runway-desc">--</div>
