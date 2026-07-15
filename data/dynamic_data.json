@@ -8,7 +8,7 @@
     "activities": [
         {
             "id": "ACT-BOG-AIRBNB",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 1,
             "type": "accommodation",
             "time": "15:00",
@@ -21,7 +21,7 @@
         },
         {
             "id": "ACT-BOG-CORD",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 2,
             "type": "event",
             "time": "14:00",
@@ -34,7 +34,7 @@
         },
         {
             "id": "ACT-SYNC-100",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 1,
             "type": "flight",
             "time": "12:00",
@@ -73,7 +73,7 @@
         },
         {
             "id": "ACT-SYNC-105",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 1,
             "type": "flight",
             "time": "12:00",
@@ -99,7 +99,7 @@
         },
         {
             "id": "ACT-SYNC-101",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 1,
             "type": "flight",
             "time": "12:00",
@@ -112,7 +112,7 @@
         },
         {
             "id": "ACT-SYNC-107",
-            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "tripId": "VIAJE-2026-09-11-BOGOTA",
             "day": 1,
             "type": "flight",
             "time": "12:00",
