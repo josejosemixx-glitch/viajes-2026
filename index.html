@@ -99,10 +99,10 @@
                         <div class="val text-blue" id="ceo-kpi-total-exposure">Cargando...</div>
                         <div class="val-desc" id="ceo-kpi-total-exposure-pen">Cargando...</div>
                     </div>
-                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-riesgos\']').click();">
-                        <small>Travel Readiness Score</small>
-                        <div class="val text-emerald" id="ceo-kpi-readiness-score">-- / 100</div>
-                        <div class="val-desc" id="ceo-kpi-readiness-desc">--</div>
+                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-finanzas\']').click();">
+                        <small>Ratio de Cobertura (30d)</small>
+                        <div class="val text-emerald" id="ceo-kpi-coverage-score">--</div>
+                        <div class="val-desc" id="ceo-kpi-coverage-desc">--</div>
                     </div>
                     <div class="ceo-kpi-card clickable" style="background: rgba(99,102,241,0.05); border-left: 3px solid var(--primary);" onclick="document.querySelector('[data-target=\'tab-viajes\']').click();">
                         <small>Rastreador de Vuelos <i class="fa-solid fa-satellite-dish" style="color: var(--primary);"></i></small>
@@ -118,9 +118,9 @@
                         <div class="val text-yellow" id="ceo-kpi-unissued">0</div>
                     </div>
                     <div class="ceo-kpi-card">
-                        <small>Salud del Sistema</small>
-                        <div class="val text-emerald" id="ceo-kpi-health-score">-- / 100</div>
-                        <div class="val-desc" id="ceo-kpi-health-desc">--</div>
+                        <small>Runway Operativo</small>
+                        <div class="val text-emerald" id="ceo-kpi-runway-score">-- Días</div>
+                        <div class="val-desc" id="ceo-kpi-runway-desc">--</div>
                     </div>
                 </div>
 
@@ -256,6 +256,10 @@
                                         <span>USD: $0</span>
                                         <span>PEN: S/.0</span>
                                         <span>COP: $0</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px;">
+                                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Deuda Tarjeta Crédito (TC):</span>
+                                        <span style="font-size: 1rem; font-weight: bold; color: var(--danger);" id="liq-debt-tc">$0 USD</span>
                                     </div>
                                     <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px;">
                                         <span style="font-size: 0.85rem; color: var(--text-secondary);">Compromisos (Próximos 30 días):</span>
@@ -429,6 +433,22 @@
                         <div>
                             <label for="config-cash-cop" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Caja COP ($):</label>
                             <input type="number" id="config-cash-cop" class="cfo-select" style="width: 100%;" value="1500000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuración de Deuda Tarjeta de Crédito -->
+                <div class="finance-card" style="margin-top: 20px;">
+                    <h3><i class="fa-solid fa-credit-card"></i> Deuda de Tarjeta de Crédito (VISA)</h3>
+                    <p class="desc" style="margin-bottom: 15px;">Ingresa la deuda actual de tu TC para un cálculo de liquidez real:</p>
+                    <div class="cash-inputs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+                        <div>
+                            <label for="config-debt-usd" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Deuda USD:</label>
+                            <input type="number" id="config-debt-usd" class="cfo-select" style="width: 100%;" value="0">
+                        </div>
+                        <div>
+                            <label for="config-debt-pen" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Deuda PEN (S/.):</label>
+                            <input type="number" id="config-debt-pen" class="cfo-select" style="width: 100%;" value="0">
                         </div>
                     </div>
                 </div>
