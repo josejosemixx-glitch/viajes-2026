@@ -117,10 +117,10 @@ const DEFAULT_PAYMENTS = [
     { id: "FIN-BOG-SEP-001", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Vuelo LIM-BOG-LIM (LATAM)", amount: 549.20, currency: "USD", status: "paid", dueDate: "2026-07-11", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: MVARPG. Vuelo directo." },
 
     // --- MADRID SEPTIEMBRE ---
-    { id: "FIN-MAD-SEP-001", tripId: "VIAJE-2026-09-21-MADRID", concept: "Vuelo LIM-MAD-LIM (Plus Ultra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Viaje de trabajo (Pagado por CFRAR)." },
+    { id: "FIN-MAD-SEP-001", tripId: "VIAJE-2026-09-21-MADRID", concept: "Vuelo LIM-MAD-LIM (Plus Ultra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Viaje de trabajo (Pagado por Crear Poder Sin Limites)." },
 
     // --- MEXICO JULIO/AGOSTO ---
-    { id: "FIN-MEX-JUL-001", tripId: "VIAJE-2026-07-21-MEXICO", concept: "Vuelo LIM-MEX-LIM (Volaris)", amount: 800.00, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: XEJP2M. Viaje de trabajo (Pagado por CFRAR)." },
+    { id: "FIN-MEX-JUL-001", tripId: "VIAJE-2026-07-21-MEXICO", concept: "Vuelo LIM-MEX-LIM (Volaris)", amount: 800.00, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: XEJP2M. Viaje de trabajo (Pagado por Crear Poder Sin Limites)." },
 
     // --- CUSCO AGOSTO (NUEVO) ---
     { id: "FIN-CUZ-AGO-001", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Paquete Cusco (Apu Andino)", amount: 2375.00, currency: "PEN", status: "paid", dueDate: "2026-07-08", classification: "CONFIRMADA", category: "Logística", notes: "Prepagado a IZI*Peru Expeditions Travel. Visa Signature ****8778 (3 cuotas)." },
@@ -867,6 +867,15 @@ function getFatigueLabel(val) {
 // ==========================================
 
 function renderAll() {
+    // Check de seguridad: Si el viaje seleccionado ya no existe en la BD, forzar al primero disponible
+    if (SYSTEM_STATE.trips.length > 0) {
+        const tripExists = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
+        if (!tripExists) {
+            SYSTEM_STATE.settings.selectedTripId = SYSTEM_STATE.trips[0].id;
+            SYSTEM_STATE.settings.selectedDay = 1;
+        }
+    }
+
     // Renderizado Asíncrono mediante requestAnimationFrame (Evita bloqueos de UI)
     requestAnimationFrame(() => {
         calculateSleepMetrics();
