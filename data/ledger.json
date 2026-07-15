@@ -210,7 +210,12 @@
         "massdelete-6b9d15d7-a986-4737-9423-00633c671f49.rcid_3c004564-5119-4451-89f0-745084f0c21a.wiid_bc649d51-01b3-4ef9-8433-02abfc90dc5d.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cac_notifyp-aid_6115d087-96a2-414a-a075-b93ddc3ed267@odspnotify",
         "6a579072.4e8829fc.1e410c.6308@mx.google.com",
         "95o5irupsygc9uyxsmyd7q@geopod-ismtpd-15",
-        "5f0c2e4b-91b4-4027-8879-17c991547af3@atl1s11mta1833.xt.local"
+        "5f0c2e4b-91b4-4027-8879-17c991547af3@atl1s11mta1833.xt.local",
+        "6a57953b.33897c89.cd287.537d@mx.google.com",
+        "3bca8076-c814-541e-8440-3518a4aed5bb@mail.uber.com",
+        "e3440d69-e01e-4c97-a1c9-d2cb869e40d6@iad4s13mta0366.xt.local",
+        "42e4795f-824e-4bfe-8b82-1832bf8e4de5@las1s04mta0391.xt.local",
+        "nm609b18b1a0ab67c45bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -804,9 +809,17 @@
             "amount": 4.9,
             "currency": "PEN",
             "timestamp": "2026-07-15T14:12:08.611291"
+        },
+        {
+            "msg_id": "nm609b18b1a0ab67c45bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Wed, 15 Jul 2026 11:29:09 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 3000.0,
+            "currency": "USD",
+            "timestamp": "2026-07-15T16:49:26.026947"
         }
     ],
-    "last_run": "2026-07-15T14:12:09.649210",
+    "last_run": "2026-07-15T16:49:26.491764",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1321.33",
