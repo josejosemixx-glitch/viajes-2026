@@ -7,6 +7,32 @@
     "trips": [],
     "activities": [
         {
+            "id": "ACT-BOG-AIRBNB",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "accommodation",
+            "time": "15:00",
+            "name": "Check-in Airbnb Bogotá",
+            "description": "Llegada al Airbnb en Bogotá.",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-bed",
+            "outfit": "Casual"
+        },
+        {
+            "id": "ACT-BOG-CORD",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 2,
+            "type": "event",
+            "time": "14:00",
+            "name": "Festival Cordillera 2026",
+            "description": "Festival en el Parque Simón Bolívar. ID Alcancía: KeUzSPzUcH5SYya. Límite pago: 28-08-2026.",
+            "location": "Parque Simón Bolívar",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-music",
+            "outfit": "Cómodo / Festival"
+        },
+        {
             "id": "ACT-SYNC-100",
             "tripId": "VIAJE-2026-09-15-BOGOTA",
             "day": 1,
