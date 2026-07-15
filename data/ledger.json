@@ -219,7 +219,10 @@
         "6a57ba17.7f7f1747.27c75.7d5d@mx.google.com",
         "-flkanhnsrwoppy49ddtgq@geopod-ismtpd-canary-0",
         "75.ae.43508.9b3d75a6@i-0f6ebf692f9f40b41.mta1vrest.sd.prd.sparkpost",
-        "6a57d7cc.eb165e5c.3844ee.0b6a@mx.google.com"
+        "6a57d7cc.eb165e5c.3844ee.0b6a@mx.google.com",
+        "nmi7jahzt_gqcbkbip7ixw@geopod-ismtpd-7",
+        "1836600.1123649568.6356131.1784152815648.danamail.2006@pacificoseguros.com.pe",
+        "nmffda6cc8f6d7-91d0-4f1f-bc05-263b2956d3cc01b77fedsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -831,7 +834,7 @@
             "timestamp": "2026-07-15T19:50:13.877801"
         }
     ],
-    "last_run": "2026-07-15T19:50:15.228785",
+    "last_run": "2026-07-15T22:15:14.716977",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1286.86",
