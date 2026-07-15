@@ -30,6 +30,19 @@ const DEFAULT_TRIPS = [
         days: 5
     },
     {
+        id: "VIAJE-2026-07-21-MEXICO",
+        name: "México (Trabajo)",
+        destination: "Ciudad de México, México",
+        startDate: "2026-07-21",
+        endDate: "2026-08-05",
+        budget: 2000.00,
+        status: "confirmed",
+        riskLevel: "Medio",
+        advanceLevel: 60,
+        pax: 1,
+        days: 16
+    },
+    {
         id: "VIAJE-2026-12-22-CALI",
         name: "Cali Diciembre",
         destination: "Cali, Colombia",
@@ -106,6 +119,9 @@ const DEFAULT_PAYMENTS = [
     // --- MADRID SEPTIEMBRE ---
     { id: "FIN-MAD-SEP-001", tripId: "VIAJE-2026-09-21-MADRID", concept: "Vuelo LIM-MAD-LIM (Plus Ultra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Viaje de trabajo." },
 
+    // --- MEXICO JULIO/AGOSTO ---
+    { id: "FIN-MEX-JUL-001", tripId: "VIAJE-2026-07-21-MEXICO", concept: "Vuelo LIM-MEX-LIM (Volaris)", amount: 800.00, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: XEJP2M. Viaje de trabajo." },
+
     // --- CUSCO AGOSTO (NUEVO) ---
     { id: "FIN-CUZ-AGO-001", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Paquete Cusco (Apu Andino)", amount: 2375.00, currency: "PEN", status: "paid", dueDate: "2026-07-08", classification: "CONFIRMADA", category: "Logística", notes: "Prepagado a IZI*Peru Expeditions Travel. Visa Signature ****8778 (3 cuotas)." },
     { id: "FIN-CUZ-AGO-002", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Tour Paracas/Ica (Angelica)", amount: 280.00, currency: "PEN", status: "pending", dueDate: "2026-08-05", classification: "ESTIMADA", category: "Actividades", notes: "Tour de un día completo para Angelica." },
@@ -144,6 +160,9 @@ const ACTIVITIES = [
 
     { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+
+    { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Y4 3919)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Y4 3918)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     {
         id: "act-eur-1-vuelo",
         tripId: "VIAJE-2026-10-12-EUROPA",
