@@ -1011,6 +1011,178 @@ function calculateRunwayScore() {
 }
 
 function renderExecutiveDashboard() {
+    // 1. Next Trip count
+    const baseDate = new Date();
+    baseDate.setHours(0,0,0,0);
+    const nextTrip = SYSTEM_STATE.trips.filter(t => new Date(t.startDate + "T00:00:00") >= baseDate).sort((a,b) => new Date(a.startDate) - new Date(b.startDate))[0];
+    
+    if (nextTrip) {
+        const diffDays = getDaysToDate(nextTrip.startDate);
+        document.getElementById("ceo-kpi-next-trip-dest").textContent = nextTrip.name;
+        document.getElementById("ceo-kpi-next-trip-days").textContent = `${diffDays} días`;
+    } else {
+        document.getElementById("ceo-kpi-next-trip-dest").textContent = "Ninguno";
+        document.getElementById("ceo-kpi-next-trip-days").textContent = "--";
+    }
+
+    // 2. Next payment in ledger
+    const unpaidPayments = SYSTEM_STATE.payments.filter(p => p.status !== "paid" && p.dueDate).sort((a,b) => new Date(a.dueDate) - new Date(b.dueDate));
+    const nextPayment = unpaidPayments[0];
+    if (nextPayment) {
+        document.getElementById("ceo-kpi-next-payment-concept").textContent = nextPayment.concept;
+        document.getElementById("ceo-kpi-next-payment-details").textContent = `${nextPayment.currency} ${nextPayment.amount.toLocaleString()} (${formatDateShort(nextPayment.dueDate)})`;
+    } else {
+        document.getElementById("ceo-kpi-next-payment-concept").textContent = "Ninguno";
+        document.getElementById("ceo-kpi-next-payment-details").textContent = "--";
+    }
+
+    // 3. Consolidated Multi-currency Exposure (Exposición total)
+    let totalUnpaidUsd = 0;
+    let totalCommittedUsd = 0;
+    let totalPaidUsd = 0;
+    
+    SYSTEM_STATE.payments.forEach(p => {
+        const rate = EXCHANGE_RATES[p.currency] || 1.0;
+        const val = p.amount * rate;
+        if (p.status === "paid") {
+            totalPaidUsd += val;
+        } else if (p.status === "committed" || p.status === "reserved") {
+            totalCommittedUsd += val;
+            totalUnpaidUsd += val;
+        } else {
+            totalUnpaidUsd += val;
+        }
+    });
+
+    const totalExposureUsd = totalUnpaidUsd;
+    const totalExposurePen = totalExposureUsd / EXCHANGE_RATES.PEN;
+    
+    document.getElementById("ceo-kpi-total-exposure").textContent = `USD ${Math.round(totalExposureUsd).toLocaleString()}`;
+    document.getElementById("ceo-kpi-total-exposure-pen").textContent = `Equiv: S/. ${Math.round(totalExposurePen).toLocaleString()}`;
+
+    // 4. Ratio de Cobertura (reemplaza Travel Readiness)
+    const coverage = calculateCoverageRatio();
+    document.getElementById("ceo-kpi-coverage-score").textContent = coverage.score;
+    document.getElementById("ceo-kpi-coverage-desc").textContent = coverage.desc;
+
+    // 4.2. Runway Operativo (reemplaza Health Score)
+    const runway = calculateRunwayScore();
+    const runwayScoreEl = document.getElementById("ceo-kpi-runway-score");
+    const runwayDescEl = document.getElementById("ceo-kpi-runway-desc");
+    if (runwayScoreEl && runwayDescEl) {
+        runwayScoreEl.textContent = `${runway.score} Días`;
+        runwayDescEl.textContent = runway.desc;
+        runwayScoreEl.className = "val " + (runway.score >= 60 ? "text-emerald" : (runway.score >= 30 ? "text-yellow" : "text-red"));
+    }
+
+    // 4.1. Flight Tracker Status
+    const trackerStatusEl = document.getElementById("ceo-kpi-flight-tracker-status");
+    const trackerDescEl = document.getElementById("ceo-kpi-flight-tracker-desc");
+    if (trackerStatusEl && trackerDescEl) {
+        if (SYSTEM_STATE.flightTrackerStatus) {
+            trackerStatusEl.textContent = SYSTEM_STATE.flightTrackerStatus;
+            trackerDescEl.textContent = "Última act. " + (SYSTEM_STATE.flightTrackerTime || "--:--");
+        } else {
+            trackerStatusEl.textContent = "Sin datos recientes";
+            trackerDescEl.textContent = "Agente en espera";
+        }
+    }
+
+    // 5. Active Risks Count
+    const activeRisks = SYSTEM_STATE.risks.length;
+    document.getElementById("ceo-kpi-risks").textContent = activeRisks;
+
+    // 6. Unissued Reservations
+    const unissuedCount = SYSTEM_STATE.payments.filter(p => p.status === "pending" && p.category === "Logística").length;
+    document.getElementById("ceo-kpi-unissued").textContent = unissuedCount;
+
+    // 7. Q&A immediate answers
+    // Q1
+    document.getElementById("q-next-payment").innerHTML = nextPayment 
+        ? `<span style='color: var(--primary); font-weight: bold;'>${formatDateShort(nextPayment.dueDate)}</span> - ${nextPayment.concept} (<strong>${nextPayment.currency} ${nextPayment.amount.toLocaleString()}</strong>)`
+        : "Ninguno pendiente.";
+    const currentYearMonth = new Date().toISOString().slice(0, 7);
+    const thisMonthPayments = SYSTEM_STATE.payments.filter(p => p.status !== "paid" && p.dueDate && p.dueDate.startsWith(currentYearMonth));
+    const thisMonthTotalUsd = thisMonthPayments.reduce((acc, curr) => acc + (curr.amount * (EXCHANGE_RATES[curr.currency] || 1)), 0);
+    document.getElementById("q-money-this-month").innerHTML = `<strong style="color: #f8fafc;">$${thisMonthTotalUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD</strong> (~S/. ${(thisMonthTotalUsd / EXCHANGE_RATES.PEN).toLocaleString('es-PE', { maximumFractionDigits: 0 })} PEN)`;
+    
+    // Q3: Money until Jan 2027
+    document.getElementById("q-money-until-dec").innerHTML = `<strong style="color: #34d399;">$${totalUnpaidUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD</strong>`;
+    
+    // Q4: Most expensive trip
+    const tripCosts = SYSTEM_STATE.trips.map(t => {
+        const cost = SYSTEM_STATE.payments.filter(p => p.tripId === t.id).reduce((acc, curr) => acc + (curr.amount * (EXCHANGE_RATES[curr.currency] || 1)), 0);
+        return { name: t.name, cost };
+    });
+    tripCosts.sort((a,b) => b.cost - a.cost);
+    document.getElementById("q-most-expensive-trip").innerHTML = `${tripCosts[0].name} (<strong>$${tripCosts[0].cost.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD</strong>)`;
+
+    // Q5: Missing reservations
+    const missingLogistics = SYSTEM_STATE.payments.filter(p => p.status === "pending" && p.category === "Logística").map(p => p.concept);
+    document.getElementById("q-missing-reservations").textContent = missingLogistics.length > 0 ? missingLogistics.slice(0, 2).join(", ") + (missingLogistics.length > 2 ? ` y ${missingLogistics.length - 2} más` : "") : "Ninguna.";
+    
+    // Exposure, committed, executed totals
+    document.getElementById("q-total-exposure").textContent = `$${totalUnpaidUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD`;
+    document.getElementById("q-total-committed").textContent = `$${totalCommittedUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD`;
+    document.getElementById("q-total-executed").textContent = `$${totalPaidUsd.toLocaleString('en-US', { maximumFractionDigits: 0 })} USD`;
+
+    // 8. stacked bar execution chart
+    const totalFinancialsUsd = totalPaidUsd + totalUnpaidUsd;
+    const paidPct = totalFinancialsUsd > 0 ? Math.round((totalPaidUsd / totalFinancialsUsd) * 100) : 0;
+    const committedPct = totalFinancialsUsd > 0 ? Math.round((totalCommittedUsd / totalFinancialsUsd) * 100) : 0;
+    const pendingPct = 100 - paidPct - committedPct;
+
+    const barPaid = document.getElementById("exec-bar-paid");
+    const barCommitted = document.getElementById("exec-bar-committed");
+    const barPending = document.getElementById("exec-bar-pending");
+    
+    if (barPaid) { barPaid.style.width = `${paidPct}%`; barPaid.textContent = paidPct > 8 ? `${paidPct}%` : ""; }
+    if (barCommitted) { barCommitted.style.width = `${committedPct}%`; barCommitted.textContent = committedPct > 8 ? `${committedPct}%` : ""; }
+    if (barPending) { barPending.style.width = `${pendingPct}%`; barPending.textContent = pendingPct > 8 ? `${pendingPct}%` : ""; }
+
+    document.getElementById("exec-pct-paid").textContent = `${paidPct}%`;
+    document.getElementById("exec-pct-committed").textContent = `${committedPct}%`;
+    document.getElementById("exec-pct-pending").textContent = `${pendingPct}%`;
+
+    // 9. Liquidity module calculation
+    const totalCashUsd = getTotalCashUsd();
+    
+    // Commitments in next 30 days
+    let commitments30Usd = 0;
+    SYSTEM_STATE.payments.forEach(p => {
+        if (p.status === "paid" || !p.dueDate) return;
+        const diffDays = getDaysToDate(p.dueDate);
+        if (diffDays >= 0 && diffDays <= 30) {
+            commitments30Usd += p.amount * (EXCHANGE_RATES[p.currency] || 1);
+        }
+    });
+
+    const totalDebtUsd = (SYSTEM_STATE.creditCardDebt?.USD || 0) + ((SYSTEM_STATE.creditCardDebt?.PEN || 0) * EXCHANGE_RATES.PEN);
+    const remainingLiquidityUsd = totalCashUsd - totalDebtUsd - commitments30Usd;
+    
+    document.getElementById("liq-cash-available").textContent = `$${Math.round(totalCashUsd).toLocaleString()} USD`;
+    const cash = SYSTEM_STATE.cash || { USD: 0, PEN: 0, COP: 0 };
+    document.getElementById("liq-cash-breakdown").innerHTML = `
+        <span>USD: $${(cash.USD || 0).toLocaleString()}</span>
+        <span>PEN: S/.${(cash.PEN || 0).toLocaleString()}</span>
+        <span>COP: $${(cash.COP || 0).toLocaleString()}</span>
+    `;
+    const debtElem = document.getElementById("liq-debt-tc");
+    if (debtElem) debtElem.textContent = `$${Math.round(totalDebtUsd).toLocaleString()} USD`;
+    
+    document.getElementById("liq-commitments-30").textContent = `$${Math.round(commitments30Usd).toLocaleString()} USD`;
+    
+    const remStatus = document.getElementById("liq-remaining-status");
+    remStatus.textContent = `$${Math.round(remainingLiquidityUsd).toLocaleString()} USD`;
+    
+    const liqAlert = document.getElementById("liquidity-alert-box");
+    if (remainingLiquidityUsd < 0) {
+        remStatus.style.color = "var(--danger)";
+        liqAlert.innerHTML = `<div class="alert-box critical" style="padding: 10px; margin-top: 10px;"><i class="fa-solid fa-circle-xmark"></i> <strong>DÉFICIT DE CAJA:</strong> Liquidez insuficiente para cubrir compromisos a 30 días.</div>`;
+    } else {
+        remStatus.style.color = "var(--success)";
+        liqAlert.innerHTML = `<div class="alert-box safe" style="padding: 10px; margin-top: 10px;"><i class="fa-solid fa-circle-check"></i> <strong>Caja Suficiente:</strong> Liquidez para los próximos 30 días garantizada.</div>`;
+    }
 
     renderCriticalAlerts();
 }
