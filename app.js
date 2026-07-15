@@ -1161,10 +1161,11 @@ function renderExecutiveDashboard() {
     const remainingLiquidityUsd = totalCashUsd - totalDebtUsd - commitments30Usd;
     
     document.getElementById("liq-cash-available").textContent = `$${Math.round(totalCashUsd).toLocaleString()} USD`;
+    const cash = SYSTEM_STATE.cash || { USD: 0, PEN: 0, COP: 0 };
     document.getElementById("liq-cash-breakdown").innerHTML = `
-        <span>USD: $${cash.USD.toLocaleString()}</span>
-        <span>PEN: S/.${cash.PEN.toLocaleString()}</span>
-        <span>COP: $${cash.COP.toLocaleString()}</span>
+        <span>USD: $${(cash.USD || 0).toLocaleString()}</span>
+        <span>PEN: S/.${(cash.PEN || 0).toLocaleString()}</span>
+        <span>COP: $${(cash.COP || 0).toLocaleString()}</span>
     `;
     const debtElem = document.getElementById("liq-debt-tc");
     if (debtElem) debtElem.textContent = `$${Math.round(totalDebtUsd).toLocaleString()} USD`;
