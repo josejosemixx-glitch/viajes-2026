@@ -185,7 +185,15 @@
         "6a569417.201aaea8.1b40cf.8f8f@mx.google.com",
         "imra2np0tqebgl3vx9hlqg@geopod-ismtpd-66",
         "df.59.27940.154a65a6@i-0a00b522b554e170a.mta1vrest.sd.prd.sparkpost",
-        "1896907167.90287993.1784062496930@email.apple.com"
+        "1896907167.90287993.1784062496930@email.apple.com",
+        "0100019f62beb324-1d725e98-cb59-4717-b334-bf2d47a38f15-000000@email.amazonses.com",
+        "yf-a4ygetigiylgdequc5g@geopod-ismtpd-12",
+        "0102019f63035be4-f37cc9db-54dc-4324-8d61-5205529daec5-000000@eu-west-1.amazonses.com",
+        "1259413854.60542754.1784073519731@ltx1-app87443.prod.linkedin.com",
+        "2ebkauapruknbry1snxrxg@geopod-ismtpd-10",
+        "2142803808.47115.1784076370107@amaplatict01.ath.net",
+        "639c226f-5188-5c75-89e9-8c660f81e400@mail.uber.com",
+        "message-id: cvcommid19gnch0fp8f2aubghiuvqf+imaqu1c7tc4pqta1tjcu="
     ],
     "transactions": [
         {
@@ -763,9 +771,17 @@
             "amount": 220.825,
             "currency": "USD",
             "timestamp": "2026-07-14T19:55:02.296210"
+        },
+        {
+            "msg_id": "2ebkauapruknbry1snxrxg@geopod-ismtpd-10",
+            "date": "Wed, 15 Jul 2026 00:34:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-15T02:49:27.308914"
         }
     ],
-    "last_run": "2026-07-14T22:14:31.798990",
+    "last_run": "2026-07-15T02:49:32.360953",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
