@@ -43,17 +43,30 @@ const DEFAULT_TRIPS = [
         days: 14
     },
     {
-        id: "VIAJE-2026-09-15-BOGOTA",
+        id: "VIAJE-2026-09-11-BOGOTA",
         name: "Bogotá Septiembre",
         destination: "Bogotá, Colombia",
-        startDate: "2026-09-15",
-        endDate: "2026-09-20",
+        startDate: "2026-09-11",
+        endDate: "2026-09-14",
         budget: 1500.00,
-        status: "planned",
-        riskLevel: "Medio",
-        advanceLevel: 0,
+        status: "confirmed",
+        riskLevel: "Bajo",
+        advanceLevel: 50,
         pax: 1,
-        days: 6
+        days: 4
+    },
+    {
+        id: "VIAJE-2026-09-21-MADRID",
+        name: "Madrid (Trabajo)",
+        destination: "Madrid, España",
+        startDate: "2026-09-21",
+        endDate: "2026-09-30",
+        budget: 2500.00,
+        status: "confirmed",
+        riskLevel: "Medio",
+        advanceLevel: 50,
+        pax: 1,
+        days: 10
     },
     {
         id: "VIAJE-2026-10-12-EUROPA",
@@ -86,6 +99,12 @@ const DEFAULT_PAYMENTS = [
     
     // --- EUROPA OCTUBRE ---
     { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo de Madrid (Plus Ultra)", amount: 1251.12, currency: "EUR", status: "paid", dueDate: "2026-06-24", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: SDXSFJ. Incluye maletas y comida." },
+
+    // --- BOGOTÁ SEPTIEMBRE ---
+    { id: "FIN-BOG-SEP-001", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Vuelo LIM-BOG-LIM (LATAM)", amount: 549.20, currency: "USD", status: "paid", dueDate: "2026-07-11", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: MVARPG. Vuelo directo." },
+
+    // --- MADRID SEPTIEMBRE ---
+    { id: "FIN-MAD-SEP-001", tripId: "VIAJE-2026-09-21-MADRID", concept: "Vuelo LIM-MAD-LIM (Plus Ultra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Viaje de trabajo." },
 
     // --- CUSCO AGOSTO (NUEVO) ---
     { id: "FIN-CUZ-AGO-001", tripId: "VIAJE-2026-08-07-CUSCO", concept: "Paquete Cusco (Apu Andino)", amount: 2375.00, currency: "PEN", status: "paid", dueDate: "2026-07-08", classification: "CONFIRMADA", category: "Logística", notes: "Prepagado a IZI*Peru Expeditions Travel. Visa Signature ****8778 (3 cuotas)." },
@@ -120,19 +139,11 @@ const DEFAULT_RISKS = [
 ];
 
 const ACTIVITIES = [
-    {
-        id: "ACT-BOG-001",
-        tripId: "VIAJE-2026-09-15-BOGOTA",
-        day: 1,
-        type: "info",
-        time: "00:00",
-        title: "Bogotá Pendiente",
-        description: "Itinerario pendiente de sincronización.",
-        location: "Bogotá",
-        status: "pending",
-        icon: "fa-solid fa-clock",
-        outfit: "Casual"
-    },
+    { id: "act-bog-sep-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LA4905)", startTime: "15:50", endTime: "19:05", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-bog-sep-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LA2387)", startTime: "17:15", endTime: "20:20", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+
+    { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     {
         id: "act-eur-1-vuelo",
         tripId: "VIAJE-2026-10-12-EUROPA",
@@ -359,10 +370,10 @@ const PREV_BEDTIMES = {
     "VIAJE-2026-08-07-CUSCO-2": "22:30",
     "VIAJE-2026-08-07-CUSCO-3": "23:00",
     "VIAJE-2026-08-07-CUSCO-4": "23:00",
-    "VIAJE-2026-09-15-BOGOTA-1": "22:30",
-    "VIAJE-2026-09-15-BOGOTA-2": "23:00",
-    "VIAJE-2026-09-15-BOGOTA-3": "23:00",
-    "VIAJE-2026-09-15-BOGOTA-4": "22:00",
+    "VIAJE-2026-09-11-BOGOTA-1": "22:30",
+    "VIAJE-2026-09-11-BOGOTA-2": "23:00",
+    "VIAJE-2026-09-11-BOGOTA-3": "23:00",
+    "VIAJE-2026-09-11-BOGOTA-4": "22:00",
     "VIAJE-2026-12-22-CALI-1": "23:00",
     "VIAJE-2026-12-22-CALI-2": "23:00",
     "VIAJE-2026-12-22-CALI-3": "02:00",
