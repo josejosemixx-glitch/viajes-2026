@@ -193,7 +193,14 @@
         "2ebkauapruknbry1snxrxg@geopod-ismtpd-10",
         "2142803808.47115.1784076370107@amaplatict01.ath.net",
         "639c226f-5188-5c75-89e9-8c660f81e400@mail.uber.com",
-        "message-id: cvcommid19gnch0fp8f2aubghiuvqf+imaqu1c7tc4pqta1tjcu="
+        "message-id: cvcommid19gnch0fp8f2aubghiuvqf+imaqu1c7tc4pqta1tjcu=",
+        "1701694058.309695.1784084270728@bg-doha-api-10-us-usg1-w-lgjb2",
+        "0107019f62ab221f-21001f03-2a70-4197-9dd4-1e04ec3dc66c-000000@eu-central-1.amazonses.com",
+        "0107019f62ab21c5-675f2a9f-f560-4b75-ae9c-f494b7e1dc41-000000@eu-central-1.amazonses.com",
+        "m_nqmusetq225yi-cbtxoa@geopod-ismtpd-84",
+        "af12a8a86df6d93293edd59b6d7b83edd4bea6fe-10044049-110294243@google.com",
+        "6a57131f.510f576d.1b3cb9.a3f6@mx.google.com",
+        "6a5717df.4f8c709f.247d0b.8ba4@mx.google.com"
     ],
     "transactions": [
         {
@@ -781,7 +788,7 @@
             "timestamp": "2026-07-15T02:49:27.308914"
         }
     ],
-    "last_run": "2026-07-15T02:49:32.360953",
+    "last_run": "2026-07-15T07:08:09.550063",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1343.97",
