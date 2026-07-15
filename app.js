@@ -110,8 +110,8 @@ const DEFAULT_PAYMENTS = [
     { id: "FIN-CAL-DIC-004", tripId: "VIAJE-2026-12-22-CALI", concept: "Seguro de viaje Cali", amount: 50.00, currency: "USD", status: "pending", dueDate: "2026-12-15", classification: "ESTIMADA", category: "Logística", notes: "Seguro médico de asistencia en viaje." },
     { id: "FIN-CAL-DIC-005", tripId: "VIAJE-2026-12-22-CALI", concept: "Traslado Aeropuerto Cali", amount: 150.00, currency: "USD", status: "pending", dueDate: "2026-12-22", classification: "ESTIMADA", category: "Logística", notes: "Movilidad local en Uber Comfort." },
     
-    // --- EUROPA OCTUBRE ---
-    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo de Madrid (Plus Ultra)", amount: 1251.12, currency: "EUR", status: "paid", dueDate: "2026-06-24", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: SDXSFJ. Incluye maletas y comida." },
+    // --- EUROPA (MADRID) SEPTIEMBRE ---
+    { id: "FIN-EUR-OCT-001", tripId: "VIAJE-2026-10-12-EUROPA", concept: "Vuelo LIM-MAD-LIM (PlusUltra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Vuelo PU 302 y PU 301. Pagado por Crear Poder Sin Limites." },
 
     // --- BOGOTÁ SEPTIEMBRE ---
     { id: "FIN-BOG-SEP-001", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Vuelo LIM-BOG-LIM (LATAM)", amount: 549.20, currency: "USD", status: "paid", dueDate: "2026-07-11", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: MVARPG. Vuelo directo." },
@@ -155,11 +155,12 @@ const DEFAULT_RISKS = [
 ];
 
 const ACTIVITIES = [
-    { id: "act-bog-sep-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LA4905)", startTime: "15:50", endTime: "19:05", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-bog-sep-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LA2387)", startTime: "17:15", endTime: "20:20", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    // --- BOGOTÁ SEPTIEMBRE ---
+    { id: "act-bog-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LATAM LA4905)", startTime: "15:50", endTime: "19:05", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-bog-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LATAM LA2387)", startTime: "17:15", endTime: "20:20", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
-    { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PlusUltra PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PlusUltra PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
     { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Y4 3919)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Y4 3918)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado" },
@@ -643,7 +644,7 @@ function setupTripSelector() {
     let html = "";
     SYSTEM_STATE.trips.forEach(trip => {
         const isSelected = trip.id === SYSTEM_STATE.settings.selectedTripId ? "selected" : "";
-        html += `<option value="${trip.id}" ${isSelected}>${trip.name} (${trip.startDate})</option>`;
+        html += `<option value="${trip.id}" ${isSelected}>${trip.name}</option>`;
     });
     selectEl.innerHTML = html;
 
@@ -887,7 +888,10 @@ function renderAll() {
         calculateSleepMetrics();
         renderExecutiveDashboard();
         calculateUrgency();
-        setupTripSelector(); // Actualizar el valor del selector si cambió
+        const selectEl = document.getElementById("trip-dropdown-select");
+        if (selectEl && selectEl.value !== SYSTEM_STATE.settings.selectedTripId) {
+            selectEl.value = SYSTEM_STATE.settings.selectedTripId;
+        }
         
         // Lazy rendering: Pestañas secundarias
         requestAnimationFrame(() => {
