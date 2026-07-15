@@ -30,6 +30,9 @@
             </div>
         </header>
 
+        <!-- BANNER DE URGENCIA AUTOMÁTICO -->
+        <div id="urgency-banner-container" style="padding: 0 20px;"></div>
+
         <!-- BARRA DE NAVEGACIÓN PRINCIPAL (9 TABS) -->
         <nav class="top-nav-tabs">
             <button class="nav-item active" data-target="tab-resumen">
@@ -110,7 +113,7 @@
                         <small>Riesgos Activos</small>
                         <div class="val text-red" id="ceo-kpi-risks">0</div>
                     </div>
-                    <div class="ceo-kpi-card">
+                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('.cfo-qna-card').scrollIntoView({behavior: 'smooth', block: 'start'});" title="Ir al detalle de reservas">
                         <small>Reservas sin Emitir</small>
                         <div class="val text-yellow" id="ceo-kpi-unissued">0</div>
                     </div>
@@ -278,14 +281,10 @@
                 </div>
                 
                 <!-- Selector de Viajes -->
-                <div class="trip-selector scrollable-x">
-                    <button class="trip-btn" data-trip="VIAJE-2026-07-21-MEXICO">Jul-Ago: México (Trabajo)</button>
-                    <button class="trip-btn active" data-trip="VIAJE-2026-08-07-CUSCO">Agosto: Cusco</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-09-11-BOGOTA">Sept: Bogotá</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-09-21-MADRID">Sept: Madrid (Trabajo)</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-10-12-EUROPA">Oct-Nov: Europa</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-12-22-CALI">Diciembre: Cali</button>
-                    <button class="trip-btn" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali (Histórico)</button>
+                <div class="trip-selector" style="margin-bottom: 20px;">
+                    <select class="trip-dropdown" id="trip-dropdown-select">
+                        <option value="">Cargando viajes...</option>
+                    </select>
                 </div>
 
                 <!-- Selector de Días Dinámico -->

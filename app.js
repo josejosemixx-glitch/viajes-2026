@@ -636,19 +636,25 @@ function setupTabs() {
 }
 
 function setupTripSelector() {
-    const tripBtns = document.querySelectorAll(".trip-btn");
-    tripBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            SYSTEM_STATE.settings.selectedTripId = btn.dataset.trip;
-            SYSTEM_STATE.settings.selectedDay = 1;
-            
-            tripBtns.forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            
-            const trip = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
-            logAction(`Viaje seleccionado: ${trip.name}`, "INFO");
-            renderAll();
-        });
+    const selectEl = document.getElementById("trip-dropdown-select");
+    if (!selectEl) return;
+    
+    // Llenar dinámicamente
+    let html = "";
+    SYSTEM_STATE.trips.forEach(trip => {
+        const isSelected = trip.id === SYSTEM_STATE.settings.selectedTripId ? "selected" : "";
+        html += `<option value="${trip.id}" ${isSelected}>${trip.name} (${trip.startDate})</option>`;
+    });
+    selectEl.innerHTML = html;
+
+    // Escuchar cambios
+    selectEl.addEventListener("change", (e) => {
+        SYSTEM_STATE.settings.selectedTripId = e.target.value;
+        SYSTEM_STATE.settings.selectedDay = 1;
+        
+        const trip = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
+        if (trip) logAction(`Viaje seleccionado: ${trip.name}`, "INFO");
+        renderAll();
     });
 }
 
@@ -880,6 +886,8 @@ function renderAll() {
     requestAnimationFrame(() => {
         calculateSleepMetrics();
         renderExecutiveDashboard();
+        calculateUrgency();
+        setupTripSelector(); // Actualizar el valor del selector si cambió
         
         // Lazy rendering: Pestañas secundarias
         requestAnimationFrame(() => {
@@ -2543,4 +2551,30 @@ function formatDateShort(dateStr) {
     }
     
     return `${date.getDate()} ${months[date.getMonth()]}`;
+}
+
+// ==========================================
+// MOTOR DE URGENCIA (NUEVO)
+// ==========================================
+function calculateUrgency() {
+    const bannerContainer = document.getElementById("urgency-banner-container");
+    if (!bannerContainer) return;
+    
+    const missing = ACTIVITIES.filter(a => a.status === "Falta Emitir");
+    if (missing.length > 0) {
+        bannerContainer.innerHTML = `
+            <div class="urgency-banner critical">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div>
+                    <strong>ALERTA OPERATIVA:</strong> Tienes ${missing.length} reserva(s) sin emitir. 
+                    <a href="#" onclick="document.querySelector('.cfo-qna-card').scrollIntoView({behavior: 'smooth', block: 'start'})" style="color: inherit; text-decoration: underline;">Revisar</a>
+                </div>
+            </div>
+        `;
+        bannerContainer.style.display = "block";
+        return;
+    }
+    
+    bannerContainer.innerHTML = "";
+    bannerContainer.style.display = "none";
 }
