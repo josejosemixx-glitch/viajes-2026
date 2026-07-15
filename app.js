@@ -12,7 +12,6 @@ const DEFAULT_TRIPS = [
         budget: 4585.00,
         status: "confirmed",
         riskLevel: "Medio",
-        advanceLevel: 52,
         pax: 2,
         days: 4
     },
@@ -25,7 +24,6 @@ const DEFAULT_TRIPS = [
         budget: 1078.22,
         status: "completed",
         riskLevel: "Bajo",
-        advanceLevel: 100,
         pax: 1,
         days: 5
     },
@@ -38,7 +36,6 @@ const DEFAULT_TRIPS = [
         budget: 2000.00,
         status: "confirmed",
         riskLevel: "Medio",
-        advanceLevel: 60,
         pax: 1,
         days: 16
     },
@@ -51,7 +48,6 @@ const DEFAULT_TRIPS = [
         budget: 2750.00,
         status: "planned",
         riskLevel: "Alto",
-        advanceLevel: 0,
         pax: 1,
         days: 14
     },
@@ -64,7 +60,6 @@ const DEFAULT_TRIPS = [
         budget: 1500.00,
         status: "confirmed",
         riskLevel: "Bajo",
-        advanceLevel: 50,
         pax: 1,
         days: 4
     },
@@ -77,7 +72,6 @@ const DEFAULT_TRIPS = [
         budget: 2500.00,
         status: "confirmed",
         riskLevel: "Medio",
-        advanceLevel: 50,
         pax: 1,
         days: 10
     },
@@ -90,7 +84,6 @@ const DEFAULT_TRIPS = [
         budget: 5000.00,
         status: "confirmed",
         riskLevel: "Medio", // risk decreases since flight is bought
-        advanceLevel: 35,
         pax: 1,
         days: 21
     }
@@ -341,6 +334,10 @@ let SYSTEM_STATE = {
         PEN: 5150,
         COP: 1500000
     },
+    creditCardDebt: {
+        USD: 3001.90,
+        PEN: 3646.44
+    },
     trips: DEFAULT_TRIPS,
     payments: DEFAULT_PAYMENTS,
     reservations: {
@@ -532,16 +529,31 @@ async function loadState() {
                 // Filter out obsolete Europe IDs to force updates
                 SYSTEM_STATE.trips = parsed.trips.filter(t => t.id !== "VIAJE-2026-10-10-EUROPA" && t.id !== "VIAJE-2026-10-01-EUROPA");
                 DEFAULT_TRIPS.forEach(dt => {
-                    if (!SYSTEM_STATE.trips.find(t => t.id === dt.id)) {
+                    const existing = SYSTEM_STATE.trips.find(t => t.id === dt.id);
+                    if (!existing) {
                         SYSTEM_STATE.trips.push(dt);
+                    } else {
+                        // Merge missing properties (like 'days') from default to existing
+                        Object.keys(dt).forEach(key => {
+                            if (existing[key] === undefined) {
+                                existing[key] = dt[key];
+                            }
+                        });
                     }
                 });
             }
             if (parsed.payments) {
                 SYSTEM_STATE.payments = parsed.payments;
                 DEFAULT_PAYMENTS.forEach(dp => {
-                    if (!SYSTEM_STATE.payments.find(p => p.id === dp.id)) {
+                    const existing = SYSTEM_STATE.payments.find(p => p.id === dp.id);
+                    if (!existing) {
                         SYSTEM_STATE.payments.push(dp);
+                    } else {
+                        Object.keys(dp).forEach(key => {
+                            if (existing[key] === undefined) {
+                                existing[key] = dp[key];
+                            }
+                        });
                     }
                 });
             }
@@ -550,6 +562,7 @@ async function loadState() {
             if (parsed.sleep) SYSTEM_STATE.sleep = { ...SYSTEM_STATE.sleep, ...parsed.sleep };
             if (parsed.settings) SYSTEM_STATE.settings = { ...SYSTEM_STATE.settings, ...parsed.settings };
             if (parsed.cash) SYSTEM_STATE.cash = parsed.cash;
+            if (parsed.creditCardDebt) SYSTEM_STATE.creditCardDebt = parsed.creditCardDebt;
             if (parsed.packingList) SYSTEM_STATE.packingList = parsed.packingList;
             if (parsed.auditLog) SYSTEM_STATE.auditLog = parsed.auditLog;
 
@@ -712,6 +725,8 @@ function setupConfigInputs() {
     const cashUsd = document.getElementById("config-cash-usd");
     const cashPen = document.getElementById("config-cash-pen");
     const cashCop = document.getElementById("config-cash-cop");
+    const debtUsd = document.getElementById("config-debt-usd");
+    const debtPen = document.getElementById("config-debt-pen");
     const loanReq = document.getElementById("config-loan-requested");
     
     if (cashUsd) {
@@ -735,6 +750,22 @@ function setupConfigInputs() {
         cashCop.addEventListener("change", (e) => {
             SYSTEM_STATE.cash.COP = parseFloat(e.target.value) || 0;
             logAction(`Caja COP actualizada a COP$${e.target.value}`, "SUCCESS");
+            renderAll();
+        });
+    }
+    if (debtUsd) {
+        debtUsd.value = SYSTEM_STATE.creditCardDebt.USD;
+        debtUsd.addEventListener("change", (e) => {
+            SYSTEM_STATE.creditCardDebt.USD = parseFloat(e.target.value) || 0;
+            logAction(`Deuda TC USD actualizada a $${e.target.value}`, "SUCCESS");
+            renderAll();
+        });
+    }
+    if (debtPen) {
+        debtPen.value = SYSTEM_STATE.creditCardDebt.PEN;
+        debtPen.addEventListener("change", (e) => {
+            SYSTEM_STATE.creditCardDebt.PEN = parseFloat(e.target.value) || 0;
+            logAction(`Deuda TC PEN actualizada a S/.${e.target.value}`, "SUCCESS");
             renderAll();
         });
     }
@@ -929,68 +960,9 @@ function getReservationState(payment) {
     return payment.status;
 }
 
-function calculateTravelReadinessScore() {
-    // 1. Crucial reservations emit (vuelo/lodge) (40%)
-    const crucialItems = SYSTEM_STATE.payments.filter(p => p.category === "Logística" && (p.concept.toLowerCase().includes("vuelo") || p.concept.toLowerCase().includes("airbnb") || p.concept.toLowerCase().includes("hotel") || p.concept.toLowerCase().includes("hospedaje")));
-    const crucialCount = crucialItems.length;
-    const crucialEmitted = crucialItems.reduce((acc, curr) => {
-        const decState = getReservationState(curr);
-        if (decState === "Emitido" || decState === "paid" || curr.status === "paid") return acc + 1.0;
-        if (decState === "En Proceso" || decState === "committed" || decState === "reserved") return acc + 0.5;
-        return acc;
-    }, 0);
-    const resScore = crucialCount > 0 ? (crucialEmitted / crucialCount) * 100 : 100;
-
-    // 2. Payments made / ledger paid value (30%)
-    let totalUsd = 0;
-    let paidUsd = 0;
-    SYSTEM_STATE.payments.forEach(p => {
-        const rate = EXCHANGE_RATES[p.currency] || 1.0;
-        const val = p.amount * rate;
-        totalUsd += val;
-        const decState = getReservationState(p);
-        if (decState === "Emitido" || decState === "paid" || p.status === "paid") {
-            paidUsd += val;
-        }
-    });
-    const payScore = totalUsd > 0 ? (paidUsd / totalUsd) * 100 : 100;
-
-    // 3. Risks mitigated (15%)
-    let mitigatedCount = 0;
-    const activeRisks = SYSTEM_STATE.risks;
-    activeRisks.forEach(r => {
-        const correspondingPayment = SYSTEM_STATE.payments.find(p => p.concept.toLowerCase().includes(r.concept.toLowerCase()) || r.concept.toLowerCase().includes(p.concept.toLowerCase()));
-        const isMitigated = correspondingPayment && (correspondingPayment.status === "paid" || correspondingPayment.status === "committed");
-        if (isMitigated) mitigatedCount++;
-    });
-    const riskScore = activeRisks.length > 0 ? (mitigatedCount / activeRisks.length) * 100 : 100;
-
-    // 4. Sleep sufficiency (10%)
-    const sleepScore = Math.max(0, 100 - (SYSTEM_STATE.sleep.accumulatedDeficit * 6));
-
-    // 5. Packing & Documentation checked items (5%)
-    let totalPack = 0;
-    let checkedPack = 0;
-    SYSTEM_STATE.packingList.forEach(cat => {
-        cat.items.forEach(item => {
-            totalPack++;
-            if (item.checked) checkedPack++;
-        });
-    });
-    const packScore = totalPack > 0 ? (checkedPack / totalPack) * 100 : 100;
-
-    const finalScore = Math.round((resScore * 0.40) + (payScore * 0.30) + (riskScore * 0.15) + (sleepScore * 0.10) + (packScore * 0.05));
-    
-    let desc = "Riesgo Logístico Alto";
-    if (finalScore >= 85) desc = "Listo para Despegue";
-    else if (finalScore >= 70) desc = "Listo con Pendientes Menores";
-    else if (finalScore >= 50) desc = "Atención Operativa Crítica";
-
-    return { score: finalScore, desc };
-}
-
-function calculateSystemHealthScore() {
+function calculateCoverageRatio() {
     const totalCashUsd = getTotalCashUsd();
+    
     let commitments30Usd = 0;
     SYSTEM_STATE.payments.forEach(p => {
         if (p.status === "paid" || !p.dueDate) return;
@@ -999,57 +971,43 @@ function calculateSystemHealthScore() {
             commitments30Usd += p.amount * (EXCHANGE_RATES[p.currency] || 1);
         }
     });
-    const liquidityScore = (totalCashUsd - commitments30Usd) >= 0 ? 100 : 0;
 
-    // 2. Riesgos (20%): Penalty based on severe risks (Risk Score >= 15)
-    let riskPenalty = 0;
-    SYSTEM_STATE.risks.forEach(r => {
-        const prob = parseInt(r.probability) || 1;
-        const imp = parseInt(r.impact) || 1;
-        const score = prob * imp;
-        if (score >= 15) {
-            riskPenalty += 35; 
-        } else if (score >= 8) {
-            riskPenalty += 15; 
-        }
-    });
-    const riskScore = Math.max(0, 100 - riskPenalty);
+    if (commitments30Usd === 0) return { score: "∞", desc: "Sin compromisos a 30d" };
+    
+    const ratio = (totalCashUsd / commitments30Usd).toFixed(2);
+    
+    let desc = "Peligro de Default";
+    if (ratio >= 2.0) desc = "Cobertura Sólida";
+    else if (ratio >= 1.0) desc = "Cobertura Aceptable";
+    else if (ratio >= 0.5) desc = "Cobertura Vulnerable";
+    
+    return { score: `${ratio}x`, desc };
+}
 
-    // 3. Reservas (20%): % of logistics items that are paid, committed, or reserved
-    const logistics = SYSTEM_STATE.payments.filter(p => p.category === "Logística");
-    const reservedCount = logistics.filter(p => p.status === "paid" || p.status === "committed" || p.status === "reserved").length;
-    const reservationsScore = logistics.length > 0 ? (reservedCount / logistics.length) * 100 : 100;
-
-    // 4. Pagos (20%): % of payment execution progress in USD
-    let totalUsd = 0;
-    let paidUsd = 0;
+function calculateRunwayScore() {
+    const totalCashUsd = getTotalCashUsd();
+    const totalDebtUsd = (SYSTEM_STATE.creditCardDebt?.USD || 0) + ((SYSTEM_STATE.creditCardDebt?.PEN || 0) * EXCHANGE_RATES.PEN);
+    const netCashUsd = totalCashUsd - totalDebtUsd;
+    
+    let commitments30Usd = 0;
     SYSTEM_STATE.payments.forEach(p => {
-        const val = p.amount * (EXCHANGE_RATES[p.currency] || 1.0);
-        totalUsd += val;
-        if (p.status === "paid") {
-            paidUsd += val;
+        if (p.status === "paid" || !p.dueDate) return;
+        const diffDays = getDaysToDate(p.dueDate);
+        if (diffDays >= 0 && diffDays <= 30) {
+            commitments30Usd += p.amount * (EXCHANGE_RATES[p.currency] || 1);
         }
     });
-    const paymentsScore = totalUsd > 0 ? (paidUsd / totalUsd) * 100 : 100;
 
-    // 5. Descanso (20%): sleep debt control (100 - fatigue index)
-    const fatigue = SYSTEM_STATE.sleep.projectedFatigue || 0;
-    const sleepScore = Math.max(0, 100 - fatigue);
-
-    const finalScore = Math.round(
-        (liquidityScore * 0.20) +
-        (riskScore * 0.20) +
-        (reservationsScore * 0.20) +
-        (paymentsScore * 0.20) +
-        (sleepScore * 0.20)
-    );
-
+    // To avoid infinity, assume a baseline daily expense of at least $50/day plus projected commitments
+    const dailyAverageUsd = (commitments30Usd / 30) + 50; 
+    const runwayDays = Math.floor(netCashUsd / dailyAverageUsd);
+    
     let desc = "Salud Crítica";
-    if (finalScore >= 85) desc = "Sistema Estable";
-    else if (finalScore >= 70) desc = "Atención Requerida";
-    else if (finalScore >= 50) desc = "Riesgo Operativo";
+    if (runwayDays >= 60) desc = "Sistema Estable";
+    else if (runwayDays >= 30) desc = "Atención Requerida";
+    else if (runwayDays >= 14) desc = "Riesgo Operativo";
 
-    return { score: finalScore, desc };
+    return { score: runwayDays, desc };
 }
 
 function renderExecutiveDashboard() {
@@ -1102,19 +1060,19 @@ function renderExecutiveDashboard() {
     document.getElementById("ceo-kpi-total-exposure").textContent = `USD ${Math.round(totalExposureUsd).toLocaleString()}`;
     document.getElementById("ceo-kpi-total-exposure-pen").textContent = `Equiv: S/. ${Math.round(totalExposurePen).toLocaleString()}`;
 
-    // 4. Travel Readiness Score
-    const readiness = calculateTravelReadinessScore();
-    document.getElementById("ceo-kpi-readiness-score").textContent = `${readiness.score} / 100`;
-    document.getElementById("ceo-kpi-readiness-desc").textContent = readiness.desc;
+    // 4. Ratio de Cobertura (reemplaza Travel Readiness)
+    const coverage = calculateCoverageRatio();
+    document.getElementById("ceo-kpi-coverage-score").textContent = coverage.score;
+    document.getElementById("ceo-kpi-coverage-desc").textContent = coverage.desc;
 
-    // 4.2. System Health Score
-    const health = calculateSystemHealthScore();
-    const healthScoreEl = document.getElementById("ceo-kpi-health-score");
-    const healthDescEl = document.getElementById("ceo-kpi-health-desc");
-    if (healthScoreEl && healthDescEl) {
-        healthScoreEl.textContent = `${health.score} / 100`;
-        healthDescEl.textContent = health.desc;
-        healthScoreEl.className = "val " + (health.score >= 85 ? "text-emerald" : (health.score >= 70 ? "text-yellow" : "text-red"));
+    // 4.2. Runway Operativo (reemplaza Health Score)
+    const runway = calculateRunwayScore();
+    const runwayScoreEl = document.getElementById("ceo-kpi-runway-score");
+    const runwayDescEl = document.getElementById("ceo-kpi-runway-desc");
+    if (runwayScoreEl && runwayDescEl) {
+        runwayScoreEl.textContent = `${runway.score} Días`;
+        runwayDescEl.textContent = runway.desc;
+        runwayScoreEl.className = "val " + (runway.score >= 60 ? "text-emerald" : (runway.score >= 30 ? "text-yellow" : "text-red"));
     }
 
     // 4.1. Flight Tracker Status
@@ -1199,7 +1157,8 @@ function renderExecutiveDashboard() {
         }
     });
 
-    const remainingLiquidityUsd = totalCashUsd - commitments30Usd;
+    const totalDebtUsd = (SYSTEM_STATE.creditCardDebt?.USD || 0) + ((SYSTEM_STATE.creditCardDebt?.PEN || 0) * EXCHANGE_RATES.PEN);
+    const remainingLiquidityUsd = totalCashUsd - totalDebtUsd - commitments30Usd;
     
     document.getElementById("liq-cash-available").textContent = `$${Math.round(totalCashUsd).toLocaleString()} USD`;
     document.getElementById("liq-cash-breakdown").innerHTML = `
@@ -1207,6 +1166,9 @@ function renderExecutiveDashboard() {
         <span>PEN: S/.${cash.PEN.toLocaleString()}</span>
         <span>COP: $${cash.COP.toLocaleString()}</span>
     `;
+    const debtElem = document.getElementById("liq-debt-tc");
+    if (debtElem) debtElem.textContent = `$${Math.round(totalDebtUsd).toLocaleString()} USD`;
+    
     document.getElementById("liq-commitments-30").textContent = `$${Math.round(commitments30Usd).toLocaleString()} USD`;
     
     const remStatus = document.getElementById("liq-remaining-status");
@@ -1638,6 +1600,23 @@ function renderCashFlowTab() {
     const months = FISCAL_MONTHS;
 
     const totalCashUsd = getTotalCashUsd();
+    const totalDebtUsd = (SYSTEM_STATE.creditCardDebt?.USD || 0) + ((SYSTEM_STATE.creditCardDebt?.PEN || 0) * EXCHANGE_RATES.PEN);
+    const netCashUsd = totalCashUsd - totalDebtUsd;
+    
+    let totalPendingPaymentsUsd = 0;
+    SYSTEM_STATE.payments.forEach(p => {
+        if (p.status !== "paid" && p.dueDate) {
+            totalPendingPaymentsUsd += p.amount * (EXCHANGE_RATES[p.currency] || 1);
+        }
+    });
+    
+    let weeklySavePen = 0;
+    const deficitUsd = totalPendingPaymentsUsd - netCashUsd;
+    if (deficitUsd > 0) {
+        const weeksRemaining = Math.max(1, Math.ceil((new Date("2026-12-31") - new Date()) / (1000 * 60 * 60 * 24 * 7)));
+        const weeklySaveUsd = deficitUsd / weeksRemaining;
+        weeklySavePen = weeklySaveUsd / EXCHANGE_RATES.PEN;
+    }
 
     let html = `
         <!-- Flujo de Caja y Ahorros -->
@@ -1645,12 +1624,12 @@ function renderCashFlowTab() {
             <h3 style="margin-bottom: 15px;"><i class="fa-solid fa-wallet"></i> Planificación y Ahorros</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 20px;">
                 <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 15px;">
-                    <small style="font-size: 0.75rem; color: var(--text-secondary);">Dinero Disponible Hoy (Consolidado)</small>
-                    <div style="font-size: 1.15rem; font-weight: bold; color: #34d399; margin-top: 5px;">$${Math.round(totalCashUsd).toLocaleString()} USD <span style="font-size:0.75rem; color:var(--text-secondary); font-weight:normal;">(S/. ${Math.round(totalCashUsd/EXCHANGE_RATES.PEN).toLocaleString()} PEN)</span></div>
+                    <small style="font-size: 0.75rem; color: var(--text-secondary);">Liquidez Neta Real (Consolidado)</small>
+                    <div style="font-size: 1.15rem; font-weight: bold; color: ${netCashUsd >= 0 ? '#34d399' : '#ef4444'}; margin-top: 5px;">$${Math.round(netCashUsd).toLocaleString()} USD <span style="font-size:0.75rem; color:var(--text-secondary); font-weight:normal;">(S/. ${Math.round(netCashUsd/EXCHANGE_RATES.PEN).toLocaleString()} PEN)</span></div>
                 </div>
                 <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 15px;">
-                    <small style="font-size: 0.75rem; color: var(--text-secondary);">Ahorro Semanal Sugerido</small>
-                    <div style="font-size: 1.15rem; font-weight: bold; color: var(--primary); margin-top: 5px;">S/. 500 <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-secondary);">(cada domingo)</span></div>
+                    <small style="font-size: 0.75rem; color: var(--text-secondary);">Ahorro Semanal Sugerido (Hacia Dec 2026)</small>
+                    <div style="font-size: 1.15rem; font-weight: bold; color: var(--primary); margin-top: 5px;">S/. ${Math.round(weeklySavePen).toLocaleString()} <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-secondary);">(cada domingo)</span></div>
                 </div>
             </div>
 
