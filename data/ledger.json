@@ -246,7 +246,9 @@
         "6a59297d.05c456d6.148f6e.e09c@mx.google.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklpzodhbxmysx9n6cy1ft/nbo8iillyaryig7xcskyrlwyfnjp2zi2uhsibkhdtikf0k8ewilnlhcfofu8ry4hkg@nws.atrapalo.pe",
         "yq9rmgtcq8a3v6mhq-xrcw@geopod-ismtpd-1",
-        "hp2v710000019f6c51db3ebf012f369ff04b84124@email-marriott.com"
+        "hp2v710000019f6c51db3ebf012f369ff04b84124@email-marriott.com",
+        "6a5934e7.03d33f19.122608.a040@mx.google.com",
+        "1725276824.82677223.1784239123902@lor1-app80682.prod.linkedin.com"
     ],
     "transactions": [
         {
@@ -882,7 +884,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T19:45:42.169624",
+    "last_run": "2026-07-16T22:16:45.903466",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1170.77)",
