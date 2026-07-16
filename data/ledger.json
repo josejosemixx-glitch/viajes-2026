@@ -239,7 +239,14 @@
         "6a58e4e3.af524659.104044.831e@mx.google.com",
         "31e82b76-f2d8-416d-85a5-3cf836530f2b@dfw1s10mta2035.xt.local",
         "8cae56b2-a14c-4e23-bfb3-0f8c5605132e@hotmail.com",
-        "202616071642.192sgqwr54rytfj@by.d.mailin.fr"
+        "202616071642.192sgqwr54rytfj@by.d.mailin.fr",
+        "1784221324081.1c583559-caba-44e2-a9ba-48cb7c725181@bf08.eu1.hubspotemail.net",
+        "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgnyx/olrtvq0gaxk/1agtxjxm54p+mpqk6lumkzsfi0zexioirhrpw7gdg6/yxq9rvbh5hwpt9wgryyph9acnfm@nws.atrapalo.com.co",
+        "20260716174239.e19f0ee193d3638b@cio82276.novedadesyape.pe",
+        "6a59297d.05c456d6.148f6e.e09c@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklpzodhbxmysx9n6cy1ft/nbo8iillyaryig7xcskyrlwyfnjp2zi2uhsibkhdtikf0k8ewilnlhcfofu8ry4hkg@nws.atrapalo.pe",
+        "yq9rmgtcq8a3v6mhq-xrcw@geopod-ismtpd-1",
+        "hp2v710000019f6c51db3ebf012f369ff04b84124@email-marriott.com"
     ],
     "transactions": [
         {
@@ -875,7 +882,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T16:47:30.522907",
+    "last_run": "2026-07-16T19:45:42.169624",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
