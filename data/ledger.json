@@ -230,7 +230,8 @@
         "ygjo53xfr8spxhbserewmw@geopod-ismtpd-7",
         "6a584834.1bbc9e8f.2506db.0744@mx.google.com",
         "1784178238572.31773a34-71c5-40b2-838f-04c9d8f757a2@47814330m.email.hubspot.copa.com",
-        "6a586946.8e75e0cb.1225b0.9cbd@mx.google.com"
+        "6a586946.8e75e0cb.1225b0.9cbd@mx.google.com",
+        "6a586bc7.b400e095.2d33c6.f5a3@mx.google.com"
     ],
     "transactions": [
         {
@@ -866,7 +867,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T05:27:34.230257",
+    "last_run": "2026-07-16T07:18:04.139787",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1156.5",
