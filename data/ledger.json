@@ -231,7 +231,12 @@
         "6a584834.1bbc9e8f.2506db.0744@mx.google.com",
         "1784178238572.31773a34-71c5-40b2-838f-04c9d8f757a2@47814330m.email.hubspot.copa.com",
         "6a586946.8e75e0cb.1225b0.9cbd@mx.google.com",
-        "6a586bc7.b400e095.2d33c6.f5a3@mx.google.com"
+        "6a586bc7.b400e095.2d33c6.f5a3@mx.google.com",
+        "6a5885ac.4aa243c6.1c4077.d48b@mx.google.com",
+        "6a58cbf6.fbcacea0.126c76.c29e@mx.google.com",
+        "4d49c828e6e0324d2c583c8c124c5c9075217f33-10035039-111282348@google.com",
+        "momentofjoy-47be9499-6bc1-436a-8714-422103353c61.rcid_f318b263-3c7f-4249-8631-18bd790e24d1.wiid_5242f029-0e73-4641-841c-71756727f721.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_3159ea0d-1ed5-4be8-aed5-9d0a83fecde7@odspnotify",
+        "6a58e4e3.af524659.104044.831e@mx.google.com"
     ],
     "transactions": [
         {
@@ -867,7 +872,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T07:18:04.139787",
+    "last_run": "2026-07-16T14:25:03.767296",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1329.25). Sugerencia: Evaluar compra inmediata.",
