@@ -236,7 +236,10 @@
         "6a58cbf6.fbcacea0.126c76.c29e@mx.google.com",
         "4d49c828e6e0324d2c583c8c124c5c9075217f33-10035039-111282348@google.com",
         "momentofjoy-47be9499-6bc1-436a-8714-422103353c61.rcid_f318b263-3c7f-4249-8631-18bd790e24d1.wiid_5242f029-0e73-4641-841c-71756727f721.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_3159ea0d-1ed5-4be8-aed5-9d0a83fecde7@odspnotify",
-        "6a58e4e3.af524659.104044.831e@mx.google.com"
+        "6a58e4e3.af524659.104044.831e@mx.google.com",
+        "31e82b76-f2d8-416d-85a5-3cf836530f2b@dfw1s10mta2035.xt.local",
+        "8cae56b2-a14c-4e23-bfb3-0f8c5605132e@hotmail.com",
+        "202616071642.192sgqwr54rytfj@by.d.mailin.fr"
     ],
     "transactions": [
         {
@@ -872,7 +875,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T14:25:03.767296",
+    "last_run": "2026-07-16T16:47:30.522907",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1329.25). Sugerencia: Evaluar compra inmediata.",
