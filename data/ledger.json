@@ -248,7 +248,10 @@
         "yq9rmgtcq8a3v6mhq-xrcw@geopod-ismtpd-1",
         "hp2v710000019f6c51db3ebf012f369ff04b84124@email-marriott.com",
         "6a5934e7.03d33f19.122608.a040@mx.google.com",
-        "1725276824.82677223.1784239123902@lor1-app80682.prod.linkedin.com"
+        "1725276824.82677223.1784239123902@lor1-app80682.prod.linkedin.com",
+        "1028269155.675523.1784242695844@amaplatipr01.ath.net",
+        "20260716233442.05b9399de9ff2c0f@order.temu.com",
+        "20260717014423.5b2bacbfd116d667@cioeu98571.info.jamesedition.com"
     ],
     "transactions": [
         {
@@ -884,7 +887,7 @@
             "timestamp": "2026-07-16T02:55:47.440665"
         }
     ],
-    "last_run": "2026-07-16T22:16:45.903466",
+    "last_run": "2026-07-17T03:12:58.241174",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1170.77)",
