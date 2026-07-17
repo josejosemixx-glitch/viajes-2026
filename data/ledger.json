@@ -254,7 +254,14 @@
         "20260717014423.5b2bacbfd116d667@cioeu98571.info.jamesedition.com",
         "6a599dba.c394364f.80041.5c28@mx.google.com",
         "6a59bb6d.449bfb44.7b862.ad8d@mx.google.com",
-        "6a59bda9.c6960a0e.211715.08d5@mx.google.com"
+        "6a59bda9.c6960a0e.211715.08d5@mx.google.com",
+        "6a59d5ce.d0742bf5.14f86d.a923@mx.google.com",
+        "mroo9hid.1fc0dbixgdyws@express.sea1.medallia.com",
+        "hp2v710000019f6fa4e180c0cdde369ff04b84167@email-marriott.com",
+        "6a5a1a80.f4bac09a.20dbee.2382@mx.google.com",
+        "kcwlc7hhsuc_691aofqdfw@geopod-ismtpd-18",
+        "rxlxnzxlqfc0baugbcd-va@geopod-ismtpd-0",
+        "6a5a32f3.c4d3d80a.849c3.17ac@mx.google.com"
     ],
     "transactions": [
         {
@@ -888,9 +895,25 @@
             "amount": 73.8,
             "currency": "PEN",
             "timestamp": "2026-07-16T02:55:47.440665"
+        },
+        {
+            "msg_id": "kcwlc7hhsuc_691aofqdfw@geopod-ismtpd-18",
+            "date": "Fri, 17 Jul 2026 13:46:26 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-17T14:04:48.443032"
+        },
+        {
+            "msg_id": "rxlxnzxlqfc0baugbcd-va@geopod-ismtpd-0",
+            "date": "Fri, 17 Jul 2026 13:30:20 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 0.99,
+            "currency": "USD",
+            "timestamp": "2026-07-17T14:04:48.869611"
         }
     ],
-    "last_run": "2026-07-17T07:12:12.739403",
+    "last_run": "2026-07-17T14:04:49.954644",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
