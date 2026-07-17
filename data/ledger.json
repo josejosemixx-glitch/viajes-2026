@@ -270,7 +270,8 @@
         "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgoi1a1i0o7d55wguirxnpj1serxvgowfqnz+z5dsmh5bfb9qv0tj5x/t679em60k1etlsh0k7yg2br3pbpup++o@nws.atrapalo.com.co",
         "20260717174833.bd94576abe9463ca@cio82276.novedadesyape.pe",
         "zqutixoyqwmg30im0od13g@geopod-ismtpd-14",
-        "6a5a7a3f.e69a5694.69008.9bc8@mx.google.com"
+        "6a5a7a3f.e69a5694.69008.9bc8@mx.google.com",
+        "fe803ca444cdd6f97fea66f50505c98c@cinecolombia.com"
     ],
     "transactions": [
         {
@@ -930,7 +931,7 @@
             "timestamp": "2026-07-17T19:46:29.708456"
         }
     ],
-    "last_run": "2026-07-17T19:46:30.882055",
+    "last_run": "2026-07-17T22:08:16.564745",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1300.6). Sugerencia: Evaluar compra inmediata.",
