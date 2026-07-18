@@ -282,7 +282,14 @@
         "6a5b2331.28258500.cd8b4.1d05@mx.google.com",
         "6a5b6827.d6521e61.2b63a6.ee1d@mx.google.com",
         "5e36d3e7e370a15766225f7fdb803c93c12e123e-10035039-111282348@google.com",
-        "6a5b7edb.776547d2.183e7b.e71f@mx.google.com"
+        "6a5b7edb.776547d2.183e7b.e71f@mx.google.com",
+        "6a5b84e1.fe2ec69d.2ac805.75f9@mx.google.com",
+        "20260718140655.192a734cc5220975@cio82276.novedadesyape.pe",
+        "momentofjoy-6c5a4195-73f1-4808-bb6e-db86d9d5559e.rcid_c50e9605-b9fc-442a-b7d4-4a00471fb397.wiid_4e20584f-8c06-47e8-8367-931ea181605a.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_47b7888f-ce16-4010-b3e0-2da3824e5fa8@odspnotify",
+        "1dr-cdc05c5cc6-g@embluemail.com",
+        "9nzqivxfr1mxcgxgovp6aa@geopod-ismtpd-52",
+        "e4smmg8ztkyeuuhjhlqlta@geopod-ismtpd-canary-0",
+        "2afdca1d-c9f5-5a2f-80c7-f853100179db@mail.uber.com"
     ],
     "transactions": [
         {
@@ -956,9 +963,25 @@
             "amount": 8.2,
             "currency": "PEN",
             "timestamp": "2026-07-18T02:50:49.515913"
+        },
+        {
+            "msg_id": "e4smmg8ztkyeuuhjhlqlta@geopod-ismtpd-canary-0",
+            "date": "Sat, 18 Jul 2026 16:04:29 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-18T16:24:26.544244"
+        },
+        {
+            "msg_id": "2afdca1d-c9f5-5a2f-80c7-f853100179db@mail.uber.com",
+            "date": "Sat, 18 Jul 2026 16:23:43 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-18T16:24:27.730451"
         }
     ],
-    "last_run": "2026-07-18T13:51:28.361217",
+    "last_run": "2026-07-18T16:24:28.242200",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
