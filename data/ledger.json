@@ -311,7 +311,11 @@
         "6a5cd732.0224be13.246a20.12d9@mx.google.com",
         "afdmqaduqsk50hdmczk1tq@geopod-ismtpd-4",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklmwfyxcp8+rpfy9bxcfjcqpggevlabj9vkgvi0404ppuezieb7jouzjtp0v/lptccn6aimjbtv/olguedqkxhh5@nws.atrapalo.pe",
-        "1784473309949.e684261d-4777-4285-a037-1d7a4211c38e@bf08.eu1.hubspotemail.net"
+        "1784473309949.e684261d-4777-4285-a037-1d7a4211c38e@bf08.eu1.hubspotemail.net",
+        "6a5cfa62.d1a89f1f.1cd619.6735@mx.google.com",
+        "0100019f7b77b39f-6ee17ceb-b6a2-4fa9-b776-e21579c6da17-000000@email.amazonses.com",
+        "qrwcuj0-tfq325qjlac7wg@geopod-ismtpd-2",
+        "6a5d1cfc.d2cb4adc.ccd80.b6b1@mx.google.com"
     ],
     "transactions": [
         {
@@ -1041,9 +1045,17 @@
             "amount": 421.33,
             "currency": "PEN",
             "timestamp": "2026-07-18T19:50:10.887050"
+        },
+        {
+            "msg_id": "qrwcuj0-tfq325qjlac7wg@geopod-ismtpd-2",
+            "date": "Sun, 19 Jul 2026 18:31:45 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-19T19:51:54.277600"
         }
     ],
-    "last_run": "2026-07-19T16:25:04.904210",
+    "last_run": "2026-07-19T19:51:55.796704",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1308.22). Sugerencia: Evaluar compra inmediata.",
