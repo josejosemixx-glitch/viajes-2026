@@ -89,6 +89,51 @@ const DEFAULT_TRIPS = [
     }
 ];
 
+const CLIMATE_DATA = {
+    "VIAJE-2026-08-07-CUSCO": {
+        tempRange: "0°C - 20°C",
+        condition: "Frío Seco / Soleado",
+        description: "Estación seca andina. Radiación solar extremadamente alta durante el día, pero descenso térmico abrupto por la noche rozando los 0°C.",
+        recommendations: "Vestirse en capas (cebolla). Gorro, guantes, protector solar SPF 50+, lentes de sol, cacao para labios y medicación para la altura."
+    },
+    "VIAJE-2026-07-02-CALI": {
+        tempRange: "18°C - 32°C",
+        condition: "Cálido Húmedo / Tropical",
+        description: "Clima cálido tropical con humedad constante. Brisa fresca del Pacífico ('brisa de la tarde') al caer el sol.",
+        recommendations: "Prendas muy frescas de algodón/lino, repelente, hidratación constante y calzado cómodo ligero."
+    },
+    "VIAJE-2026-07-21-MEXICO": {
+        tempRange: "13°C - 24°C",
+        condition: "Templado / Lluvioso",
+        description: "Temporada de lluvias de verano. Mañanas templadas y soleadas, tardes/noches con lluvias fuertes o tormentas dispersas.",
+        recommendations: "Chaqueta impermeable ligera o paraguas portátil, zapatos resistentes al agua para caminatas en ciudad y abrigo ligero."
+    },
+    "VIAJE-2026-12-22-CALI": {
+        tempRange: "18°C - 33°C",
+        condition: "Caluroso / Tropical",
+        description: "Clima festivo muy cálido de fin de año ideal para la Feria de Cali. Alta humedad.",
+        recommendations: "Camisas guayaberas frescas, ropa ligera de colores claros, bloqueador solar y calzado apto para eventos de baile."
+    },
+    "VIAJE-2026-09-11-BOGOTA": {
+        tempRange: "9°C - 19°C",
+        condition: "Templado Frío / Lluvia",
+        description: "Clima de altura andina nublado. Lloviznas frecuentes e inesperadas ('chubascos'). Humedad que acentúa el frío.",
+        recommendations: "Chaqueta impermeable gruesa/cortavientos, zapatillas cerradas muy cómodas para el Festival Cordillera, paraguas."
+    },
+    "VIAJE-2026-09-21-MADRID": {
+        tempRange: "14°C - 26°C",
+        condition: "Templado Seco / Soleado",
+        description: "Otoño temprano muy agradable. Días templados y soleados ideales para caminar, noches frescas.",
+        recommendations: "Ropa semi-formal de negocios, camisas x5, blazer, calzado formal cómodo y abrigo ligero para la noche."
+    },
+    "VIAJE-2026-10-12-EUROPA": {
+        tempRange: "6°C - 18°C",
+        condition: "Otoño Frío / Lluvioso",
+        description: "Otoño consolidado con descensos térmicos marcados en Madrid y París (noches frías de 6°C). Roma más suave. Lluvia ocasional.",
+        recommendations: "Abrigo grueso cortavientos, ropa térmica interior (talla XXL), bufanda, calzado resistente al agua y paraguas plegable."
+    }
+};
+
 const DEFAULT_PAYMENTS = [
     // --- CALI JULIO ---
     { id: "FIN-CAL-JUL-001", tripId: "VIAJE-2026-07-02-CALI", concept: "Vuelo LATAM", amount: 465.00, currency: "USD", status: "paid", dueDate: "2026-06-05", classification: "CONFIRMADA", category: "Logística", notes: "Tarifa Light. Carry-on incluido." },
@@ -108,6 +153,8 @@ const DEFAULT_PAYMENTS = [
 
     // --- BOGOTÁ SEPTIEMBRE ---
     { id: "FIN-BOG-SEP-001", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Vuelo LIM-BOG-LIM (LATAM)", amount: 549.20, currency: "USD", status: "paid", dueDate: "2026-07-11", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: MVARPG. Vuelo directo." },
+    { id: "FIN-BOG-SEP-002", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Seguro de viaje Pacífico Seguros (Póliza 21075357) TC Signature", amount: 0.00, currency: "USD", status: "paid", dueDate: "2026-07-15", classification: "CONFIRMADA", category: "Logística", notes: "Cobertura de seguro mediante Tarjeta de Crédito Signature y Pacífico Seguros." },
+    { id: "FIN-BOG-SEP-003", tripId: "VIAJE-2026-09-11-BOGOTA", concept: "Hospedaje Airbnb (Chapinero)", amount: 135.63, currency: "USD", status: "paid", dueDate: "2026-07-15", classification: "CONFIRMADA", category: "Hospedaje", notes: "LOFT MODERNO Y ACOGEDOR (Anfitrión: YOJAM). Calle 57 #8-24." },
 
     // --- MADRID SEPTIEMBRE ---
     { id: "FIN-MAD-SEP-001", tripId: "VIAJE-2026-09-21-MADRID", concept: "Vuelo LIM-MAD-LIM (Plus Ultra)", amount: 1398.84, currency: "USD", status: "paid", dueDate: "2026-07-14", classification: "CONFIRMADA", category: "Logística", notes: "Localizador: ZVRGTI. Viaje de trabajo (Pagado por Crear Poder Sin Limites)." },
@@ -151,6 +198,10 @@ const DEFAULT_RISKS = [
 const ACTIVITIES = [
     // --- BOGOTÁ SEPTIEMBRE ---
     { id: "act-bog-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LATAM LA4905)", startTime: "15:50", endTime: "19:05", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-bog-1-hospedaje", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🏠 Check-in Airbnb (YOJAM)", startTime: "20:00", endTime: "20:30", priority: "Alta", location: "Calle 57 #8-24, Bogotá", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "LOFT MODERNO. Check-in disponible desde 14:00." },
+    { id: "act-bog-2-cordillera", tripId: "VIAJE-2026-09-11-BOGOTA", day: 2, name: "🎸 Festival Cordillera - Día 1", startTime: "14:00", endTime: "23:59", priority: "Media", location: "Parque Simón Bolívar", category: "Actividades", owner: "jose", status: "Confirmado", notes: "Andrés Calamaro, Grupo Niche, etc." },
+    { id: "act-bog-3-cordillera", tripId: "VIAJE-2026-09-11-BOGOTA", day: 3, name: "🎸 Festival Cordillera - Día 2", startTime: "14:00", endTime: "23:59", priority: "Media", location: "Parque Simón Bolívar", category: "Actividades", owner: "jose", status: "Confirmado", notes: "Ricky Martin, Caifanes, Andrés Cepeda, etc." },
+    { id: "act-bog-4-hospedaje", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "🏠 Check-out Airbnb", startTime: "10:30", endTime: "11:00", priority: "Alta", location: "Calle 57 #8-24, Bogotá", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "Check-out máximo a las 11:00 a.m." },
     { id: "act-bog-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LATAM LA2387)", startTime: "17:15", endTime: "20:20", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
     { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PlusUltra PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
@@ -356,7 +407,7 @@ let SYSTEM_STATE = {
         accumulatedDeficit: 0,
         projectedFatigue: 0
     },
-    packingList: DEFAULT_PACKING_LIST,
+    packingList: null, // Will be initialized by generatePackingList if needed, but defaults to generatePackingList("VIAJE-2026-09-11-BOGOTA", "carryon") if not found in localStorage
     settings: {
         selectedTripId: "VIAJE-2026-08-07-CUSCO",
         selectedDay: 1,
@@ -568,7 +619,11 @@ async function loadState() {
             if (parsed.settings) SYSTEM_STATE.settings = { ...SYSTEM_STATE.settings, ...parsed.settings };
             if (parsed.cash) SYSTEM_STATE.cash = parsed.cash;
             if (parsed.creditCardDebt) SYSTEM_STATE.creditCardDebt = parsed.creditCardDebt;
-            if (parsed.packingList) SYSTEM_STATE.packingList = parsed.packingList;
+            if (parsed.packingList) {
+                SYSTEM_STATE.packingList = parsed.packingList;
+            } else {
+                SYSTEM_STATE.packingList = generatePackingList(SYSTEM_STATE.settings.selectedTripId || "VIAJE-2026-08-07-CUSCO", "carryon");
+            }
             if (parsed.auditLog) SYSTEM_STATE.auditLog = parsed.auditLog;
 
             // Restore dynamic activities
@@ -657,6 +712,7 @@ function setupTabs() {
 
 function setupTripSelector() {
     const selectEl = document.getElementById("trip-dropdown-select");
+    const packingSelectEl = document.getElementById("packing-trip-select");
     if (!selectEl) return;
     
     // Llenar dinámicamente
@@ -667,10 +723,25 @@ function setupTripSelector() {
     });
     selectEl.innerHTML = html;
 
+    // Llenar dinámicamente selector de equipaje
+    if (packingSelectEl && packingSelectEl.children.length === 0) {
+        let packingHtml = "";
+        SYSTEM_STATE.trips.forEach(trip => {
+            const label = trip.name + (trip.status === "completed" ? " (Histórico)" : "");
+            packingHtml += `<option value="${trip.id}">${label}</option>`;
+        });
+        packingSelectEl.innerHTML = packingHtml;
+    }
+
     // Escuchar cambios
     selectEl.addEventListener("change", (e) => {
         SYSTEM_STATE.settings.selectedTripId = e.target.value;
         SYSTEM_STATE.settings.selectedDay = 1;
+        
+        if (packingSelectEl) {
+            packingSelectEl.value = e.target.value;
+            updatePackingList();
+        }
         
         const trip = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
         if (trip) logAction(`Viaje seleccionado: ${trip.name}`, "INFO");
@@ -814,7 +885,7 @@ function setupResetButton() {
                     SYSTEM_STATE.sleep.bedtimes[key] = PREV_BEDTIMES[key];
                     SYSTEM_STATE.sleep.wakeTimes[key] = addHours(PREV_BEDTIMES[key], 8);
                 });
-                SYSTEM_STATE.packingList = DEFAULT_PACKING_LIST;
+                SYSTEM_STATE.packingList = generatePackingList(SYSTEM_STATE.settings.selectedTripId || "VIAJE-2026-08-07-CUSCO", "carryon");
                 SYSTEM_STATE.auditLog = [];
                 SYSTEM_STATE.cash = { USD: 2200, PEN: 5150, COP: 1500000 };
                 SYSTEM_STATE.settings.loanRequested = false;
@@ -2116,6 +2187,48 @@ function renderItinerariesTab() {
     const trip = SYSTEM_STATE.trips.find(t => t.id === SYSTEM_STATE.settings.selectedTripId);
     if (!trip) return;
 
+    // Helper para íconos de clima
+    const getWeatherIcon = (condStr) => {
+        const cond = condStr.toLowerCase();
+        if (cond.includes("lluvia") || cond.includes("lluvioso")) return "🌧️";
+        if (cond.includes("frío") || cond.includes("seco")) return "❄️";
+        if (cond.includes("cálido") || cond.includes("caluroso") || cond.includes("tropical")) return "☀️";
+        if (cond.includes("otoño") || cond.includes("fresco")) return "⛅";
+        return "☁️";
+    };
+
+    // Renderizar widget de clima activo
+    const weatherWidget = document.getElementById("trip-weather-widget");
+    if (weatherWidget) {
+        const climate = CLIMATE_DATA[trip.id];
+        if (climate) {
+            weatherWidget.style.display = "block";
+            weatherWidget.innerHTML = `
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="font-size: 2rem; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.05); color: var(--primary);">
+                            ${getWeatherIcon(climate.condition)}
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.1rem; font-weight: 600; margin: 0; color: #fff;">${trip.destination}</h3>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 3px 0 0 0;">Pronóstico: <strong style="color: var(--primary);">${climate.condition}</strong></p>
+                        </div>
+                    </div>
+                    <div style="text-align: right; min-width: 100px;">
+                        <span class="val mono" style="font-size: 1.3rem; font-weight: 700; color: #fff; display: block; line-height: 1.1;">${climate.tempRange}</span>
+                        <span style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Rango Promedio</span>
+                    </div>
+                </div>
+                <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border-glass); font-size: 0.8rem; line-height: 1.4; color: var(--text-muted);">
+                    <p style="margin: 0 0 6px 0;"><i class="fa-solid fa-cloud-sun" style="color: var(--primary);"></i> ${climate.description}</p>
+                    <p style="margin: 0; color: var(--text-secondary); font-style: italic;"><strong style="color: var(--primary); font-style: normal;"><i class="fa-solid fa-suitcase"></i> Tip de Empaque:</strong> ${climate.recommendations}</p>
+                </div>
+            `;
+        } else {
+            weatherWidget.style.display = "none";
+        }
+    }
+
     if (typeof window.CountdownEngine !== 'undefined') {
         window.CountdownEngine.clearAll();
     }
@@ -2442,9 +2555,158 @@ function renderSleepTab() {
 
 // --- PESTAÑA 8: EQUIPAJE ---
 
+function generatePackingList(tripId, luggageType) {
+    const baseDocs = [
+        { id: "pack-dni", text: "Pasaporte / DNI Vigente", checked: false },
+        { id: "pack-cards", text: "Tarjetas de Crédito / Débito (Signature)", checked: false },
+        { id: "pack-seguro", text: "Póliza de Seguro de Asistencia Médica Internacional", checked: false },
+        { id: "pack-itinerario", text: "Impresión de Vuelos y Reservas (Airbnb/Hotel)", checked: false }
+    ];
+
+    const baseElec = [
+        { id: "pack-phone", text: "Smartphone y Cargador Rápido", checked: false },
+        { id: "pack-powerbank", text: "Powerbank (10,000mAh+)", checked: false },
+        { id: "pack-laptop", text: "Laptop y Cargador", checked: false },
+        { id: "pack-headphones", text: "Audífonos con Cancelación de Ruido", checked: false }
+    ];
+
+    const baseToiletries = [
+        { id: "pack-toothbrush", text: "Cepillo y Pasta Dental", checked: false },
+        { id: "pack-deodorant", text: "Desodorante", checked: false },
+        { id: "pack-skincare", text: "Crema hidratante y Protector Solar", checked: false }
+    ];
+
+    let clothes = [];
+    
+    // Ropa y artículos según Destino (Contextura: 2.00m, 110kg)
+    if (tripId === "VIAJE-2026-08-07-CUSCO") {
+        clothes = [
+            { id: "pack-ropa-cuz1", text: "Casaca gruesa abrigadora / Puffer (Talla XXL)", checked: false },
+            { id: "pack-ropa-cuz2", text: "Chompas / Polares abrigadores x2", checked: false },
+            { id: "pack-ropa-cuz3", text: "Polos de algodón manga larga x3", checked: false },
+            { id: "pack-ropa-cuz4", text: "Pantalones gruesos (jeans/trekking) x3", checked: false },
+            { id: "pack-ropa-cuz5", text: "Zapatillas de trekking cómodas (Machu Picchu)", checked: false },
+            { id: "pack-ropa-cuz6", text: "Chullo/Gorro de lana y guantes para la noche", checked: false },
+            { id: "pack-ropa-cuz7", text: "Pastillas Sorojchi Pills (Altitud) y bloqueador", checked: false }
+        ];
+    } else if (tripId === "VIAJE-2026-07-02-CALI" || tripId === "VIAJE-2026-12-22-CALI") {
+        const isDec = tripId.includes("12-22");
+        clothes = [
+            { id: "pack-ropa-cal1", text: isDec ? "Guayaberas formales o camisas de lino x3 (Feria)" : "Camisas de lino o algodón fresco x3", checked: false },
+            { id: "pack-ropa-cal2", text: "Bermudas / Shorts cómodos x3", checked: false },
+            { id: "pack-ropa-cal3", text: "Polos ligeros de algodón transpirable x5", checked: false },
+            { id: "pack-ropa-cal4", text: "Zapatos frescos (mocasines/zapatillas ligeras)", checked: false },
+            { id: "pack-ropa-cal5", text: "Sandalias y ropa de baño", checked: false },
+            { id: "pack-ropa-cal6", text: "Sombrero / Gorra de sol y lentes oscuros", checked: false },
+            { id: "pack-ropa-cal7", text: "Repelente de mosquitos (OFF!) e hidratantes", checked: false }
+        ];
+    } else if (tripId === "VIAJE-2026-07-21-MEXICO") {
+        clothes = [
+            { id: "pack-ropa-mex1", text: "Chaqueta impermeable ligera (tormentas de tarde)", checked: false },
+            { id: "pack-ropa-mex2", text: "Camisas casual-elegantes para trabajo x5", checked: false },
+            { id: "pack-ropa-mex3", text: "Pantalones chinos / Jeans cómodos x4", checked: false },
+            { id: "pack-ropa-mex4", text: "Zapatos formales de cuero cómodos para caminar", checked: false },
+            { id: "pack-ropa-mex5", text: "Polos básicos x4 y blazer ligero", checked: false },
+            { id: "pack-ropa-mex6", text: "Paraguas portátil resistente al viento", checked: false }
+        ];
+    } else if (tripId === "VIAJE-2026-09-11-BOGOTA") {
+        clothes = [
+            { id: "pack-ropa-bog1", text: "Chaqueta impermeable gruesa (cortavientos para lluvia)", checked: false },
+            { id: "pack-ropa-bog2", text: "Sweaters / Hoodies cómodos x2", checked: false },
+            { id: "pack-ropa-bog3", text: "Jeans gruesos resistentes x3", checked: false },
+            { id: "pack-ropa-bog4", text: "Zapatillas muy cómodas (Caminatas en Festival Cordillera)", checked: false },
+            { id: "pack-ropa-bog5", text: "Polos oscuros x4 y medias térmicas", checked: false },
+            { id: "pack-ropa-bog6", text: "Paraguas plegable e impermeable extra", checked: false }
+        ];
+    } else if (tripId === "VIAJE-2026-09-21-MADRID") {
+        clothes = [
+            { id: "pack-ropa-mad1", text: "Blazer o saco semi-formal de negocios (Talla XXL)", checked: false },
+            { id: "pack-ropa-mad2", text: "Camisas de cuello formal/casual x5", checked: false },
+            { id: "pack-ropa-mad3", text: "Pantalones chinos o de vestir formales x4", checked: false },
+            { id: "pack-ropa-mad4", text: "Zapatos de cuero cómodos y correa combinando", checked: false },
+            { id: "pack-ropa-mad5", text: "Abrigo ligero para las noches frescas", checked: false },
+            { id: "pack-ropa-mad6", text: "Adaptador de enchufe europeo (Tipo C/E/F)", checked: false }
+        ];
+    } else if (tripId === "VIAJE-2026-10-12-EUROPA") {
+        clothes = [
+            { id: "pack-ropa-eur1", text: "Abrigo grueso cortavientos / Puffer largo (Talla XXL)", checked: false },
+            { id: "pack-ropa-eur2", text: "Polos / Camisetas térmicas interiores x3 (Indispensable)", checked: false },
+            { id: "pack-ropa-eur3", text: "Sweaters de lana o polares gruesos x3", checked: false },
+            { id: "pack-ropa-eur4", text: "Jeans o pantalones de tela pesada x4", checked: false },
+            { id: "pack-ropa-eur5", text: "Zapatillas urbanas de cuero con soporte (caminatas largas)", checked: false },
+            { id: "pack-ropa-eur6", text: "Bufanda gruesa, guantes y gorro otoñal", checked: false },
+            { id: "pack-ropa-eur7", text: "Adaptadores europeos y paraguas reforzado", checked: false }
+        ];
+    } else {
+        clothes = [
+            { id: "pack-ropa-gen1", text: "Pantalones casuales x3", checked: false },
+            { id: "pack-ropa-gen2", text: "Camisas o Polos x4", checked: false },
+            { id: "pack-ropa-gen3", text: "Zapatos / Zapatillas cómodas", checked: false },
+            { id: "pack-ropa-gen4", text: "Abrigo medio / Cortavientos", checked: false }
+        ];
+    }
+
+    // Reglas según Maleta
+    if (luggageType === "carryon") {
+        baseToiletries.push({ id: "pack-liquids-rule", text: "Líquidos en envases < 100ml (Bolsa Ziploc transparente)", checked: false });
+        clothes.push({ id: "pack-layering-rule", text: "Llevar la chaqueta más voluminosa puesta en el vuelo", checked: false });
+    } else if (luggageType === "bodega") {
+        baseToiletries.push({ id: "pack-liquids-rule", text: "Perfume grande y artículos de aseo full-size", checked: false });
+        clothes.push({ id: "pack-extra-shoes", text: "Par de zapatos extra (opcional)", checked: false });
+    } else if (luggageType === "mochila") {
+        baseToiletries.push({ id: "pack-liquids-rule", text: "Neceser minimalista (Solo esenciales < 100ml)", checked: false });
+        clothes = clothes.filter((c, index) => index < 3); // Reducir cantidad de ropa
+        clothes.push({ id: "pack-backpack-rule", text: "Enrollar ropa tipo militar para maximizar espacio", checked: false });
+    }
+
+    return [
+        { category: "Documentos y Dinero", items: baseDocs },
+        { category: "Ropa y Calzado (Adaptado)", items: clothes },
+        { category: "Electrónicos", items: baseElec },
+        { category: "Aseo Personal", items: baseToiletries }
+    ];
+}
+
+function updatePackingList() {
+    const tripId = document.getElementById("packing-trip-select")?.value || SYSTEM_STATE.settings.selectedTripId;
+    const luggageType = document.getElementById("packing-luggage-select")?.value || "carryon";
+    
+    SYSTEM_STATE.packingList = generatePackingList(tripId, luggageType);
+    saveData();
+    renderPackingTab();
+}
+
 function renderPackingTab() {
     const container = document.getElementById("packing-list-render");
+    const climateInfo = document.getElementById("packing-climate-info");
     if (!container) return;
+
+    const tripId = document.getElementById("packing-trip-select")?.value || SYSTEM_STATE.settings.selectedTripId;
+    const selectEl = document.getElementById("packing-trip-select");
+    if (selectEl && selectEl.value !== tripId) {
+        selectEl.value = tripId;
+    }
+
+    if (climateInfo) {
+        const climate = CLIMATE_DATA[tripId];
+        if (climate) {
+            const selectEl = document.getElementById("packing-trip-select");
+            const tripName = selectEl?.selectedOptions[0]?.text || "Destino";
+            climateInfo.style.display = "block";
+            climateInfo.innerHTML = `
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                    <div style="font-size: 1.5rem; margin-top: 2px; color: var(--primary);">⛅</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 0.9rem; color: #fff;">Condiciones de ${tripName}: <strong style="color: var(--primary);">${climate.tempRange} (${climate.condition})</strong></h4>
+                        <p style="margin: 4px 0 0 0; font-size: 0.8rem; color: var(--text-secondary);">${climate.description}</p>
+                        <p style="margin: 4px 0 0 0; font-size: 0.75rem; color: var(--text-muted);"><strong style="color: var(--primary);">Recomendación:</strong> ${climate.recommendations}</p>
+                    </div>
+                </div>
+            `;
+        } else {
+            climateInfo.style.display = "none";
+        }
+    }
 
     let html = "";
     

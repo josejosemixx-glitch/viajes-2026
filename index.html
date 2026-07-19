@@ -290,6 +290,11 @@
                         <option value="">Cargando viajes...</option>
                     </select>
                 </div>
+                
+                <!-- Widget del Clima del Viaje Activo -->
+                <div id="trip-weather-widget" class="cfo-card" style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; display: none;">
+                    <!-- Renderizado dinámico del clima vía JS -->
+                </div>
 
                 <!-- Selector de Días Dinámico -->
                 <div class="day-selector scrollable-x" id="day-selector-container">
@@ -377,9 +382,26 @@
             <!-- PESTAÑA 8: EQUIPAJE -->
             <div id="tab-equipaje" class="tab-pane">
                 <div class="section-title">
-                    <h2>🎒 Control de Equipaje</h2>
-                    <p>Checklist ergonómico adaptado a tu contextura (2.00m y 110kg) y requerimientos de Angélica</p>
+                    <h2>🎒 Control de Equipaje Inteligente</h2>
+                    <p>Recomendaciones adaptadas a tu contextura (2.00m y 110kg), clima del destino y tipo de equipaje</p>
                 </div>
+
+                <div class="filter-controls" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                    <select id="packing-trip-select" class="form-control" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.05); color: white;" onchange="updatePackingList()">
+                        <!-- Poblado dinámicamente -->
+                    </select>
+                    <select id="packing-luggage-select" class="form-control" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.05); color: white;" onchange="updatePackingList()">
+                        <option value="carryon">Carry-on 10kg</option>
+                        <option value="bodega">Maleta Bodega 23kg</option>
+                        <option value="mochila">Mochila Ligera</option>
+                    </select>
+                </div>
+
+                <!-- Resumen de Clima de Destino (para Equipaje) -->
+                <div id="packing-climate-info" class="cfo-card" style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 10px; display: none;">
+                    <!-- Renderizado dinámico del clima vía JS -->
+                </div>
+
                 <div class="packing-list-card">
                     <div id="packing-list-render">
                         <!-- Renderizado dinámico vía JS -->
