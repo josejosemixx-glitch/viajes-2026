@@ -207,8 +207,8 @@ const ACTIVITIES = [
     { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PlusUltra PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PlusUltra PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
-    { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Y4 3919)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Y4 3918)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Volaris Y4 3919 - Asiento 13F)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
+    { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Volaris Y4 3918 - Asiento 13F)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
     {
         id: "act-eur-1-vuelo",
         tripId: "VIAJE-2026-10-12-EUROPA",
@@ -237,14 +237,15 @@ const ACTIVITIES = [
     },
     // --- CUSCO AGOSTO ---
     { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LATAM LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto LIM (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-1-recojo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🚐 Recojo del Aeropuerto (Apu Andino)", startTime: "22:45", endTime: "23:00", priority: "Alta", location: "Aeropuerto CUZ", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-1-hotel", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🏠 Llegada a Casa Andina Catedral", startTime: "23:00", endTime: "23:59", priority: "Alta", location: "Cusco, Perú", category: "Alojamiento", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-2-valle", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚐 Tour Valle Sagrado (Pisac, Ollantaytambo)", startTime: "08:30", endTime: "16:00", priority: "Critical", location: "Valle Sagrado", category: "Tours", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-2-tren", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚂 Tren Expedition a Aguas Calientes", startTime: "19:00", endTime: "20:45", priority: "Critical", location: "Estación Ollantaytambo", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-2-valle", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚐 Tour Valle Sagrado (Compartido, Almuerzo Tunupa)", startTime: "08:30", endTime: "16:00", priority: "Critical", location: "Valle Sagrado", category: "Tours", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-2-tren", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚂 Tren Vistadome Observatory a Aguas Calientes", startTime: "19:00", endTime: "20:45", priority: "Critical", location: "Estación Ollantaytambo", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-hotel2", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🏠 Noche en Qoya Palace", startTime: "21:00", endTime: "23:59", priority: "Alta", location: "Machupicchu Pueblo", category: "Alojamiento", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-3-bus", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "🚌 Fila Bus Consettur", startTime: "05:00", endTime: "06:30", priority: "Alta", location: "Aguas Calientes", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-3-mp", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "⛰️ Visita a Machu Picchu", startTime: "07:00", endTime: "11:00", priority: "Critical", location: "Santuario Histórico", category: "Tours", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-3-retorno", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "🚂 Retorno a Cusco (Tren + Bus)", startTime: "14:30", endTime: "19:00", priority: "Critical", location: "Estación de Tren", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-4-traslado", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "🚕 Traslado al Aeropuerto (Evitar Tráfico)", startTime: "08:00", endTime: "08:45", priority: "Alta", location: "Hotel Casa Andina", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-3-mp", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "⛰️ Visita a Machu Picchu (Circuito 1 + Circuito 3 Realeza)", startTime: "07:00", endTime: "11:00", priority: "Critical", location: "Santuario Histórico", category: "Tours", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-3-retorno", tripId: "VIAJE-2026-08-07-CUSCO", day: 3, name: "🚂 Retorno a Cusco (Tren + Bus Privado a Hotel)", startTime: "14:30", endTime: "19:00", priority: "Critical", location: "Estación de Tren", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-4-traslado", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "🚕 Traslado Privado al Aeropuerto (Apu Andino)", startTime: "08:00", endTime: "08:45", priority: "Alta", location: "Hotel Casa Andina", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-4-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "✈️ Vuelo Cusco ➔ Lima (LATAM LA2014)", startTime: "10:40", endTime: "12:15", priority: "Critical", location: "Aeropuerto CUZ (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
     // --- CALI JULIO ---
@@ -2672,7 +2673,7 @@ function updatePackingList() {
     const luggageType = document.getElementById("packing-luggage-select")?.value || "carryon";
     
     SYSTEM_STATE.packingList = generatePackingList(tripId, luggageType);
-    saveData();
+    saveState();
     renderPackingTab();
 }
 
