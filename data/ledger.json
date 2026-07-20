@@ -335,7 +335,15 @@
         "oihy-trfrw6zotj-b2ze0q@geopod-ismtpd-16",
         "6a5e31f9.f7f62383.1d6f82.77be@mx.google.com",
         "momentofjoy-ed4a5783-01d7-47e2-82ef-2ca463319915.rcid_cfc1bde6-0d39-40b8-b5de-e6571c2b8f67.wiid_2a1c8c2c-2200-46ca-a96d-37033617ddd8.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_99adfd52-4e57-4376-8aec-d43765b356d3@odspnotify",
-        "d4ypueytqyyx2ju79wucga@geopod-ismtpd-5"
+        "d4ypueytqyyx2ju79wucga@geopod-ismtpd-5",
+        "6a5e51f3.eb165e5c.4506c.5168@mx.google.com",
+        "jget3wcctwq994zp2-j-ja@geopod-ismtpd-7",
+        "9307aa1f-3c87-5ebf-843a-c0f912ec7575@mail.uber.com",
+        "xsvts3dgq8wg4vjd56_vua@geopod-ismtpd-17",
+        "4ee1f6553ce1eb3bd6dbf3ce9b010947@pd0ldwk002c6i",
+        "20260720191132.11e5e4941f5aebeb@cio82276.novedadesyape.pe",
+        "6a5e762c.69e6b551.26204f.6d5e@mx.google.com",
+        "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0"
     ],
     "transactions": [
         {
@@ -1129,9 +1137,41 @@
             "amount": 6.3,
             "currency": "PEN",
             "timestamp": "2026-07-20T16:50:58.028827"
+        },
+        {
+            "msg_id": "jget3wcctwq994zp2-j-ja@geopod-ismtpd-7",
+            "date": "Mon, 20 Jul 2026 18:23:00 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:13.882696"
+        },
+        {
+            "msg_id": "9307aa1f-3c87-5ebf-843a-c0f912ec7575@mail.uber.com",
+            "date": "Mon, 20 Jul 2026 18:35:52 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:14.287126"
+        },
+        {
+            "msg_id": "xsvts3dgq8wg4vjd56_vua@geopod-ismtpd-17",
+            "date": "Mon, 20 Jul 2026 18:44:20 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 42.3,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:14.542896"
+        },
+        {
+            "msg_id": "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0",
+            "date": "Mon, 20 Jul 2026 20:01:18 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 54.26,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:16.234730"
         }
     ],
-    "last_run": "2026-07-20T16:50:58.457584",
+    "last_run": "2026-07-20T20:12:16.826707",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1153.67",
