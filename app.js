@@ -531,12 +531,13 @@ document.addEventListener("DOMContentLoaded", async () => {
                 });
             }
             
-            // Merge activities (we don't store activities in SYSTEM_STATE right now, they are in ACTIVITIES array)
-            // Wait, ACTIVITIES is a const! We need to make it a let or push to it.
-            // Since ACTIVITIES is a const array, we can push to it.
+            // Merge activities
             if (dynData.activities && Array.isArray(dynData.activities)) {
                 SYSTEM_STATE.dynamicActivities = dynData.activities;
                 dynData.activities.forEach(newAct => {
+                    if (!newAct.startTime) newAct.startTime = newAct.time || "00:00";
+                    if (!newAct.endTime) newAct.endTime = newAct.time || "23:59";
+                    if (!newAct.category) newAct.category = "Sincronizado";
                     const existingIndex = ACTIVITIES.findIndex(a => a.id === newAct.id);
                     if (existingIndex > -1) {
                         ACTIVITIES[existingIndex] = newAct;
@@ -2300,7 +2301,7 @@ function renderItinerariesTab() {
 
     const nextDayActs = ACTIVITIES.filter(a => a.tripId === SYSTEM_STATE.settings.selectedTripId && a.day === (SYSTEM_STATE.settings.selectedDay + 1));
     const firstActNextDay = nextDayActs.length > 0 
-        ? nextDayActs.filter(a => a.category !== "Descanso").sort((a, b) => a.startTime.localeCompare(b.startTime))[0] 
+        ? nextDayActs.filter(a => a.category !== "Descanso").sort((a, b) => (a.startTime || "00:00").localeCompare(b.startTime || "00:00"))[0] 
         : null;
 
     let sleepAlertHtml = "";
@@ -2346,7 +2347,7 @@ function renderItinerariesTab() {
         });
     }
     
-    dayActs.sort((a, b) => a.startTime.localeCompare(b.startTime));
+    dayActs.sort((a, b) => (a.startTime || "00:00").localeCompare(b.startTime || "00:00"));
 
     // Calendar conflict checking
     const conflicts = [];
@@ -2357,8 +2358,10 @@ function renderItinerariesTab() {
         const act = dayActs[i];
         if (act.category === "Descanso") continue;
 
-        const [sh, sm] = act.startTime.split(":").map(Number);
-        const [eh, em] = act.endTime.split(":").map(Number);
+        const startTimeStr = act.startTime || "00:00";
+        const endTimeStr = act.endTime || "23:59";
+        const [sh, sm] = startTimeStr.split(":").map(Number);
+        const [eh, em] = endTimeStr.split(":").map(Number);
         const durationMin = (eh * 60 + em) - (sh * 60 + sm);
         activeDurationMin += durationMin;
 
@@ -2368,7 +2371,8 @@ function renderItinerariesTab() {
                 conflicts.push(`Solapamiento entre "${prev.name}" (${prev.startTime}-${prev.endTime}) y "${act.name}" (${act.startTime}-${act.endTime}).`);
             }
 
-            const [ph, pm] = prev.endTime.split(":").map(Number);
+            const prevEndTimeStr = prev.endTime || "23:59";
+            const [ph, pm] = prevEndTimeStr.split(":").map(Number);
             const gapMin = (sh * 60 + sm) - (ph * 60 + pm);
             if (gapMin > 120 && prev.category !== "Descanso") {
                 const gapH = Math.floor(gapMin / 60);
