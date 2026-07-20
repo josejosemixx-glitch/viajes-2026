@@ -2030,6 +2030,7 @@ function renderFinancesLedgerTab() {
     if (filterSelect) {
         filterSelect.addEventListener("change", (e) => {
             SYSTEM_STATE.settings.selectedFinanceTripFilter = e.target.value;
+            saveState();
             renderAll();
         });
     }
@@ -2058,7 +2059,7 @@ function renderFinancesLedgerTab() {
                 }
             }
 
-            logAction(`Emisión de reserva ${key.toUpperCase()} cambiada a: ${e.target.value}`, "INFO");
+            logAction(`Estado de reserva [${key.toUpperCase()}] actualizado a: ${e.target.value}`, "INFO");
             renderAll();
         });
     });
@@ -2288,6 +2289,7 @@ function renderItinerariesTab() {
     dayBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             SYSTEM_STATE.settings.selectedDay = parseInt(btn.dataset.day);
+            saveState();
             renderAll();
         });
     });
