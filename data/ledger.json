@@ -343,7 +343,9 @@
         "4ee1f6553ce1eb3bd6dbf3ce9b010947@pd0ldwk002c6i",
         "20260720191132.11e5e4941f5aebeb@cio82276.novedadesyape.pe",
         "6a5e762c.69e6b551.26204f.6d5e@mx.google.com",
-        "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0"
+        "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0",
+        "6a5e8121.efad125f.ad2ad.c733@mx.google.com",
+        "4e08195f463fbb25ffd1c4d1fd4f6d21@pd0ldwk002bml"
     ],
     "transactions": [
         {
@@ -1171,7 +1173,7 @@
             "timestamp": "2026-07-20T20:12:16.234730"
         }
     ],
-    "last_run": "2026-07-20T20:12:16.826707",
+    "last_run": "2026-07-20T22:15:01.368048",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
