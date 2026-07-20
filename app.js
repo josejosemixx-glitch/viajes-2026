@@ -2672,7 +2672,7 @@ function updatePackingList() {
     const luggageType = document.getElementById("packing-luggage-select")?.value || "carryon";
     
     SYSTEM_STATE.packingList = generatePackingList(tripId, luggageType);
-    saveData();
+    saveState();
     renderPackingTab();
 }
 
