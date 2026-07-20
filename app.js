@@ -197,18 +197,32 @@ const DEFAULT_RISKS = [
 
 const ACTIVITIES = [
     // --- BOGOTÁ SEPTIEMBRE ---
+    { id: "act-bog-1-salida", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "12:00", endTime: "12:50", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-bog-1-checkin-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🛂 Check-in LATAM y Controles", startTime: "12:50", endTime: "13:50", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-bog-1-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "✈️ Vuelo Lima ➔ Bogotá (LATAM LA4905)", startTime: "15:50", endTime: "19:05", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
-    { id: "act-bog-1-hospedaje", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🏠 Check-in Airbnb (YOJAM)", startTime: "20:00", endTime: "20:30", priority: "Alta", location: "Calle 57 #8-24, Bogotá", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "LOFT MODERNO. Check-in disponible desde 14:00." },
+    { id: "act-bog-1-hospedaje", tripId: "VIAJE-2026-09-11-BOGOTA", day: 1, name: "🏠 Llegada y Check-in Airbnb (YOJAM)", startTime: "21:00", endTime: "21:30", priority: "Alta", location: "Calle 57 #8-24, Bogotá", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "LOFT MODERNO. Check-in ajustado tras llegada." },
     { id: "act-bog-2-cordillera", tripId: "VIAJE-2026-09-11-BOGOTA", day: 2, name: "🎸 Festival Cordillera - Día 1", startTime: "14:00", endTime: "23:59", priority: "Media", location: "Parque Simón Bolívar", category: "Actividades", owner: "jose", status: "Confirmado", notes: "Andrés Calamaro, Grupo Niche, etc." },
     { id: "act-bog-3-cordillera", tripId: "VIAJE-2026-09-11-BOGOTA", day: 3, name: "🎸 Festival Cordillera - Día 2", startTime: "14:00", endTime: "23:59", priority: "Media", location: "Parque Simón Bolívar", category: "Actividades", owner: "jose", status: "Confirmado", notes: "Ricky Martin, Caifanes, Andrés Cepeda, etc." },
     { id: "act-bog-4-hospedaje", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "🏠 Check-out Airbnb", startTime: "10:30", endTime: "11:00", priority: "Alta", location: "Calle 57 #8-24, Bogotá", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "Check-out máximo a las 11:00 a.m." },
+    { id: "act-bog-4-traslado", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "🚕 Traslado al Aeropuerto El Dorado", startTime: "13:30", endTime: "14:15", priority: "Alta", location: "Aeropuerto El Dorado (BOG)", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-bog-4-vuelo", tripId: "VIAJE-2026-09-11-BOGOTA", day: 4, name: "✈️ Vuelo Bogotá ➔ Lima (LATAM LA2387)", startTime: "17:15", endTime: "20:20", priority: "Critical", location: "Aeropuerto El Dorado (BOG)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
+    { id: "act-mad-sep-1-salida", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "14:00", endTime: "15:00", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-1-checkin", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "🛂 Check-in Plus Ultra y Controles", startTime: "15:00", endTime: "16:00", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mad-sep-1-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 1, name: "✈️ Vuelo Lima ➔ Madrid (PlusUltra PU 302)", startTime: "18:10", endTime: "13:05", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-2-llegada", tripId: "VIAJE-2026-09-21-MADRID", day: 2, name: "🚕 Llegada a MAD y Traslado", startTime: "14:30", endTime: "15:30", priority: "Alta", location: "Madrid", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mad-sep-10-salida", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "🚕 Salida al Aeropuerto Barajas", startTime: "07:00", endTime: "08:00", priority: "Alta", location: "Aeropuerto Barajas (MAD)", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mad-sep-10-vuelo", tripId: "VIAJE-2026-09-21-MADRID", day: 10, name: "✈️ Vuelo Madrid ➔ Lima (PlusUltra PU 301)", startTime: "11:00", endTime: "16:10", priority: "Critical", location: "Aeropuerto Barajas (MAD)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
+    { id: "act-mex-jul-1-salida", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🚕 Salida al Aeropuerto LIM (Madrugada)", startTime: "02:30", endTime: "03:20", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-1-checkin", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🛂 Check-in Volaris", startTime: "03:20", endTime: "04:20", priority: "Alta", location: "Aeropuerto LIM", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Volaris Y4 3919 - Asiento 13F)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
+    { id: "act-mex-jul-1-llegada", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🚕 Llegada y Traslado a Alojamiento", startTime: "12:30", endTime: "13:30", priority: "Alta", location: "CDMX", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-16-salida", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "🚕 Salida al Aeropuerto AICM", startTime: "18:00", endTime: "19:00", priority: "Alta", location: "Hacia AICM", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Volaris Y4 3918 - Asiento 13F)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
+    
+    { id: "act-eur-1-salida", tripId: "VIAJE-2026-10-12-EUROPA", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "14:00", endTime: "15:00", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-eur-1-checkin", tripId: "VIAJE-2026-10-12-EUROPA", day: 1, name: "🛂 Check-in Plus Ultra", startTime: "15:00", endTime: "16:00", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "jose", status: "Confirmado" },
     {
         id: "act-eur-1-vuelo",
         tripId: "VIAJE-2026-10-12-EUROPA",
@@ -222,6 +236,7 @@ const ACTIVITIES = [
         owner: "jose",
         status: "Confirmado"
     },
+    { id: "act-eur-21-salida", tripId: "VIAJE-2026-10-12-EUROPA", day: 21, name: "🚕 Salida al Aeropuerto Barajas", startTime: "07:00", endTime: "08:00", priority: "Alta", location: "Aeropuerto Adolfo Suárez Madrid-Barajas (MAD)", category: "Traslados", owner: "jose", status: "Confirmado" },
     {
         id: "act-eur-21-vuelo",
         tripId: "VIAJE-2026-10-12-EUROPA",
@@ -236,9 +251,10 @@ const ACTIVITIES = [
         status: "Confirmado"
     },
     // --- CUSCO AGOSTO ---
+    { id: "act-cuz-1-salida", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "18:00", endTime: "18:50", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-1-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "✈️ Vuelo Lima ➔ Cusco (LATAM LA2200)", startTime: "21:10", endTime: "22:35", priority: "Critical", location: "Aeropuerto LIM (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-1-recojo", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🚐 Recojo del Aeropuerto (Apu Andino)", startTime: "22:45", endTime: "23:00", priority: "Alta", location: "Aeropuerto CUZ", category: "Traslados", owner: "jose", status: "Confirmado" },
-    { id: "act-cuz-1-hotel", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🏠 Llegada a Casa Andina Catedral", startTime: "23:00", endTime: "23:59", priority: "Alta", location: "Cusco, Perú", category: "Alojamiento", owner: "jose", status: "Confirmado" },
+    { id: "act-cuz-1-hotel", tripId: "VIAJE-2026-08-07-CUSCO", day: 1, name: "🏠 Llegada a Casa Andina Catedral", startTime: "23:20", endTime: "23:59", priority: "Alta", location: "Cusco, Perú", category: "Alojamiento", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-valle", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚐 Tour Valle Sagrado (Compartido, Almuerzo Tunupa)", startTime: "08:30", endTime: "16:00", priority: "Critical", location: "Valle Sagrado", category: "Tours", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-tren", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🚂 Tren Vistadome Observatory a Aguas Calientes", startTime: "19:00", endTime: "20:45", priority: "Critical", location: "Estación Ollantaytambo", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-cuz-2-hotel2", tripId: "VIAJE-2026-08-07-CUSCO", day: 2, name: "🏠 Noche en Qoya Palace", startTime: "21:00", endTime: "23:59", priority: "Alta", location: "Machupicchu Pueblo", category: "Alojamiento", owner: "jose", status: "Confirmado" },
@@ -249,6 +265,8 @@ const ACTIVITIES = [
     { id: "act-cuz-4-vuelo", tripId: "VIAJE-2026-08-07-CUSCO", day: 4, name: "✈️ Vuelo Cusco ➔ Lima (LATAM LA2014)", startTime: "10:40", endTime: "12:15", priority: "Critical", location: "Aeropuerto CUZ (PNR: KMTEYF)", category: "Vuelos", owner: "jose", status: "Confirmado" },
 
     // --- CALI JULIO ---
+    { id: "act-jul-1-salida", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "12:30", endTime: "13:30", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Completado" },
+    { id: "act-jul-1-checkin-aero", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🛂 Check-in LATAM", startTime: "13:30", endTime: "14:30", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "jose", status: "Completado" },
     { id: "act-jul-1-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "✈️ Vuelo de salida LIM ➔ CLO (LATAM LA2242)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Completado" },
     { id: "act-jul-1-checkin", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "🏠 Check-in Loft Cali (Av. 8 Norte #23-94 Piso 2)", startTime: "23:30", endTime: "23:59", priority: "Alta", location: "Airbnb Loft Cali", category: "Alojamiento", owner: "jose", status: "Completado" },
     { id: "act-jul-1-desconn", tripId: "VIAJE-2026-07-02-CALI", day: 1, name: "📱 Ventana de desconexión", startTime: "23:30", endTime: "01:30", priority: "Baja", location: "Airbnb Loft Cali", category: "Descanso", owner: "jose", status: "Completado" },
@@ -269,6 +287,8 @@ const ACTIVITIES = [
     { id: "act-jul-5-vuelo", tripId: "VIAJE-2026-07-02-CALI", day: 5, name: "✈️ Vuelo de retorno CLO ➔ LIM (LATAM LA2243)", startTime: "14:35", endTime: "20:20", priority: "Critical", location: "Aeropuerto Internacional Jorge Chávez", category: "Vuelos", owner: "jose", status: "Completado" },
 
     // --- CALI DICIEMBRE ---
+    { id: "act-dic-1-salida", tripId: "VIAJE-2026-12-22-CALI", day: 1, name: "🚕 Salida al Aeropuerto LIM", startTime: "12:30", endTime: "13:30", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-dic-1-checkin-aero", tripId: "VIAJE-2026-12-22-CALI", day: 1, name: "🛂 Check-in LATAM", startTime: "13:30", endTime: "14:30", priority: "Alta", location: "Aeropuerto Jorge Chávez", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-dic-1-vuelo", tripId: "VIAJE-2026-12-22-CALI", day: 1, name: "✈️ Vuelo Lima ➔ Cali (PE - LATAM)", startTime: "15:50", endTime: "22:35", priority: "Critical", location: "Aeropuerto Alfonso Bonilla Aragón (CLO)", category: "Vuelos", owner: "jose", status: "Confirmado" },
     { id: "act-dic-1-hotel", tripId: "VIAJE-2026-12-22-CALI", day: 1, name: "🏠 Traslado al Airbnb & Acomodación", startTime: "22:35", endTime: "23:30", priority: "Alta", location: "Airbnb Feria de Cali (Norte)", category: "Alojamiento", owner: "jose", status: "Confirmado" },
     { id: "act-dic-2-compras", tripId: "VIAJE-2026-12-22-CALI", day: 2, name: "🛍️ Compras Navideñas de Último Minuto", startTime: "10:00", endTime: "15:00", priority: "Media", location: "Centro Comercial Chipichape", category: "Ocio", owner: "jose", status: "Confirmado" },
