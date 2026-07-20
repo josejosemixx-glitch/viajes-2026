@@ -614,7 +614,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function loadState() {
     try {
-        const saved = localStorage.getItem("cfo_control_center_state");
+        const saved = localStorage.getItem("cfo_control_center_state_v2");
         if (saved) {
             const parsed = JSON.parse(saved);
             
@@ -700,7 +700,7 @@ async function loadState() {
 
 async function saveState() {
     try {
-        localStorage.setItem("cfo_control_center_state", JSON.stringify(SYSTEM_STATE));
+        localStorage.setItem("cfo_control_center_state_v2", JSON.stringify(SYSTEM_STATE));
         
         // Background Sync hook (preparación para Service Worker PWA)
         if ('serviceWorker' in navigator && 'SyncManager' in window) {
@@ -903,7 +903,8 @@ function setupResetButton() {
     if (btnReset) {
         btnReset.addEventListener("click", () => {
             if (confirm("¿Está seguro de que desea restablecer el estado completo? Se borrarán todos los pagos realizados e historiales.")) {
-                localStorage.removeItem("cfo_control_center_state");
+                localStorage.removeItem("cfo_control_center_state_v2");
+                localStorage.removeItem("cfo_control_center_state"); // Clear old one too
                 SYSTEM_STATE.payments = DEFAULT_PAYMENTS;
                 SYSTEM_STATE.reservations = {
                     "vuelo": "Pendiente",
