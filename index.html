@@ -9,7 +9,7 @@
     <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Archivo de Estilos -->
-    <link rel="stylesheet" href="style.css?v=1.2.2">
+    <link rel="stylesheet" href="style.css?v=1.2.0">
 </head>
 <body>
     <div class="app-container">
@@ -29,9 +29,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- BANNER DE URGENCIA AUTOMÁTICO -->
-        <div id="urgency-banner-container" style="padding: 0 20px;"></div>
 
         <!-- BARRA DE NAVEGACIÓN PRINCIPAL (9 TABS) -->
         <nav class="top-nav-tabs">
@@ -56,8 +53,8 @@
                 <span>Riesgos</span>
             </button>
             <button class="nav-item" data-target="tab-agenda">
-                <i class="fa-solid fa-table-list"></i>
-                <span>Trazabilidad</span>
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Agenda</span>
             </button>
             <button class="nav-item" data-target="tab-descanso">
                 <i class="fa-solid fa-moon"></i>
@@ -99,28 +96,23 @@
                         <div class="val text-blue" id="ceo-kpi-total-exposure">Cargando...</div>
                         <div class="val-desc" id="ceo-kpi-total-exposure-pen">Cargando...</div>
                     </div>
-                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-finanzas\']').click();">
-                        <small>Ratio de Cobertura (30d)</small>
-                        <div class="val text-emerald" id="ceo-kpi-coverage-score">--</div>
-                        <div class="val-desc" id="ceo-kpi-coverage-desc">--</div>
+                    <div class="ceo-kpi-card">
+                        <small>Travel Readiness Score</small>
+                        <div class="val text-emerald" id="ceo-kpi-readiness-score">-- / 100</div>
+                        <div class="val-desc" id="ceo-kpi-readiness-desc">--</div>
                     </div>
-                    <div class="ceo-kpi-card clickable" style="background: rgba(99,102,241,0.05); border-left: 3px solid var(--primary);" onclick="document.querySelector('[data-target=\'tab-viajes\']').click();">
+                    <div class="ceo-kpi-card" style="background: rgba(99,102,241,0.05); border-left: 3px solid var(--primary);">
                         <small>Rastreador de Vuelos <i class="fa-solid fa-satellite-dish" style="color: var(--primary);"></i></small>
                         <div class="val-title" id="ceo-kpi-flight-tracker-status" style="font-size: 0.85rem; margin-top: 5px;">Sincronizando...</div>
                         <div class="val-desc" id="ceo-kpi-flight-tracker-desc" style="color: var(--primary);">Esperando datos de la caja negra</div>
                     </div>
-                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-riesgos\']').click();" title="Ver riesgos del sistema">
+                    <div class="ceo-kpi-card">
                         <small>Riesgos Activos</small>
                         <div class="val text-red" id="ceo-kpi-risks">0</div>
                     </div>
-                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('.cfo-qna-card').scrollIntoView({behavior: 'smooth', block: 'start'});" title="Ir al detalle de reservas">
+                    <div class="ceo-kpi-card">
                         <small>Reservas sin Emitir</small>
                         <div class="val text-yellow" id="ceo-kpi-unissued">0</div>
-                    </div>
-                    <div class="ceo-kpi-card clickable" onclick="document.querySelector('[data-target=\'tab-caja\']').click();" title="Ver proyecciones de flujo de caja">
-                        <small>Runway Operativo</small>
-                        <div class="val text-emerald" id="ceo-kpi-runway-score">-- Días</div>
-                        <div class="val-desc" id="ceo-kpi-runway-desc">--</div>
                     </div>
                 </div>
 
@@ -145,11 +137,10 @@
                             <div class="cfo-card-header">
                                 <i class="fa-solid fa-clipboard-question"></i>
                                 <h3>Respuestas de Caja Inmediatas</h3>
-                            </div>
-                            <div class="cfo-card-body">
                                 <div class="qna-item">
                                     <span class="q">¿Cuál es el próximo pago?</span>
                                     <span class="a" id="q-next-payment">Cargando...</span>
+                                </div>
                                 </div>
                                 <div class="qna-item">
                                     <span class="q">¿Cuánto dinero necesito este mes?</span>
@@ -258,10 +249,6 @@
                                         <span>COP: $0</span>
                                     </div>
                                     <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px;">
-                                        <span style="font-size: 0.85rem; color: var(--text-secondary);">Deuda Tarjeta Crédito (TC):</span>
-                                        <span style="font-size: 1rem; font-weight: bold; color: var(--danger);" id="liq-debt-tc">$0 USD</span>
-                                    </div>
-                                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 10px;">
                                         <span style="font-size: 0.85rem; color: var(--text-secondary);">Compromisos (Próximos 30 días):</span>
                                         <span style="font-size: 1rem; font-weight: bold; color: var(--danger);" id="liq-commitments-30">$0 USD</span>
                                     </div>
@@ -280,30 +267,13 @@
             <!-- PESTAÑA 2: VIAJES -->
             <div id="tab-viajes" class="tab-pane">
                 <div class="section-title">
-                    <h2>✈️ Viajes e Itinerarios</h2>
-                    <p>Control de vuelos, hospedaje y cuenta regresiva de eventos</p>
+                    <h2>📅 Matriz de Trazabilidad Maestro</h2>
+                    <p>Trazabilidad física y financiera consolidada de todos tus traslados</p>
                 </div>
-                
-                <!-- Selector de Viajes -->
-                <div class="trip-selector" style="margin-bottom: 20px;">
-                    <select class="trip-dropdown" id="trip-dropdown-select">
-                        <option value="">Cargando viajes...</option>
-                    </select>
-                </div>
-                
-                <!-- Widget del Clima del Viaje Activo -->
-                <div id="trip-weather-widget" class="cfo-card" style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; display: none;">
-                    <!-- Renderizado dinámico del clima vía JS -->
-                </div>
-
-                <!-- Selector de Días Dinámico -->
-                <div class="day-selector scrollable-x" id="day-selector-container">
-                    <!-- Se renderiza vía JS según el viaje activo -->
-                </div>
-
-                <!-- Contenido de los Itinerarios -->
-                <div class="itineraries-container" id="itineraries-render" style="margin-top: 20px;">
-                    <!-- Se renderiza dinámicamente vía JS -->
+                <div class="cfo-card">
+                    <div id="traceability-matrix-render">
+                        <!-- Renderizado dinámico vía JS -->
+                    </div>
                 </div>
             </div>
 
@@ -343,13 +313,25 @@
             <!-- PESTAÑA 6: AGENDA INTELIGENTE -->
             <div id="tab-agenda" class="tab-pane">
                 <div class="section-title">
-                    <h2>📅 Matriz de Trazabilidad Maestro</h2>
-                    <p>Trazabilidad física y financiera consolidada de todos tus traslados</p>
+                    <h2>📅 Agenda Inteligente</h2>
+                    <p>Operativa y logística diaria, diagnóstico de conflictos de agenda</p>
                 </div>
-                <div class="cfo-card">
-                    <div id="traceability-matrix-render">
-                        <!-- Renderizado dinámico vía JS -->
-                    </div>
+                
+                <!-- Selector de Viajes -->
+                <div class="trip-selector scrollable-x">
+                    <button class="trip-btn active" data-trip="VIAJE-2026-08-07-CUSCO">Agosto: Cusco</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-12-22-CALI">Diciembre: Cali</button>
+                    <button class="trip-btn" data-trip="VIAJE-2026-07-02-CALI">Julio: Cali (Histórico)</button>
+                </div>
+
+                <!-- Selector de Días Dinámico -->
+                <div class="day-selector scrollable-x" id="day-selector-container">
+                    <!-- Se renderiza vía JS según el viaje activo -->
+                </div>
+
+                <!-- Contenido de los Itinerarios -->
+                <div class="itineraries-container" id="itineraries-render" style="margin-top: 20px;">
+                    <!-- Se renderiza dinámicamente vía JS -->
                 </div>
             </div>
 
@@ -382,26 +364,9 @@
             <!-- PESTAÑA 8: EQUIPAJE -->
             <div id="tab-equipaje" class="tab-pane">
                 <div class="section-title">
-                    <h2>🎒 Control de Equipaje Inteligente</h2>
-                    <p>Recomendaciones adaptadas a tu contextura (2.00m y 110kg), clima del destino y tipo de equipaje</p>
+                    <h2>🎒 Control de Equipaje</h2>
+                    <p>Checklist ergonómico adaptado a tu contextura (2.00m y 110kg) y requerimientos de Angélica</p>
                 </div>
-
-                <div class="filter-controls" style="display: flex; gap: 10px; margin-bottom: 20px;">
-                    <select id="packing-trip-select" class="form-control" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.05); color: white;" onchange="updatePackingList()">
-                        <!-- Poblado dinámicamente -->
-                    </select>
-                    <select id="packing-luggage-select" class="form-control" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.05); color: white;" onchange="updatePackingList()">
-                        <option value="carryon">Carry-on 10kg</option>
-                        <option value="bodega">Maleta Bodega 23kg</option>
-                        <option value="mochila">Mochila Ligera</option>
-                    </select>
-                </div>
-
-                <!-- Resumen de Clima de Destino (para Equipaje) -->
-                <div id="packing-climate-info" class="cfo-card" style="margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 10px; display: none;">
-                    <!-- Renderizado dinámico del clima vía JS -->
-                </div>
-
                 <div class="packing-list-card">
                     <div id="packing-list-render">
                         <!-- Renderizado dinámico vía JS -->
@@ -459,22 +424,6 @@
                     </div>
                 </div>
 
-                <!-- Configuración de Deuda Tarjeta de Crédito -->
-                <div class="finance-card" style="margin-top: 20px;">
-                    <h3><i class="fa-solid fa-credit-card"></i> Deuda de Tarjeta de Crédito (VISA)</h3>
-                    <p class="desc" style="margin-bottom: 15px;">Ingresa la deuda actual de tu TC para un cálculo de liquidez real:</p>
-                    <div class="cash-inputs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
-                        <div>
-                            <label for="config-debt-usd" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Deuda USD:</label>
-                            <input type="number" id="config-debt-usd" class="cfo-select" style="width: 100%;" value="0">
-                        </div>
-                        <div>
-                            <label for="config-debt-pen" style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 5px;">Deuda PEN (S/.):</label>
-                            <input type="number" id="config-debt-pen" class="cfo-select" style="width: 100%;" value="0">
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Estado del Crédito Europa -->
                 <div class="finance-card" style="margin-top: 20px;">
                     <h3><i class="fa-solid fa-landmark"></i> Estado del Crédito Europa</h3>
@@ -494,6 +443,9 @@
                         </button>
                         <button onclick="document.getElementById('migration-dialog').showModal()" class="btn btn-sm" style="border: 1px solid var(--primary); background: rgba(99,102,241,0.08); color: #fff;">
                             <i class="fa-solid fa-passport"></i> Ver Info Migración Perú
+                        </button>
+                        <button onclick="document.getElementById('mexico-migration-dialog').showModal()" class="btn btn-sm" style="border: 1px solid var(--primary); background: rgba(99,102,241,0.08); color: #fff;">
+                            <i class="fa-solid fa-passport"></i> Ver Info Alojamiento México
                         </button>
                     </div>
                 </div>
@@ -553,8 +505,30 @@
         </div>
     </dialog>
 
+    <dialog id="mexico-migration-dialog" class="cfo-dialog">
+        <div class="dialog-header">
+            <h3>📋 Alojamiento y Oficina (México)</h3>
+            <button onclick="document.getElementById('mexico-migration-dialog').close()" class="btn-close">&times;</button>
+        </div>
+        <div class="dialog-body">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Dirección de hospedaje y accesos (Airbnb):</p>
+            <div class="pnrs-box" style="margin-bottom: 15px;">
+                <strong>Ubicación:</strong> <a href="https://maps.app.goo.gl/7mqm3NQ5J7geYPSq7" target="_blank" style="color: var(--primary);">Ver en Google Maps</a><br>
+                <strong>Acceso Principal:</strong> Casa #217. Cerradura digital: 2829#.<br>
+                <strong>Habitación:</strong> Primer nivel, número 4. Código caja fuerte: 2829.<br>
+                <strong>Contactos:</strong> Nora Zamora / Jimmy (+52 7229085667)
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Logística y Horarios:</p>
+            <ul style="font-size: 0.8rem; padding-left: 15px; display: flex; flex-direction: column; gap: 8px;">
+                <li><strong>Traslado:</strong> Tomar bus <strong>EL CAMINANTE</strong> al llegar al aeropuerto. Avisar a Nora en Outlet Lerma.</li>
+                <li><strong>Horario Oficina:</strong> 08:00 AM a 04:00 PM (1 hora antes de lo habitual).</li>
+            </ul>
+        </div>
+    </dialog>
+
+
     <!-- Archivo JS Lógico -->
-    <script src="countdownEngine.js?v=1.2.0"></script>
+    <script src="countdownEngine.js?v=1.0.0"></script>
     <script src="app.js?v=1.2.3"></script>
 </body>
 </html>

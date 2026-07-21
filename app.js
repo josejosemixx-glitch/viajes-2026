@@ -239,7 +239,10 @@ const ACTIVITIES = [
     { id: "act-mex-jul-1-salida", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🚕 Salida al Aeropuerto LIM (Madrugada)", startTime: "02:30", endTime: "03:20", priority: "Alta", location: "Hacia el Aeropuerto", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-1-checkin", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🛂 Check-in Volaris", startTime: "03:20", endTime: "04:20", priority: "Alta", location: "Aeropuerto LIM", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-1-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "✈️ Vuelo Lima ➔ CDMX (Volaris Y4 3919 - Asiento 13F)", startTime: "06:04", endTime: "11:10", priority: "Critical", location: "Aeropuerto (LIM)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
-    { id: "act-mex-jul-1-llegada", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🚕 Llegada y Traslado a Alojamiento", startTime: "12:30", endTime: "13:30", priority: "Alta", location: "CDMX", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-1-bus", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🚌 Bus EL CAMINANTE a Lerma", startTime: "12:00", endTime: "13:30", priority: "Alta", location: "Aeropuerto a Lerma", category: "Traslados", owner: "jose", status: "Confirmado", notes: "Avisar a Nora a la altura del Outlet Lerma" },
+    { id: "act-mex-jul-1-encuentro", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "👋 Encuentro con Nora", startTime: "13:30", endTime: "14:00", priority: "Alta", location: "Estación Lerma", category: "Traslados", owner: "jose", status: "Confirmado" },
+    { id: "act-mex-jul-1-airbnb", tripId: "VIAJE-2026-07-21-MEXICO", day: 1, name: "🏠 Check-in Airbnb", startTime: "15:00", endTime: "16:00", priority: "Alta", location: "Casa 217", category: "Alojamiento", owner: "jose", status: "Confirmado", notes: "Puerta: 2829#, Hab. 4, Caja: 2829. Host: Jimmy +52 7229085667" },
+    { id: "act-mex-jul-2-oficina", tripId: "VIAJE-2026-07-21-MEXICO", day: 2, name: "🏢 Jornada en Oficina", startTime: "08:00", endTime: "16:00", priority: "Alta", location: "Oficina", category: "Reuniones", owner: "jose", status: "Confirmado", notes: "Horario acordado 8am a 4pm" },
     { id: "act-mex-jul-16-salida", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "🚕 Salida al Aeropuerto AICM", startTime: "18:00", endTime: "19:00", priority: "Alta", location: "Hacia AICM", category: "Traslados", owner: "jose", status: "Confirmado" },
     { id: "act-mex-jul-16-vuelo", tripId: "VIAJE-2026-07-21-MEXICO", day: 16, name: "✈️ Vuelo CDMX ➔ Lima (Volaris Y4 3918 - Asiento 13F)", startTime: "22:00", endTime: "05:01", priority: "Critical", location: "Aeropuerto AICM (MEX)", category: "Vuelos", owner: "jose", status: "Confirmado", notes: "Incluye maleta 25kg" },
     
@@ -672,6 +675,9 @@ async function loadState() {
 
             // Restore dynamic activities
             if (parsed.dynamicActivities) {
+                // PATCH: Remover actividades cacheadas de Mexico para usar las nuevas hardcodeadas
+                parsed.dynamicActivities = parsed.dynamicActivities.filter(a => !a.id.startsWith("act-mex-jul"));
+                
                 SYSTEM_STATE.dynamicActivities = parsed.dynamicActivities;
                 parsed.dynamicActivities.forEach(act => {
                     const existingIndex = ACTIVITIES.findIndex(a => a.id === act.id);
@@ -2434,6 +2440,25 @@ function renderItinerariesTab() {
                 }
             }
 
+            let gateSearchHtml = "";
+            if (act.category === "Vuelos" || (act.name && act.name.toLowerCase().includes("vuelo"))) {
+                let searchStr = "estado de vuelo";
+                const match = act.name.match(/\((.*?)(?:\s-|\))/);
+                if (match && match[1]) {
+                    searchStr = `estado de vuelo ${match[1].trim()}`;
+                } else {
+                    searchStr = `estado de ${act.name.replace(/[^\w\s]/gi, '')}`;
+                }
+                const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchStr)}`;
+                gateSearchHtml = `
+                    <div style="margin-top: 8px;">
+                        <a href="${searchUrl}" target="_blank" class="btn btn-sm" style="background: rgba(99,102,241,0.15); color: #fff; border: 1px solid var(--primary); font-size: 0.7rem; padding: 4px 8px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-weight: bold; transition: all 0.2s ease;">
+                            <i class="fa-solid fa-plane-departure"></i> Buscar Sala / Estado
+                        </a>
+                    </div>
+                `;
+            }
+
             let countdownHtml = "";
             let isoTarget = null;
             if ((priorityClass === 'critical' || priorityClass === 'alta') && act.status !== "Completado") {
@@ -2467,6 +2492,7 @@ function renderItinerariesTab() {
                         </div>
                         <p style="margin-top: 5px; font-size: 0.8rem; color: var(--text-secondary);"><i class="fa-solid fa-location-dot"></i> ${act.location}</p>
                         ${budgetBadge}
+                        ${gateSearchHtml}
                         ${countdownHtml}
                     </div>
                 </li>
