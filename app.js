@@ -1,3 +1,10 @@
+window.addEventListener('error', function(e) {
+    document.body.innerHTML = '<div style="background:red;color:white;padding:50px;font-size:24px;z-index:9999;position:fixed;top:0;left:0;width:100%;height:100%;">' + e.message + '<br>' + e.filename + ':' + e.lineno + '<br><pre>' + (e.error ? e.error.stack : '') + '</pre></div>';
+});
+window.addEventListener('unhandledrejection', function(e) {
+    document.body.innerHTML = '<div style="background:red;color:white;padding:50px;font-size:24px;z-index:9999;position:fixed;top:0;left:0;width:100%;height:100%;">Unhandled Promise Rejection: ' + e.reason + '</div>';
+});
+
 // ==========================================
 // DATA LEDGER INITIAL VALUES
 // ==========================================
