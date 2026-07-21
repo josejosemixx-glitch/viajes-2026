@@ -2415,7 +2415,7 @@ function renderItinerariesTab() {
     } else {
         itineraryHtml += `<ul class="timeline">`;
         dayActs.forEach(act => {
-            let priorityClass = act.priority.toLowerCase();
+            let priorityClass = (act.priority || "baja").toLowerCase();
             let isReprog = false;
             
             if (SYSTEM_STATE.settings.selectedDay > 1) {
