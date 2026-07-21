@@ -318,7 +318,47 @@
         "6a5d1cfc.d2cb4adc.ccd80.b6b1@mx.google.com",
         "6a5d2add.a4791f72.2944a8.d1bf@mx.google.com",
         "6a5d4b71.88aec2a3.2c8106.feea@mx.google.com",
-        "295a3970e9d442ac86e4c0f99a7b3ae792d28220-20399006-337030291@google.com"
+        "295a3970e9d442ac86e4c0f99a7b3ae792d28220-20399006-337030291@google.com",
+        "6a5d97a3.92178f4f.3b58e0.414c@mx.google.com",
+        "6a5da029e6f3a_130113034063e@sharedworker-58ccbdc98c-mpgsb.mail",
+        "7cd787d7-1d5f-54a2-9663-2b8145a38b21@mail.uber.com",
+        "fadlheedrxcc5jd4mwyuhq@geopod-ismtpd-14",
+        "lhsowroer-wuuyaubndnjq@geopod-ismtpd-17",
+        "jv8qe26tr-i9qhf8h39nwq@geopod-ismtpd-14",
+        "dcf52d0c-d420-5d9b-a833-ef369fe9bdd0@mail.uber.com",
+        "6a5db7a8.b1823a4b.1e29f9.8c9b@mx.google.com",
+        "6a5db8b2.20aff8f6.ce849.ad03@mx.google.com",
+        "b8d82067958ac37f70b3e686e7cc32cce809e97e-10035039-111282348@google.com",
+        "2d0942fccb39ec993330ce487a2a92c9289b194f9dd89ab85d600882e9805c00@pe.didiglobal.com",
+        "6a5e2e14.35b683e3.4f8c8.3bec@mx.google.com",
+        "o04bvjvxricdm5rwporiaq@geopod-ismtpd-11",
+        "oihy-trfrw6zotj-b2ze0q@geopod-ismtpd-16",
+        "6a5e31f9.f7f62383.1d6f82.77be@mx.google.com",
+        "momentofjoy-ed4a5783-01d7-47e2-82ef-2ca463319915.rcid_cfc1bde6-0d39-40b8-b5de-e6571c2b8f67.wiid_2a1c8c2c-2200-46ca-a96d-37033617ddd8.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_99adfd52-4e57-4376-8aec-d43765b356d3@odspnotify",
+        "d4ypueytqyyx2ju79wucga@geopod-ismtpd-5",
+        "6a5e51f3.eb165e5c.4506c.5168@mx.google.com",
+        "jget3wcctwq994zp2-j-ja@geopod-ismtpd-7",
+        "9307aa1f-3c87-5ebf-843a-c0f912ec7575@mail.uber.com",
+        "xsvts3dgq8wg4vjd56_vua@geopod-ismtpd-17",
+        "4ee1f6553ce1eb3bd6dbf3ce9b010947@pd0ldwk002c6i",
+        "20260720191132.11e5e4941f5aebeb@cio82276.novedadesyape.pe",
+        "6a5e762c.69e6b551.26204f.6d5e@mx.google.com",
+        "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0",
+        "6a5e8121.efad125f.ad2ad.c733@mx.google.com",
+        "4e08195f463fbb25ffd1c4d1fd4f6d21@pd0ldwk002bml",
+        "9d92e5d4620f4138d97ff33795b9b16463015ea0030e0e93b7a266ded98580fd@pe.didiglobal.com",
+        "zlb66_mxq2o7snoxfhkfbg@geopod-ismtpd-21",
+        "uuksdqkaqgq6flgouqik6w@geopod-ismtpd-7",
+        "uv_2bbwtqu6hnp4g5patia@geopod-ismtpd-1",
+        "kp7nrmreqhugtw7hf5bnmw@geopod-ismtpd-16",
+        "0100019f81ff5cf3-f592ec63-7fc0-43be-b463-63dbb528edd2-000000@email.amazonses.com",
+        "e9twu9arq9gbhrfkt9ppmq@geopod-ismtpd-17",
+        "51a5683c3b87c93601b26b829d86c7e4fadd4b2a8bf7fb06b5e150c5366b30dc@pe.didiglobal.com",
+        "ylbm5xkrqfy1znt11jjnrw@geopod-ismtpd-5",
+        "zcb.3z41b8c8175ff9843675a39f1092e99a74.135e89da62726d85.1784599950535@zma.inesem.es",
+        "6a5ee475.1551f180.2f4ec8.ceca@mx.google.com",
+        "6a5f0334.d9789fc0.2c9f5e.3b2a@mx.google.com",
+        "6a5f0592.2f7a0d05.3e740.72a2@mx.google.com"
     ],
     "transactions": [
         {
@@ -1056,90 +1096,138 @@
             "amount": 16.9,
             "currency": "PEN",
             "timestamp": "2026-07-19T19:51:54.277600"
+        },
+        {
+            "msg_id": "7cd787d7-1d5f-54a2-9663-2b8145a38b21@mail.uber.com",
+            "date": "Mon, 20 Jul 2026 01:53:52 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T05:56:50.919843"
+        },
+        {
+            "msg_id": "fadlheedrxcc5jd4mwyuhq@geopod-ismtpd-14",
+            "date": "Mon, 20 Jul 2026 01:25:12 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T05:56:53.438153"
+        },
+        {
+            "msg_id": "lhsowroer-wuuyaubndnjq@geopod-ismtpd-17",
+            "date": "Mon, 20 Jul 2026 01:24:11 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T05:56:55.959428"
+        },
+        {
+            "msg_id": "jv8qe26tr-i9qhf8h39nwq@geopod-ismtpd-14",
+            "date": "Sun, 19 Jul 2026 21:24:32 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 220.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T05:56:58.478943"
+        },
+        {
+            "msg_id": "o04bvjvxricdm5rwporiaq@geopod-ismtpd-11",
+            "date": "Mon, 20 Jul 2026 14:15:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.4,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T14:34:31.254606"
+        },
+        {
+            "msg_id": "oihy-trfrw6zotj-b2ze0q@geopod-ismtpd-16",
+            "date": "Mon, 20 Jul 2026 13:53:10 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T14:34:32.022658"
+        },
+        {
+            "msg_id": "d4ypueytqyyx2ju79wucga@geopod-ismtpd-5",
+            "date": "Mon, 20 Jul 2026 16:45:03 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 6.3,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T16:50:58.028827"
+        },
+        {
+            "msg_id": "jget3wcctwq994zp2-j-ja@geopod-ismtpd-7",
+            "date": "Mon, 20 Jul 2026 18:23:00 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:13.882696"
+        },
+        {
+            "msg_id": "9307aa1f-3c87-5ebf-843a-c0f912ec7575@mail.uber.com",
+            "date": "Mon, 20 Jul 2026 18:35:52 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:14.287126"
+        },
+        {
+            "msg_id": "xsvts3dgq8wg4vjd56_vua@geopod-ismtpd-17",
+            "date": "Mon, 20 Jul 2026 18:44:20 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 42.3,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:14.542896"
+        },
+        {
+            "msg_id": "lpgcquufrimt0d4mu4pqgq@geopod-ismtpd-canary-0",
+            "date": "Mon, 20 Jul 2026 20:01:18 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 54.26,
+            "currency": "PEN",
+            "timestamp": "2026-07-20T20:12:16.234730"
+        },
+        {
+            "msg_id": "zlb66_mxq2o7snoxfhkfbg@geopod-ismtpd-21",
+            "date": "Mon, 20 Jul 2026 22:45:58 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 13.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-21T03:15:59.411495"
+        },
+        {
+            "msg_id": "uuksdqkaqgq6flgouqik6w@geopod-ismtpd-7",
+            "date": "Mon, 20 Jul 2026 22:46:28 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-21T03:15:59.762881"
+        },
+        {
+            "msg_id": "uv_2bbwtqu6hnp4g5patia@geopod-ismtpd-1",
+            "date": "Mon, 20 Jul 2026 23:07:29 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 11.3,
+            "currency": "PEN",
+            "timestamp": "2026-07-21T03:16:00.112559"
+        },
+        {
+            "msg_id": "e9twu9arq9gbhrfkt9ppmq@geopod-ismtpd-17",
+            "date": "Tue, 21 Jul 2026 01:38:55 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-07-21T03:16:01.501107"
+        },
+        {
+            "msg_id": "ylbm5xkrqfy1znt11jjnrw@geopod-ismtpd-5",
+            "date": "Tue, 21 Jul 2026 01:57:36 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.7,
+            "currency": "PEN",
+            "timestamp": "2026-07-21T03:16:02.843397"
         }
     ],
-    "last_run": "2026-07-20T03:36:01.636493",
+    "last_run": "2026-07-21T07:28:53.751666",
     "auditLog": [
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-16T17:25:35.350979"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1339.46",
-            "status": "INFO",
-            "timestamp": "2026-07-16T17:25:35.350997"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1339.46). Sugerencia: Evaluar compra inmediata.",
-            "status": "WARNING",
-            "timestamp": "2026-07-16T17:25:35.351001"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-16T21:09:53.289772"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1288.28",
-            "status": "INFO",
-            "timestamp": "2026-07-16T21:09:53.289791"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-17T03:23:10.885425"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1253.57",
-            "status": "INFO",
-            "timestamp": "2026-07-17T03:23:10.885442"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-17T06:22:57.768022"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1189.91",
-            "status": "INFO",
-            "timestamp": "2026-07-17T06:22:57.768042"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-17T10:05:27.527569"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1153.67",
-            "status": "INFO",
-            "timestamp": "2026-07-17T10:05:27.527586"
-        },
-        {
-            "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1153.67)",
-            "status": "SUCCESS",
-            "timestamp": "2026-07-17T10:05:27.527590"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-17T13:53:21.503109"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1150.79",
-            "status": "INFO",
-            "timestamp": "2026-07-17T13:53:21.503120"
-        },
-        {
-            "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1150.79)",
-            "status": "SUCCESS",
-            "timestamp": "2026-07-17T13:53:21.503122"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-17T17:18:33.855177"
-        },
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1229.16",
             "status": "INFO",
@@ -1309,6 +1397,86 @@
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1223.51",
             "status": "INFO",
             "timestamp": "2026-07-20T03:47:25.561269"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T06:54:29.750898"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1253.7",
+            "status": "INFO",
+            "timestamp": "2026-07-20T06:54:29.750917"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T11:08:05.192715"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1155.75",
+            "status": "INFO",
+            "timestamp": "2026-07-20T11:08:05.192739"
+        },
+        {
+            "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1155.75)",
+            "status": "SUCCESS",
+            "timestamp": "2026-07-20T11:08:05.192744"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T14:23:08.240066"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1260.34",
+            "status": "INFO",
+            "timestamp": "2026-07-20T14:23:08.240094"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T18:10:51.253367"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1323.26",
+            "status": "INFO",
+            "timestamp": "2026-07-20T18:10:51.253387"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1323.26). Sugerencia: Evaluar compra inmediata.",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T18:10:51.253391"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-20T21:17:01.568804"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1263.74",
+            "status": "INFO",
+            "timestamp": "2026-07-20T21:17:01.568824"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-21T03:26:34.354676"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1208.74",
+            "status": "INFO",
+            "timestamp": "2026-07-21T03:26:34.354699"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-07-21T06:35:28.956520"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1287.31",
+            "status": "INFO",
+            "timestamp": "2026-07-21T06:35:28.956561"
         }
     ]
 }
