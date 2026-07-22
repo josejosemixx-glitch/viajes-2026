@@ -388,7 +388,10 @@
         "nm60e3c89b30ab8332fbcp_mid_prod6@email.bcp.com.pe",
         "hc2btjvkssazgiq2jymjwq@geopod-ismtpd-22",
         "6a605445.05b29a09.2ce599.3ec0@mx.google.com",
-        "6a6056c1.743400b0.25573c.495f@mx.google.com"
+        "6a6056c1.743400b0.25573c.495f@mx.google.com",
+        "20260722051121.46681572.830117@sailthru.com",
+        "camhob2viz+donrl7ufcw6sjag_lonw3yk8pgsejd0nab=xnvma@mail.gmail.com",
+        "6a60ce97.dfa3d646.3230ce.2daa@mx.google.com"
     ],
     "transactions": [
         {
@@ -1288,7 +1291,7 @@
             "timestamp": "2026-07-22T03:13:52.039458"
         }
     ],
-    "last_run": "2026-07-22T07:30:23.979877",
+    "last_run": "2026-07-22T14:23:53.971421",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
