@@ -385,7 +385,8 @@
         "20260721200936.3f456309169b0ec2@cio82276.novedadesyape.pe",
         "1153263447.117737973.1784665701351@lor1-app152538.prod.linkedin.com",
         "1840208.1519670989.9748798.1784667802308.danamail.7017@pacificoseguros.com.pe",
-        "nm60e3c89b30ab8332fbcp_mid_prod6@email.bcp.com.pe"
+        "nm60e3c89b30ab8332fbcp_mid_prod6@email.bcp.com.pe",
+        "hc2btjvkssazgiq2jymjwq@geopod-ismtpd-22"
     ],
     "transactions": [
         {
@@ -1275,9 +1276,17 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-07-21T22:13:05.377943"
+        },
+        {
+            "msg_id": "hc2btjvkssazgiq2jymjwq@geopod-ismtpd-22",
+            "date": "Wed, 22 Jul 2026 02:35:03 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 200.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-22T03:13:52.039458"
         }
     ],
-    "last_run": "2026-07-21T22:13:05.811127",
+    "last_run": "2026-07-22T03:13:52.488677",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1260.27",
