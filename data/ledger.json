@@ -386,7 +386,8 @@
         "1153263447.117737973.1784665701351@lor1-app152538.prod.linkedin.com",
         "1840208.1519670989.9748798.1784667802308.danamail.7017@pacificoseguros.com.pe",
         "nm60e3c89b30ab8332fbcp_mid_prod6@email.bcp.com.pe",
-        "hc2btjvkssazgiq2jymjwq@geopod-ismtpd-22"
+        "hc2btjvkssazgiq2jymjwq@geopod-ismtpd-22",
+        "6a605445.05b29a09.2ce599.3ec0@mx.google.com"
     ],
     "transactions": [
         {
@@ -1286,7 +1287,7 @@
             "timestamp": "2026-07-22T03:13:52.039458"
         }
     ],
-    "last_run": "2026-07-22T03:13:52.488677",
+    "last_run": "2026-07-22T05:36:00.326141",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1317.0",
