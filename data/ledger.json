@@ -400,7 +400,9 @@
         "f2127fa4-190b-3f2e-a1d3-2be8c0c05641@info.lifemiles.com",
         "6a61207d.c5504292.1bbfc8.d677@mx.google.com",
         "abihknltsug3rmyrpzk6ua@geopod-ismtpd-62",
-        "zqti4plfru2ke97-f1g34q@geopod-ismtpd-79"
+        "zqti4plfru2ke97-f1g34q@geopod-ismtpd-79",
+        "6a61888d.492e23e4.292f20.69b5@mx.google.com",
+        "6a61a71e.8426f43d.32bbc9.3162@mx.google.com"
     ],
     "transactions": [
         {
@@ -1300,7 +1302,7 @@
             "timestamp": "2026-07-22T03:13:52.039458"
         }
     ],
-    "last_run": "2026-07-23T03:20:43.987676",
+    "last_run": "2026-07-23T05:40:43.584206",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
