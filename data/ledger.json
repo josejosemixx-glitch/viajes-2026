@@ -416,7 +416,14 @@
         "bzwjptoxqiaxjokosn_ljq@geopod-ismtpd-16",
         "31180933.20260723150709.6a622e1d0900b4.96839867@mail180-14.suw31.mandrillapp.com",
         "9a.52.50315.410326a6@i-05e821888b1c43292.mta1vrest.sd.prd.sparkpost",
-        "0.0.c.a44.1dd1ab3ffaa63a4.0@omp.contigo.bancodebogota.com.co"
+        "0.0.c.a44.1dd1ab3ffaa63a4.0@omp.contigo.bancodebogota.com.co",
+        "6a6246f4.46adc49a.117dd0.5358@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln+zeizosl9zctvok4bj9gomjqqalkuupub+zepylktkvvyo6ozbzgxiseerbyag3oglfzqcxhriwycgrlgqxfv@nws.atrapalo.pe",
+        "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgovcpmno9pryku/2/kioip297fbxz4jhkqj2+agbwranfquro0uh2gkmjytb33nybwkiqfk5sk+nqerj8jywh5z@nws.atrapalo.com.co",
+        "6a62649f.e69a5694.360c4b.86bc@mx.google.com",
+        "0100019f905b913c-d7cbf917-0285-4cee-9d19-cc99d076b5c5-000000@email.amazonses.com",
+        "202623071935.1ad57ewr54rytfj@by.d.mailin.fr",
+        "202623071935.1ad4wff3oorytfj@hb.d.mailin.fr"
     ],
     "transactions": [
         {
@@ -1340,7 +1347,7 @@
             "timestamp": "2026-07-23T16:53:06.648411"
         }
     ],
-    "last_run": "2026-07-23T16:53:07.880570",
+    "last_run": "2026-07-23T19:59:59.916996",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
