@@ -403,7 +403,15 @@
         "zqti4plfru2ke97-f1g34q@geopod-ismtpd-79",
         "6a61888d.492e23e4.292f20.69b5@mx.google.com",
         "6a61a71e.8426f43d.32bbc9.3162@mx.google.com",
-        "6a61a95c.1efbd165.174bf6.5f76@mx.google.com"
+        "6a61a95c.1efbd165.174bf6.5f76@mx.google.com",
+        "6a61c276.dab7d853.1d39fb.7f71@mx.google.com",
+        "6a620761.39f23b82.4b911.89f6@mx.google.com",
+        "ev2sst5ark6sg6lhomkpba@geopod-ismtpd-14",
+        "6b49b401e075a9c24598b80908bae50e7a543f9b-10035039-111282348@google.com",
+        "massdelete-4519f937-403e-4d05-9490-ff7ddbe98279.rcid_b48334e6-1543-413f-b816-e8bf6ecb3afe.wiid_d76360d3-04e8-4b23-8f5d-2178498aa96a.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cac_notifyp-aid_caca5409-c9c8-44c6-97fe-d9a69cdea9fa@odspnotify",
+        "momentofjoy-27dcdeec-4cf4-4acb-87f4-4865e3c2f9e1.rcid_b5ec8615-7ce7-4694-a0cd-badf9b259464.wiid_46343ed3-44c0-4421-a385-454d978b29ff.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_f8a17953-76f2-478b-a06a-5db363ef83b5@odspnotify",
+        "w-6elfhrruohykb8fmfksq@geopod-ismtpd-19",
+        "6a62211b.1fd19957.28a4f.e486@mx.google.com"
     ],
     "transactions": [
         {
@@ -1301,9 +1309,25 @@
             "amount": 200.0,
             "currency": "PEN",
             "timestamp": "2026-07-22T03:13:52.039458"
+        },
+        {
+            "msg_id": "ev2sst5ark6sg6lhomkpba@geopod-ismtpd-14",
+            "date": "Thu, 23 Jul 2026 12:22:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-07-23T14:33:51.724746"
+        },
+        {
+            "msg_id": "w-6elfhrruohykb8fmfksq@geopod-ismtpd-19",
+            "date": "Thu, 23 Jul 2026 13:47:26 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 1.96,
+            "currency": "USD",
+            "timestamp": "2026-07-23T14:33:53.774255"
         }
     ],
-    "last_run": "2026-07-23T07:27:49.252859",
+    "last_run": "2026-07-23T14:33:54.887100",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
