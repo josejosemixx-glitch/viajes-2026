@@ -439,7 +439,14 @@
         "f37911ee8896da0ac7fe592a3282c89504c86f5f-10044049-110294243@google.com",
         "tkovzfgnt6-f1pgjucwgiq@geopod-ismtpd-34",
         "eb06aec5-3d74-4ba7-9f30-00d57e9adc14@iad4s12mta1215.xt.local",
-        "josejosemixx-glitch/viajes-2026/check-suites/cs_kwdos6cswm8aaaas_zgixg/1784910345@github.com"
+        "josejosemixx-glitch/viajes-2026/check-suites/cs_kwdos6cswm8aaaas_zgixg/1784910345@github.com",
+        "6a639a38.1a0f6747.3a52c7.2f1b@mx.google.com",
+        "0100019f9526af84-09361845-07ca-4a17-b0cf-47de8f16fbac-000000@email.amazonses.com",
+        "6a63b95f.7d702ed2.2f6c05.feb0@mx.google.com",
+        "kxegtleiqle2vdtmz8jmka@geopod-ismtpd-14",
+        "nmffda9268ca49-cb37-4c88-a341-7e97cf41e5b201a4a58bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "deeb1a1e-c871-3def-bd4e-d4cd2b77a9f5@newsletter.lifemiles.com",
+        "b1684e02.av4aaj_9hyuaac7jtroaaxozpl8aaaadreiab9cdacdt6qbqy8hw@mailjet.com"
     ],
     "transactions": [
         {
@@ -1361,9 +1368,25 @@
             "amount": 6.52,
             "currency": "USD",
             "timestamp": "2026-07-23T16:53:06.648411"
+        },
+        {
+            "msg_id": "kxegtleiqle2vdtmz8jmka@geopod-ismtpd-14",
+            "date": "Fri, 24 Jul 2026 19:09:20 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 20.59,
+            "currency": "USD",
+            "timestamp": "2026-07-24T20:01:47.195368"
+        },
+        {
+            "msg_id": "nmffda9268ca49-cb37-4c88-a341-7e97cf41e5b201a4a58bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Fri, 24 Jul 2026 19:31:21 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 322.493,
+            "currency": "USD",
+            "timestamp": "2026-07-24T20:01:47.828608"
         }
     ],
-    "last_run": "2026-07-24T17:00:39.620846",
+    "last_run": "2026-07-24T20:01:50.365517",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
