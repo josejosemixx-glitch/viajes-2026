@@ -446,7 +446,11 @@
         "kxegtleiqle2vdtmz8jmka@geopod-ismtpd-14",
         "nmffda9268ca49-cb37-4c88-a341-7e97cf41e5b201a4a58bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "deeb1a1e-c871-3def-bd4e-d4cd2b77a9f5@newsletter.lifemiles.com",
-        "b1684e02.av4aaj_9hyuaac7jtroaaxozpl8aaaadreiab9cdacdt6qbqy8hw@mailjet.com"
+        "b1684e02.av4aaj_9hyuaac7jtroaaxozpl8aaaadreiab9cdacdt6qbqy8hw@mailjet.com",
+        "1842261.1166446841.2145673.1784923351264.danamail.8645@pacificoseguros.com.pe",
+        "nmffda05bbda0e-0d1e-4c71-9b52-0f73c5fb9b2101b796a3samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "1dr-106dddd91e-g@embluemail.com",
+        "1842448.531652787.2612514.1784929141445.danamail.7867@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -1384,9 +1388,17 @@
             "amount": 322.493,
             "currency": "USD",
             "timestamp": "2026-07-24T20:01:47.828608"
+        },
+        {
+            "msg_id": "nmffda05bbda0e-0d1e-4c71-9b52-0f73c5fb9b2101b796a3samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Fri, 24 Jul 2026 20:05:08 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 123.951,
+            "currency": "USD",
+            "timestamp": "2026-07-24T22:28:35.901458"
         }
     ],
-    "last_run": "2026-07-24T20:01:50.365517",
+    "last_run": "2026-07-24T22:28:37.473854",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
