@@ -434,7 +434,12 @@
         "6a62f86e.f0689485.37bb55.bfaf@mx.google.com",
         "6a62fa0d.9a9f8321.a4998.84d8@mx.google.com",
         "dk9mx4kbsiwjwpuf5rxotq@geopod-ismtpd-70",
-        "6a636e92.941bd20c.1c38c4.1fa6@mx.google.com"
+        "6a636e92.941bd20c.1c38c4.1fa6@mx.google.com",
+        "6a63734d.fafec2b9.12f335.cea7@mx.google.com",
+        "f37911ee8896da0ac7fe592a3282c89504c86f5f-10044049-110294243@google.com",
+        "tkovzfgnt6-f1pgjucwgiq@geopod-ismtpd-34",
+        "eb06aec5-3d74-4ba7-9f30-00d57e9adc14@iad4s12mta1215.xt.local",
+        "josejosemixx-glitch/viajes-2026/check-suites/cs_kwdos6cswm8aaaas_zgixg/1784910345@github.com"
     ],
     "transactions": [
         {
@@ -1358,7 +1363,7 @@
             "timestamp": "2026-07-23T16:53:06.648411"
         }
     ],
-    "last_run": "2026-07-24T14:14:35.870072",
+    "last_run": "2026-07-24T17:00:39.620846",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1263.74",
