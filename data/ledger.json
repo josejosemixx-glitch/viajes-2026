@@ -458,7 +458,10 @@
         "nm6111d77ab0ab90175bcp_mid_prod6@email.bcp.com.pe",
         "2101265027.7911509.1784937521530@lor1-app114001.prod.linkedin.com",
         "509556222.14041575.1784939804026@email.apple.com",
-        "mrzn5ydk.174y5fvqbrslv@express.sea1.medallia.com"
+        "mrzn5ydk.174y5fvqbrslv@express.sea1.medallia.com",
+        "6a6429ba.1e1ac41d.8ad93.17fb@mx.google.com",
+        "416648842.7473864.1784951920766@ltx1-app86770.prod.linkedin.com",
+        "6a6447d9.7e72d6e7.8efb9.098b@mx.google.com"
     ],
     "transactions": [
         {
@@ -1406,7 +1409,7 @@
             "timestamp": "2026-07-24T22:28:35.901458"
         }
     ],
-    "last_run": "2026-07-25T03:12:56.993783",
+    "last_run": "2026-07-25T05:31:14.429140",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
