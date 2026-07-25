@@ -474,7 +474,10 @@
         "6a64e34a.3cce8983.19fb00.953a@mx.google.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnsycxg3csoxcbmcvpwxpwtzsnwmzq5hpxgryf8nwrajdffcpcb4eglxiarjedeo4mmacyklh+ggkyzbudpwn//@nws.atrapalo.pe",
         "6a6506d5.0318b02e.530b7.b9a5@mx.google.com",
-        "86kpomkbr96ji6c2qlpfda@geopod-ismtpd-2"
+        "86kpomkbr96ji6c2qlpfda@geopod-ismtpd-2",
+        "6a6514b5.c41479e6.26e599.b196@mx.google.com",
+        "cy4fssiwrzkfwdysltujja@geopod-ismtpd-15",
+        "rntkq0i1tp2lvtabwj-kaa@geopod-ismtpd-69"
     ],
     "transactions": [
         {
@@ -1430,7 +1433,7 @@
             "timestamp": "2026-07-25T16:24:39.925089"
         }
     ],
-    "last_run": "2026-07-25T19:55:31.509431",
+    "last_run": "2026-07-25T22:12:14.080590",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
