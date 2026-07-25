@@ -467,7 +467,10 @@
         "6a64a65d.259d8d2a.1611d6.41bb@mx.google.com",
         "13ea03bad52dcefb90a30b50035c6575f557a8a3-10035039-111282348@google.com",
         "momentofjoy-35125d99-74b7-4e00-8086-aceb564d6a63.rcid_1a3486eb-512a-4e37-a97e-ad70f56876e5.wiid_f4e76ad9-389f-46ba-b0a4-3c314d677f49.r0-ioe_1-tid_9188040d-6c67-4c5b-b112-36a304b66dad-rh_cae_notifyp-aid_c97499f4-ef1b-4a36-8c67-af2cbd2489bf@odspnotify",
-        "6a64bde8.886ac8ff.258937.34d9@mx.google.com"
+        "6a64bde8.886ac8ff.258937.34d9@mx.google.com",
+        "6a64c238.b922cc60.96bc0.e916@mx.google.com",
+        "nmffda85d0d943-31ed-4b47-946c-1b6dadcc534e01a4a6b9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "8ckcvuourt6lasfej6s9ew@geopod-ismtpd-8"
     ],
     "transactions": [
         {
@@ -1413,9 +1416,17 @@
             "amount": 123.951,
             "currency": "USD",
             "timestamp": "2026-07-24T22:28:35.901458"
+        },
+        {
+            "msg_id": "nmffda85d0d943-31ed-4b47-946c-1b6dadcc534e01a4a6b9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Sat, 25 Jul 2026 15:43:58 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 187.493,
+            "currency": "USD",
+            "timestamp": "2026-07-25T16:24:39.925089"
         }
     ],
-    "last_run": "2026-07-25T14:03:35.539242",
+    "last_run": "2026-07-25T16:24:41.441466",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1327.23). Sugerencia: Evaluar compra inmediata.",
