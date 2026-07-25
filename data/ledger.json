@@ -450,7 +450,15 @@
         "1842261.1166446841.2145673.1784923351264.danamail.8645@pacificoseguros.com.pe",
         "nmffda05bbda0e-0d1e-4c71-9b52-0f73c5fb9b2101b796a3samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "1dr-106dddd91e-g@embluemail.com",
-        "1842448.531652787.2612514.1784929141445.danamail.7867@pacificoseguros.com.pe"
+        "1842448.531652787.2612514.1784929141445.danamail.7867@pacificoseguros.com.pe",
+        "6a63e716.60095fd0.323e1d.4f7a@mx.google.com",
+        "79abf5b9d1fb23f1b886fab329d65752@cinecolombia.com",
+        "140733213.2595519.1784934840711@jwm-66d9b847dd-qcs2j",
+        "nm610f12ecb0ab9017cbcp_mid_prod6@email.bcp.com.pe",
+        "nm6111d77ab0ab90175bcp_mid_prod6@email.bcp.com.pe",
+        "2101265027.7911509.1784937521530@lor1-app114001.prod.linkedin.com",
+        "509556222.14041575.1784939804026@email.apple.com",
+        "mrzn5ydk.174y5fvqbrslv@express.sea1.medallia.com"
     ],
     "transactions": [
         {
@@ -1398,7 +1406,7 @@
             "timestamp": "2026-07-24T22:28:35.901458"
         }
     ],
-    "last_run": "2026-07-24T22:28:37.473854",
+    "last_run": "2026-07-25T03:12:56.993783",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
