@@ -485,7 +485,9 @@
         "6a65b7d8.f3151ff8.2f3401.94f1@mx.google.com",
         "6a65f6cc.9a9f8321.a4998.7546@mx.google.com",
         "324d5cae4850656b934c882290aebb8cd80e277e-10035039-111282348@google.com",
-        "6a660e23.6c5720b3.2e9b28.0ff7@mx.google.com"
+        "6a660e23.6c5720b3.2e9b28.0ff7@mx.google.com",
+        "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgnbeekkxr3p6yu7w0qshsh+9s7mnqn+i8fzxzroww1etso0hd363vpenkmophequ4rq632lq5dbyze9rokrxwvm@nws.atrapalo.com.co",
+        "31304859.20260726162203.6a66342bb9b7f2.47219430@mail7.wdc04.mandrillapp.com"
     ],
     "transactions": [
         {
@@ -1441,7 +1443,7 @@
             "timestamp": "2026-07-25T16:24:39.925089"
         }
     ],
-    "last_run": "2026-07-26T13:58:12.588386",
+    "last_run": "2026-07-26T16:27:51.454936",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
