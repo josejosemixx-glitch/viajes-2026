@@ -512,7 +512,12 @@
         "6a679201.03d33f19.23be27.ece8@mx.google.com",
         "0100019fa4931bce-34f65cde-a133-44a8-a00e-268712a01d93-000000@email.amazonses.com",
         "eadd1ccc-9627-5408-9fc2-6bc383c3b111-87f4f123-fd52-47b1-90f8-a4a4fffa6e43@messagebird.com",
-        "6a67add8.8e75e0cb.2de827.6c5c@mx.google.com"
+        "6a67add8.8e75e0cb.2de827.6c5c@mx.google.com",
+        "6a67bae1.b1416da1.20b4cf.256c@mx.google.com",
+        "1843894.1087420.1719653.1785184377956.danamail.6383@pacificoseguros.com.pe",
+        "1843945.1643316998.25937041.1785187253545.danamail.0247@pacificoseguros.com.pe",
+        "1785187812503.6ed8536c-931e-44ec-aa57-2710d2e7f17d@50471150m.wingo.com",
+        "j-6arm8trqwdbwop7bo0ig@geopod-ismtpd-5"
     ],
     "transactions": [
         {
@@ -1500,7 +1505,7 @@
             "timestamp": "2026-07-27T17:14:39.125738"
         }
     ],
-    "last_run": "2026-07-27T20:09:04.630760",
+    "last_run": "2026-07-27T22:19:54.610074",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
