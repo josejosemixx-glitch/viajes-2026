@@ -536,7 +536,14 @@
         "sxpmlibxqn-zj8cwf4v5qq@geopod-ismtpd-2",
         "6a68bac8.666420a4.3252ee.229b@mx.google.com",
         "6a68bf19.e1b18cd3.1db953.4f9f@mx.google.com",
-        "ef543afc-d81f-441c-ae8e-b4267b7e6ca2@iad4s12mta0857.xt.local"
+        "ef543afc-d81f-441c-ae8e-b4267b7e6ca2@iad4s12mta0857.xt.local",
+        "6a68df22.1fd19957.118d96.5b54@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnstxy/mdp9dihchwsbyvkwmxqb/mmjizmx2i/ci+p+pp7fg+i4xv7pmmyq8/zgm23nznzfryrcwsystd7hyzmh@nws.atrapalo.pe",
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2kh33gwoyjymagug72mwwrbt0euejt0v2uiz5c3jextbgqhnzqtqbtlwg85rrg9rnwhrshe8q+vgmy8exmtipato@nws.atrapalo.com",
+        "6sd0qryjrdixyuxvspqegw@geopod-ismtpd-4",
+        "nmffdaf4e7d7e9-2f9a-4705-b40a-beb5a370c1c401b7a1aasamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "1844697.1831776990.213765.1785264656271.danamail.5270@pacificoseguros.com.pe",
+        "6a68fe4e.f06f4994.611f0.fb96@mx.google.com"
     ],
     "transactions": [
         {
@@ -1530,9 +1537,17 @@
             "amount": 71.01,
             "currency": "USD",
             "timestamp": "2026-07-28T02:51:38.100407"
+        },
+        {
+            "msg_id": "nmffdaf4e7d7e9-2f9a-4705-b40a-beb5a370c1c401b7a1aasamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Tue, 28 Jul 2026 18:42:19 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 362.496,
+            "currency": "USD",
+            "timestamp": "2026-07-28T20:05:40.073483"
         }
     ],
-    "last_run": "2026-07-28T16:56:01.388021",
+    "last_run": "2026-07-28T20:05:41.302042",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1268.25",
