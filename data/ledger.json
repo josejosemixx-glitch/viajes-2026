@@ -566,7 +566,12 @@
         "6a6a0c88.b3164203.8a689.0a72@mx.google.com",
         "k4q9a7uss5ooskmqe24nqw@geopod-ismtpd-33",
         "vhxis4kkt8qdbsmncx07iw@geopod-ismtpd-18",
-        "1dr-8cd790e6b2-g@embluemail.com"
+        "1dr-8cd790e6b2-g@embluemail.com",
+        "tkpcicxvsuo-gxuk17kfgg@geopod-ismtpd-21",
+        "nmffdaf5dd096c-6e88-4c4a-9600-8c3fe66149f101b7a4afsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "1075294871.461899275.1785350998051@email.apple.com",
+        "6a6a4d5d.6edd682e.2492db.2ff1@mx.google.com",
+        "efadffe6-24f7-3a6f-963a-b016622553f9@newsletter.lifemiles.com"
     ],
     "transactions": [
         {
@@ -1592,9 +1597,25 @@
             "amount": 2.12,
             "currency": "USD",
             "timestamp": "2026-07-29T16:45:12.779862"
+        },
+        {
+            "msg_id": "tkpcicxvsuo-gxuk17kfgg@geopod-ismtpd-21",
+            "date": "Wed, 29 Jul 2026 18:20:59 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 15.61,
+            "currency": "USD",
+            "timestamp": "2026-07-29T19:59:28.108596"
+        },
+        {
+            "msg_id": "nmffdaf5dd096c-6e88-4c4a-9600-8c3fe66149f101b7a4afsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Wed, 29 Jul 2026 18:37:39 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 322.493,
+            "currency": "USD",
+            "timestamp": "2026-07-29T19:59:28.379701"
         }
     ],
-    "last_run": "2026-07-29T16:45:13.610117",
+    "last_run": "2026-07-29T19:59:31.207693",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1197.66",
