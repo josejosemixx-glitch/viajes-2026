@@ -571,7 +571,9 @@
         "nmffdaf5dd096c-6e88-4c4a-9600-8c3fe66149f101b7a4afsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "1075294871.461899275.1785350998051@email.apple.com",
         "6a6a4d5d.6edd682e.2492db.2ff1@mx.google.com",
-        "efadffe6-24f7-3a6f-963a-b016622553f9@newsletter.lifemiles.com"
+        "efadffe6-24f7-3a6f-963a-b016622553f9@newsletter.lifemiles.com",
+        "6a6a5ba3.04986471.2969cd.16a6@mx.google.com",
+        "waghfdtsqfucdkhk-l-zpa@geopod-ismtpd-canary-0"
     ],
     "transactions": [
         {
@@ -1613,9 +1615,17 @@
             "amount": 322.493,
             "currency": "USD",
             "timestamp": "2026-07-29T19:59:28.379701"
+        },
+        {
+            "msg_id": "waghfdtsqfucdkhk-l-zpa@geopod-ismtpd-canary-0",
+            "date": "Wed, 29 Jul 2026 21:48:57 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 34.24,
+            "currency": "USD",
+            "timestamp": "2026-07-29T22:14:46.810859"
         }
     ],
-    "last_run": "2026-07-29T19:59:31.207693",
+    "last_run": "2026-07-29T22:14:47.229598",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1344.65",
