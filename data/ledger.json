@@ -587,7 +587,12 @@
         "6a6b4317.8f92c32c.276051.3227@mx.google.com",
         "9c125464-5b68-49dc-a214-b32221d32213@atl1s07mta0864.xt.local",
         "6a6b5be9.a02854e2.3b73ba.e287@mx.google.com",
-        "6a6ba1d6.eb165e5c.3d2fab.c8fc@mx.google.com"
+        "6a6ba1d6.eb165e5c.3d2fab.c8fc@mx.google.com",
+        "6a6bae8c.95751058.113362.2f38@mx.google.com",
+        "jrqc2osutdczjx-gxm2k6q@geopod-ismtpd-6",
+        "82049555.13687944.1785447577868@lor1-app159092.prod.linkedin.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkloscsoaicewevw3spdd1oq5legpr0ore7c7bm9g5c4geywchfkzeujornfp4t0tx2tx60ufelcxmccf6jybmoqp@nws.atrapalo.pe",
+        "6cvdlf2oqjea2fmqyhbhhq@geopod-ismtpd-8"
     ],
     "transactions": [
         {
@@ -1639,7 +1644,7 @@
             "timestamp": "2026-07-29T22:14:46.810859"
         }
     ],
-    "last_run": "2026-07-30T20:05:31.420129",
+    "last_run": "2026-07-30T22:28:45.743750",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1327.14). Sugerencia: Evaluar compra inmediata.",
