@@ -579,7 +579,14 @@
         "6a6aba69.83ce629a.13f3d7.bc81@mx.google.com",
         "0100019fb142ec7d-8c028776-5b5d-49c4-8b8f-9e72094c182b-000000@email.amazonses.com",
         "6a6addd4.91ceb846.13a551.9dfe@mx.google.com",
-        "6a6ae099.e8251c5d.2f6388.9a1c@mx.google.com"
+        "6a6ae099.e8251c5d.2f6388.9a1c@mx.google.com",
+        "6a6afd4f.267a80c6.125714.133c@mx.google.com",
+        "y-ch9uztqngaazhwzdq2tw@geopod-ismtpd-35",
+        "8e4f8f5045524f0594be0b9946bc226c@proteccion.com",
+        "d5c8af2667efd9db5bf36680e8d7fde033b4116d-10035039-111282348@google.com",
+        "6a6b4317.8f92c32c.276051.3227@mx.google.com",
+        "9c125464-5b68-49dc-a214-b32221d32213@atl1s07mta0864.xt.local",
+        "6a6b5be9.a02854e2.3b73ba.e287@mx.google.com"
     ],
     "transactions": [
         {
@@ -1631,7 +1638,7 @@
             "timestamp": "2026-07-29T22:14:46.810859"
         }
     ],
-    "last_run": "2026-07-30T07:29:17.495059",
+    "last_run": "2026-07-30T14:33:28.548717",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
