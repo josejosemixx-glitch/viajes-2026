@@ -608,7 +608,11 @@
         "6a6caf1f.92f6587b.242c9e.b90e@mx.google.com",
         "6a6cb326.201ddd8e.c3977.b07a@mx.google.com",
         "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgmqwjpdqf74juigtg0endwexikhvmlc12uwuzhkbww5dwy/bc92ahicc8m15irr1rtjdglvdzdjybwvhcze6kvs@nws.atrapalo.com.co",
-        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2khoydsbxczheock46unus0hahqkq0rqurucx8phrnv3xxwgle6tie0damuz+czzjy45jr4hx+1zbo5ffuxs3cfe@nws.atrapalo.com"
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2khoydsbxczheock46unus0hahqkq0rqurucx8phrnv3xxwgle6tie0damuz+czzjy45jr4hx+1zbo5ffuxs3cfe@nws.atrapalo.com",
+        "6a6cd49b.8c9a4268.1ea007.a3e4@mx.google.com",
+        "ehgh8jqbslwglc7qrtqiqq@geopod-ismtpd-67",
+        "7uuyzblbr7i_0xiq8c9weq@geopod-ismtpd-4",
+        "6a6cf2c2.0c3a67b7.71aeb.6800@mx.google.com"
     ],
     "transactions": [
         {
@@ -1666,9 +1670,17 @@
             "amount": 133.61,
             "currency": "USD",
             "timestamp": "2026-07-31T07:45:25.702310"
+        },
+        {
+            "msg_id": "7uuyzblbr7i_0xiq8c9weq@geopod-ismtpd-4",
+            "date": "Fri, 31 Jul 2026 18:09:59 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3001.9,
+            "currency": "USD",
+            "timestamp": "2026-07-31T20:07:28.520637"
         }
     ],
-    "last_run": "2026-07-31T17:00:10.275811",
+    "last_run": "2026-07-31T20:07:29.824856",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1179.9)",
