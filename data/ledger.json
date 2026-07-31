@@ -605,7 +605,10 @@
         "av16ezljrekv99h-ih9bsa@geopod-ismtpd-9",
         "f0198f7e44dda1c9b3212d439af61a6c8240cbc6-10035039-111282348@google.com",
         "6a6c9a86.0a531e61.3a57fb.0176@mx.google.com",
-        "6a6caf1f.92f6587b.242c9e.b90e@mx.google.com"
+        "6a6caf1f.92f6587b.242c9e.b90e@mx.google.com",
+        "6a6cb326.201ddd8e.c3977.b07a@mx.google.com",
+        "atrapalo.xserial.s56ejqm517quw7zrilthj4+gxvqlhjngnsb6kga46wstqgmqwjpdqf74juigtg0endwexikhvmlc12uwuzhkbww5dwy/bc92ahicc8m15irr1rtjdglvdzdjybwvhcze6kvs@nws.atrapalo.com.co",
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2khoydsbxczheock46unus0hahqkq0rqurucx8phrnv3xxwgle6tie0damuz+czzjy45jr4hx+1zbo5ffuxs3cfe@nws.atrapalo.com"
     ],
     "transactions": [
         {
@@ -1665,7 +1668,7 @@
             "timestamp": "2026-07-31T07:45:25.702310"
         }
     ],
-    "last_run": "2026-07-31T14:37:25.015929",
+    "last_run": "2026-07-31T17:00:10.275811",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1205.21",
