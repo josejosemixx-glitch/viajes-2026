@@ -631,7 +631,16 @@
         "6a6dfb1c.7d702ed2.104899.2779@mx.google.com",
         "253845648.18247917.1785592722825@ltx1-app23882.prod.linkedin.com",
         "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2keec5vqjvry3nytw7dmahtgiicjjaryh3pudegok7rd/ld8rhgpnpqxg/r0ccz6n6izp1uaqd4j9j6k/rwmvktb@nws.atrapalo.com",
-        "nm6152857f30abacbf2bcp_mid_prod6@email.bcp.com.pe"
+        "nm6152857f30abacbf2bcp_mid_prod6@email.bcp.com.pe",
+        "6a6e1e65.e78280df.1fe368.86da@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklma2stmoioy+iz5gkhfmcjvteqvetb2pfutpykp45vszhs4edl2fuvspqa9dfadjo3zskromfp4kjdstduqi8av@nws.atrapalo.pe",
+        "2kay8ih1qak1s5_vrkiwsg@geopod-ismtpd-87",
+        "g328forss-esl1jxz8dmtw@geopod-ismtpd-7",
+        "nmffda31c3db60-441b-4e29-9b7f-c5b795979ba101b7ad7bsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "8f8ltv0hsn-y2esghfzo4a@geopod-ismtpd-7",
+        "nmffda48756e3f-15f5-49ca-be05-23c053f5c16201b7ad5bsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "6a6e40b5.492e23e4.d6f95.a6fb@mx.google.com",
+        "cneq8d8gr2k2knsvlbmh5w@geopod-ismtpd-71"
     ],
     "transactions": [
         {
@@ -1713,9 +1722,17 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-08-01T16:27:15.646262"
+        },
+        {
+            "msg_id": "nmffda48756e3f-15f5-49ca-be05-23c053f5c16201b7ad5bsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Sat, 01 Aug 2026 18:36:36 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 137.492,
+            "currency": "USD",
+            "timestamp": "2026-08-01T19:53:23.867453"
         }
     ],
-    "last_run": "2026-08-01T16:27:16.265999",
+    "last_run": "2026-08-01T19:53:25.401532",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1160.02",
