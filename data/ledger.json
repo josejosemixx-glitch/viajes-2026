@@ -1848,16 +1848,6 @@
     "last_run": "2026-08-03T08:21:48.677109",
     "auditLog": [
         {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1237.05",
-            "status": "INFO",
-            "timestamp": "2026-07-30T21:17:32.512972"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-07-31T03:35:49.531311"
-        },
-        {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1268.29",
             "status": "INFO",
             "timestamp": "2026-07-31T03:35:49.531331"
@@ -2096,6 +2086,16 @@
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1319.93). Sugerencia: Evaluar compra inmediata.",
             "status": "WARNING",
             "timestamp": "2026-08-03T11:34:37.025220"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-08-03T14:55:29.137343"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1239.33",
+            "status": "INFO",
+            "timestamp": "2026-08-03T14:55:29.137370"
         }
     ]
 }
