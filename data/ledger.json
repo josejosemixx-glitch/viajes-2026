@@ -689,7 +689,11 @@
         "6a70aa27.a4faa870.266c9c.6a7d@mx.google.com",
         "b8a67d2f-5927-488a-8743-5260bd137976@atl1s07mta0861.xt.local",
         "1785774744624.224ca52b-b206-42ff-9f2e-927faf1ccfe0@bf08.eu1.hubspotemail.net",
-        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2kgiagydx4ufhpjaxhroauykvpcofd97kzyesyucgmjggn7+6pffowtrf7n2rjrfmuaeta/x+1bgujivrwlvvgae@nws.atrapalo.com"
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2kgiagydx4ufhpjaxhroauykvpcofd97kzyesyucgmjggn7+6pffowtrf7n2rjrfmuaeta/x+1bgujivrwlvvgae@nws.atrapalo.com",
+        "6a70ce4b.69a4da5a.249ab8.247d@mx.google.com",
+        "85ae5e6d-55ba-4ecf-8d43-b09c812d86e7@iad4s12mta1221.xt.local",
+        "6a70e99b.abe55a58.32b52c.9ca9@mx.google.com",
+        "0100019fc93ee984-4a3775b3-1a74-4581-bb60-6d122552bd80-000000@email.amazonses.com"
     ],
     "transactions": [
         {
@@ -1853,7 +1857,7 @@
             "timestamp": "2026-08-02T22:12:04.988246"
         }
     ],
-    "last_run": "2026-08-03T17:22:18.906882",
+    "last_run": "2026-08-03T20:17:40.135657",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1233.49",
