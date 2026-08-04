@@ -1878,16 +1878,6 @@
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
             "status": "WARNING",
-            "timestamp": "2026-08-01T06:36:01.768159"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1214.5",
-            "status": "INFO",
-            "timestamp": "2026-08-01T06:36:01.768179"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
             "timestamp": "2026-08-01T10:05:37.449292"
         },
         {
@@ -2124,6 +2114,16 @@
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1223.75",
             "status": "INFO",
             "timestamp": "2026-08-04T14:31:28.132677"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-08-04T17:55:39.261827"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1258.04",
+            "status": "INFO",
+            "timestamp": "2026-08-04T17:55:39.261859"
         }
     ]
 }
