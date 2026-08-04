@@ -1858,7 +1858,7 @@
             "timestamp": "2026-08-02T22:12:04.988246"
         }
     ],
-    "last_run": "2026-08-03T22:19:09.308474",
+    "last_run": "2026-08-04T02:54:57.853517",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
