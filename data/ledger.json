@@ -737,7 +737,10 @@
         "80a13f1b-33b8-4d0d-9c91-5090dcd497c4@atl1s07mta0863.xt.local",
         "91a35758-94b3-4b4f-9510-c4f918a63ac2@atl1s07mta0862.xt.local",
         "6a7349f0.1b3fddab.78b6d.f998@mx.google.com",
-        "nmffda7be1085c-610d-47e8-9dae-ae5480e6ac8201a4c047samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
+        "nmffda7be1085c-610d-47e8-9dae-ae5480e6ac8201a4c047samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "9nyvkjurswsyuhublosogg@geopod-ismtpd-2",
+        "98e62a5f-06a8-593f-97fe-93ac0ac95d91@mail.uber.com",
+        "6a738b7f.5b9fb48b.201d41.96ff@mx.google.com"
     ],
     "transactions": [
         {
@@ -1971,9 +1974,25 @@
             "amount": 799.9,
             "currency": "USD",
             "timestamp": "2026-08-05T16:57:38.348308"
+        },
+        {
+            "msg_id": "9nyvkjurswsyuhublosogg@geopod-ismtpd-2",
+            "date": "Wed, 05 Aug 2026 17:58:17 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.45,
+            "currency": "USD",
+            "timestamp": "2026-08-05T20:13:57.319618"
+        },
+        {
+            "msg_id": "98e62a5f-06a8-593f-97fe-93ac0ac95d91@mail.uber.com",
+            "date": "Wed, 05 Aug 2026 18:11:44 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-05T20:13:58.185700"
         }
     ],
-    "last_run": "2026-08-05T16:57:38.833224",
+    "last_run": "2026-08-05T20:13:59.100433",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1163.03)",
