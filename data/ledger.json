@@ -714,7 +714,13 @@
         "zdptttpxs5yndmjii9j2va@geopod-ismtpd-15",
         "g7swn1qitco21arxobfu1q@geopod-ismtpd-71",
         "599455727.7954889.1785881261383@lor1-app135291.prod.linkedin.com",
-        "1210028881.7997191.1785881508046@lor1-app135291.prod.linkedin.com"
+        "1210028881.7997191.1785881508046@lor1-app135291.prod.linkedin.com",
+        "8h4eo_7mties1y0vdbyx2g@geopod-ismtpd-37",
+        "btlwe5nprkcqh2swhz-kea@geopod-ismtpd-2",
+        "jayobjnjsi-fx0ablveoiw@geopod-ismtpd-0",
+        "cugigdi8t9-tocoknxgbvw@geopod-ismtpd-10",
+        "88f3815ad95475bc9f8c1b130eb68855@pd0ldwk002d95",
+        "119a4784e40f24edf249fc2ce3fec77a@pd0ldwk002d95"
     ],
     "transactions": [
         {
@@ -1900,9 +1906,33 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-08-04T20:12:36.387017"
+        },
+        {
+            "msg_id": "btlwe5nprkcqh2swhz-kea@geopod-ismtpd-2",
+            "date": "Wed, 05 Aug 2026 01:54:48 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-05T02:51:32.181289"
+        },
+        {
+            "msg_id": "jayobjnjsi-fx0ablveoiw@geopod-ismtpd-0",
+            "date": "Wed, 05 Aug 2026 01:55:22 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-05T02:51:32.548112"
+        },
+        {
+            "msg_id": "cugigdi8t9-tocoknxgbvw@geopod-ismtpd-10",
+            "date": "Wed, 05 Aug 2026 01:55:33 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 46.4,
+            "currency": "PEN",
+            "timestamp": "2026-08-05T02:51:32.961585"
         }
     ],
-    "last_run": "2026-08-04T22:30:26.192724",
+    "last_run": "2026-08-05T02:51:34.640954",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
