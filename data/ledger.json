@@ -728,7 +728,14 @@
         "6a72c7d4.b5fdfa5d.df202.3676@mx.google.com",
         "6a72cb04.929880b8.3b4756.a101@mx.google.com",
         "4fyx-sm9t7gj2muwg2fw1w@geopod-ismtpd-20",
-        "1106587151.8679326.1785909521961@ltx1-app94465.prod.linkedin.com"
+        "1106587151.8679326.1785909521961@ltx1-app94465.prod.linkedin.com",
+        "0100019fd1f2ea82-8ad24659-6a90-49c2-bcc5-79d29a4604f3-000000@email.amazonses.com",
+        "31304859.20260805125648.6a733310510c87.66944008@mail133-15.atl131.mandrillapp.com",
+        "5376ba48-664a-3341-9bbf-0ba5f7b49d4b@newsletter.lifemiles.com",
+        "ay046no5qxw3oa_q-nrwbw@geopod-ismtpd-canary-0",
+        "6a734654.c56fb102.188d14.9815@mx.google.com",
+        "80a13f1b-33b8-4d0d-9c91-5090dcd497c4@atl1s07mta0863.xt.local",
+        "91a35758-94b3-4b4f-9510-c4f918a63ac2@atl1s07mta0862.xt.local"
     ],
     "transactions": [
         {
@@ -1946,9 +1953,17 @@
             "amount": 38.32,
             "currency": "USD",
             "timestamp": "2026-08-05T05:32:50.672853"
+        },
+        {
+            "msg_id": "ay046no5qxw3oa_q-nrwbw@geopod-ismtpd-canary-0",
+            "date": "Wed, 05 Aug 2026 13:34:38 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 39.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-05T14:34:21.082875"
         }
     ],
-    "last_run": "2026-08-05T07:33:44.914814",
+    "last_run": "2026-08-05T14:34:24.172163",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1264.57",
