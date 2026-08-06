@@ -757,7 +757,16 @@
         "862535739.15098.1785989448464@0f93bf273d7b",
         "1689469382.6283781785989843802.javamail.app@ap92-ca-ue1.prod.awspr",
         "6a7419dc.1a0f6747.3c2380.479e@mx.google.com",
-        "6a741d12.170fc313.2fcc21.c58e@mx.google.com"
+        "6a741d12.170fc313.2fcc21.c58e@mx.google.com",
+        "6a7438f4.ec04e30f.22759a.8949@mx.google.com",
+        "1786006922761.0e9cf119-7db4-4a0c-b56b-6245c1081e7e@bf08.eu1.hubspotemail.net",
+        "trln_g57twkzwujlom94ng@geopod-ismtpd-15",
+        "qeiebujgth6wl-7e_irqvg@geopod-ismtpd-57",
+        "6a74841f.e5907290.5b611.2872@mx.google.com",
+        "0hnnt2mwt0qnz2ahbltnwg@geopod-ismtpd-6",
+        "22fc239a-7f62-5fd9-a9a3-2cbf956bc015@mail.uber.com",
+        "w3h7m6iusnqlthu_twxmlw@geopod-ismtpd-21",
+        "6a74987d.6e4ae5d3.20843b.3e41@mx.google.com"
     ],
     "transactions": [
         {
@@ -2023,9 +2032,49 @@
             "amount": 11.87,
             "currency": "USD",
             "timestamp": "2026-08-06T02:54:55.819397"
+        },
+        {
+            "msg_id": "trln_g57twkzwujlom94ng@geopod-ismtpd-15",
+            "date": "Thu, 06 Aug 2026 11:07:43 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 39.6,
+            "currency": "PEN",
+            "timestamp": "2026-08-06T14:36:07.026680"
+        },
+        {
+            "msg_id": "qeiebujgth6wl-7e_irqvg@geopod-ismtpd-57",
+            "date": "Thu, 06 Aug 2026 11:41:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 36.4,
+            "currency": "PEN",
+            "timestamp": "2026-08-06T14:36:07.297170"
+        },
+        {
+            "msg_id": "0hnnt2mwt0qnz2ahbltnwg@geopod-ismtpd-6",
+            "date": "Thu, 06 Aug 2026 13:46:40 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-06T14:36:08.308815"
+        },
+        {
+            "msg_id": "22fc239a-7f62-5fd9-a9a3-2cbf956bc015@mail.uber.com",
+            "date": "Thu, 06 Aug 2026 13:56:19 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-06T14:36:09.181233"
+        },
+        {
+            "msg_id": "w3h7m6iusnqlthu_twxmlw@geopod-ismtpd-21",
+            "date": "Thu, 06 Aug 2026 13:56:40 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.14,
+            "currency": "PEN",
+            "timestamp": "2026-08-06T14:36:09.868614"
         }
     ],
-    "last_run": "2026-08-06T07:34:11.808681",
+    "last_run": "2026-08-06T14:36:10.975769",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1234.0",
