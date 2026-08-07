@@ -782,7 +782,8 @@
         "tyv1184drooz2oyk4mzepg@geopod-ismtpd-1",
         "555a42c8-a915-54bb-8dd2-0b1df77c2b23@mail.uber.com",
         "22400106.20103880.1786061320556@ltx1-app49961.prod.linkedin.com",
-        "do06fzveqwm4r5x-yl6nra@geopod-ismtpd-10"
+        "do06fzveqwm4r5x-yl6nra@geopod-ismtpd-10",
+        "6a75271b.4bf4691f.22ddfd.b544@mx.google.com"
     ],
     "transactions": [
         {
@@ -2138,7 +2139,7 @@
             "timestamp": "2026-08-07T00:30:18.597287"
         }
     ],
-    "last_run": "2026-08-07T00:30:19.001183",
+    "last_run": "2026-08-07T01:02:27.564525",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1319.93). Sugerencia: Evaluar compra inmediata.",
