@@ -805,7 +805,12 @@
         "6a75c44d.8cf4c31a.290a00.ae5a@mx.google.com",
         "itvrob0cqsgaty4lulvqga@geopod-ismtpd-13",
         "1786107739312.4f24501b-e1fd-4879-9162-74eb3077ce5a@bf08.eu1.hubspotemail.net",
-        "6a75d9d4.025d159f.1bf7fb.d670@mx.google.com"
+        "6a75d9d4.025d159f.1bf7fb.d670@mx.google.com",
+        "s6fcfuytqxeg_oxrjjhhaq@geopod-ismtpd-3",
+        "665b3644-d67a-5f43-8e89-0773fc4c843f@mail.uber.com",
+        "m2jgmonqtkyk22gtcaarja@geopod-ismtpd-1",
+        "calendar-fad88c37-1b77-42c2-9187-872635f763d0@google.com",
+        "1347736098.72284.1786114316310@8ccc861e720c"
     ],
     "transactions": [
         {
@@ -2183,9 +2188,33 @@
             "amount": 31.2,
             "currency": "PEN",
             "timestamp": "2026-08-07T02:52:08.079807"
+        },
+        {
+            "msg_id": "s6fcfuytqxeg_oxrjjhhaq@geopod-ismtpd-3",
+            "date": "Fri, 07 Aug 2026 13:43:07 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.8,
+            "currency": "PEN",
+            "timestamp": "2026-08-07T16:13:48.015463"
+        },
+        {
+            "msg_id": "665b3644-d67a-5f43-8e89-0773fc4c843f@mail.uber.com",
+            "date": "Fri, 07 Aug 2026 13:55:07 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-07T16:13:48.456011"
+        },
+        {
+            "msg_id": "m2jgmonqtkyk22gtcaarja@geopod-ismtpd-1",
+            "date": "Fri, 07 Aug 2026 13:55:48 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.14,
+            "currency": "PEN",
+            "timestamp": "2026-08-07T16:13:48.759223"
         }
     ],
-    "last_run": "2026-08-07T13:41:06.801444",
+    "last_run": "2026-08-07T16:13:49.838362",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
