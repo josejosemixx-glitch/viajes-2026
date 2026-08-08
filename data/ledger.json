@@ -831,7 +831,10 @@
         "1851373.629587952.10652243.1786143689895.danamail.6895@pacificoseguros.com.pe",
         "eiook609rvighwckbhx0aa@geopod-ismtpd-103",
         "augiyrujtae9fay6kxxvhw@geopod-ismtpd-4",
-        "bd932cdc-dfd6-5796-81dc-a9ecaf7b4fc5@mail.uber.com"
+        "bd932cdc-dfd6-5796-81dc-a9ecaf7b4fc5@mail.uber.com",
+        "6a76a915.fafec2b9.563da.7850@mx.google.com",
+        "gvumszwerwcsfqfjbnnvhq@geopod-ismtpd-8",
+        "uckbul81qng-u_7eqw0yew@geopod-ismtpd-0"
     ],
     "transactions": [
         {
@@ -2273,9 +2276,25 @@
             "amount": 90.6,
             "currency": "PEN",
             "timestamp": "2026-08-08T01:55:45.581160"
+        },
+        {
+            "msg_id": "gvumszwerwcsfqfjbnnvhq@geopod-ismtpd-8",
+            "date": "Sat, 08 Aug 2026 04:58:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 170.5,
+            "currency": "PEN",
+            "timestamp": "2026-08-08T05:36:09.686774"
+        },
+        {
+            "msg_id": "uckbul81qng-u_7eqw0yew@geopod-ismtpd-0",
+            "date": "Sat, 08 Aug 2026 05:05:18 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 500.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-08T05:36:10.258711"
         }
     ],
-    "last_run": "2026-08-08T03:57:07.301110",
+    "last_run": "2026-08-08T05:36:10.677305",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
