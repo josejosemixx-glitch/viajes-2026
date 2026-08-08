@@ -842,7 +842,8 @@
         "8d03c089-b66c-47be-9003-1d17171a7ada@atl1s07mta1302.xt.local",
         "289816351.222314.1786209064004@a50a01d02445",
         "1851723.1075687429.2354.1786207775650.danamail.1129@integratel.com.pe",
-        "mzcy4zfns56rkne8ynquvg@geopod-ismtpd-18"
+        "mzcy4zfns56rkne8ynquvg@geopod-ismtpd-18",
+        "6a778060.d0742bf5.20c4bd.5ee2@mx.google.com"
     ],
     "transactions": [
         {
@@ -2310,7 +2311,7 @@
             "timestamp": "2026-08-08T19:15:41.952881"
         }
     ],
-    "last_run": "2026-08-08T19:15:42.366503",
+    "last_run": "2026-08-08T21:47:19.877962",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1211.18",
