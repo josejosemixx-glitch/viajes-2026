@@ -855,7 +855,12 @@
         "_m6aanzqts-qbnjdyhbxsa@geopod-ismtpd-0",
         "6a78799c.2224c765.38ef3d.63bd@mx.google.com",
         "97aab913-9eb8-3d2b-a0a0-08012872c2f2@mail.uber.com",
-        "6a787db6.bfa6cdf1.1a23c3.28bb@mx.google.com"
+        "6a787db6.bfa6cdf1.1a23c3.28bb@mx.google.com",
+        "6a78a2b9.04a468da.2a420e.6b09@mx.google.com",
+        "e05c25e3-9675-475a-8847-7d8ea7ad5f33@atl1s07mta1302.xt.local",
+        "dfc9d02a-5d4c-4451-9317-88733210105a@atl1s07mta1302.xt.local",
+        "df112ce6-8cc1-4de0-a64d-b4a17a635b09@atl1s07mta0862.xt.local",
+        "6a78c5ea.f51725f9.3058b3.a929@mx.google.com"
     ],
     "transactions": [
         {
@@ -2331,7 +2336,7 @@
             "timestamp": "2026-08-09T02:03:12.279185"
         }
     ],
-    "last_run": "2026-08-09T15:54:32.431006",
+    "last_run": "2026-08-09T19:19:22.090874",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1164.04)",
