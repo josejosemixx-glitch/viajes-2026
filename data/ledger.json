@@ -843,7 +843,11 @@
         "289816351.222314.1786209064004@a50a01d02445",
         "1851723.1075687429.2354.1786207775650.danamail.1129@integratel.com.pe",
         "mzcy4zfns56rkne8ynquvg@geopod-ismtpd-18",
-        "6a778060.d0742bf5.20c4bd.5ee2@mx.google.com"
+        "6a778060.d0742bf5.20c4bd.5ee2@mx.google.com",
+        "6a77a3e8.d6ce4a42.25a40.e697@mx.google.com",
+        "6a77bce51798c_63b3118065293@sharedworker-cc577b9d9-4mckd.mail",
+        "tnvnwuliqzghmzhcjteciq@geopod-ismtpd-3",
+        "xlpugxrlq92myl3unl9qpg@geopod-ismtpd-3"
     ],
     "transactions": [
         {
@@ -2309,9 +2313,17 @@
             "amount": 51.0,
             "currency": "PEN",
             "timestamp": "2026-08-08T19:15:41.952881"
+        },
+        {
+            "msg_id": "xlpugxrlq92myl3unl9qpg@geopod-ismtpd-3",
+            "date": "Sun, 09 Aug 2026 01:45:47 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 323.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-09T02:03:12.279185"
         }
     ],
-    "last_run": "2026-08-08T21:47:19.877962",
+    "last_run": "2026-08-09T02:03:12.732735",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1211.18",
