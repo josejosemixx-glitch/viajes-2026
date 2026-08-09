@@ -854,7 +854,8 @@
         "wumdvtcmqcg1f3bv0xgnow@geopod-ismtpd-2",
         "_m6aanzqts-qbnjdyhbxsa@geopod-ismtpd-0",
         "6a78799c.2224c765.38ef3d.63bd@mx.google.com",
-        "97aab913-9eb8-3d2b-a0a0-08012872c2f2@mail.uber.com"
+        "97aab913-9eb8-3d2b-a0a0-08012872c2f2@mail.uber.com",
+        "6a787db6.bfa6cdf1.1a23c3.28bb@mx.google.com"
     ],
     "transactions": [
         {
@@ -2330,7 +2331,7 @@
             "timestamp": "2026-08-09T02:03:12.279185"
         }
     ],
-    "last_run": "2026-08-09T13:16:37.434899",
+    "last_run": "2026-08-09T15:54:32.431006",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
