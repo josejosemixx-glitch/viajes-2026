@@ -885,7 +885,11 @@
         "camhob2wvm+vlj3_u7bmhiywtt-yz_a_awhbm9q-g_ruqtvp2bw@mail.gmail.com",
         "cacqxl1whax6zqnc3mdusuk9grokoyu3kv5hmrcbei2cicq5j3q@mail.gmail.com",
         "camhob2wzvjgjlqfurqcmlnruyzzr1e98szva6h1sxnuj-0gptg@mail.gmail.com",
-        "cacqxl1z7e+gb-biqbxnar+r1mj4radxc7lc93lpq8jncyarj_g@mail.gmail.com"
+        "cacqxl1z7e+gb-biqbxnar+r1mj4radxc7lc93lpq8jncyarj_g@mail.gmail.com",
+        "3b651e39-29cb-48e6-b0de-d5071af95af3@atl1s07mta1306.xt.local",
+        "dpvo89xyqv-irpg1qpozdq@geopod-ismtpd-0",
+        "80c15fc523fb460d94869a8847cce6a6@pd0ldwk002cu8",
+        "019fed8eb01072c49ede4f6f57c2cc7e@promociones.cinemark.com.co"
     ],
     "transactions": [
         {
@@ -2399,9 +2403,17 @@
             "amount": 17.21,
             "currency": "USD",
             "timestamp": "2026-08-10T16:13:18.725242"
+        },
+        {
+            "msg_id": "dpvo89xyqv-irpg1qpozdq@geopod-ismtpd-0",
+            "date": "Mon, 10 Aug 2026 19:59:58 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 95.5,
+            "currency": "PEN",
+            "timestamp": "2026-08-10T22:00:02.127155"
         }
     ],
-    "last_run": "2026-08-10T19:40:49.796381",
+    "last_run": "2026-08-10T22:00:03.654353",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1343.06",
