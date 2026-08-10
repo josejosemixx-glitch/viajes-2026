@@ -875,7 +875,17 @@
         "16041117.473906.1786362973267@399261d2973e",
         "675000112.327536.1786369282000@a135d417fde5",
         "4uftnfm4s8gfnszsoa0e7a@geopod-ismtpd-canary-0",
-        "calendar-1df2162a-1b86-47df-8770-adf7c89aebd7@google.com"
+        "calendar-1df2162a-1b86-47df-8770-adf7c89aebd7@google.com",
+        "6a79f8a0.c56fb102.3d2aa1.b639@mx.google.com",
+        "msnhixoo.5bmw7uv4trya@express.medallia.com",
+        "aa.a9.33901.e3b0a7a6@i-04f0a569592f386c8.mta1vrest.sd.prd.sparkpost",
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2kgcu/fgsxezp7xaal37ve1gzyyvvz+wmsslw5ovujawzpc2plu1mgurrgsm4e44kc0+2rdfdhjxrnuzn3pu425k@nws.atrapalo.com",
+        "atrapalo.xserial.s56evhzc1vuuugtdavscyw4dyezy3fqcdij0clzmmhnzx/s3eauxa08xonuw291lxzzie/9hbi3gsffmagjkulvv7pgkdzewvpjhl79jhndzzzjdn7sqbj1s7seltxpiphj4@nws.atrapalo.com",
+        "6a7a1b7f.62b4ec9b.b704e.3893@mx.google.com",
+        "camhob2wvm+vlj3_u7bmhiywtt-yz_a_awhbm9q-g_ruqtvp2bw@mail.gmail.com",
+        "cacqxl1whax6zqnc3mdusuk9grokoyu3kv5hmrcbei2cicq5j3q@mail.gmail.com",
+        "camhob2wzvjgjlqfurqcmlnruyzzr1e98szva6h1sxnuj-0gptg@mail.gmail.com",
+        "cacqxl1z7e+gb-biqbxnar+r1mj4radxc7lc93lpq8jncyarj_g@mail.gmail.com"
     ],
     "transactions": [
         {
@@ -2391,7 +2401,7 @@
             "timestamp": "2026-08-10T16:13:18.725242"
         }
     ],
-    "last_run": "2026-08-10T16:13:19.658167",
+    "last_run": "2026-08-10T19:40:49.796381",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1168.2)",
