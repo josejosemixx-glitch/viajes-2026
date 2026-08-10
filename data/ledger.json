@@ -873,7 +873,9 @@
         "calendar-6b6db186-8b7d-42cf-a0c3-3c52dd2f0207@google.com",
         "0101019feaace520-61bcf515-cbd8-4d99-97ed-0611272834f4-000000@us-west-2.amazonses.com",
         "16041117.473906.1786362973267@399261d2973e",
-        "675000112.327536.1786369282000@a135d417fde5"
+        "675000112.327536.1786369282000@a135d417fde5",
+        "4uftnfm4s8gfnszsoa0e7a@geopod-ismtpd-canary-0",
+        "calendar-1df2162a-1b86-47df-8770-adf7c89aebd7@google.com"
     ],
     "transactions": [
         {
@@ -2379,9 +2381,17 @@
             "amount": 662.6,
             "currency": "PEN",
             "timestamp": "2026-08-10T06:06:55.412730"
+        },
+        {
+            "msg_id": "4uftnfm4s8gfnszsoa0e7a@geopod-ismtpd-canary-0",
+            "date": "Mon, 10 Aug 2026 15:23:46 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 17.21,
+            "currency": "USD",
+            "timestamp": "2026-08-10T16:13:18.725242"
         }
     ],
-    "last_run": "2026-08-10T13:45:58.389578",
+    "last_run": "2026-08-10T16:13:19.658167",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1177.34)",
