@@ -892,7 +892,13 @@
         "019fed8eb01072c49ede4f6f57c2cc7e@promociones.cinemark.com.co",
         "6a7a9bbc.ffa8efc9.46a73.f2e9@mx.google.com",
         "6a7a9fa3.0ce3539a.1081c7.0dbd@mx.google.com",
-        "1786421652534.31540165-25e9-4f40-9fa0-3a305ce23e88@47814330m.email.hubspot.copa.com"
+        "1786421652534.31540165-25e9-4f40-9fa0-3a305ce23e88@47814330m.email.hubspot.copa.com",
+        "6a7ab7cd.016698c7.15bc19.bd0c@mx.google.com",
+        "mso9nhkc.70e9uwop9iad@express.sea1.medallia.com",
+        "hp2v710000019ff05f39809719c9f4bbc780a0116@email-marriott.com",
+        "qixuu0aqtxkpbefb-7vcsw@geopod-ismtpd-3",
+        "6a7b0a3a.028a0eea.19bb5c.fea2@mx.google.com",
+        "6a7b204e.4bf4691f.1ac264.fc4d@mx.google.com"
     ],
     "transactions": [
         {
@@ -2416,7 +2422,7 @@
             "timestamp": "2026-08-10T22:00:02.127155"
         }
     ],
-    "last_run": "2026-08-11T05:49:00.083754",
+    "last_run": "2026-08-11T13:43:57.059017",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1211.89",
