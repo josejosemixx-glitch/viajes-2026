@@ -898,7 +898,12 @@
         "hp2v710000019ff05f39809719c9f4bbc780a0116@email-marriott.com",
         "qixuu0aqtxkpbefb-7vcsw@geopod-ismtpd-3",
         "6a7b0a3a.028a0eea.19bb5c.fea2@mx.google.com",
-        "6a7b204e.4bf4691f.1ac264.fc4d@mx.google.com"
+        "6a7b204e.4bf4691f.1ac264.fc4d@mx.google.com",
+        "6a7b271e.e73849ad.184502.e459@mx.google.com",
+        "072a0f32f89f0a5b96f8c8a412a46d55fe7bf380700b06bbbfe14660e0750147@pe.didiglobal.com",
+        "fa796e80ed055ccff503e7351e82814a119eefd4195df27481785abe79c2fcfc@pe.didiglobal.com",
+        "m2gnw56cqemoxxp2l6v0pq@geopod-ismtpd-0",
+        "0f0a74b1-f3c3-4462-b12d-013521e54b23@atl1s11mta1838.xt.local"
     ],
     "transactions": [
         {
@@ -2420,9 +2425,17 @@
             "amount": 95.5,
             "currency": "PEN",
             "timestamp": "2026-08-10T22:00:02.127155"
+        },
+        {
+            "msg_id": "m2gnw56cqemoxxp2l6v0pq@geopod-ismtpd-0",
+            "date": "Tue, 11 Aug 2026 14:35:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.94,
+            "currency": "USD",
+            "timestamp": "2026-08-11T16:15:08.674641"
         }
     ],
-    "last_run": "2026-08-11T13:43:57.059017",
+    "last_run": "2026-08-11T16:15:09.717292",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1211.89",
