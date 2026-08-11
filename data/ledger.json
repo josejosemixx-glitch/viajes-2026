@@ -889,7 +889,8 @@
         "3b651e39-29cb-48e6-b0de-d5071af95af3@atl1s07mta1306.xt.local",
         "dpvo89xyqv-irpg1qpozdq@geopod-ismtpd-0",
         "80c15fc523fb460d94869a8847cce6a6@pd0ldwk002cu8",
-        "019fed8eb01072c49ede4f6f57c2cc7e@promociones.cinemark.com.co"
+        "019fed8eb01072c49ede4f6f57c2cc7e@promociones.cinemark.com.co",
+        "6a7a9bbc.ffa8efc9.46a73.f2e9@mx.google.com"
     ],
     "transactions": [
         {
@@ -2413,7 +2414,7 @@
             "timestamp": "2026-08-10T22:00:02.127155"
         }
     ],
-    "last_run": "2026-08-11T02:02:22.054872",
+    "last_run": "2026-08-11T04:05:54.555631",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
