@@ -919,7 +919,11 @@
         "019ff2bcd7987d7f8f16c0987249f9aa@promociones.cinemark.com.co",
         "5243854d-23a8-57ca-a2a2-3d78fbb0da06@mail.uber.com",
         "6a7b9ce0.0e8df0f7.1f1eeb.8937@mx.google.com",
-        "655626859.6618383.1786492721338@ltx1-app43993.prod.linkedin.com"
+        "655626859.6618383.1786492721338@ltx1-app43993.prod.linkedin.com",
+        "6a7bd82d.8426f43d.14c16d.5331@mx.google.com",
+        "z-3fptw3qkgssord2tzuag@geopod-ismtpd-13",
+        "mspivriy.1bbmok9d1l0nb@express.medallia.com",
+        "6a7bf2a3.117ebc60.7e70c.c17e@mx.google.com"
     ],
     "transactions": [
         {
@@ -2489,9 +2493,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-08-11T22:06:23.682830"
+        },
+        {
+            "msg_id": "z-3fptw3qkgssord2tzuag@geopod-ismtpd-13",
+            "date": "Wed, 12 Aug 2026 02:48:57 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 35.5,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T04:26:22.056358"
         }
     ],
-    "last_run": "2026-08-12T02:19:24.554741",
+    "last_run": "2026-08-12T04:26:23.770383",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
