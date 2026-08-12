@@ -917,7 +917,9 @@
         "nmffda7558ca83-917e-448c-98e1-1a4d4d3889f301a4d3dasamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "svcxupmxrcoua9dajkj_yw@geopod-ismtpd-21",
         "019ff2bcd7987d7f8f16c0987249f9aa@promociones.cinemark.com.co",
-        "5243854d-23a8-57ca-a2a2-3d78fbb0da06@mail.uber.com"
+        "5243854d-23a8-57ca-a2a2-3d78fbb0da06@mail.uber.com",
+        "6a7b9ce0.0e8df0f7.1f1eeb.8937@mx.google.com",
+        "655626859.6618383.1786492721338@ltx1-app43993.prod.linkedin.com"
     ],
     "transactions": [
         {
@@ -2489,7 +2491,7 @@
             "timestamp": "2026-08-11T22:06:23.682830"
         }
     ],
-    "last_run": "2026-08-11T22:06:24.121322",
+    "last_run": "2026-08-12T02:19:24.554741",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
