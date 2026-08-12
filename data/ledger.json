@@ -925,7 +925,12 @@
         "mspivriy.1bbmok9d1l0nb@express.medallia.com",
         "6a7bf2a3.117ebc60.7e70c.c17e@mx.google.com",
         "6a7bf5f0.64b4ec9b.343ce6.bc17@mx.google.com",
-        "o69ymm6htvumctcwjyz9wg@geopod-ismtpd-22"
+        "o69ymm6htvumctcwjyz9wg@geopod-ismtpd-22",
+        "6a7c79d4.74d237a2.1fa302.e23b@mx.google.com",
+        "uynckjkytbuapyvzdxpvwg@geopod-ismtpd-9",
+        "88a22e52-0e85-5919-9f88-788752d1e930@mail.uber.com",
+        "fjvjkueglfo4xoa59br-cq@notifications.google.com",
+        "nmffda236ee538-3f4a-48b5-ba23-3b801d8d1f2c01a4d5d9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -2511,9 +2516,33 @@
             "amount": 8.9,
             "currency": "PEN",
             "timestamp": "2026-08-12T13:49:06.417911"
+        },
+        {
+            "msg_id": "uynckjkytbuapyvzdxpvwg@geopod-ismtpd-9",
+            "date": "Wed, 12 Aug 2026 14:00:14 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.1,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T16:15:18.145942"
+        },
+        {
+            "msg_id": "88a22e52-0e85-5919-9f88-788752d1e930@mail.uber.com",
+            "date": "Wed, 12 Aug 2026 14:00:22 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T16:15:18.714950"
+        },
+        {
+            "msg_id": "nmffda236ee538-3f4a-48b5-ba23-3b801d8d1f2c01a4d5d9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Wed, 12 Aug 2026 15:13:47 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 30.0,
+            "currency": "USD",
+            "timestamp": "2026-08-12T16:15:19.446383"
         }
     ],
-    "last_run": "2026-08-12T13:49:07.052767",
+    "last_run": "2026-08-12T16:15:20.059127",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1294.73",
