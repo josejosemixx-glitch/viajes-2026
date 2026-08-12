@@ -930,7 +930,16 @@
         "uynckjkytbuapyvzdxpvwg@geopod-ismtpd-9",
         "88a22e52-0e85-5919-9f88-788752d1e930@mail.uber.com",
         "fjvjkueglfo4xoa59br-cq@notifications.google.com",
-        "nmffda236ee538-3f4a-48b5-ba23-3b801d8d1f2c01a4d5d9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
+        "nmffda236ee538-3f4a-48b5-ba23-3b801d8d1f2c01a4d5d9samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "6a7c9c18.35334a41.b20a.e8e2@mx.google.com",
+        "202612081626.1och2cr3oorytfj@hq.d.sender-sib.com",
+        "202612081627.1ochdc8r54rytfj@hr.d.sender-sib.com",
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2keeib1stbcnneqmeq0znnaxp5noh6c4nk0ndspfgyaxp8wsmebc2xjvxcdvpbj5ojbtgha/qvfay9wh74llcqmu@nws.atrapalo.com",
+        "a5aed0ca-c3ea-4a51-9e16-66a7e3d59886@atl1s11mta1836.xt.local",
+        "sah9vgpmqvs7wwdduvn8gw@geopod-ismtpd-8",
+        "w2rij2z3rwmkueewedx6aa@geopod-ismtpd-16",
+        "sqzexpprthqsp0wy-7g74q@geopod-ismtpd-1",
+        "6a7cbfc1.b9c3ca56.127e87.52ef@mx.google.com"
     ],
     "transactions": [
         {
@@ -2540,9 +2549,33 @@
             "amount": 30.0,
             "currency": "USD",
             "timestamp": "2026-08-12T16:15:19.446383"
+        },
+        {
+            "msg_id": "sah9vgpmqvs7wwdduvn8gw@geopod-ismtpd-8",
+            "date": "Wed, 12 Aug 2026 18:19:45 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 70.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T19:46:47.479573"
+        },
+        {
+            "msg_id": "w2rij2z3rwmkueewedx6aa@geopod-ismtpd-16",
+            "date": "Wed, 12 Aug 2026 18:22:45 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 40.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T19:46:47.798078"
+        },
+        {
+            "msg_id": "sqzexpprthqsp0wy-7g74q@geopod-ismtpd-1",
+            "date": "Wed, 12 Aug 2026 18:24:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 48.7,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T19:46:48.065826"
         }
     ],
-    "last_run": "2026-08-12T16:15:20.059127",
+    "last_run": "2026-08-12T19:46:49.160714",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
