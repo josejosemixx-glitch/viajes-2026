@@ -939,7 +939,11 @@
         "sah9vgpmqvs7wwdduvn8gw@geopod-ismtpd-8",
         "w2rij2z3rwmkueewedx6aa@geopod-ismtpd-16",
         "sqzexpprthqsp0wy-7g74q@geopod-ismtpd-1",
-        "6a7cbfc1.b9c3ca56.127e87.52ef@mx.google.com"
+        "6a7cbfc1.b9c3ca56.127e87.52ef@mx.google.com",
+        "vgwc3eavrn-5iw9nwhr-ig@geopod-ismtpd-14",
+        "91929194.20521600.1786564158451@email.apple.com",
+        "ts20qxaiq2wu1wjeegt7xq@geopod-ismtpd-15",
+        "1f694e11-3e5a-594a-850c-2e007e755546@mail.uber.com"
     ],
     "transactions": [
         {
@@ -2573,9 +2577,25 @@
             "amount": 48.7,
             "currency": "PEN",
             "timestamp": "2026-08-12T19:46:48.065826"
+        },
+        {
+            "msg_id": "vgwc3eavrn-5iw9nwhr-ig@geopod-ismtpd-14",
+            "date": "Wed, 12 Aug 2026 19:49:20 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.2,
+            "currency": "USD",
+            "timestamp": "2026-08-12T22:04:41.539786"
+        },
+        {
+            "msg_id": "ts20qxaiq2wu1wjeegt7xq@geopod-ismtpd-15",
+            "date": "Wed, 12 Aug 2026 21:46:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T22:04:42.804166"
         }
     ],
-    "last_run": "2026-08-12T19:46:49.160714",
+    "last_run": "2026-08-12T22:04:43.723167",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1161.39)",
