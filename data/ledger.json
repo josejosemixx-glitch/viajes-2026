@@ -924,7 +924,8 @@
         "z-3fptw3qkgssord2tzuag@geopod-ismtpd-13",
         "mspivriy.1bbmok9d1l0nb@express.medallia.com",
         "6a7bf2a3.117ebc60.7e70c.c17e@mx.google.com",
-        "6a7bf5f0.64b4ec9b.343ce6.bc17@mx.google.com"
+        "6a7bf5f0.64b4ec9b.343ce6.bc17@mx.google.com",
+        "o69ymm6htvumctcwjyz9wg@geopod-ismtpd-22"
     ],
     "transactions": [
         {
@@ -2502,9 +2503,17 @@
             "amount": 35.5,
             "currency": "PEN",
             "timestamp": "2026-08-12T04:26:22.056358"
+        },
+        {
+            "msg_id": "o69ymm6htvumctcwjyz9wg@geopod-ismtpd-22",
+            "date": "Wed, 12 Aug 2026 13:43:17 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-12T13:49:06.417911"
         }
     ],
-    "last_run": "2026-08-12T06:07:39.536800",
+    "last_run": "2026-08-12T13:49:07.052767",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1294.73",
