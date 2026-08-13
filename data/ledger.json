@@ -955,7 +955,14 @@
         "6a7dadcb.ba316acb.358898.a9d8@mx.google.com",
         "6a7dc4e1.858065bc.1ab90b.6045@mx.google.com",
         "zygdipk9saozlzqdto0gzq@geopod-ismtpd-2",
-        "1209580659.1598841786634604025.javamail.app@ap92-ca-ue1.prod.awspr"
+        "1209580659.1598841786634604025.javamail.app@ap92-ca-ue1.prod.awspr",
+        "6a7ded69.a29f8321.25df9b.5d2b@mx.google.com",
+        "nmffda8a0b4513-ec32-4eef-a9ee-36fa8e8037ec01a4d7f0samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "d17d21c7-7c75-447c-a7ab-a0032dc6bcd8@las1s04mta0279.xt.local",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklm/ayvqs4abcf0ghicmzflijvcdvyp0ms3ibn13lswbusd+jwr0rdpbkj4jvqsxbqqgu0bxwczti9s4uz/sas1g@nws.atrapalo.pe",
+        "0100019ffc2ed71e-fdfc3b75-432a-46bd-8ae9-49b9abfa2652-000000@email.amazonses.com",
+        "nbaxq2z1txeusosctvqtja@geopod-ismtpd-16",
+        "6a7e1187.4a46f23c.36a6e5.5111@mx.google.com"
     ],
     "transactions": [
         {
@@ -2621,9 +2628,17 @@
             "amount": 121.9,
             "currency": "PEN",
             "timestamp": "2026-08-13T13:49:44.529766"
+        },
+        {
+            "msg_id": "nmffda8a0b4513-ec32-4eef-a9ee-36fa8e8037ec01a4d7f0samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Thu, 13 Aug 2026 16:32:43 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 187.496,
+            "currency": "USD",
+            "timestamp": "2026-08-13T19:43:29.824133"
         }
     ],
-    "last_run": "2026-08-13T16:14:32.947179",
+    "last_run": "2026-08-13T19:43:34.414231",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
