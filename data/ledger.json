@@ -943,7 +943,11 @@
         "vgwc3eavrn-5iw9nwhr-ig@geopod-ismtpd-14",
         "91929194.20521600.1786564158451@email.apple.com",
         "ts20qxaiq2wu1wjeegt7xq@geopod-ismtpd-15",
-        "1f694e11-3e5a-594a-850c-2e007e755546@mail.uber.com"
+        "1f694e11-3e5a-594a-850c-2e007e755546@mail.uber.com",
+        "1268813087.835850.1786571920153@lor1-app89031.prod.linkedin.com",
+        "message-id: cvcommidmoijfgxtos8hooigrtlj5ucvkz1ifctvtj0thqtvn7c=",
+        "nm61db3293c0abd5863bcp_mid_prod6@email.bcp.com.pe",
+        "1146571186.66087624.1786586665904@email.apple.com"
     ],
     "transactions": [
         {
@@ -2593,9 +2597,17 @@
             "amount": 7.9,
             "currency": "PEN",
             "timestamp": "2026-08-12T22:04:42.804166"
+        },
+        {
+            "msg_id": "nm61db3293c0abd5863bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Wed, 12 Aug 2026 19:26:09 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 10000.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-13T02:21:25.914793"
         }
     ],
-    "last_run": "2026-08-12T22:04:43.723167",
+    "last_run": "2026-08-13T02:21:27.343966",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1161.39)",
