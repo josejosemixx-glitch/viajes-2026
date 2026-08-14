@@ -981,7 +981,15 @@
         "6a7e9600.dd82a9c3.23c9ff.ca91@mx.google.com",
         "ityxn6qjtc2ja4_h2wrlrg@geopod-ismtpd-12",
         "6a7e9930.9e083835.25746b.dc89@mx.google.com",
-        "ac700000000293d734f131cd153mscom_mkt_prod135@e-mails.microsoft.com"
+        "ac700000000293d734f131cd153mscom_mkt_prod135@e-mails.microsoft.com",
+        "6a7eb0a0.1f9e218a.13ce74.01af@mx.google.com",
+        "6a7efeb3.88a20ebf.84826.34de@mx.google.com",
+        "7dvb349htikuveoriokxqq@geopod-ismtpd-17",
+        "20260814125504.9e520646782b7f25@cioeu98571.info.jamesedition.com",
+        "010001a0005a9eaa-9e61c46c-a335-4b61-a1c1-ca551389be17-000000@email.amazonses.com",
+        "_vtr4x4vtbeyoepemu-odg@geopod-ismtpd-1",
+        "1786712552845.a0e03a94-211c-4d64-b4be-1ce90a03b743@bf08.eu1.hubspotemail.net",
+        "6a7f14f3.b9bfd787.1a6e7e.7058@mx.google.com"
     ],
     "transactions": [
         {
@@ -2727,9 +2735,25 @@
             "amount": 22.68,
             "currency": "USD",
             "timestamp": "2026-08-14T04:27:25.956204"
+        },
+        {
+            "msg_id": "7dvb349htikuveoriokxqq@geopod-ismtpd-17",
+            "date": "Fri, 14 Aug 2026 12:44:55 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-14T13:45:11.975898"
+        },
+        {
+            "msg_id": "_vtr4x4vtbeyoepemu-odg@geopod-ismtpd-1",
+            "date": "Fri, 14 Aug 2026 12:58:46 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.23,
+            "currency": "USD",
+            "timestamp": "2026-08-14T13:45:14.003778"
         }
     ],
-    "last_run": "2026-08-14T06:07:27.083766",
+    "last_run": "2026-08-14T13:45:15.498727",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1297.07",
