@@ -1023,7 +1023,12 @@
         "eb6fe2dc2b89ee840ff588637c3d4f4147ddbfc246e964e665b0d40af95a2ea6@correo.sunat.gob.pe",
         "curpkxhdq0czjt6keppedw@geopod-ismtpd-13",
         "5f54c8c0-0a9e-5ed2-a958-c16f582f6391@mail.uber.com",
-        "roenkhfzt4kfxh5burbfga@geopod-ismtpd-11"
+        "roenkhfzt4kfxh5burbfga@geopod-ismtpd-11",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln3dzcea3049qsp4s3txynh29al2fwp78yxlfewo1pp1gc8atigicdejlc//edijnfx/qnvtriajqx00gkd+lfv@nws.atrapalo.pe",
+        "d1.3f.64810.03c908a6@i-07da90582d879aaf0.mta1vrest.sd.prd.sparkpost",
+        "01a0066802f176ecbf60ef963423a3b5@newsletter.cineplanet.com.pe",
+        "010001a0068ba211-56f7fcaf-1a21-4173-81ed-694f23ddea6e-000000@email.amazonses.com",
+        "6a80ac8a.b5fdfa5d.1005e0.9f8b@mx.google.com"
     ],
     "transactions": [
         {
@@ -2851,7 +2856,7 @@
             "timestamp": "2026-08-15T15:42:07.537975"
         }
     ],
-    "last_run": "2026-08-15T15:42:09.824272",
+    "last_run": "2026-08-15T19:01:42.785355",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1301.12",
