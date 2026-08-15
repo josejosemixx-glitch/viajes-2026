@@ -1018,7 +1018,12 @@
         "1855824.906067531.8773085.1786739472489.danamail.9052@pacificoseguros.com.pe",
         "6a804a2d.997c261f.1db285.5d8b@mx.google.com",
         "fa72fa86ddc88a776acf7452b4bf7a6b2adb06b029b0663c8498d48fe08a9a77@correo.sunat.gob.pe",
-        "6a805f33.3790c345.14c46e.8415@mx.google.com"
+        "6a805f33.3790c345.14c46e.8415@mx.google.com",
+        "6a8062cf.a3285b1f.3ce8d6.92ec@mx.google.com",
+        "eb6fe2dc2b89ee840ff588637c3d4f4147ddbfc246e964e665b0d40af95a2ea6@correo.sunat.gob.pe",
+        "curpkxhdq0czjt6keppedw@geopod-ismtpd-13",
+        "5f54c8c0-0a9e-5ed2-a958-c16f582f6391@mail.uber.com",
+        "roenkhfzt4kfxh5burbfga@geopod-ismtpd-11"
     ],
     "transactions": [
         {
@@ -2836,9 +2841,17 @@
             "amount": 200.0,
             "currency": "PEN",
             "timestamp": "2026-08-15T03:21:35.235382"
+        },
+        {
+            "msg_id": "curpkxhdq0czjt6keppedw@geopod-ismtpd-13",
+            "date": "Sat, 15 Aug 2026 13:29:06 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 19.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-15T15:42:07.537975"
         }
     ],
-    "last_run": "2026-08-15T12:59:57.852494",
+    "last_run": "2026-08-15T15:42:09.824272",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1207.93",
