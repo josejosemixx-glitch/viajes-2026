@@ -776,6 +776,19 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-157",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: 🏖️Desde $595 USD / S/ 2007: Ca...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: ['31/10/2026']",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
