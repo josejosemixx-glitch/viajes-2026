@@ -1028,7 +1028,13 @@
         "d1.3f.64810.03c908a6@i-07da90582d879aaf0.mta1vrest.sd.prd.sparkpost",
         "01a0066802f176ecbf60ef963423a3b5@newsletter.cineplanet.com.pe",
         "010001a0068ba211-56f7fcaf-1a21-4173-81ed-694f23ddea6e-000000@email.amazonses.com",
-        "6a80ac8a.b5fdfa5d.1005e0.9f8b@mx.google.com"
+        "6a80ac8a.b5fdfa5d.1005e0.9f8b@mx.google.com",
+        "6a80b797.5a189652.3c25ee.b2f1@mx.google.com",
+        "hp31jrmosigg2wzy3rgxna@geopod-ismtpd-3",
+        "1ebcd07232a659a65fca357bd9c37197921bf337-20376977-337030291@google.com",
+        "8thussrxthek8prpqhakoa@geopod-ismtpd-15",
+        "30ed6b22-6c41-5782-aaf6-43697e42988f@mail.uber.com",
+        "urgexhhfsgon_9bvga0c4q@geopod-ismtpd-5"
     ],
     "transactions": [
         {
@@ -2854,9 +2860,25 @@
             "amount": 19.9,
             "currency": "PEN",
             "timestamp": "2026-08-15T15:42:07.537975"
+        },
+        {
+            "msg_id": "8thussrxthek8prpqhakoa@geopod-ismtpd-15",
+            "date": "Sat, 15 Aug 2026 19:44:52 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 1.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-15T21:36:59.957473"
+        },
+        {
+            "msg_id": "urgexhhfsgon_9bvga0c4q@geopod-ismtpd-5",
+            "date": "Sat, 15 Aug 2026 21:33:32 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 47.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-15T21:37:01.097403"
         }
     ],
-    "last_run": "2026-08-15T19:01:42.785355",
+    "last_run": "2026-08-15T21:37:01.665581",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
