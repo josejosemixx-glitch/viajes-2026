@@ -1041,7 +1041,11 @@
         "6a8128e9.26b50d05.336427.b3e2@mx.google.com",
         "6a812f04.39f23b82.f1625.bffa@mx.google.com",
         "bmwjwtbpsi-gqumpf6-mea@geopod-ismtpd-16",
-        "a39685a9-8c64-5c37-8e80-582f88bc401c@mail.uber.com"
+        "a39685a9-8c64-5c37-8e80-582f88bc401c@mail.uber.com",
+        "6a81488c.4eff4424.f453c.7898@mx.google.com",
+        "om8keb1hrgen2ednfxufkg@geopod-ismtpd-3",
+        "6a819bb1.b1b3e0a1.5664a.36cb@mx.google.com",
+        "6a81b162.a07c915d.9a7c9.41e8@mx.google.com"
     ],
     "transactions": [
         {
@@ -2901,7 +2905,7 @@
             "timestamp": "2026-08-16T05:20:11.120667"
         }
     ],
-    "last_run": "2026-08-16T05:20:11.549487",
+    "last_run": "2026-08-16T13:01:38.872877",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1335.48). Sugerencia: Evaluar compra inmediata.",
