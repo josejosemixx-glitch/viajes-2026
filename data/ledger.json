@@ -1066,7 +1066,12 @@
         "6a829be7.e59e62a9.15fc27.852e@mx.google.com",
         "6a82ee7f.fa459026.18a0e8.ff97@mx.google.com",
         "6a83042d.0946b47c.29caf2.20b6@mx.google.com",
-        "1786971814417.f762956d-61ed-4a1a-88e8-691123894e0d@bf08.eu1.hubspotemail.net"
+        "1786971814417.f762956d-61ed-4a1a-88e8-691123894e0d@bf08.eu1.hubspotemail.net",
+        "6a83078e.4bf4691f.6b238.8e16@mx.google.com",
+        "b812f6d8-f5d4-43a9-81d3-ab4114f487e0@iad4s13mta0211.xt.local",
+        "k72wlisxsyccusgmuu3vfg@geopod-ismtpd-20",
+        "hp8fkse0qvkccodyptq3sa@geopod-ismtpd-9",
+        "a61b5d76-e7f5-5d09-8d07-e49897d8277c@mail.uber.com"
     ],
     "transactions": [
         {
@@ -2980,9 +2985,33 @@
             "amount": 10.6,
             "currency": "PEN",
             "timestamp": "2026-08-17T05:28:05.706596"
+        },
+        {
+            "msg_id": "k72wlisxsyccusgmuu3vfg@geopod-ismtpd-20",
+            "date": "Mon, 17 Aug 2026 14:44:35 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 5.2,
+            "currency": "PEN",
+            "timestamp": "2026-08-17T15:46:05.731385"
+        },
+        {
+            "msg_id": "hp8fkse0qvkccodyptq3sa@geopod-ismtpd-9",
+            "date": "Mon, 17 Aug 2026 15:01:14 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 5.6,
+            "currency": "PEN",
+            "timestamp": "2026-08-17T15:46:06.117075"
+        },
+        {
+            "msg_id": "a61b5d76-e7f5-5d09-8d07-e49897d8277c@mail.uber.com",
+            "date": "Mon, 17 Aug 2026 15:01:21 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-17T15:46:06.518689"
         }
     ],
-    "last_run": "2026-08-17T13:07:26.049803",
+    "last_run": "2026-08-17T15:46:08.059952",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1168.9",
