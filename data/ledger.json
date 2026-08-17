@@ -1076,7 +1076,12 @@
         "e4.f1.29150.711438a6@i-066f63191201c3049.mta1vrest.sd.prd.sparkpost",
         "rvgbvxdcrgyfwx_xajo08q@geopod-ismtpd-15",
         "fcplt1qatamas5vdjp1tqq@geopod-ismtpd-12",
-        "6a8351c6.92d2873c.3d6c5b.3865@mx.google.com"
+        "6a8351c6.92d2873c.3d6c5b.3865@mx.google.com",
+        "6a835de0.5d357cd9.674fc.2410@mx.google.com",
+        "871b84d018ac5be400886f1824e19716@prexpe.com.pe",
+        "e9391ca542578a737f1ef4ad5ab1b9ab@prexpe.com.pe",
+        "1630752671.255299.1787001100764@bg-doha-api-12-us-usg1-w-kr4xx",
+        "nm620d46e4a0abe0034bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -3030,9 +3035,17 @@
             "amount": 20.0,
             "currency": "PEN",
             "timestamp": "2026-08-17T19:15:42.861231"
+        },
+        {
+            "msg_id": "nm620d46e4a0abe0034bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Mon, 17 Aug 2026 16:24:25 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-17T21:42:59.247892"
         }
     ],
-    "last_run": "2026-08-17T19:15:44.159138",
+    "last_run": "2026-08-17T21:42:59.753107",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
