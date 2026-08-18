@@ -1090,7 +1090,13 @@
         "dvr_53rzsukeku7yq5zr6w@geopod-ismtpd-69",
         "010001a012ca84f5-12569d24-ad83-4cb1-9403-529fb341b000-000000@email.amazonses.com",
         "6a83cb5e.0e54f35d.1ec0f3.f0a0@mx.google.com",
-        "6a83d0ce.46adc49a.43b5b.f633@mx.google.com"
+        "6a83d0ce.46adc49a.43b5b.f633@mx.google.com",
+        "6a845983.ea2182b8.3d564c.0dc0@mx.google.com",
+        "xhpt3a5prtmebrsepyquag@geopod-ismtpd-18",
+        "0.0.7.4a3.1dd2f19f352435e.0@omp.contigo.bancodebogota.com.co",
+        "e6eea96247197f32492c583ef8a5bbe26191a9f7f8abda6396f41ccf36e17009@pe.didiglobal.com",
+        "63ncqtinqxe7gmmmitfmow@geopod-ismtpd-18",
+        "zeemu1qsriumgex9k5aa5w@geopod-ismtpd-16"
     ],
     "transactions": [
         {
@@ -3068,9 +3074,25 @@
             "amount": 300.0,
             "currency": "PEN",
             "timestamp": "2026-08-18T03:26:03.492990"
+        },
+        {
+            "msg_id": "xhpt3a5prtmebrsepyquag@geopod-ismtpd-18",
+            "date": "Tue, 18 Aug 2026 13:52:26 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.2,
+            "currency": "PEN",
+            "timestamp": "2026-08-18T15:54:12.459420"
+        },
+        {
+            "msg_id": "63ncqtinqxe7gmmmitfmow@geopod-ismtpd-18",
+            "date": "Tue, 18 Aug 2026 14:16:01 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.24,
+            "currency": "USD",
+            "timestamp": "2026-08-18T15:54:13.910774"
         }
     ],
-    "last_run": "2026-08-18T13:09:22.413664",
+    "last_run": "2026-08-18T15:54:15.011874",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1175.13)",
