@@ -1096,7 +1096,13 @@
         "0.0.7.4a3.1dd2f19f352435e.0@omp.contigo.bancodebogota.com.co",
         "e6eea96247197f32492c583ef8a5bbe26191a9f7f8abda6396f41ccf36e17009@pe.didiglobal.com",
         "63ncqtinqxe7gmmmitfmow@geopod-ismtpd-18",
-        "zeemu1qsriumgex9k5aa5w@geopod-ismtpd-16"
+        "zeemu1qsriumgex9k5aa5w@geopod-ismtpd-16",
+        "6a848027.e17f22e8.9209d.6415@mx.google.com",
+        "-jg4yqcmr72_i_jjixfktw@geopod-ismtpd-115",
+        "1kl1txzurnwozfi6rv1uyw@geopod-ismtpd-20",
+        "6a84a341.c40671ba.2d96bb.de58@mx.google.com",
+        "j9y9b3ptt62bz03miea2tq@geopod-ismtpd-20",
+        "sv6gizagsukenkwtwtt6pg@geopod-ismtpd-7"
     ],
     "transactions": [
         {
@@ -3090,9 +3096,25 @@
             "amount": 3.24,
             "currency": "USD",
             "timestamp": "2026-08-18T15:54:13.910774"
+        },
+        {
+            "msg_id": "j9y9b3ptt62bz03miea2tq@geopod-ismtpd-20",
+            "date": "Tue, 18 Aug 2026 18:32:56 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 20.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-18T19:15:39.947042"
+        },
+        {
+            "msg_id": "sv6gizagsukenkwtwtt6pg@geopod-ismtpd-7",
+            "date": "Tue, 18 Aug 2026 18:33:10 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 80.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-18T19:15:40.642108"
         }
     ],
-    "last_run": "2026-08-18T15:54:15.011874",
+    "last_run": "2026-08-18T19:15:41.072813",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
