@@ -1124,7 +1124,11 @@
         "kf-kjxkaqeqdn7xfhbk8dg@geopod-ismtpd-16",
         "2fe63affa67065edd3d9c834a693584091d3ce145b82617026bd4efc69951326@correo.sunat.gob.pe",
         "834eadd8ad44d2b95e3f03c9ec2c40ac4244dc8a9ca4a41f47ffe544204e6218@correo.sunat.gob.pe",
-        "010701a01a9f03ae-d1190502-9ad1-4ca0-8696-1375e588be18-000000@eu-central-1.amazonses.com"
+        "010701a01a9f03ae-d1190502-9ad1-4ca0-8696-1375e588be18-000000@eu-central-1.amazonses.com",
+        "sa3pr14mb70029774378a84b7b805bf63d8a52@sa3pr14mb7002.namprd14.prod.outlook.com",
+        "kicn6q8rty602p7foxpuba@geopod-ismtpd-21",
+        "al0das4wtcargjewwc-48w@geopod-ismtpd-19",
+        "6a85f529.afd65eb9.36b113.811b@mx.google.com"
     ],
     "transactions": [
         {
@@ -3174,9 +3178,25 @@
             "amount": 2.78,
             "currency": "USD",
             "timestamp": "2026-08-19T15:53:48.498202"
+        },
+        {
+            "msg_id": "kicn6q8rty602p7foxpuba@geopod-ismtpd-21",
+            "date": "Wed, 19 Aug 2026 18:09:33 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 20.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-19T19:06:27.182230"
+        },
+        {
+            "msg_id": "al0das4wtcargjewwc-48w@geopod-ismtpd-19",
+            "date": "Wed, 19 Aug 2026 18:17:58 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 90.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-19T19:06:27.925246"
         }
     ],
-    "last_run": "2026-08-19T15:53:51.498869",
+    "last_run": "2026-08-19T19:06:29.150900",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
