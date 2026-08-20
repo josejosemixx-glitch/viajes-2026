@@ -1158,7 +1158,9 @@
         "010001a0204675a1-e9d10318-674a-4006-b158-45be644a8f36-000000@email.amazonses.com",
         "1860294.394109532.12616180.1787248356227.danamail.8137@pacificoseguros.com.pe",
         "6a874656.fdaa3def.2a7c45.2f97@mx.google.com",
-        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnfd7xx3ldowtiq8acusx+xduy97hr/inowm0pcst7voooq2lozavtqzmekzs9oo/qmq/jurdouvozzxeabhwp7@nws.atrapalo.pe"
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnfd7xx3ldowtiq8acusx+xduy97hr/inowm0pcst7voooq2lozavtqzmekzs9oo/qmq/jurdouvozzxeabhwp7@nws.atrapalo.pe",
+        "43548f6e-6747-4d61-972d-98af17196a5b@iad4s13mta0213.xt.local",
+        "nm623ad01880abea0d2bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -3256,9 +3258,17 @@
             "amount": 10000.0,
             "currency": "PEN",
             "timestamp": "2026-08-20T01:27:30.012824"
+        },
+        {
+            "msg_id": "nm623ad01880abea0d2bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Thu, 20 Aug 2026 16:29:59 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 40000.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-20T21:45:29.581691"
         }
     ],
-    "last_run": "2026-08-20T19:18:01.707681",
+    "last_run": "2026-08-20T21:45:29.811021",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1154.73)",
