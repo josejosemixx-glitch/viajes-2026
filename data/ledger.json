@@ -1142,7 +1142,9 @@
         "ksodfhd2q_kglnlanf13ua@geopod-ismtpd-1",
         "nm623265aee0abe8338bcp_mid_prod6@email.bcp.com.pe",
         "12511f4566b8f753404024aa1c022730@pd0ldwk002cti",
-        "bb6e9bc9-c7c9-4049-8324-778f325d2cec@atl1s11mta1856.xt.local"
+        "bb6e9bc9-c7c9-4049-8324-778f325d2cec@atl1s11mta1856.xt.local",
+        "6a865805.d2cb4adc.2c4456.f3a9@mx.google.com",
+        "6a866e07.6f91ca5b.252ba6.76f2@mx.google.com"
     ],
     "transactions": [
         {
@@ -3242,7 +3244,7 @@
             "timestamp": "2026-08-20T01:27:30.012824"
         }
     ],
-    "last_run": "2026-08-20T01:27:32.098658",
+    "last_run": "2026-08-20T03:28:19.417517",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1331.47). Sugerencia: Evaluar compra inmediata.",
