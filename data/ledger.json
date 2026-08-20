@@ -1149,7 +1149,9 @@
         "6a868f22.6852c33c.23e84e.c29c@mx.google.com",
         "6a86e305.df41426b.e50ad.8143@mx.google.com",
         "hp2v71000001a01eeeee7b8c7dfaf4bbcfb648081@email-marriott.com",
-        "6a86fcbc.3f2ee557.fa843.3715@mx.google.com"
+        "6a86fcbc.3f2ee557.fa843.3715@mx.google.com",
+        "6a86fd1b.69a4da5a.379e37.c6c0@mx.google.com",
+        "nmffda5204543e-27b5-4336-8f7c-eb9c9982e5aa01b7e143samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -3249,7 +3251,7 @@
             "timestamp": "2026-08-20T01:27:30.012824"
         }
     ],
-    "last_run": "2026-08-20T13:11:54.688571",
+    "last_run": "2026-08-20T15:55:20.950845",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
