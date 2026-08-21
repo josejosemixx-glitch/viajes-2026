@@ -1160,7 +1160,12 @@
         "6a874656.fdaa3def.2a7c45.2f97@mx.google.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnfd7xx3ldowtiq8acusx+xduy97hr/inowm0pcst7voooq2lozavtqzmekzs9oo/qmq/jurdouvozzxeabhwp7@nws.atrapalo.pe",
         "43548f6e-6747-4d61-972d-98af17196a5b@iad4s13mta0213.xt.local",
-        "nm623ad01880abea0d2bcp_mid_prod6@email.bcp.com.pe"
+        "nm623ad01880abea0d2bcp_mid_prod6@email.bcp.com.pe",
+        "yiktiew_tzcqeve480a4ca@geopod-ismtpd-10",
+        "pyz-0lnysjgpk0ktndwqqg@geopod-ismtpd-canary-0",
+        "eadd1ccc-9627-5408-9fc2-6bc383c3b111-f1c765fd-af20-4350-98ef-81f91a1c56a9@messagebird.com",
+        "839655239.93961.1787275247245@amaplatipr02.ath.net",
+        "010001a021e749e7-12eb2bbe-480a-41b4-88f7-f588bc5a34f7-000000@email.amazonses.com"
     ],
     "transactions": [
         {
@@ -3266,9 +3271,25 @@
             "amount": 40000.0,
             "currency": "PEN",
             "timestamp": "2026-08-20T21:45:29.581691"
+        },
+        {
+            "msg_id": "yiktiew_tzcqeve480a4ca@geopod-ismtpd-10",
+            "date": "Fri, 21 Aug 2026 00:56:15 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.2,
+            "currency": "PEN",
+            "timestamp": "2026-08-21T01:38:32.770188"
+        },
+        {
+            "msg_id": "pyz-0lnysjgpk0ktndwqqg@geopod-ismtpd-canary-0",
+            "date": "Fri, 21 Aug 2026 01:17:52 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 211.8,
+            "currency": "PEN",
+            "timestamp": "2026-08-21T01:38:34.670966"
         }
     ],
-    "last_run": "2026-08-20T21:45:29.811021",
+    "last_run": "2026-08-21T01:38:40.232150",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1154.73)",
