@@ -1173,7 +1173,15 @@
         "6a87c25b.3968298c.a433.8928@mx.google.com",
         "6a87c74f.b3e79337.1b1b12.2c86@mx.google.com",
         "z9gd2rm5sm2mdvsvotwmiw@geopod-ismtpd-18",
-        "0ayrfgkgqz-kxfbvh1zqow@geopod-ismtpd-18"
+        "0ayrfgkgqz-kxfbvh1zqow@geopod-ismtpd-18",
+        "6a87e121.dcf3bad1.1021c2.7f86@mx.google.com",
+        "2036469702.9379947.1787291920605@lor1-app115087.prod.linkedin.com",
+        "ab.ac.19256.103288a6@i-0ca98205d5d7f3c4f.mta1vrest.sd.prd.sparkpost",
+        "6a88346c.4540bc7d.3bf7e7.9822@mx.google.com",
+        "bb.b8.26328.bc5488a6@i-0658182c970ccee02.mta1vrest.sd.prd.sparkpost",
+        "6a884bd3.4540bc7d.3bf7e7.4448@mx.google.com",
+        "e13ba216-ac12-4655-b965-4fd63bc1bf3b@iad4s12mta1215.xt.local",
+        "xecetpu2qvqomt8ms7juvw@geopod-ismtpd-5"
     ],
     "transactions": [
         {
@@ -3337,7 +3345,7 @@
             "timestamp": "2026-08-21T05:24:48.438673"
         }
     ],
-    "last_run": "2026-08-21T05:24:48.727352",
+    "last_run": "2026-08-21T13:12:04.395329",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
