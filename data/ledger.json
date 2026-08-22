@@ -1198,7 +1198,14 @@
         "d3d13465e95eaafcb4e3550ffbc827df@pd0ldwk002e13",
         "b-cvdh6dtcqcvjb5g8n6ga@geopod-ismtpd-8",
         "vhtleitzqha4ltfkapbz1a@geopod-ismtpd-10",
-        "1861346.540857478.14864795.1787360926378.danamail.1270@pacificoseguros.com.pe"
+        "1861346.540857478.14864795.1787360926378.danamail.1270@pacificoseguros.com.pe",
+        "6a88fac0.de89bd77.362314.5bb3@mx.google.com",
+        "b5v74lvztxcvdkdy_gycgq@geopod-ismtpd-20",
+        "2a2877fd-7d7f-5a6a-b84d-7be264585937@mail.uber.com",
+        "ml4ljzxvtmw2_bcyz1kvmq@geopod-ismtpd-8",
+        "8nbxp2ywqraiffpvbuzmqq@geopod-ismtpd-1",
+        "2ee48696-77ce-566a-b954-2b49d9d292c4@mail.uber.com",
+        "6a891073.3fea39c7.3abd5a.26dd@mx.google.com"
     ],
     "transactions": [
         {
@@ -3424,9 +3431,33 @@
             "amount": 7.2,
             "currency": "PEN",
             "timestamp": "2026-08-22T01:26:23.209672"
+        },
+        {
+            "msg_id": "b5v74lvztxcvdkdy_gycgq@geopod-ismtpd-20",
+            "date": "Sat, 22 Aug 2026 01:24:29 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.0,
+            "currency": "USD",
+            "timestamp": "2026-08-22T03:24:05.074346"
+        },
+        {
+            "msg_id": "ml4ljzxvtmw2_bcyz1kvmq@geopod-ismtpd-8",
+            "date": "Sat, 22 Aug 2026 01:41:45 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 42.6,
+            "currency": "PEN",
+            "timestamp": "2026-08-22T03:24:06.573445"
+        },
+        {
+            "msg_id": "8nbxp2ywqraiffpvbuzmqq@geopod-ismtpd-1",
+            "date": "Sat, 22 Aug 2026 02:37:47 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 39.2,
+            "currency": "PEN",
+            "timestamp": "2026-08-22T03:24:07.296371"
         }
     ],
-    "last_run": "2026-08-22T01:26:23.864165",
+    "last_run": "2026-08-22T03:24:09.135105",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1157.91",
