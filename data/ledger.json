@@ -1261,7 +1261,11 @@
         "4ed87c98-3165-4c69-9405-93f211f2e9a2@iad4s12mta1215.xt.local",
         "6a8c4021.96731870.163648.ada8@mx.google.com",
         "1787576523677.7e842ea0-ca69-4e77-a83d-2c19e1c07a0f@bf08.eu1.hubspotemail.net",
-        "nm625dd582c0abf2828bcp_mid_prod6@email.bcp.com.pe"
+        "nm625dd582c0abf2828bcp_mid_prod6@email.bcp.com.pe",
+        "6a8c43b1.be1895d6.4d5a6.1548@mx.google.com",
+        "hi7wyucwtqg8z0xkjcysoa@geopod-ismtpd-74",
+        "0.1.8.304.1dd33da92460382.0@omp.contigo.bancodebogota.com.co",
+        "e5fe50551a9628b3708d710bf83efb3f1973d106-10044049-110294243@google.com"
     ],
     "transactions": [
         {
@@ -3641,7 +3645,7 @@
             "timestamp": "2026-08-24T13:14:24.285009"
         }
     ],
-    "last_run": "2026-08-24T13:14:24.504676",
+    "last_run": "2026-08-24T16:01:31.726581",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1198.71",
