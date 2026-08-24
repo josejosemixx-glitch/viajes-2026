@@ -854,6 +854,32 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-163",
+            "tripId": "VIAJE-2026-10-12-EUROPA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: ¡No te pierdas los Plus Ultra ...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: ['59-57-4045']",
+            "location": "Europa",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-164",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: 📲Comparte tu QR y recibe diner...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
