@@ -1255,7 +1255,13 @@
         "ehnlqnztqc-nvioiqyuhoa@geopod-ismtpd-83",
         "mjlt7xg5qkgecj2ll_4ntq@geopod-ismtpd-59",
         "6a8bb5d0.ad4f9334.3bd0bd.47ed@mx.google.com",
-        "6a8bbc31.8dff2db4.1d9d6d.1f8d@mx.google.com"
+        "6a8bbc31.8dff2db4.1d9d6d.1f8d@mx.google.com",
+        "6a8bd724.362730bf.2c561d.33e8@mx.google.com",
+        "6a8c2942.d2e28207.1af115.e3ea@mx.google.com",
+        "4ed87c98-3165-4c69-9405-93f211f2e9a2@iad4s12mta1215.xt.local",
+        "6a8c4021.96731870.163648.ada8@mx.google.com",
+        "1787576523677.7e842ea0-ca69-4e77-a83d-2c19e1c07a0f@bf08.eu1.hubspotemail.net",
+        "nm625dd582c0abf2828bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -3625,9 +3631,17 @@
             "amount": 6.61,
             "currency": "USD",
             "timestamp": "2026-08-23T15:43:38.995640"
+        },
+        {
+            "msg_id": "nm625dd582c0abf2828bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Mon, 24 Aug 2026 08:00:36 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-24T13:14:24.285009"
         }
     ],
-    "last_run": "2026-08-24T05:31:15.928828",
+    "last_run": "2026-08-24T13:14:24.504676",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1198.71",
