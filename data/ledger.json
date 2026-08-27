@@ -1337,7 +1337,20 @@
         "m1z9gcfrqliatraz2d4-mw@geopod-ismtpd-17",
         "546691287.25443192.1787836794177@email.apple.com",
         "calendar-4e6140ee-daf8-4fa1-a3ff-b4408aede4a8@google.com",
-        "v8yrto1qrta733npl6fyag@geopod-ismtpd-18"
+        "v8yrto1qrta733npl6fyag@geopod-ismtpd-18",
+        "c8.b8.50519.0fe609a6@i-0a626c397440dab83.mta1vrest.sd.prd.sparkpost",
+        "1787850077688.5e77b00f-00e1-4ac4-be65-b47929fa5ad4@47814330m.email.hubspot.copa.com",
+        "94eb8b5d-a587-5468-a04c-4374106d1408@mail.uber.com",
+        "6a90a3cb.51258d9a.29f0e5.7d99@mx.google.com",
+        "e199be64-a130-3aa0-9169-6f80aa3609c6@newsletter.avianca.com",
+        "010001a045200413-98284c62-1c5b-480b-95e4-8466dcd064bd-000000@email.amazonses.com",
+        "6a90b435.160324b0.247a43.c91d@mx.google.com",
+        "s6eo16kktwuavnijdo_dqw@geopod-ismtpd-53",
+        "fd59d2bd-12e1-4bf4-8201-ffbe2823cc52@las1s04mta0391.xt.local",
+        "20260827220716.117ec33f7740985f@order.temu.com",
+        "773620600.535655.1787868436971@bg-doha-api-12-us-usg1-w-vnbpf",
+        "433268359.1207274.1787868436915@bg-doha-api-10-us-usg1-w-29bdc",
+        "atij-mc_tr69rr8d-tpc4g@geopod-ismtpd-3"
     ],
     "transactions": [
         {
@@ -3883,9 +3896,25 @@
             "amount": 7.2,
             "currency": "PEN",
             "timestamp": "2026-08-27T16:01:09.107876"
+        },
+        {
+            "msg_id": "s6eo16kktwuavnijdo_dqw@geopod-ismtpd-53",
+            "date": "Thu, 27 Aug 2026 22:02:38 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3429.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-27T22:17:19.035813"
+        },
+        {
+            "msg_id": "atij-mc_tr69rr8d-tpc4g@geopod-ismtpd-3",
+            "date": "Thu, 27 Aug 2026 22:12:35 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 46.5,
+            "currency": "PEN",
+            "timestamp": "2026-08-27T22:17:22.688533"
         }
     ],
-    "last_run": "2026-08-27T16:01:09.265450",
+    "last_run": "2026-08-27T22:17:23.222155",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1318.04",
