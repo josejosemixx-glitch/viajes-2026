@@ -1360,7 +1360,17 @@
         "ogspf_d3qbmd499eroyqtq@geopod-ismtpd-11",
         "010101a04638345f-00468d39-31ac-455f-8147-28e2a36fd8e5-000000@us-west-2.amazonses.com",
         "6a91167448998_bf11b898248@flexworker-86984594b-p794p.mail",
-        "6a911bfb.8e75e0cb.d7530.0fd4@mx.google.com"
+        "6a911bfb.8e75e0cb.d7530.0fd4@mx.google.com",
+        "6a91662f.560f397e.3135bb.98bd@mx.google.com",
+        "20260828113744.06a71f27ad47c5d7@email.claude.com",
+        "844564821.9726222.1787918319637@lor1-app78040.prod.linkedin.com",
+        "ssodrykbryu4bmk2hszfrg@geopod-ismtpd-1",
+        "nzbyogwjrjuacyislmbgva@geopod-ismtpd-1",
+        "39c6b54a-9630-5156-a850-368910307a55@mail.uber.com",
+        "fkrrb504r1-u2cgjfspcyq@geopod-ismtpd-11",
+        "1260270917.4436304.1787925521950@ltx1-app87360.prod.linkedin.com",
+        "1787925745134.f5db5502-af1f-4a67-aeac-6364514e440f@bf08.eu1.hubspotemail.net",
+        "6a919783.87c8bd60.173001.38c6@mx.google.com"
     ],
     "transactions": [
         {
@@ -3962,9 +3972,25 @@
             "amount": 869.89,
             "currency": "PEN",
             "timestamp": "2026-08-28T05:26:16.296769"
+        },
+        {
+            "msg_id": "ssodrykbryu4bmk2hszfrg@geopod-ismtpd-1",
+            "date": "Fri, 28 Aug 2026 12:02:32 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-08-28T14:35:04.539540"
+        },
+        {
+            "msg_id": "fkrrb504r1-u2cgjfspcyq@geopod-ismtpd-11",
+            "date": "Fri, 28 Aug 2026 13:00:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-28T14:35:08.396746"
         }
     ],
-    "last_run": "2026-08-28T10:42:54.660709",
+    "last_run": "2026-08-28T14:35:11.498797",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
