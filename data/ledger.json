@@ -1403,7 +1403,13 @@
         "qezplzogtzoqkaiojux6aa@geopod-ismtpd-45",
         "6a927c80.88a20ebf.248065.f494@mx.google.com",
         "6a929d12.b3d68efa.14767f.226c@mx.google.com",
-        "6a92a4d6.3790c345.1eedf1.10f1@mx.google.com"
+        "6a92a4d6.3790c345.1eedf1.10f1@mx.google.com",
+        "iwdkplnkqlmhfl9dzdfcpg@geopod-ismtpd-canary-0",
+        "8d5pms8wr0wtunb9yhtuaq@geopod-ismtpd-68",
+        "qyp6itowtbklajcuiciolq@geopod-ismtpd-10",
+        "6a92f9c2.ac91a9e4.31f4aa.191f@mx.google.com",
+        "6a93090c.890fbd35.d1f02.a812@mx.google.com",
+        "nmffda50ce438b-410b-4aae-9372-f6b58a9b114101b7f98dsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -4077,9 +4083,25 @@
             "amount": 26.7,
             "currency": "PEN",
             "timestamp": "2026-08-29T01:54:50.962661"
+        },
+        {
+            "msg_id": "iwdkplnkqlmhfl9dzdfcpg@geopod-ismtpd-canary-0",
+            "date": "Sat, 29 Aug 2026 12:51:36 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-29T16:44:27.509731"
+        },
+        {
+            "msg_id": "qyp6itowtbklajcuiciolq@geopod-ismtpd-10",
+            "date": "Sat, 29 Aug 2026 15:11:34 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.15,
+            "currency": "USD",
+            "timestamp": "2026-08-29T16:44:28.408173"
         }
     ],
-    "last_run": "2026-08-29T11:25:32.410719",
+    "last_run": "2026-08-29T16:44:30.766745",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1347.04",
