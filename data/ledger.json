@@ -1400,7 +1400,9 @@
         "6a923bef.3f2ee557.1c4c28.4893@mx.google.com",
         "e4653ec68a996c9648be0e3399691a68@pd0ldwk002cqg",
         "6a924dd3.fdaa3def.19ce2b.f02f@mx.google.com",
-        "qezplzogtzoqkaiojux6aa@geopod-ismtpd-45"
+        "qezplzogtzoqkaiojux6aa@geopod-ismtpd-45",
+        "6a927c80.88a20ebf.248065.f494@mx.google.com",
+        "6a929d12.b3d68efa.14767f.226c@mx.google.com"
     ],
     "transactions": [
         {
@@ -4076,7 +4078,7 @@
             "timestamp": "2026-08-29T01:54:50.962661"
         }
     ],
-    "last_run": "2026-08-29T06:30:23.898119",
+    "last_run": "2026-08-29T09:22:29.870642",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1169.27)",
