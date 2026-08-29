@@ -1382,7 +1382,14 @@
         "nm629f39fb10ac047abbcp_mid_prod6@email.bcp.com.pe",
         "sqcfhotztxgk_m5gxjqdlg@geopod-ismtpd-17",
         "orjjzaivrbugle3qhwajkg@geopod-ismtpd-10",
-        "6a920494.c927a5f4.b96b2.f6b4@mx.google.com"
+        "6a920494.c927a5f4.b96b2.f6b4@mx.google.com",
+        "6a920a37.3865fcc3.b1744.1f5c@mx.google.com",
+        "rgppposbr7255rgtr-9u8g@geopod-ismtpd-10",
+        "k5ngkerbsmqzeuuqyjj7ug@geopod-ismtpd-48",
+        "nm62a05c4b50ac04e16bcp_mid_prod6@email.bcp.com.pe",
+        "20260828232355.62a14218161a8504@email.claude.com",
+        "cs2eeovsqnarvzxwyaxk0a@geopod-ismtpd-0",
+        "1842654969.7640944.1787961522085@ltx1-app99912.prod.linkedin.com"
     ],
     "transactions": [
         {
@@ -4016,9 +4023,33 @@
             "amount": 19.9,
             "currency": "PEN",
             "timestamp": "2026-08-28T22:22:45.432499"
+        },
+        {
+            "msg_id": "rgppposbr7255rgtr-9u8g@geopod-ismtpd-10",
+            "date": "Fri, 28 Aug 2026 22:10:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 10.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-29T00:02:22.990773"
+        },
+        {
+            "msg_id": "nm62a05c4b50ac04e16bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 28 Aug 2026 17:50:32 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1694540400.0,
+            "currency": "PEN",
+            "timestamp": "2026-08-29T00:02:23.704628"
+        },
+        {
+            "msg_id": "cs2eeovsqnarvzxwyaxk0a@geopod-ismtpd-0",
+            "date": "Fri, 28 Aug 2026 23:46:14 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 29.96,
+            "currency": "PEN",
+            "timestamp": "2026-08-29T00:02:24.579474"
         }
     ],
-    "last_run": "2026-08-28T22:22:46.374181",
+    "last_run": "2026-08-29T00:02:25.430878",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1164.47)",
