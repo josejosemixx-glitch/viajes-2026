@@ -1473,7 +1473,12 @@
         "gv2pr07mb9153bda6aca662b830c1943cc8a82@gv2pr07mb9153.eurprd07.prod.outlook.com",
         "atrapalo.xserial.s56e5pcrjqssuohqnrncdph6zb22dk6z5p5okvmpcgmdpaqium4my10s1vmpd+luxrjk5gvv/sxpbrro6kc1pldczujl1qcxfd1gzfnjx0yhzm8oxwvsjlr0gq2vbflmhwiv@nws.atrapalo.com",
         "6a96edd0.bd99a6db.241824.7325@mx.google.com",
-        "6a96fb2e.da55105d.18229d.2a09@mx.google.com"
+        "6a96fb2e.da55105d.18229d.2a09@mx.google.com",
+        "6a970048.45cbbc81.24875f.d3cc@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklmxkh9jck9lc845onjyqcm42kztbwhrpe2rhxib2re+w1amrkrestyfwotf9chvxpe0efcuvkstzsb8ep98q56l@nws.atrapalo.pe",
+        "010001a05df9f8a0-8ad56c2f-ebd4-47f4-bfb3-5dae09eba434-000000@email.amazonses.com",
+        "lhtldaz2q76odwjbnxdcgq@geopod-ismtpd-39",
+        "6stg_t04qng3ehwuvvblya@geopod-ismtpd-17"
     ],
     "transactions": [
         {
@@ -4277,7 +4282,7 @@
             "timestamp": "2026-09-01T16:41:39.671490"
         }
     ],
-    "last_run": "2026-09-01T16:41:43.273221",
+    "last_run": "2026-09-01T18:40:00.584325",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
