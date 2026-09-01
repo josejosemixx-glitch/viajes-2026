@@ -1483,7 +1483,9 @@
         "8oqcu3pkqfeb-g7qptmzjq@geopod-ismtpd-15",
         "eqh3ud96r6otl5rb2puq7w@geopod-ismtpd-79",
         "vato2pp8ssu-roimmyayag@geopod-ismtpd-97",
-        "6a9732db.4bf4691f.212851.d57c@mx.google.com"
+        "6a9732db.4bf4691f.212851.d57c@mx.google.com",
+        "6a974177.d0742bf5.1a4f22.893f@mx.google.com",
+        "1869287.1471438218.63660.1788300085016.danamail.3892@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -4311,7 +4313,7 @@
             "timestamp": "2026-09-01T21:19:48.850220"
         }
     ],
-    "last_run": "2026-09-01T21:19:50.657841",
+    "last_run": "2026-09-01T23:20:33.731654",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
