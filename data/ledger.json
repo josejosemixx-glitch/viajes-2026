@@ -1499,7 +1499,10 @@
         "nmffda54c85c50-cc32-488a-be34-735a529f457c01b802ccsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "c1a217fc-4b8d-3623-bae5-504b7da688c9@newsletter.lifemiles.com",
         "h1od6zdltgkmhsxjxhukha@geopod-ismtpd-9",
-        "6a984bd6.4bfec62e.81ec1.4189@mx.google.com"
+        "6a984bd6.4bfec62e.81ec1.4189@mx.google.com",
+        "ktbtetflqe2f6rsba1fylg@geopod-ismtpd-2",
+        "_d0r-vezssedm6330qvslw@geopod-ismtpd-16",
+        "376807e816fc17037a543198a683b022@pd0ldwk002cmg"
     ],
     "transactions": [
         {
@@ -4341,9 +4344,17 @@
             "amount": 291.658,
             "currency": "USD",
             "timestamp": "2026-09-02T16:36:18.879735"
+        },
+        {
+            "msg_id": "_d0r-vezssedm6330qvslw@geopod-ismtpd-16",
+            "date": "Wed, 02 Sep 2026 18:01:11 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 59.86,
+            "currency": "PEN",
+            "timestamp": "2026-09-02T18:49:44.854782"
         }
     ],
-    "last_run": "2026-09-02T16:36:21.503554",
+    "last_run": "2026-09-02T18:49:45.937555",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1161.53)",
