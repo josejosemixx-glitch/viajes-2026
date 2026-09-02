@@ -1502,7 +1502,11 @@
         "6a984bd6.4bfec62e.81ec1.4189@mx.google.com",
         "ktbtetflqe2f6rsba1fylg@geopod-ismtpd-2",
         "_d0r-vezssedm6330qvslw@geopod-ismtpd-16",
-        "376807e816fc17037a543198a683b022@pd0ldwk002cmg"
+        "376807e816fc17037a543198a683b022@pd0ldwk002cmg",
+        "jbvbhmixtwkaygseaqoarg@geopod-ismtpd-30",
+        "ozc5ppyktv2plwrpqhn5aq@geopod-ismtpd-19",
+        "swypdlnkqf6tdxmws42xww@geopod-ismtpd-21",
+        "6a988413.160324b0.160b2.3f57@mx.google.com"
     ],
     "transactions": [
         {
@@ -4352,9 +4356,33 @@
             "amount": 59.86,
             "currency": "PEN",
             "timestamp": "2026-09-02T18:49:44.854782"
+        },
+        {
+            "msg_id": "jbvbhmixtwkaygseaqoarg@geopod-ismtpd-30",
+            "date": "Wed, 02 Sep 2026 19:09:22 +0000 (UTC)",
+            "sender": "airbnb <automated@airbnb.com>",
+            "amount": 135.63,
+            "currency": "USD",
+            "timestamp": "2026-09-02T21:17:12.978539"
+        },
+        {
+            "msg_id": "ozc5ppyktv2plwrpqhn5aq@geopod-ismtpd-19",
+            "date": "Wed, 02 Sep 2026 19:55:59 +0000 (UTC)",
+            "sender": "airbnb <automated@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-02T21:17:13.317876"
+        },
+        {
+            "msg_id": "swypdlnkqf6tdxmws42xww@geopod-ismtpd-21",
+            "date": "Wed, 02 Sep 2026 19:55:52 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 135.63,
+            "currency": "USD",
+            "timestamp": "2026-09-02T21:17:13.839285"
         }
     ],
-    "last_run": "2026-09-02T18:49:45.937555",
+    "last_run": "2026-09-02T21:17:14.934143",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1346.24",
