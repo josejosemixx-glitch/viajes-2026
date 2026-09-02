@@ -1495,7 +1495,11 @@
         "1687473970.3204583.1788321520790@ltx1-app82278.prod.linkedin.com",
         "6a97c961.684b7002.36a057.8dbd@mx.google.com",
         "1476619114.11715918.1788332816429@email.apple.com",
-        "6a97cde7.9c49f9ea.2da9a0.10d6@mx.google.com"
+        "6a97cde7.9c49f9ea.2da9a0.10d6@mx.google.com",
+        "nmffda54c85c50-cc32-488a-be34-735a529f457c01b802ccsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "c1a217fc-4b8d-3623-bae5-504b7da688c9@newsletter.lifemiles.com",
+        "h1od6zdltgkmhsxjxhukha@geopod-ismtpd-9",
+        "6a984bd6.4bfec62e.81ec1.4189@mx.google.com"
     ],
     "transactions": [
         {
@@ -4329,9 +4333,17 @@
             "amount": 15.3,
             "currency": "USD",
             "timestamp": "2026-09-02T03:49:07.330807"
+        },
+        {
+            "msg_id": "nmffda54c85c50-cc32-488a-be34-735a529f457c01b802ccsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Wed, 02 Sep 2026 15:23:37 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 291.658,
+            "currency": "USD",
+            "timestamp": "2026-09-02T16:36:18.879735"
         }
     ],
-    "last_run": "2026-09-02T09:12:23.250844",
+    "last_run": "2026-09-02T16:36:21.503554",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1161.53)",
