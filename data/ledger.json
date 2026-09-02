@@ -1485,7 +1485,11 @@
         "vato2pp8ssu-roimmyayag@geopod-ismtpd-97",
         "6a9732db.4bf4691f.212851.d57c@mx.google.com",
         "6a974177.d0742bf5.1a4f22.893f@mx.google.com",
-        "1869287.1471438218.63660.1788300085016.danamail.3892@pacificoseguros.com.pe"
+        "1869287.1471438218.63660.1788300085016.danamail.3892@pacificoseguros.com.pe",
+        "6a975dc3.018c0331.338835.c7f4@mx.google.com",
+        "0827d5449e3d6c4749fdc1a17133a9da97decfa9-20376977-337030291@google.com",
+        "1735463286.788403.1788318372802@jwm-654d49f94b-wjt95",
+        "smn1twv0rvmqmzkyjrm7lw@geopod-ismtpd-18"
     ],
     "transactions": [
         {
@@ -4311,9 +4315,17 @@
             "amount": 1500.0,
             "currency": "PEN",
             "timestamp": "2026-09-01T21:19:48.850220"
+        },
+        {
+            "msg_id": "smn1twv0rvmqmzkyjrm7lw@geopod-ismtpd-18",
+            "date": "Wed, 02 Sep 2026 03:12:09 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 15.3,
+            "currency": "USD",
+            "timestamp": "2026-09-02T03:49:07.330807"
         }
     ],
-    "last_run": "2026-09-01T23:20:33.731654",
+    "last_run": "2026-09-02T03:49:07.509568",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
