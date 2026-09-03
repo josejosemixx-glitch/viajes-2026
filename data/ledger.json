@@ -1520,7 +1520,12 @@
         "nmffda333a87db-744b-4f4a-8a49-2d6af39fc2ee01b805d8samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "20220661-944d-41e8-b40d-7b64ec59c6ee@atl1s07mta0356.xt.local",
         "0b.09.27807.86a999a6@i-08a31b1dfb52bd90c.mta1vrest.sd.prd.sparkpost",
-        "6a999b10.eba846fa.28abe0.f421@mx.google.com"
+        "6a999b10.eba846fa.28abe0.f421@mx.google.com",
+        "6a999feb.244fc04b.d78ba.0419@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklncjbgqpeog+wzf9+0cdrkrq/z/fsbewsowbxo0na0u50nk7hxqpfdcqydewoaj09z6agehbltizrq6hnoyxf31@nws.atrapalo.pe",
+        "keetujk_sqk1sfyfxxluaa@geopod-ismtpd-17",
+        "453962399.18444180.1788458322335@lor1-app144172.prod.linkedin.com",
+        "1871284.1290503587.995469.1788460719894.danamail.4159@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -4426,9 +4431,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-03T16:27:18.045665"
+        },
+        {
+            "msg_id": "keetujk_sqk1sfyfxxluaa@geopod-ismtpd-17",
+            "date": "Thu, 03 Sep 2026 17:50:33 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 40.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-03T18:47:55.091922"
         }
     ],
-    "last_run": "2026-09-03T16:27:22.344771",
+    "last_run": "2026-09-03T18:47:56.215633",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1343.71). Sugerencia: Evaluar compra inmediata.",
