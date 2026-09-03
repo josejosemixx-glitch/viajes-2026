@@ -1512,7 +1512,15 @@
         "6a98ee17.ee10049a.1fe9f8.e0fa@mx.google.com",
         "dd66cd4d-e692-43bc-8ecf-ae3273a7ca79@alibaba.com",
         "6a991b60.160324b0.160b2.6d22@mx.google.com",
-        "6a99202b.a865c849.178086.cdea@mx.google.com"
+        "6a99202b.a865c849.178086.cdea@mx.google.com",
+        "lbou2lb-qnqebn2dj9tvea@geopod-ismtpd-12",
+        "tyuccy9tt8yvotsl_ykdhg@geopod-ismtpd-11",
+        "83596bcb-d615-54dd-9351-5a252d5fc1a0@mail.uber.com",
+        "6a998996.1b998245.28b6f8.a772@mx.google.com",
+        "nmffda333a87db-744b-4f4a-8a49-2d6af39fc2ee01b805d8samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "20220661-944d-41e8-b40d-7b64ec59c6ee@atl1s07mta0356.xt.local",
+        "0b.09.27807.86a999a6@i-08a31b1dfb52bd90c.mta1vrest.sd.prd.sparkpost",
+        "6a999b10.eba846fa.28abe0.f421@mx.google.com"
     ],
     "transactions": [
         {
@@ -4394,9 +4402,33 @@
             "amount": 299.992,
             "currency": "USD",
             "timestamp": "2026-09-02T23:20:34.733793"
+        },
+        {
+            "msg_id": "lbou2lb-qnqebn2dj9tvea@geopod-ismtpd-12",
+            "date": "Thu, 03 Sep 2026 12:37:33 +0000 (UTC)",
+            "sender": "airbnb <automated@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-03T16:27:16.735082"
+        },
+        {
+            "msg_id": "tyuccy9tt8yvotsl_ykdhg@geopod-ismtpd-11",
+            "date": "Thu, 03 Sep 2026 13:46:18 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-03T16:27:17.203385"
+        },
+        {
+            "msg_id": "83596bcb-d615-54dd-9351-5a252d5fc1a0@mail.uber.com",
+            "date": "Thu, 03 Sep 2026 14:10:59 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-03T16:27:18.045665"
         }
     ],
-    "last_run": "2026-09-03T09:19:53.431019",
+    "last_run": "2026-09-03T16:27:22.344771",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1343.71). Sugerencia: Evaluar compra inmediata.",
