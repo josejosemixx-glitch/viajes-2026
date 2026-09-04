@@ -1548,7 +1548,10 @@
         "20260904150345.fafcb92ba8313725@order.temu.com",
         "20260904150344.d6b9607487b4c613@order.temu.com",
         "6a9aeb7a.05b29a09.75d68.bab2@mx.google.com",
-        "010001a06d919452-3339dab1-6d72-415c-bfb2-07021ab17724-000000@email.amazonses.com"
+        "010001a06d919452-3339dab1-6d72-415c-bfb2-07021ab17724-000000@email.amazonses.com",
+        "6a9b0e49.3c73b1f2.aaf78.6a63@mx.google.com",
+        "oiajci8jrocyujwbjvg-ma@geopod-ismtpd-4",
+        "202604092041.1wm9gkr3oorytfj@hb.d.mailin.fr"
     ],
     "transactions": [
         {
@@ -4470,9 +4473,17 @@
             "amount": 8.0,
             "currency": "PEN",
             "timestamp": "2026-09-04T03:49:37.241734"
+        },
+        {
+            "msg_id": "oiajci8jrocyujwbjvg-ma@geopod-ismtpd-4",
+            "date": "Fri, 04 Sep 2026 20:40:54 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.1,
+            "currency": "PEN",
+            "timestamp": "2026-09-04T21:02:29.009981"
         }
     ],
-    "last_run": "2026-09-04T18:30:33.253492",
+    "last_run": "2026-09-04T21:02:30.022948",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1169.6)",
