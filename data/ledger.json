@@ -1551,7 +1551,9 @@
         "010001a06d919452-3339dab1-6d72-415c-bfb2-07021ab17724-000000@email.amazonses.com",
         "6a9b0e49.3c73b1f2.aaf78.6a63@mx.google.com",
         "oiajci8jrocyujwbjvg-ma@geopod-ismtpd-4",
-        "202604092041.1wm9gkr3oorytfj@hb.d.mailin.fr"
+        "202604092041.1wm9gkr3oorytfj@hb.d.mailin.fr",
+        "6a9b31e6.e5907290.1fc949.54ea@mx.google.com",
+        "26c880cd-62d4-59e4-b283-94fa99ee5566@mail.uber.com"
     ],
     "transactions": [
         {
@@ -4483,7 +4485,7 @@
             "timestamp": "2026-09-04T21:02:29.009981"
         }
     ],
-    "last_run": "2026-09-04T21:02:30.022948",
+    "last_run": "2026-09-04T23:03:38.281998",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1315.52",
