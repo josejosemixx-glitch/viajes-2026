@@ -1580,7 +1580,9 @@
         "65c18027968e705ba3ee3e5215ac9c3027fb8d671b6e7bccb45846cd799e973d@order.temu.com",
         "4eh4ced_q6i72itb_drbiq@geopod-ismtpd-108",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklmeyyqz80qlahvcztetfvmuave3e36dygkv20un8stctc7akkujop9mfjflnl1hhsbtsxgbkwvcljjpgd1bm7kc@nws.atrapalo.pe",
-        "1872463.723254187.873157.1788627625748.danamail.0099@pacificoseguros.com.pe"
+        "1872463.723254187.873157.1788627625748.danamail.0099@pacificoseguros.com.pe",
+        "6a9c70ad.eb8592fe.220541.0174@mx.google.com",
+        "20260905201012.7d09335611cf2cc7@cio82276.novedadesyape.pe"
     ],
     "transactions": [
         {
@@ -4584,7 +4586,7 @@
             "timestamp": "2026-09-05T15:16:31.674975"
         }
     ],
-    "last_run": "2026-09-05T17:25:30.385438",
+    "last_run": "2026-09-05T20:42:51.656752",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1165.66",
