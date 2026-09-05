@@ -1571,7 +1571,16 @@
         "gzjyl5pjqsaho8ttla7dxa@geopod-ismtpd-19",
         "6a9c1b80.1e1ac41d.3ae945.5a09@mx.google.com",
         "6a9c2cb6.089daf51.276f5c.1d07@mx.google.com",
-        "kdpl1ujxsiqso5hy6wnewg@geopod-ismtpd-1"
+        "kdpl1ujxsiqso5hy6wnewg@geopod-ismtpd-1",
+        "6a9c3250.e7e80b80.2e4acc.9832@mx.google.com",
+        "tukrweo1tccj3mgl4muoia@geopod-ismtpd-21",
+        "iioz1vsqqsgdabvu7e_wjw@geopod-ismtpd-31",
+        "1594800247.8009.1788622220910@bg-doha-api-12-us-usg1-w-kpw7d",
+        "k3v1ainbsvovefm-6o09yw@geopod-ismtpd-12",
+        "65c18027968e705ba3ee3e5215ac9c3027fb8d671b6e7bccb45846cd799e973d@order.temu.com",
+        "4eh4ced_q6i72itb_drbiq@geopod-ismtpd-108",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklmeyyqz80qlahvcztetfvmuave3e36dygkv20un8stctc7akkujop9mfjflnl1hhsbtsxgbkwvcljjpgd1bm7kc@nws.atrapalo.pe",
+        "1872463.723254187.873157.1788627625748.danamail.0099@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -4575,7 +4584,7 @@
             "timestamp": "2026-09-05T15:16:31.674975"
         }
     ],
-    "last_run": "2026-09-05T15:16:31.909350",
+    "last_run": "2026-09-05T17:25:30.385438",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1292.18",
