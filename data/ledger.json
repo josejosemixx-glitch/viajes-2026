@@ -1617,7 +1617,18 @@
         "bc59cc2d-04a6-56f3-8c77-1bee069be503@mail.uber.com",
         "6a9e34b9.074cb543.9ac92.6943@mx.google.com",
         "6a9e638c.7d74b517.206c4c.c4f5@mx.google.com",
-        "6a9e687d.c265db82.147856.9c28@mx.google.com"
+        "6a9e687d.c265db82.147856.9c28@mx.google.com",
+        "6a9e891c.6510e82a.bbee3.f3a8@mx.google.com",
+        "a27d61a9-f756-42e1-94e6-8263b3b47463@iad4s12mta0857.xt.local",
+        "518977863.28433041.1788789521205@ltx1-app37352.prod.linkedin.com",
+        "ue6pwjlkskudn7igqwochw@geopod-ismtpd-78",
+        "79e9f570-38c1-40e5-b5f5-b152558e1b49@atl1s07mta0358.xt.local",
+        "atrapalo.xserial.s56edodk57/dlapgpwk8+hppti5hezadathk+/k1lucr2kgveinimxdhunkmegiqentdjbv/0b8gassu40kgf2yosrixptr3in9sotjyb2pfived+5ktbaue9syinnhbx7wb@nws.atrapalo.com",
+        "6a9ee331.0f490953.6e3f5.04d3@mx.google.com",
+        "38e29741789b973caa1d11a2ac7f1a4b49f4ad95928a432f6998155413d1e8de@nequi.com.co",
+        "owezsipytxgtqtkz402wya@geopod-ismtpd-8",
+        "6a9ef59b.ffa8efc9.1ea804.192c@mx.google.com",
+        "010001a07cf234f2-2133757c-0618-41ee-a67c-2cb058fa423a-000000@email.amazonses.com"
     ],
     "transactions": [
         {
@@ -4699,9 +4710,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-07T03:51:20.475090"
+        },
+        {
+            "msg_id": "owezsipytxgtqtkz402wya@geopod-ismtpd-8",
+            "date": "Mon, 07 Sep 2026 17:00:30 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.9,
+            "currency": "PEN",
+            "timestamp": "2026-09-07T17:45:02.188445"
         }
     ],
-    "last_run": "2026-09-07T09:51:21.866176",
+    "last_run": "2026-09-07T17:45:03.537072",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
