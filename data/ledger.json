@@ -1629,7 +1629,10 @@
         "owezsipytxgtqtkz402wya@geopod-ismtpd-8",
         "6a9ef59b.ffa8efc9.1ea804.192c@mx.google.com",
         "010001a07cf234f2-2133757c-0618-41ee-a67c-2cb058fa423a-000000@email.amazonses.com",
-        "1873186.1070051487.24549353.1788804990525.danamail.2772@pacificoseguros.com.pe"
+        "1873186.1070051487.24549353.1788804990525.danamail.2772@pacificoseguros.com.pe",
+        "scyp152mb7168af49ea67582eaef0ba7aecb22@scyp152mb7168.lamp152.prod.outlook.com",
+        "6a9f2485.074cb543.9ac92.b943@mx.google.com",
+        "nm630f9bcf40ac22d8fbcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -4719,9 +4722,17 @@
             "amount": 16.9,
             "currency": "PEN",
             "timestamp": "2026-09-07T17:45:02.188445"
+        },
+        {
+            "msg_id": "nm630f9bcf40ac22d8fbcp_mid_prod6@email.bcp.com.pe",
+            "date": "Mon, 07 Sep 2026 16:06:03 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-07T21:46:12.822329"
         }
     ],
-    "last_run": "2026-09-07T19:17:01.832107",
+    "last_run": "2026-09-07T21:46:13.009459",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1337.99",
