@@ -1663,7 +1663,9 @@
         "4dbckvd0qmupfylkq-remg@geopod-ismtpd-12",
         "9iakpxkut8c-nch4iolohg@geopod-ismtpd-18",
         "010001a082d0271e-e84fe89b-d3ac-454c-8f3d-1108a92662aa-000000@email.amazonses.com",
-        "1874199.1847073655.9165.1788898975687.danamail.5250@integratel.com.pe"
+        "1874199.1847073655.9165.1788898975687.danamail.5250@integratel.com.pe",
+        "6aa07d5a.8bd82347.371bbf.db5e@mx.google.com",
+        "3a326b1f-6ff4-4533-a0c9-7378e133bc33@iad4s12mta1219.xt.local"
     ],
     "transactions": [
         {
@@ -4795,7 +4797,7 @@
             "timestamp": "2026-09-08T16:39:55.971901"
         }
     ],
-    "last_run": "2026-09-08T21:25:46.075746",
+    "last_run": "2026-09-08T23:25:11.096973",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1269.56",
