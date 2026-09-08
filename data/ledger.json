@@ -1638,7 +1638,16 @@
         "01d8c7ca-090f-4623-86f7-10fb171ed251@las1s04mta0393.xt.local",
         "1873395.499795673.933283.1788820171860.danamail.1201@pacificoseguros.com.pe",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklmprtwtxutds+jyojxlsja5r4shcbz9kryi8ocex653saytrgc30ocxofj3wvtpypjw7tspupnrh4a52klv1ehw@nws.atrapalo.pe",
-        "6hffvcxeqhanaot4tpurzw@geopod-ismtpd-16"
+        "6hffvcxeqhanaot4tpurzw@geopod-ismtpd-16",
+        "6a9f4973.0bddbea0.ce033.1d4a@mx.google.com",
+        "a88c68fefdf143373794a9eb16765646@cinecolombia.com",
+        "nc1b1dvbr4oypurxfettqa@geopod-ismtpd-19",
+        "ro2p152mb5073a3784b75da18b0e6eb5380b12@ro2p152mb5073.lamp152.prod.outlook.com",
+        "wcug96akrqgv8rhq07z2rq@geopod-ismtpd-7",
+        "uvlah3lgtis_flv6wgrsww@geopod-ismtpd-0",
+        "18fe688b-fd5d-41de-aeac-cdd84d5d2ad2@facebookmail.com",
+        "d_8hx-xdqcclmpxlivrgww@geopod-ismtpd-103",
+        "zph_1h6_twqoavdds3jpsg@geopod-ismtpd-19"
     ],
     "transactions": [
         {
@@ -4736,9 +4745,33 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-09-07T21:46:12.822329"
+        },
+        {
+            "msg_id": "wcug96akrqgv8rhq07z2rq@geopod-ismtpd-7",
+            "date": "Tue, 08 Sep 2026 03:28:24 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 288.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-08T03:54:19.691095"
+        },
+        {
+            "msg_id": "uvlah3lgtis_flv6wgrsww@geopod-ismtpd-0",
+            "date": "Tue, 08 Sep 2026 03:27:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 1.0,
+            "currency": "USD",
+            "timestamp": "2026-09-08T03:54:19.938852"
+        },
+        {
+            "msg_id": "zph_1h6_twqoavdds3jpsg@geopod-ismtpd-19",
+            "date": "Tue, 08 Sep 2026 02:42:48 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 165.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-08T03:54:20.673704"
         }
     ],
-    "last_run": "2026-09-07T23:32:01.692088",
+    "last_run": "2026-09-08T03:54:20.828905",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1178.05",
