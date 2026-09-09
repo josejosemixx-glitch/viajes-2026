@@ -1675,7 +1675,21 @@
         "a7b8c472336cd09a3371e6a3f26a9744e518eee0-20376977-337030291@google.com",
         "6aa10733.1cdd1264.218a32.c549@mx.google.com",
         "6aa10be9.b37bde8a.2db5e3.8ea9@mx.google.com",
-        "20260909051135.47404470.722939@sailthru.com"
+        "20260909051135.47404470.722939@sailthru.com",
+        "6aa12494.580c57c2.c15cf.5223@mx.google.com",
+        "2fe50b0d-b24b-40ac-8a84-8816b1bfa2c8@atl1s07mta0862.xt.local",
+        "_w-blytstnwsabmsctlfxw@geopod-ismtpd-108",
+        "bxp3vzckstq99ns9hcslag@geopod-ismtpd-8",
+        "6aa1742f.6e1fbaa4.349f00.a082@mx.google.com",
+        "0.0.1.b5.1dd4064dcde83ce.0@omp.contigo.bancodebogota.com.co",
+        "33e6a552-6707-5a3e-97b3-15e3cc0103ca@mail.uber.com",
+        "d2e9a57d-4247-4c2c-af26-460211a04f01@las1s04mta0392.xt.local",
+        "5a.da.24057.f0d71aa6@i-0a93ffd84cf3b4ff3.mta1vrest.sd.prd.sparkpost",
+        "1788968364085.6181f6a4-e179-4f61-996f-e786a2245a28@47814330m.email.hubspot.copa.com",
+        "f8.b7.09418.a7181aa6@ccg01mail10",
+        "uaqatabbqeqyawbxku_dpw@geopod-ismtpd-2",
+        "uwzm-eectb2ucdxx-jnn3q@geopod-ismtpd-24",
+        "6aa1861b.e9da7a6b.7552d.8265@mx.google.com"
     ],
     "transactions": [
         {
@@ -4829,9 +4843,33 @@
             "amount": 36.1,
             "currency": "PEN",
             "timestamp": "2026-09-09T03:59:43.812134"
+        },
+        {
+            "msg_id": "_w-blytstnwsabmsctlfxw@geopod-ismtpd-108",
+            "date": "Wed, 09 Sep 2026 12:38:12 +0000 (UTC)",
+            "sender": "airbnb <automated@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-09T16:40:29.146571"
+        },
+        {
+            "msg_id": "bxp3vzckstq99ns9hcslag@geopod-ismtpd-8",
+            "date": "Wed, 09 Sep 2026 13:53:06 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-09T16:40:29.456594"
+        },
+        {
+            "msg_id": "33e6a552-6707-5a3e-97b3-15e3cc0103ca@mail.uber.com",
+            "date": "Wed, 09 Sep 2026 14:13:52 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-09T16:40:31.231442"
         }
     ],
-    "last_run": "2026-09-09T09:19:15.179383",
+    "last_run": "2026-09-09T16:40:35.626763",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1194.96",
