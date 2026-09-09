@@ -1693,7 +1693,14 @@
         "0g8fohujs8e5lpzs6sdrwg@geopod-ismtpd-1",
         "6aa1a90b.a94c109a.36b556.f077@mx.google.com",
         "6aa1be12.89fc228d.248d8e.5a35@mx.google.com",
-        "41c34e79-327e-476c-86d8-24bdff90e5fb@iad4s12mta1215.xt.local"
+        "41c34e79-327e-476c-86d8-24bdff90e5fb@iad4s12mta1215.xt.local",
+        "667e9305-44ed-4491-9d45-12cdae3bb406@atl1s07mta0863.xt.local",
+        "2jcbrti-tvkbveo_k3g2kq@geopod-ismtpd-71",
+        "ch2pr06mb6648fee6f43177a7db7c862ef1b02@ch2pr06mb6648.namprd06.prod.outlook.com",
+        "hjwajxmnqaa2pcsqezwdpa@geopod-ismtpd-18",
+        "qtzldgnaql66nmn5fhsctq@geopod-ismtpd-12",
+        "620448b5-ad4a-58e0-9f36-ada77e65a913@mail.uber.com",
+        "1875068.2025901197.492643.1788994019568.danamail.2644@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -4879,9 +4886,25 @@
             "amount": 41.0,
             "currency": "PEN",
             "timestamp": "2026-09-09T18:44:25.755976"
+        },
+        {
+            "msg_id": "hjwajxmnqaa2pcsqezwdpa@geopod-ismtpd-18",
+            "date": "Wed, 09 Sep 2026 22:28:31 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.1,
+            "currency": "PEN",
+            "timestamp": "2026-09-09T23:18:00.270982"
+        },
+        {
+            "msg_id": "qtzldgnaql66nmn5fhsctq@geopod-ismtpd-12",
+            "date": "Wed, 09 Sep 2026 22:43:13 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.5,
+            "currency": "PEN",
+            "timestamp": "2026-09-09T23:18:00.847000"
         }
     ],
-    "last_run": "2026-09-09T21:11:01.367536",
+    "last_run": "2026-09-09T23:18:02.266704",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1294.8",
