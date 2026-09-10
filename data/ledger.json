@@ -1707,7 +1707,9 @@
         "1789002367071.1453fc39-e302-439a-8872-eec485fc8507@50471150m.wingo.com",
         "1260294717.84851021.1789010140271@email.apple.com",
         "6aa22ae5.0f647e62.2c7662.fdf2@mx.google.com",
-        "6aa257e0.48560075.395a26.36ce@mx.google.com"
+        "6aa257e0.48560075.395a26.36ce@mx.google.com",
+        "6aa25c8e.e9e6d371.20d526.09cf@mx.google.com",
+        "ac70000000029bbc069131d4287mscom_mkt_prod135@e-mails.microsoft.com"
     ],
     "transactions": [
         {
@@ -4911,7 +4913,7 @@
             "timestamp": "2026-09-09T23:18:00.847000"
         }
     ],
-    "last_run": "2026-09-10T07:30:21.939368",
+    "last_run": "2026-09-10T09:18:03.455689",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
