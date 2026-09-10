@@ -1709,7 +1709,13 @@
         "6aa22ae5.0f647e62.2c7662.fdf2@mx.google.com",
         "6aa257e0.48560075.395a26.36ce@mx.google.com",
         "6aa25c8e.e9e6d371.20d526.09cf@mx.google.com",
-        "ac70000000029bbc069131d4287mscom_mkt_prod135@e-mails.microsoft.com"
+        "ac70000000029bbc069131d4287mscom_mkt_prod135@e-mails.microsoft.com",
+        "lverwcdassaoqvt5meyqfa@geopod-ismtpd-4",
+        "atubi1hasay1p7zaaqfjma@geopod-ismtpd-5",
+        "yseufiejs2qhq9801lewoa@geopod-ismtpd-8",
+        "c73797cd-44c7-55d3-bde2-bb6b950a1a12@mail.uber.com",
+        "d936ad90-275e-482a-ad59-6a36b7dd982e@las1s04mta0280.xt.local",
+        "6aa2d586.3a3a0805.b201c.e51a@mx.google.com"
     ],
     "transactions": [
         {
@@ -4911,9 +4917,33 @@
             "amount": 7.5,
             "currency": "PEN",
             "timestamp": "2026-09-09T23:18:00.847000"
+        },
+        {
+            "msg_id": "lverwcdassaoqvt5meyqfa@geopod-ismtpd-4",
+            "date": "Thu, 10 Sep 2026 09:23:23 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 19.28,
+            "currency": "USD",
+            "timestamp": "2026-09-10T16:26:04.756787"
+        },
+        {
+            "msg_id": "atubi1hasay1p7zaaqfjma@geopod-ismtpd-5",
+            "date": "Thu, 10 Sep 2026 13:34:16 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 121.9,
+            "currency": "PEN",
+            "timestamp": "2026-09-10T16:26:05.179141"
+        },
+        {
+            "msg_id": "yseufiejs2qhq9801lewoa@geopod-ismtpd-8",
+            "date": "Thu, 10 Sep 2026 13:54:38 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.1,
+            "currency": "PEN",
+            "timestamp": "2026-09-10T16:26:05.601283"
         }
     ],
-    "last_run": "2026-09-10T09:18:03.455689",
+    "last_run": "2026-09-10T16:26:08.092136",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1349.78). Sugerencia: Evaluar compra inmediata.",
