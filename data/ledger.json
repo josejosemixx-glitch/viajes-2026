@@ -1753,7 +1753,16 @@
         "laz-qbkrsy-pymc-hqzcrg@geopod-ismtpd-5",
         "imhjcud5q5uovjk8c-feiw@geopod-ismtpd-12",
         "saxpqaccqtcm3cb3mabiwq@geopod-ismtpd-9",
-        "wvxh2qjzrjatk6zyhitkpa@geopod-ismtpd-78"
+        "wvxh2qjzrjatk6zyhitkpa@geopod-ismtpd-78",
+        "6aa44b28.73f9ae50.eb142.7a67@mx.google.com",
+        "1cf815da-d51d-5798-8161-052fc569e98a@mail.uber.com",
+        "ehgrhh_ysh-xw1danxctvq@geopod-ismtpd-87",
+        "calendar-9b227807-31f9-4cc2-acc0-6b5921369787@google.com",
+        "6aa460bc.61320aeb.2241c5.2f6c@mx.google.com",
+        "1876210.1228328285.912055.1789158179593.danamail.2899@pacificoseguros.com.pe",
+        "rjgnw2pos2a0bkgapjly4a@geopod-ismtpd-5",
+        "calendar-9df556bc-0c46-4088-a32c-b81615726d44@google.com",
+        "73a900a7-be9a-4360-8945-7edc332d904c@las1s04mta0391.xt.local"
     ],
     "transactions": [
         {
@@ -5107,9 +5116,25 @@
             "amount": 1.2451978287532605e+18,
             "currency": "PEN",
             "timestamp": "2026-09-11T18:40:38.633788"
+        },
+        {
+            "msg_id": "1cf815da-d51d-5798-8161-052fc569e98a@mail.uber.com",
+            "date": "Fri, 11 Sep 2026 18:54:36 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-11T21:17:57.805856"
+        },
+        {
+            "msg_id": "ehgrhh_ysh-xw1danxctvq@geopod-ismtpd-87",
+            "date": "Fri, 11 Sep 2026 19:06:03 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-11T21:17:58.793556"
         }
     ],
-    "last_run": "2026-09-11T18:40:38.836649",
+    "last_run": "2026-09-11T21:18:02.768215",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
