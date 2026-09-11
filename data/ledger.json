@@ -1724,7 +1724,15 @@
         "calendar-155c5821-7f75-431f-afc9-e5ba38594fea@google.com",
         "calendar-fd2fd0bd-8bc6-4d55-bf5e-a7e54fc3f89b@google.com",
         "cozckpl8swiuiqkcmgtq2a@geopod-ismtpd-2",
-        "3189f026-1a00-5568-ba8a-bde26df476c4@mail.uber.com"
+        "3189f026-1a00-5568-ba8a-bde26df476c4@mail.uber.com",
+        "6uuwsx0orpazxffn3egpzg@geopod-ismtpd-8",
+        "x4tzozrrt_qevchkqexutw@geopod-ismtpd-91",
+        "b053f30779e44a153090ad89f44cbcef@pd0ldwk002exe",
+        "31519ff5-3220-4bbe-83d0-bfb883ee31e1@atl1s07mta1302.xt.local",
+        "6dfa4636-7a17-464c-96cd-a049dd3b33c1@las1s04mta0281.xt.local",
+        "1aef22b0-cc32-4d03-aa4c-a8ce6f077211@atl1s07mta0863.xt.local",
+        "sn6pr06mb4815ecff2237120348a359db98bf2@sn6pr06mb4815.namprd06.prod.outlook.com",
+        "2a4fd84a-50c0-40d7-9686-0732362881bb@atl1s07mta0860.xt.local"
     ],
     "transactions": [
         {
@@ -4966,9 +4974,25 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-10T23:20:20.052320"
+        },
+        {
+            "msg_id": "6uuwsx0orpazxffn3egpzg@geopod-ismtpd-8",
+            "date": "Thu, 10 Sep 2026 23:18:03 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 59.4,
+            "currency": "PEN",
+            "timestamp": "2026-09-11T03:55:01.077467"
+        },
+        {
+            "msg_id": "x4tzozrrt_qevchkqexutw@geopod-ismtpd-91",
+            "date": "Thu, 10 Sep 2026 23:24:25 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-11T03:55:01.431949"
         }
     ],
-    "last_run": "2026-09-10T23:20:32.645445",
+    "last_run": "2026-09-11T03:55:04.786164",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1331.9). Sugerencia: Evaluar compra inmediata.",
