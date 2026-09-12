@@ -1296,6 +1296,19 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-197",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: Jose Luis, ¡queremos saber cóm...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: ['11/09/2026', '18/09/2026', '11/09/2026', '18/09/2026', '09/11/2026', '09/18/2026']",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
