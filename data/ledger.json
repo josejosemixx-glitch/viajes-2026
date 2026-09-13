@@ -1834,7 +1834,12 @@
         "plzvleictjuikr5vdv79eq@geopod-ismtpd-20",
         "mtlbi5poq6-m3ir_ffwrjq@geopod-ismtpd-2",
         "6aa700ec.749efa0d.1234b.0559@mx.google.com",
-        "a99f6ce1-c715-5d60-89b2-7d81df824dc7@mail.uber.com"
+        "a99f6ce1-c715-5d60-89b2-7d81df824dc7@mail.uber.com",
+        "6aa7109f.35e3acd8.d5fb2.d33f@mx.google.com",
+        "krroddgwrlusheskphksqq@geopod-ismtpd-3",
+        "mu0ceza8.100skywi308o3@express.sea1.medallia.com",
+        "calendar-ab6b138f-6113-4993-a43e-761395d35ea4@google.com",
+        "eq9fiuz1tlyn7rb8u0noaa@geopod-ismtpd-68"
     ],
     "transactions": [
         {
@@ -5380,9 +5385,17 @@
             "amount": 3.45,
             "currency": "USD",
             "timestamp": "2026-09-13T21:07:41.119255"
+        },
+        {
+            "msg_id": "eq9fiuz1tlyn7rb8u0noaa@geopod-ismtpd-68",
+            "date": "Sun, 13 Sep 2026 23:04:38 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.2451978287532605e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-13T23:11:39.573890"
         }
     ],
-    "last_run": "2026-09-13T21:07:42.686119",
+    "last_run": "2026-09-13T23:11:39.726913",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
