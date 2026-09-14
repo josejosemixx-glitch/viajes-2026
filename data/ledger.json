@@ -1849,7 +1849,12 @@
         "2ccc09d8-d936-5cf4-b448-a1773e4815a7@mail.uber.com",
         "5b1550be-9c04-4a37-86f6-c2fc9a561c6c@mail.uber.com",
         "6aa7a607.6ccac100.89d0d.d6df@mx.google.com",
-        "06737be8-de07-40d3-953b-f4357a60b390@atl1s07mta0862.xt.local"
+        "06737be8-de07-40d3-953b-f4357a60b390@atl1s07mta0862.xt.local",
+        "6aa7ab03.681cab4b.7cb78.36f2@mx.google.com",
+        "wujlwj-ire6c5w3ue0nr7w@geopod-ismtpd-20",
+        "5b273ed4-99b8-585e-8fd3-c22f0821d2d5@mail.uber.com",
+        "nipwk_hnspyuibrf3ods5w@geopod-ismtpd-10",
+        "h5twzrbhtyowfciusevova@geopod-ismtpd-2"
     ],
     "transactions": [
         {
@@ -5419,9 +5424,33 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-14T08:06:23.827969"
+        },
+        {
+            "msg_id": "wujlwj-ire6c5w3ue0nr7w@geopod-ismtpd-20",
+            "date": "Mon, 14 Sep 2026 08:24:04 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.27,
+            "currency": "USD",
+            "timestamp": "2026-09-14T10:13:38.005737"
+        },
+        {
+            "msg_id": "nipwk_hnspyuibrf3ods5w@geopod-ismtpd-10",
+            "date": "Mon, 14 Sep 2026 08:59:34 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.43,
+            "currency": "USD",
+            "timestamp": "2026-09-14T10:13:39.856863"
+        },
+        {
+            "msg_id": "h5twzrbhtyowfciusevova@geopod-ismtpd-2",
+            "date": "Mon, 14 Sep 2026 08:59:38 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.27,
+            "currency": "USD",
+            "timestamp": "2026-09-14T10:13:40.453006"
         }
     ],
-    "last_run": "2026-09-14T08:06:26.385958",
+    "last_run": "2026-09-14T10:13:40.693798",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1304.78). Sugerencia: Evaluar compra inmediata.",
