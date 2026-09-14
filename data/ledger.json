@@ -1871,7 +1871,10 @@
         "6aa8375b.9c49f9ea.1fdaa4.e520@mx.google.com",
         "m17bdzpsrys_4i9gjizktg@geopod-ismtpd-86",
         "7zqgn2ncr6czzeubutwdgq@geopod-ismtpd-66",
-        "calendar-5b1c98d4-80a1-410d-bb5f-603a618c3613@google.com"
+        "calendar-5b1c98d4-80a1-410d-bb5f-603a618c3613@google.com",
+        "6aa86f15.541ea9c2.12e582.34a2@mx.google.com",
+        "yfpjwku-qngnl8uafzuspq@geopod-ismtpd-17",
+        "375299112.44842413.1789426771664@email.apple.com"
     ],
     "transactions": [
         {
@@ -5499,7 +5502,7 @@
             "timestamp": "2026-09-14T19:53:03.786446"
         }
     ],
-    "last_run": "2026-09-14T22:03:00.492909",
+    "last_run": "2026-09-14T23:52:59.832938",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1247.0",
