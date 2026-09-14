@@ -5499,7 +5499,7 @@
             "timestamp": "2026-09-14T19:53:03.786446"
         }
     ],
-    "last_run": "2026-09-14T19:53:04.561374",
+    "last_run": "2026-09-14T22:03:00.492909",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1247.0",
