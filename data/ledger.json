@@ -1839,7 +1839,10 @@
         "krroddgwrlusheskphksqq@geopod-ismtpd-3",
         "mu0ceza8.100skywi308o3@express.sea1.medallia.com",
         "calendar-ab6b138f-6113-4993-a43e-761395d35ea4@google.com",
-        "eq9fiuz1tlyn7rb8u0noaa@geopod-ismtpd-68"
+        "eq9fiuz1tlyn7rb8u0noaa@geopod-ismtpd-68",
+        "1ce64822-d8c4-475c-b7eb-cdd3e86970e5@atl1s07mta1302.xt.local",
+        "c577039a-7bad-4f84-9375-104604c29c77@atl1s07mta1306.xt.local",
+        "mx4_sd4wruernpwp_fdsvw@geopod-ismtpd-86"
     ],
     "transactions": [
         {
@@ -5395,7 +5398,7 @@
             "timestamp": "2026-09-13T23:11:39.573890"
         }
     ],
-    "last_run": "2026-09-13T23:11:39.726913",
+    "last_run": "2026-09-14T04:14:44.569503",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
