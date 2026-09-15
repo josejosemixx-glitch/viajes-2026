@@ -1908,7 +1908,13 @@
         "gwwntcluseyahbatlkapsq@geopod-ismtpd-5",
         "2465b344-f11e-5621-869b-f6275146af26@mail.uber.com",
         "dxahoptvjc9a-caxzi3quq@notifications.google.com",
-        "6aa9744b.4e600794.c6c9b.2314@mx.google.com"
+        "6aa9744b.4e600794.c6c9b.2314@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklpcfrci0z2ouoaysq199fe3h7l9db39k1ykbnk9tg5p5cdwrdenauxmdx5lh0ogcvc6cpnjkt/bwcao8lcsq9sx@nws.atrapalo.pe",
+        "6aa97a25.515a8f88.c5273.4064@mx.google.com",
+        "1789491764627.c957984f-f904-48e0-ae45-93f719064225@bf08.eu1.hubspotemail.net",
+        "nmffda09fe736d-1bbf-4a95-8407-9b331538985301b8239bsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "010001a0a6186388-12900cc5-3998-4825-9402-68c0fbea62d7-000000@email.amazonses.com",
+        "1789492035990.412baab3-387e-47eb-86ba-ea87f5bc33bb@50471150m.wingo.com"
     ],
     "transactions": [
         {
@@ -5622,9 +5628,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-15T17:02:21.893071"
+        },
+        {
+            "msg_id": "nmffda09fe736d-1bbf-4a95-8407-9b331538985301b8239bsamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Tue, 15 Sep 2026 17:08:17 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 145.825,
+            "currency": "USD",
+            "timestamp": "2026-09-15T19:07:29.282730"
         }
     ],
-    "last_run": "2026-09-15T17:02:29.149231",
+    "last_run": "2026-09-15T19:07:30.031302",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1329.97). Sugerencia: Evaluar compra inmediata.",
