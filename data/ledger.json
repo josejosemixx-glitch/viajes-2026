@@ -1890,7 +1890,14 @@
         "b852872c-ddcb-579f-9415-06224daad75d@mail.uber.com",
         "994de3806499f21a5d6a5ef2239162860064d51f-10044049-110294243@google.com",
         "calendar-06a2a2a5-9a0b-486e-8c9a-dafd5223e12d@google.com",
-        "6aa8f418.f2d059ea.35cd1c.d257@mx.google.com"
+        "6aa8f418.f2d059ea.35cd1c.d257@mx.google.com",
+        "6aa8fb47.31b3fbb8.14203c.6e81@mx.google.com",
+        "mu2elmdd.1twz692t29e9t@express.medallia.com",
+        "mu2dack0.kbddickf9aki@express.sea1.medallia.com",
+        "5bmzejlxskabcbm7uq4gyw@geopod-ismtpd-8",
+        "eyau0ir1tk-lp4ngho6n7a@geopod-ismtpd-0",
+        "calendar-1fe6ceed-1d1e-4263-85e6-4fdb2af4534b@google.com",
+        "mu2gnewb.de59jh4ymv8d@express.sea1.medallia.com"
     ],
     "transactions": [
         {
@@ -5548,9 +5555,25 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-15T04:14:17.632316"
+        },
+        {
+            "msg_id": "5bmzejlxskabcbm7uq4gyw@geopod-ismtpd-8",
+            "date": "Tue, 15 Sep 2026 08:31:46 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 21.09,
+            "currency": "USD",
+            "timestamp": "2026-09-15T09:42:42.401141"
+        },
+        {
+            "msg_id": "eyau0ir1tk-lp4ngho6n7a@geopod-ismtpd-0",
+            "date": "Tue, 15 Sep 2026 09:10:25 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 21.49,
+            "currency": "USD",
+            "timestamp": "2026-09-15T09:42:43.060376"
         }
     ],
-    "last_run": "2026-09-15T08:01:09.858789",
+    "last_run": "2026-09-15T09:42:44.656583",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1209.63",
