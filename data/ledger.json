@@ -1897,7 +1897,18 @@
         "5bmzejlxskabcbm7uq4gyw@geopod-ismtpd-8",
         "eyau0ir1tk-lp4ngho6n7a@geopod-ismtpd-0",
         "calendar-1fe6ceed-1d1e-4263-85e6-4fdb2af4534b@google.com",
-        "mu2gnewb.de59jh4ymv8d@express.sea1.medallia.com"
+        "mu2gnewb.de59jh4ymv8d@express.sea1.medallia.com",
+        "6aa91316.3a3a0805.367087.0c48@mx.google.com",
+        "mzcaurzftumn9n8csbmvcg@geopod-ismtpd-8",
+        "3mbnlwydrj-nlqdnvoz8xw@geopod-ismtpd-25",
+        "0a65ylx0txmcjzp7fhy5ja@geopod-ismtpd-80",
+        "oa_04bnusvy_m-zjpupc7q@geopod-ismtpd-54",
+        "df4b0da3-30d8-459f-9389-189d4337ee26@iad4s13mta0366.xt.local",
+        "6aa96326.f7af93ed.36542b.88d9@mx.google.com",
+        "gwwntcluseyahbatlkapsq@geopod-ismtpd-5",
+        "2465b344-f11e-5621-869b-f6275146af26@mail.uber.com",
+        "dxahoptvjc9a-caxzi3quq@notifications.google.com",
+        "6aa9744b.4e600794.c6c9b.2314@mx.google.com"
     ],
     "transactions": [
         {
@@ -5571,9 +5582,49 @@
             "amount": 21.49,
             "currency": "USD",
             "timestamp": "2026-09-15T09:42:43.060376"
+        },
+        {
+            "msg_id": "3mbnlwydrj-nlqdnvoz8xw@geopod-ismtpd-25",
+            "date": "Tue, 15 Sep 2026 13:51:58 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.7728734347822323e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T17:02:10.917652"
+        },
+        {
+            "msg_id": "0a65ylx0txmcjzp7fhy5ja@geopod-ismtpd-80",
+            "date": "Tue, 15 Sep 2026 14:04:38 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.7728734347822323e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T17:02:14.338205"
+        },
+        {
+            "msg_id": "oa_04bnusvy_m-zjpupc7q@geopod-ismtpd-54",
+            "date": "Tue, 15 Sep 2026 14:11:15 +0000 (UTC)",
+            "sender": "airbnb <express@airbnb.com>",
+            "amount": 1.7728734347822323e+18,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T17:02:16.527720"
+        },
+        {
+            "msg_id": "gwwntcluseyahbatlkapsq@geopod-ismtpd-5",
+            "date": "Tue, 15 Sep 2026 14:48:14 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.08,
+            "currency": "USD",
+            "timestamp": "2026-09-15T17:02:20.991465"
+        },
+        {
+            "msg_id": "2465b344-f11e-5621-869b-f6275146af26@mail.uber.com",
+            "date": "Tue, 15 Sep 2026 15:04:26 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T17:02:21.893071"
         }
     ],
-    "last_run": "2026-09-15T09:42:44.656583",
+    "last_run": "2026-09-15T17:02:29.149231",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1329.97). Sugerencia: Evaluar compra inmediata.",
