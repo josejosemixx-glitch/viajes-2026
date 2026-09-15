@@ -1874,7 +1874,20 @@
         "calendar-5b1c98d4-80a1-410d-bb5f-603a618c3613@google.com",
         "6aa86f15.541ea9c2.12e582.34a2@mx.google.com",
         "yfpjwku-qngnl8uafzuspq@geopod-ismtpd-17",
-        "375299112.44842413.1789426771664@email.apple.com"
+        "375299112.44842413.1789426771664@email.apple.com",
+        "6aa888dc.77785314.3b11d2.e154@mx.google.com",
+        "vveuzlloqa6kojd6xepvvw@geopod-ismtpd-36",
+        "1877706.2139752376.3368467.1789433682036.danamail.2749@pacificoseguros.com.pe",
+        "039e10c6-4c16-40d7-acb9-6a326e29216d@atl1s07mta1301.xt.local",
+        "calendar-abb163aa-76c1-449f-8cd4-d0f5c3ac2b5a@google.com",
+        "mu1zf0f2.k5ueegblu1c2@express.medallia.com",
+        "-mzs4afnrpsdvkvtqhlypw@geopod-ismtpd-11",
+        "010701a0a2b9b31e-b9b91d87-6521-4a09-a089-33f3c7039b7d-000000@eu-central-1.amazonses.com",
+        "9dc21a77-35d1-5a7f-994d-1c043be07eb7@mail.uber.com",
+        "2b195051-e927-467f-8f65-71a499a60f95@srvmigraexch01.migraciones.gob.pe",
+        "0f52e02e-c032-453b-88eb-7317a887c7b5@srvmigraexch01.migraciones.gob.pe",
+        "m9ojl3rktku8sxburdsjjw@geopod-ismtpd-19",
+        "b852872c-ddcb-579f-9415-06224daad75d@mail.uber.com"
     ],
     "transactions": [
         {
@@ -5500,9 +5513,41 @@
             "amount": 1.7728734347822323e+18,
             "currency": "PEN",
             "timestamp": "2026-09-14T19:53:03.786446"
+        },
+        {
+            "msg_id": "-mzs4afnrpsdvkvtqhlypw@geopod-ismtpd-11",
+            "date": "Tue, 15 Sep 2026 01:32:28 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 38.2,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T04:14:14.446468"
+        },
+        {
+            "msg_id": "9dc21a77-35d1-5a7f-994d-1c043be07eb7@mail.uber.com",
+            "date": "Tue, 15 Sep 2026 02:08:48 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T04:14:15.150999"
+        },
+        {
+            "msg_id": "m9ojl3rktku8sxburdsjjw@geopod-ismtpd-19",
+            "date": "Tue, 15 Sep 2026 02:38:55 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 56.1,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T04:14:17.021756"
+        },
+        {
+            "msg_id": "b852872c-ddcb-579f-9415-06224daad75d@mail.uber.com",
+            "date": "Tue, 15 Sep 2026 03:24:35 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-15T04:14:17.632316"
         }
     ],
-    "last_run": "2026-09-14T23:52:59.832938",
+    "last_run": "2026-09-15T04:14:17.789880",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1247.0",
