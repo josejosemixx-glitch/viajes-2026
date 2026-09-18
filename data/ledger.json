@@ -1979,7 +1979,15 @@
         "7vgithtzt4-turr0swf54a@geopod-ismtpd-63",
         "6aac5f67.b624b01c.2db672.1119@mx.google.com",
         "402604282.6750444.1789682321464@lor1-app158959.prod.linkedin.com",
-        "bf29ef29.caaacvnpjwmaac7mwn4aaxozpl8aaaadreiab9cdacdt6qbqrgw9@mailjet.com"
+        "bf29ef29.caaacvnpjwmaac7mwn4aaxozpl8aaaadreiab9cdacdt6qbqrgw9@mailjet.com",
+        "6aac78e1.98167482.332625.a6e5@mx.google.com",
+        "010701a0b20eddcc-1e9b86d1-ff79-486d-9f92-fe853b17c2d1-000000@eu-central-1.amazonses.com",
+        "i-uixlsmrgeqqmeqdd1d-a@geopod-ismtpd-14",
+        "9aa403a1-2984-57c5-8f79-e87a37b9af18@mail.uber.com",
+        "govwmfqas-2qi0uqw8w_-a@geopod-ismtpd-4",
+        "68725858-d44e-5544-90ac-e13ad5a84637@mail.uber.com",
+        "20260918013443.3891fdaae90d8df6@cioeu98571.info.jamesedition.com",
+        "s-n0y2vyt6uf4eirnqxy2g@geopod-ismtpd-20"
     ],
     "transactions": [
         {
@@ -5837,9 +5845,49 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-17T21:45:09.564530"
+        },
+        {
+            "msg_id": "i-uixlsmrgeqqmeqdd1d-a@geopod-ismtpd-14",
+            "date": "Fri, 18 Sep 2026 01:13:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 21.49,
+            "currency": "USD",
+            "timestamp": "2026-09-18T04:01:09.735420"
+        },
+        {
+            "msg_id": "9aa403a1-2984-57c5-8f79-e87a37b9af18@mail.uber.com",
+            "date": "Fri, 18 Sep 2026 01:13:11 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-18T04:01:10.172115"
+        },
+        {
+            "msg_id": "govwmfqas-2qi0uqw8w_-a@geopod-ismtpd-4",
+            "date": "Fri, 18 Sep 2026 01:13:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.9,
+            "currency": "PEN",
+            "timestamp": "2026-09-18T04:01:10.485425"
+        },
+        {
+            "msg_id": "68725858-d44e-5544-90ac-e13ad5a84637@mail.uber.com",
+            "date": "Fri, 18 Sep 2026 01:30:24 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-18T04:01:10.838971"
+        },
+        {
+            "msg_id": "s-n0y2vyt6uf4eirnqxy2g@geopod-ismtpd-20",
+            "date": "Fri, 18 Sep 2026 03:30:29 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 12.6,
+            "currency": "PEN",
+            "timestamp": "2026-09-18T04:01:11.847801"
         }
     ],
-    "last_run": "2026-09-17T23:33:52.277354",
+    "last_run": "2026-09-18T04:01:12.129510",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
