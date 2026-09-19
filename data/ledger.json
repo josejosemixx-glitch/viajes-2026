@@ -2005,7 +2005,14 @@
         "mu7p7fz3.1pqguzncyughr@express.medallia.com",
         "6aae35e8.2fe18630.1f6ee9.0db7@mx.google.com",
         "6aae3a69.057d2789.33a32b.e416@mx.google.com",
-        "mu84di7k.1kopzf0iotr4a@express.medallia.com"
+        "mu84di7k.1kopzf0iotr4a@express.medallia.com",
+        "6aae5069.98167482.2fb9bb.de28@mx.google.com",
+        "50.1f.62219.f5d5eaa6@i-0fbdafab2ca626ab1.mta3vrest.sd.prd.sparkpost",
+        "6aae96f5.fdee0002.2a29f3.fb57@mx.google.com",
+        "eqm1muv0sdqbobu1fxiecg@geopod-ismtpd-3",
+        "37.36.14866.7d7aeaa6@i-0b81e668203cef5c0.mta1vrest.sd.prd.sparkpost",
+        "nmffda44c40374-f424-4d39-9e96-0776b13aab7a01b82d95samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "6aaeacd0.83934afc.16fbd2.a5b2@mx.google.com"
     ],
     "transactions": [
         {
@@ -5903,9 +5910,17 @@
             "amount": 12.6,
             "currency": "PEN",
             "timestamp": "2026-09-18T04:01:11.847801"
+        },
+        {
+            "msg_id": "nmffda44c40374-f424-4d39-9e96-0776b13aab7a01b82d95samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Sat, 19 Sep 2026 15:36:24 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 150.0,
+            "currency": "USD",
+            "timestamp": "2026-09-19T15:54:04.047704"
         }
     ],
-    "last_run": "2026-09-19T09:05:44.266957",
+    "last_run": "2026-09-19T15:54:04.989316",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
