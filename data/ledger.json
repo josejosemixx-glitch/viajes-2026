@@ -2052,7 +2052,8 @@
         "010201a0c5522d59-fdc04049-8a38-4c09-bec8-355b9c0c6dbe-000000@eu-west-1.amazonses.com",
         "4d2ef021-4b0e-48b4-b8ec-81417d76cef6@atl1s07mta0850.xt.local",
         "31304859.20260921204446.6ab1973e8395f3.56084809@mail179-30.suw41.mandrillapp.com",
-        "6ab1a058.3a3a0805.21ef73.9647@mx.google.com"
+        "6ab1a058.3a3a0805.21ef73.9647@mx.google.com",
+        "6ab1ac19.0f75f638.d7f5c.aeff@mx.google.com"
     ],
     "transactions": [
         {
@@ -5968,7 +5969,7 @@
             "timestamp": "2026-09-19T21:00:41.317051"
         }
     ],
-    "last_run": "2026-09-21T22:13:43.405632",
+    "last_run": "2026-09-22T00:08:50.337103",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1174.02",
