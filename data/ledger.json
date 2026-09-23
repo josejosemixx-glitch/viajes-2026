@@ -2070,7 +2070,9 @@
         "6ab2f597.d153db54.1da6b8.0c8e@mx.google.com",
         "6ab3110e.54d7c073.39e79b.a926@mx.google.com",
         "6ab3508b.834f8ed8.34f2c4.8b0a@mx.google.com",
-        "6ab3816a.8a95a640.24f8a6.5560@mx.google.com"
+        "6ab3816a.8a95a640.24f8a6.5560@mx.google.com",
+        "6ab38679.d153db54.1da6b8.45ee@mx.google.com",
+        "20260923051121.47610905.717383@sailthru.com"
     ],
     "transactions": [
         {
@@ -5986,7 +5988,7 @@
             "timestamp": "2026-09-19T21:00:41.317051"
         }
     ],
-    "last_run": "2026-09-23T07:57:44.298936",
+    "last_run": "2026-09-23T09:39:22.273090",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
