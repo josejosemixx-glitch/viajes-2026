@@ -2086,7 +2086,8 @@
         "6ab448f0.0137d0df.3cd70a.9fb2@mx.google.com",
         "6ab4644d.3bb3934b.235f21.2ace@mx.google.com",
         "010201a0d0e04c6f-97f36387-6ca8-45f4-8476-3efa447fed92-000000@eu-west-1.amazonses.com",
-        "20260924013306.209ed66acd7621a3@email.claude.com"
+        "20260924013306.209ed66acd7621a3@email.claude.com",
+        "6ab4d0eb.5b3af5af.1a8093.16b5@mx.google.com"
     ],
     "transactions": [
         {
@@ -6002,7 +6003,7 @@
             "timestamp": "2026-09-19T21:00:41.317051"
         }
     ],
-    "last_run": "2026-09-24T04:02:38.559681",
+    "last_run": "2026-09-24T07:48:29.945854",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1300.88). Sugerencia: Evaluar compra inmediata.",
