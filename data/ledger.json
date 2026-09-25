@@ -2103,7 +2103,8 @@
         "20260924224451.3e4f3941b2ceec54@cioeu98571.info.jamesedition.com",
         "8feab362-4266-4c1f-8f16-e92adcb57a21@iad4s12mta1219.xt.local",
         "6ab5b802.a94c109a.2d0d3.c235@mx.google.com",
-        "3c.81.33166.d0ae5ba6@i-039671ab1716dd6f4.mta1vrest.sd.prd.sparkpost"
+        "3c.81.33166.d0ae5ba6@i-039671ab1716dd6f4.mta1vrest.sd.prd.sparkpost",
+        "554e3ec1-2401-4db7-bd24-94c6124d89c9@atl1s07mta0558.xt.local"
     ],
     "transactions": [
         {
@@ -6019,7 +6020,7 @@
             "timestamp": "2026-09-19T21:00:41.317051"
         }
     ],
-    "last_run": "2026-09-25T04:16:48.398370",
+    "last_run": "2026-09-25T08:10:25.119595",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1306.58",
