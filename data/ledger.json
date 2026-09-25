@@ -2116,7 +2116,9 @@
         "nmffdab90cccf1-70bf-4e36-9bca-9b45663d9d5f01b83a3csamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "6ab6c9d1.77bb26fa.3a5691.83f3@mx.google.com",
         "31304859.20260925194941.6ab6d0557f3141.68344850@mail177-11.suw61.mandrillapp.com",
-        "6ab6df3a.45417901.fa420.1450@mx.google.com"
+        "6ab6df3a.45417901.fa420.1450@mx.google.com",
+        "6ab6ec69.7d04ff81.37364a.3fff@mx.google.com",
+        "yul04mzfsgwnxadfjazckq@geopod-ismtpd-93"
     ],
     "transactions": [
         {
@@ -6048,7 +6050,7 @@
             "timestamp": "2026-09-25T19:21:52.229660"
         }
     ],
-    "last_run": "2026-09-25T21:49:28.803636",
+    "last_run": "2026-09-25T23:57:39.007883",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1301.81). Sugerencia: Evaluar compra inmediata.",
