@@ -1504,6 +1504,19 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-213",
+            "tripId": "VIAJE-2026-10-12-EUROPA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: Joseluis, ya puedes realizar t...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Europa",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
