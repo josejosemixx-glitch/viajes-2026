@@ -2130,7 +2130,10 @@
         "zpqoxyjveuu4.x5fekcldj7vd2@bl02epf00024f3c",
         "6ab7ed79.8e75e0cb.315582.f6c3@mx.google.com",
         "6ab7f209.cf765dc4.349b9a.4939@mx.google.com",
-        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklphqqglnqfxf6dztwds7i+k4lv5grfy3/arglxyhvzxaabqqsoyorxmep67sdohnahis3fhjcz0flcitf8uwgpa@nws.atrapalo.pe"
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklphqqglnqfxf6dztwds7i+k4lv5grfy3/arglxyhvzxaabqqsoyorxmep67sdohnahis3fhjcz0flcitf8uwgpa@nws.atrapalo.pe",
+        "6ab8115c.14693a91.2f552a.954d@mx.google.com",
+        "moi4572xeuu4.zxmxr6hdpfqd@ph1pepf0001736f",
+        "6ab82988.5b5e1a07.259664.15ad@mx.google.com"
     ],
     "transactions": [
         {
@@ -6062,7 +6065,7 @@
             "timestamp": "2026-09-25T19:21:52.229660"
         }
     ],
-    "last_run": "2026-09-26T18:39:23.625034",
+    "last_run": "2026-09-26T21:34:41.266654",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1271.36",
