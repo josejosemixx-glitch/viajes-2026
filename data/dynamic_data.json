@@ -1530,6 +1530,19 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-215",
+            "tripId": "VIAJE-2026-10-12-EUROPA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: Cambia tu vuelo hoy y recibe 7...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Europa",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
