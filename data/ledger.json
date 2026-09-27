@@ -2141,7 +2141,11 @@
         "sy3kja9fsx-gbticzs-fmq@geopod-ismtpd-2",
         "6ab93652.2f5f2073.f39ff.653f@mx.google.com",
         "6ab94782.a8c15849.1bc2a4.3ee1@mx.google.com",
-        "_2rq5ulstygxfxmrwk5voq@geopod-ismtpd-37"
+        "_2rq5ulstygxfxmrwk5voq@geopod-ismtpd-37",
+        "010101a0e46ad39c-209ad9c4-95c8-4516-b594-7fc71374e2f3-000000@us-west-2.amazonses.com",
+        "7exndehutowpvuqwppki4g@geopod-ismtpd-67",
+        "010001a0e4904025-d038e010-a681-4a71-b2b2-28e48c22883e-000000@email.amazonses.com",
+        "6ab97e53.e5f0f813.f1229.73e3@mx.google.com"
     ],
     "transactions": [
         {
@@ -6073,7 +6077,7 @@
             "timestamp": "2026-09-25T19:21:52.229660"
         }
     ],
-    "last_run": "2026-09-27T19:06:22.333463",
+    "last_run": "2026-09-27T21:37:21.038721",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1331.29). Sugerencia: Evaluar compra inmediata.",
