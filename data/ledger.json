@@ -2192,7 +2192,11 @@
         "6abb0dc9.c21e2895.11c874.8a33@mx.google.com",
         "fkbhsw2dr02e3mypaj-k4w@geopod-ismtpd-4",
         "habuhhxetbcwsvvtqisocw@geopod-ismtpd-12",
-        "8fbae99b-3ebe-434f-8c23-c0de72acedf6@atl1s07mta0853.xt.local"
+        "8fbae99b-3ebe-434f-8c23-c0de72acedf6@atl1s07mta0853.xt.local",
+        "6abb7e92.84cfb2d3.2cf01e.b97b@mx.google.com",
+        "4vdp8gd7sw2kev2_n6qixa@geopod-ismtpd-2",
+        "ggd06tjnss2pre-33axd1q@geopod-ismtpd-17",
+        "d4fb6349-0775-43b7-826b-b93702c2a84d@mail.uber.com"
     ],
     "transactions": [
         {
@@ -6266,9 +6270,25 @@
             "amount": 3.52,
             "currency": "USD",
             "timestamp": "2026-09-29T05:06:47.764047"
+        },
+        {
+            "msg_id": "ggd06tjnss2pre-33axd1q@geopod-ismtpd-17",
+            "date": "Tue, 29 Sep 2026 10:13:04 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 103.2,
+            "currency": "USD",
+            "timestamp": "2026-09-29T10:59:46.115490"
+        },
+        {
+            "msg_id": "d4fb6349-0775-43b7-826b-b93702c2a84d@mail.uber.com",
+            "date": "Tue, 29 Sep 2026 10:13:08 +0000",
+            "sender": "\"uber\" <no-reply@uber.com>",
+            "amount": 17.0,
+            "currency": "PEN",
+            "timestamp": "2026-09-29T10:59:47.179272"
         }
     ],
-    "last_run": "2026-09-29T09:02:09.062684",
+    "last_run": "2026-09-29T10:59:47.531723",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1328.9). Sugerencia: Evaluar compra inmediata.",
