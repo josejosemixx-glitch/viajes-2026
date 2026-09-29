@@ -2188,7 +2188,10 @@
         "tcx7st32sc6_j96mkkwd_a@geopod-ismtpd-12",
         "6abaee3e.4757b01e.15faa3.0421@mx.google.com",
         "6abaf888.fc1023d6.133f0d.b548@mx.google.com",
-        "894093769.21689431.1790639920445@ltx1-app91207.prod.linkedin.com"
+        "894093769.21689431.1790639920445@ltx1-app91207.prod.linkedin.com",
+        "6abb0dc9.c21e2895.11c874.8a33@mx.google.com",
+        "fkbhsw2dr02e3mypaj-k4w@geopod-ismtpd-4",
+        "habuhhxetbcwsvvtqisocw@geopod-ismtpd-12"
     ],
     "transactions": [
         {
@@ -6246,9 +6249,25 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-09-28T19:41:39.526567"
+        },
+        {
+            "msg_id": "fkbhsw2dr02e3mypaj-k4w@geopod-ismtpd-4",
+            "date": "Tue, 29 Sep 2026 02:12:01 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.52,
+            "currency": "USD",
+            "timestamp": "2026-09-29T05:06:47.351459"
+        },
+        {
+            "msg_id": "habuhhxetbcwsvvtqisocw@geopod-ismtpd-12",
+            "date": "Tue, 29 Sep 2026 02:12:03 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.52,
+            "currency": "USD",
+            "timestamp": "2026-09-29T05:06:47.764047"
         }
     ],
-    "last_run": "2026-09-29T01:00:55.974747",
+    "last_run": "2026-09-29T05:06:48.175129",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
