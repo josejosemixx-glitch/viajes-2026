@@ -2205,7 +2205,9 @@
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklpwwhddwkq6imxtidqng3e2ebxzouro0lgywv7iblhyqjsko30gglnohc2svq4hwy4pthhnir4xycjohdq6su9h@nws.atrapalo.pe",
         "s5qubukusiqnfnolcg1jxq@geopod-ismtpd-14",
         "urbmawpgrj-agyc9saolpw@geopod-ismtpd-4",
-        "6abbfbb6.1e23bb1d.162444.8b64@mx.google.com"
+        "6abbfbb6.1e23bb1d.162444.8b64@mx.google.com",
+        "6abbfe0e.5fb20c3f.2e27d9.7e54@mx.google.com",
+        "92fkqx0ns220so-hkppdaw@geopod-ismtpd-5"
     ],
     "transactions": [
         {
@@ -6311,9 +6313,17 @@
             "amount": 3.76,
             "currency": "USD",
             "timestamp": "2026-09-29T18:06:03.548079"
+        },
+        {
+            "msg_id": "92fkqx0ns220so-hkppdaw@geopod-ismtpd-5",
+            "date": "Tue, 29 Sep 2026 19:11:39 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 21.94,
+            "currency": "USD",
+            "timestamp": "2026-09-29T20:03:43.943168"
         }
     ],
-    "last_run": "2026-09-29T18:06:04.911443",
+    "last_run": "2026-09-29T20:03:44.220388",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1171.8",
