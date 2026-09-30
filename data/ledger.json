@@ -2210,7 +2210,11 @@
         "92fkqx0ns220so-hkppdaw@geopod-ismtpd-5",
         "6abc19a3.2a54a8ff.25fbe5.e9ec@mx.google.com",
         "010001a0eecf71c6-ab427a20-ef70-4d55-a976-6b7c85b48310-000000@email.amazonses.com",
-        "6abc3080.0ab7b85a.3364a6.83de@mx.google.com"
+        "6abc3080.0ab7b85a.3364a6.83de@mx.google.com",
+        "1927262039.181533818.1790721784064@email.apple.com",
+        "nmffdadd7152f3-64f4-4593-b740-b376e582048301a54e69samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "aa2f4da4-f804-4589-af54-8a35e84a0409@iad4s12mta1219.xt.local",
+        "1888951.817194040.12016649.1790724852584.danamail.1986@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -6324,9 +6328,17 @@
             "amount": 21.94,
             "currency": "USD",
             "timestamp": "2026-09-29T20:03:43.943168"
+        },
+        {
+            "msg_id": "nmffdadd7152f3-64f4-4593-b740-b376e582048301a54e69samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Tue, 29 Sep 2026 22:57:26 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 184.16,
+            "currency": "USD",
+            "timestamp": "2026-09-30T00:30:37.784955"
         }
     ],
-    "last_run": "2026-09-29T22:36:14.734017",
+    "last_run": "2026-09-30T00:30:39.207744",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
