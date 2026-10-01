@@ -2242,7 +2242,11 @@
         "87.9c.11711.1317dba6@i-091e3fcac1942758c.mta1vrest.sd.prd.sparkpost",
         "bl0pr13mb44183f4c20ed8a3b35298c40908b2@bl0pr13mb4418.namprd13.prod.outlook.com",
         "6abd81dc.e0fcf82b.181563.0f6f@mx.google.com",
-        "1777064498.130055.1790805522720@lor1-app114323.prod.linkedin.com"
+        "1777064498.130055.1790805522720@lor1-app114323.prod.linkedin.com",
+        "vm_e7ezhquejmwikmny0kg@geopod-ismtpd-16",
+        "6ea42e06-d003-442d-a44b-da5fd45425f0@las1s04mta0284.xt.local",
+        "1889915.534333450.23089341.1790810809424.danamail.8564@pacificoseguros.com.pe",
+        "oe1zwdqtrsouvpcpbv7xsa@geopod-ismtpd-13"
     ],
     "transactions": [
         {
@@ -6380,9 +6384,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-09-30T04:54:10.222336"
+        },
+        {
+            "msg_id": "vm_e7ezhquejmwikmny0kg@geopod-ismtpd-16",
+            "date": "Wed, 30 Sep 2026 23:12:02 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 26.4,
+            "currency": "PEN",
+            "timestamp": "2026-10-01T00:34:36.866910"
         }
     ],
-    "last_run": "2026-09-30T22:38:00.369010",
+    "last_run": "2026-10-01T00:34:39.392775",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1159.77",
