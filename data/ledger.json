@@ -2300,7 +2300,13 @@
         "9g3jh2snq4qjrk8lcqpmwa@geopod-ismtpd-93",
         "6abfefa6.b7d948ac.325795.b67f@mx.google.com",
         "nmffdaaa05e18d-387e-4079-b277-b92f14cbaad801a55758samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
-        "fbe54143-80dd-3b45-9e9f-f121284d0850@newsletter.lifemiles.com"
+        "fbe54143-80dd-3b45-9e9f-f121284d0850@newsletter.lifemiles.com",
+        "zeewfjmls9ithb2gqm7k6a@geopod-ismtpd-1",
+        "010001a0fe715d03-27875341-d39d-4898-af8d-e9dc730b3017-000000@email.amazonses.com",
+        "6ac02363.c71e875c.1a3551.373b@mx.google.com",
+        "1601945100.11213639.1790978321972@lor1-app159918.prod.linkedin.com",
+        "20261002221945.736299afa01ff422@email.claude.com",
+        "010101a0feb94986-3c74701d-65b7-4f14-a91a-4ea35fbd37cb-000000@us-west-2.amazonses.com"
     ],
     "transactions": [
         {
@@ -6566,9 +6572,17 @@
             "amount": 193.746,
             "currency": "USD",
             "timestamp": "2026-10-02T20:00:07.494256"
+        },
+        {
+            "msg_id": "zeewfjmls9ithb2gqm7k6a@geopod-ismtpd-1",
+            "date": "Fri, 02 Oct 2026 20:50:57 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 40.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-02T22:33:20.636534"
         }
     ],
-    "last_run": "2026-10-02T20:00:08.354498",
+    "last_run": "2026-10-02T22:33:23.674735",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1334.39). Sugerencia: Evaluar compra inmediata.",
