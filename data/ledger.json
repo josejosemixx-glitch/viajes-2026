@@ -2297,7 +2297,10 @@
         "nm6458b582d0ac54892bcp_mid_prod6@email.bcp.com.pe",
         "6abfdbdf.07690cf0.82eca.331e@mx.google.com",
         "6abfec85.68fca72d.2da44f.b28e@mx.google.com",
-        "9g3jh2snq4qjrk8lcqpmwa@geopod-ismtpd-93"
+        "9g3jh2snq4qjrk8lcqpmwa@geopod-ismtpd-93",
+        "6abfefa6.b7d948ac.325795.b67f@mx.google.com",
+        "nmffdaaa05e18d-387e-4079-b277-b92f14cbaad801a55758samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "fbe54143-80dd-3b45-9e9f-f121284d0850@newsletter.lifemiles.com"
     ],
     "transactions": [
         {
@@ -6555,9 +6558,17 @@
             "amount": 500.0,
             "currency": "PEN",
             "timestamp": "2026-10-02T17:53:40.225267"
+        },
+        {
+            "msg_id": "nmffdaaa05e18d-387e-4079-b277-b92f14cbaad801a55758samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Fri, 02 Oct 2026 19:23:51 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 193.746,
+            "currency": "USD",
+            "timestamp": "2026-10-02T20:00:07.494256"
         }
     ],
-    "last_run": "2026-10-02T17:53:41.857229",
+    "last_run": "2026-10-02T20:00:08.354498",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
