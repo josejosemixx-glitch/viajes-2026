@@ -2290,7 +2290,14 @@
         "6abf3972.e0601936.31fff.c7e8@mx.google.com",
         "db_ftzyjqxg4pz6wcf8xwg@geopod-ismtpd-85",
         "6abf6778.983466f8.13287a.723d@mx.google.com",
-        "6abf7295.cb15bf0c.149d21.fe1a@mx.google.com"
+        "6abf7295.cb15bf0c.149d21.fe1a@mx.google.com",
+        "1986337892.206286905.1790941996064@email.apple.com",
+        "f25aba3f-c1c2-5b7d-a90c-7e778871ea17@mail.uber.com",
+        "twpndz6gsxibmr01ntkhia@geopod-ismtpd-10",
+        "nm6458b582d0ac54892bcp_mid_prod6@email.bcp.com.pe",
+        "6abfdbdf.07690cf0.82eca.331e@mx.google.com",
+        "6abfec85.68fca72d.2da44f.b28e@mx.google.com",
+        "9g3jh2snq4qjrk8lcqpmwa@geopod-ismtpd-93"
     ],
     "transactions": [
         {
@@ -6524,9 +6531,33 @@
             "amount": 14.85,
             "currency": "USD",
             "timestamp": "2026-10-02T04:56:16.597170"
+        },
+        {
+            "msg_id": "f25aba3f-c1c2-5b7d-a90c-7e778871ea17@mail.uber.com",
+            "date": "Fri, 02 Oct 2026 12:27:41 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-02T17:53:39.444212"
+        },
+        {
+            "msg_id": "twpndz6gsxibmr01ntkhia@geopod-ismtpd-10",
+            "date": "Fri, 02 Oct 2026 13:05:22 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 37.47,
+            "currency": "PEN",
+            "timestamp": "2026-10-02T17:53:39.805751"
+        },
+        {
+            "msg_id": "nm6458b582d0ac54892bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 02 Oct 2026 08:16:10 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 500.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-02T17:53:40.225267"
         }
     ],
-    "last_run": "2026-10-02T10:49:20.707970",
+    "last_run": "2026-10-02T17:53:41.857229",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
