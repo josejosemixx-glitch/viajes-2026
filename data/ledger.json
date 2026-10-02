@@ -2274,7 +2274,10 @@
         "gppekdqwsy2usai_wtncya@geopod-ismtpd-15",
         "nmffda34d15383-2643-4326-9bdc-c7935ac5a21701b849b0samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "46.be.64791.feebeba6@i-0d00c145a4a857d69.mta1vrest.sd.prd.sparkpost",
-        "yzpmq-ccsxe4ivefxrw-gg@geopod-ismtpd-17"
+        "yzpmq-ccsxe4ivefxrw-gg@geopod-ismtpd-17",
+        "6abee4a2.cfd91843.c4bb4.e54b@mx.google.com",
+        "20261001233815.d99b96dfa564eb98@cioeu98571.info.jamesedition.com",
+        "ttqe6yeit1iipe3t_lxa0w@geopod-ismtpd-0"
     ],
     "transactions": [
         {
@@ -6462,7 +6465,7 @@
             "timestamp": "2026-10-01T20:24:09.347733"
         }
     ],
-    "last_run": "2026-10-01T22:54:26.200229",
+    "last_run": "2026-10-02T00:49:34.565101",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1235.82",
