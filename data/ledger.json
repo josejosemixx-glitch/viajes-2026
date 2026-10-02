@@ -2286,7 +2286,10 @@
         "d6be35747de930567a0ef889a1df1e30@pd0ldwk002g79",
         "d1b2d0fc-5042-5b46-b7ba-4f5778cee26e@mail.uber.com",
         "guhu4zyprrit-qzrhq-2wq@geopod-ismtpd-5",
-        "in3jhmtu5-siwx7lhv-ftw@notifications.google.com"
+        "in3jhmtu5-siwx7lhv-ftw@notifications.google.com",
+        "6abf3972.e0601936.31fff.c7e8@mx.google.com",
+        "db_ftzyjqxg4pz6wcf8xwg@geopod-ismtpd-85",
+        "6abf6778.983466f8.13287a.723d@mx.google.com"
     ],
     "transactions": [
         {
@@ -6522,7 +6525,7 @@
             "timestamp": "2026-10-02T04:56:16.597170"
         }
     ],
-    "last_run": "2026-10-02T04:56:17.534876",
+    "last_run": "2026-10-02T09:00:04.403048",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1270.92",
