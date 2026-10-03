@@ -1660,6 +1660,45 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-225",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: ¡Aprovecha pasajes en oferta y...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-226",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: Sin interés y con 10% Dto. 🔥...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-227",
+            "tripId": "VIAJE-2026-09-15-BOGOTA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: ¡PANEM TE LLAMA! Prepárate par...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Bogotá",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
