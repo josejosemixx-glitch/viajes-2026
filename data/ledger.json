@@ -2310,7 +2310,13 @@
         "010001a0ff12eaf6-2debbeac-4a73-448d-9250-19004291b18e-000000@email.amazonses.com",
         "iunjoqtxqvsgdkvm8g6_pg@geopod-ismtpd-0",
         "010001a0ff169772-408c8ee5-e927-4476-83bd-d17dafea9c24-000000@email.amazonses.com",
-        "010001a0ff16db82-126d6305-f0be-4922-a7bd-b79d670b03c2-000000@email.amazonses.com"
+        "010001a0ff16db82-126d6305-f0be-4922-a7bd-b79d670b03c2-000000@email.amazonses.com",
+        "t6xzfisasycaxqequz9asa@geopod-ismtpd-0",
+        "--7ylwuisjav6lsw97gjba@geopod-ismtpd-7",
+        "rwoj8iihqgck9qsfvax62g@geopod-ismtpd-14",
+        "63389590-a605-5d37-99ce-d61fcf6c8cfb@mail.uber.com",
+        "01ee47a8-dfd9-5618-b26f-9760c926fb98@mail.uber.com",
+        "efa6566b-86eb-53b0-8db7-2db6a492bcc9@mail.uber.com"
     ],
     "transactions": [
         {
@@ -6592,9 +6598,49 @@
             "amount": 7000.0,
             "currency": "PEN",
             "timestamp": "2026-10-03T00:32:04.837519"
+        },
+        {
+            "msg_id": "t6xzfisasycaxqequz9asa@geopod-ismtpd-0",
+            "date": "Sat, 03 Oct 2026 01:43:11 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 194.8,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T04:39:38.541336"
+        },
+        {
+            "msg_id": "--7ylwuisjav6lsw97gjba@geopod-ismtpd-7",
+            "date": "Sat, 03 Oct 2026 01:49:07 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T04:39:38.904076"
+        },
+        {
+            "msg_id": "rwoj8iihqgck9qsfvax62g@geopod-ismtpd-14",
+            "date": "Sat, 03 Oct 2026 02:41:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.6,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T04:39:39.184710"
+        },
+        {
+            "msg_id": "01ee47a8-dfd9-5618-b26f-9760c926fb98@mail.uber.com",
+            "date": "Sat, 03 Oct 2026 02:45:03 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T04:39:39.776908"
+        },
+        {
+            "msg_id": "efa6566b-86eb-53b0-8db7-2db6a492bcc9@mail.uber.com",
+            "date": "Sat, 03 Oct 2026 03:00:45 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T04:39:40.053912"
         }
     ],
-    "last_run": "2026-10-03T00:32:05.739193",
+    "last_run": "2026-10-03T04:39:40.246405",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1334.39). Sugerencia: Evaluar compra inmediata.",
