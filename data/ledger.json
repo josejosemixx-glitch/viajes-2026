@@ -2326,7 +2326,14 @@
         "6ac12b17.c41479e6.271203.4c4f@mx.google.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklp9r0mprpslwggmmadgusjqfpetenabhy7fuslnnevvfpolcf3g9tcrwxzlodli3whw1uxswroinf2xwxp98kg+@nws.atrapalo.pe",
         "nmffdaae93fc34-1a99-43d8-a806-1872c91db5d301a5593csamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
-        "98175c8682f746b63c8d3cbe36202d75@cinecolombia.com"
+        "98175c8682f746b63c8d3cbe36202d75@cinecolombia.com",
+        "6ac14d1f.8ca2c123.d6a00.cc51@mx.google.com",
+        "a5e85c43-d2f9-4742-8d8f-225c21acfb68@las1s04mta0280.xt.local",
+        "f13a63e0-6953-5b04-9cd4-484e4c593e97@mail.uber.com",
+        "e8-pe8j_qcyascu4xyl4cg@geopod-ismtpd-9",
+        "f0.58.31591.af161ca6@i-09f48d0affac7bfab.mta1vrest.sd.prd.sparkpost",
+        "6ac16379.c71e875c.1a3551.43f4@mx.google.com",
+        "olznmj1ytbuj0ayl-862pa@geopod-ismtpd-14"
     ],
     "transactions": [
         {
@@ -6656,9 +6663,17 @@
             "amount": 172493.0,
             "currency": "USD",
             "timestamp": "2026-10-03T18:44:45.907504"
+        },
+        {
+            "msg_id": "olznmj1ytbuj0ayl-862pa@geopod-ismtpd-14",
+            "date": "Sat, 03 Oct 2026 20:33:17 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 53.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-03T21:45:57.792567"
         }
     ],
-    "last_run": "2026-10-03T18:44:46.517591",
+    "last_run": "2026-10-03T21:45:58.040631",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1315.3",
