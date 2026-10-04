@@ -2357,7 +2357,8 @@
         "-2t6cik8r4aaexh_ik30mw@geopod-ismtpd-5",
         "010001a108c310cd-48d5d25f-9ef6-4c0e-a57c-11a48ca89e33-000000@email.amazonses.com",
         "c_gj9cqus_odpbae1b2rtw@geopod-ismtpd-22",
-        "nsftdxwrszgdghs0bezdeq@geopod-ismtpd-18"
+        "nsftdxwrszgdghs0bezdeq@geopod-ismtpd-18",
+        "d-v6igr2tm-xlj5tfm1vag@geopod-ismtpd-2"
     ],
     "transactions": [
         {
@@ -6767,9 +6768,17 @@
             "amount": 16.0,
             "currency": "PEN",
             "timestamp": "2026-10-04T21:56:27.552849"
+        },
+        {
+            "msg_id": "d-v6igr2tm-xlj5tfm1vag@geopod-ismtpd-2",
+            "date": "Sun, 04 Oct 2026 23:01:50 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 232.97,
+            "currency": "USD",
+            "timestamp": "2026-10-04T23:58:10.275010"
         }
     ],
-    "last_run": "2026-10-04T21:56:27.955696",
+    "last_run": "2026-10-04T23:58:10.601557",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
