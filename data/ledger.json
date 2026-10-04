@@ -2350,7 +2350,14 @@
         "010001a107846d1b-b69132dc-1511-4976-bf52-5c2ece3e221d-000000@email.amazonses.com",
         "6ac272b0.f779b19c.8bf8b.82ea@mx.google.com",
         "6ac2816c.db9f0efd.2b2c0.d472@mx.google.com",
-        "6ac2842c.38e82656.6d27b.acf2@mx.google.com"
+        "6ac2842c.38e82656.6d27b.acf2@mx.google.com",
+        "trft4hrwrkk78oxv9ipf1a@geopod-ismtpd-canary-0",
+        "wzk-6gfrtksksk_vsbaigq@geopod-ismtpd-1",
+        "ec3cdc00-f996-5a83-90e9-699e0973d78f@mail.uber.com",
+        "-2t6cik8r4aaexh_ik30mw@geopod-ismtpd-5",
+        "010001a108c310cd-48d5d25f-9ef6-4c0e-a57c-11a48ca89e33-000000@email.amazonses.com",
+        "c_gj9cqus_odpbae1b2rtw@geopod-ismtpd-22",
+        "nsftdxwrszgdghs0bezdeq@geopod-ismtpd-18"
     ],
     "transactions": [
         {
@@ -6712,9 +6719,57 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-10-04T05:10:43.125605"
+        },
+        {
+            "msg_id": "trft4hrwrkk78oxv9ipf1a@geopod-ismtpd-canary-0",
+            "date": "Sun, 04 Oct 2026 19:32:40 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 19.8,
+            "currency": "PEN",
+            "timestamp": "2026-10-04T21:56:22.534666"
+        },
+        {
+            "msg_id": "wzk-6gfrtksksk_vsbaigq@geopod-ismtpd-1",
+            "date": "Sun, 04 Oct 2026 19:57:56 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 20.1,
+            "currency": "PEN",
+            "timestamp": "2026-10-04T21:56:23.246076"
+        },
+        {
+            "msg_id": "ec3cdc00-f996-5a83-90e9-699e0973d78f@mail.uber.com",
+            "date": "Sun, 04 Oct 2026 19:58:03 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-04T21:56:24.005718"
+        },
+        {
+            "msg_id": "-2t6cik8r4aaexh_ik30mw@geopod-ismtpd-5",
+            "date": "Sun, 04 Oct 2026 20:55:18 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 86.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-04T21:56:24.711077"
+        },
+        {
+            "msg_id": "c_gj9cqus_odpbae1b2rtw@geopod-ismtpd-22",
+            "date": "Sun, 04 Oct 2026 21:12:35 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.74,
+            "currency": "USD",
+            "timestamp": "2026-10-04T21:56:26.555096"
+        },
+        {
+            "msg_id": "nsftdxwrszgdghs0bezdeq@geopod-ismtpd-18",
+            "date": "Sun, 04 Oct 2026 21:17:59 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 16.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-04T21:56:27.552849"
         }
     ],
-    "last_run": "2026-10-04T18:41:57.470715",
+    "last_run": "2026-10-04T21:56:27.955696",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1319.63). Sugerencia: Evaluar compra inmediata.",
