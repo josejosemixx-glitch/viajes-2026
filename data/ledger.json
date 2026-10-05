@@ -2364,7 +2364,12 @@
         "010101a1092725ab-9ac13583-d8bb-4fc8-bd25-a8c17b40810f-000000@us-west-2.amazonses.com",
         "6ac32db8.1290c124.2e831e.12d0@mx.google.com",
         "6ac36300.658b9900.bb25e.6942@mx.google.com",
-        "6ac36f7d.c71e875c.1a3551.65d1@mx.google.com"
+        "6ac36f7d.c71e875c.1a3551.65d1@mx.google.com",
+        "352c44a1-eec7-4c74-a2ce-a5c4eb625546@iad4s12mta1217.xt.local",
+        "ti0akgg0sfcqxdypfuneaw@geopod-ismtpd-21",
+        "evwflc7jr4e3oqewrorn6a@geopod-ismtpd-23",
+        "lmvqryitqzkbowez7jwgrq@geopod-ismtpd-77",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaxkvkkuw/1791232718@github.com"
     ],
     "transactions": [
         {
@@ -6798,9 +6803,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-10-05T04:55:18.038131"
+        },
+        {
+            "msg_id": "ti0akgg0sfcqxdypfuneaw@geopod-ismtpd-21",
+            "date": "Mon, 05 Oct 2026 13:39:11 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 43.4,
+            "currency": "PEN",
+            "timestamp": "2026-10-05T20:44:39.397007"
         }
     ],
-    "last_run": "2026-10-05T11:57:22.525259",
+    "last_run": "2026-10-05T20:44:41.037717",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
