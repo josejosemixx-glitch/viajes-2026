@@ -2422,7 +2422,13 @@
         "6ac5d522.5986774d.3bc9ae.d726@mx.google.com",
         "6ac6017c.03dba279.3e5a7.3324@mx.google.com",
         "6ac60d8f.04a3e10e.11dd81.2d76@mx.google.com",
-        "20261007051128.47817449.729628@sailthru.com"
+        "20261007051128.47817449.729628@sailthru.com",
+        "zm_xn6yqqaohvfhee6ms_a@geopod-ismtpd-1",
+        "vprqbuslqsehhz8rnou2pa@geopod-ismtpd-11",
+        "2ddeda61-2b8d-5299-aecb-c2843be5c315@mail.uber.com",
+        "1894944.209183719.37454229.1791395087360.danamail.8940@pacificoseguros.com.pe",
+        "ilb_yovlqsag7wsufmwrsw@geopod-ismtpd-15",
+        "6ac69242.95c05185.2f709d.e8cd@mx.google.com"
     ],
     "transactions": [
         {
@@ -7000,9 +7006,33 @@
             "amount": 70.4,
             "currency": "PEN",
             "timestamp": "2026-10-07T05:14:07.917348"
+        },
+        {
+            "msg_id": "zm_xn6yqqaohvfhee6ms_a@geopod-ismtpd-1",
+            "date": "Wed, 07 Oct 2026 13:42:05 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.2,
+            "currency": "PEN",
+            "timestamp": "2026-10-07T18:57:52.691144"
+        },
+        {
+            "msg_id": "vprqbuslqsehhz8rnou2pa@geopod-ismtpd-11",
+            "date": "Wed, 07 Oct 2026 13:56:33 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 8.4,
+            "currency": "PEN",
+            "timestamp": "2026-10-07T18:57:54.063577"
+        },
+        {
+            "msg_id": "2ddeda61-2b8d-5299-aecb-c2843be5c315@mail.uber.com",
+            "date": "Wed, 07 Oct 2026 13:56:40 +0000",
+            "sender": "\"recibos de uber\" <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-07T18:57:54.926235"
         }
     ],
-    "last_run": "2026-10-07T11:26:56.105111",
+    "last_run": "2026-10-07T18:58:00.995150",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1330.68). Sugerencia: Evaluar compra inmediata.",
