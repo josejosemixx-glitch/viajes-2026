@@ -2428,7 +2428,9 @@
         "2ddeda61-2b8d-5299-aecb-c2843be5c315@mail.uber.com",
         "1894944.209183719.37454229.1791395087360.danamail.8940@pacificoseguros.com.pe",
         "ilb_yovlqsag7wsufmwrsw@geopod-ismtpd-15",
-        "6ac69242.95c05185.2f709d.e8cd@mx.google.com"
+        "6ac69242.95c05185.2f709d.e8cd@mx.google.com",
+        "tvpd53jss_c5ugootw08ww@geopod-ismtpd-2",
+        "e42848ee.baaacx_joiyaac7nl8gaaxozpl8aaaadreiab9cdacdt6qbqxp8m@mailjet.com"
     ],
     "transactions": [
         {
@@ -7030,9 +7032,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-10-07T18:57:54.926235"
+        },
+        {
+            "msg_id": "tvpd53jss_c5ugootw08ww@geopod-ismtpd-2",
+            "date": "Wed, 07 Oct 2026 19:13:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 27.9,
+            "currency": "PEN",
+            "timestamp": "2026-10-07T20:41:25.738640"
         }
     ],
-    "last_run": "2026-10-07T18:58:00.995150",
+    "last_run": "2026-10-07T20:41:26.565439",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1330.68). Sugerencia: Evaluar compra inmediata.",
