@@ -2418,7 +2418,9 @@
         "ci5kn2clri6oboybhobtqw@geopod-ismtpd-16",
         "io1ws2gttvms69e8pbp6ig@geopod-ismtpd-14",
         "b-lzt5tbqseaynd32nvcpa@geopod-ismtpd-6",
-        "bf30a71b7b5f5bd6ef932d2f28324a12@pd0ldwk002gan"
+        "bf30a71b7b5f5bd6ef932d2f28324a12@pd0ldwk002gan",
+        "6ac5d522.5986774d.3bc9ae.d726@mx.google.com",
+        "6ac6017c.03dba279.3e5a7.3324@mx.google.com"
     ],
     "transactions": [
         {
@@ -6998,7 +7000,7 @@
             "timestamp": "2026-10-07T05:14:07.917348"
         }
     ],
-    "last_run": "2026-10-07T05:14:08.684149",
+    "last_run": "2026-10-07T09:14:52.807338",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
