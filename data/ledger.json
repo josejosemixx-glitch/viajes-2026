@@ -2485,7 +2485,19 @@
         "6ac930e8.10f94e07.e43e4.2a4c@mx.google.com",
         "-1pk9rgmrwwyjv7jvp8ssw@geopod-ismtpd-6",
         "ad843f22-2d2f-5199-9641-3ae8748f1195@mail.uber.com",
-        "p73sbdferyikskyomvb5nq@geopod-ismtpd-11"
+        "p73sbdferyikskyomvb5nq@geopod-ismtpd-11",
+        "6ac94a20.ced8aaa0.32d051.d496@mx.google.com",
+        "44.a4.03644.23b49ca6@i-03301b76bef3c7884.mta1vrest.sd.prd.sparkpost",
+        "d7.1a.50389.f9f49ca6@i-0b8e5542237e0b09c.mta1vrest.sd.prd.sparkpost",
+        "a4l3ursltvcyzhnfp8hhow@geopod-ismtpd-13",
+        "84f2d7a4-f6b5-51b4-b1ec-bd53532bfbbc@mail.uber.com",
+        "947f7c6d-6267-3cf8-8570-e3de1743ebe3@newsletter.lifemiles.com",
+        "a1nifnufrn-iggn8kimkga@geopod-ismtpd-96",
+        "xkkkrethqnufpiknsaeo0w@geopod-ismtpd-13",
+        "6ac963f1.ba263b4e.19f91.9fd5@mx.google.com",
+        "1897608.616228605.44355205.1791584051701.danamail.2015@pacificoseguros.com.pe",
+        "nm64bce53f70ac6da2abcp_mid_prod6@email.bcp.com.pe",
+        "1897633.1602218855.22021904.1791585534898.danamail.9543@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -7215,9 +7227,17 @@
             "amount": 10.9,
             "currency": "PEN",
             "timestamp": "2026-10-09T20:10:07.178141"
+        },
+        {
+            "msg_id": "nm64bce53f70ac6da2abcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 09 Oct 2026 17:24:24 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-09T22:54:42.191474"
         }
     ],
-    "last_run": "2026-10-09T20:10:07.362499",
+    "last_run": "2026-10-09T22:54:43.151096",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1301.58",
