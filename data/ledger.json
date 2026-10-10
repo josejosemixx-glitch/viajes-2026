@@ -2508,7 +2508,17 @@
         "6ac9c90e.a23893f1.252f0a.3414@mx.google.com",
         "6ac9f47c.f2da05a5.1bb3f7.a0ec@mx.google.com",
         "z1vbiduosqui9epu07m1ka@geopod-ismtpd-1",
-        "6ac9fe66.0d30fa7d.2e7ef0.dcf8@mx.google.com"
+        "6ac9fe66.0d30fa7d.2e7ef0.dcf8@mx.google.com",
+        "pnkif2soqvkxyb028zwdmg@geopod-ismtpd-19",
+        "0bca0333-099e-5f0b-8c98-32eb445c26a9@mail.uber.com",
+        "mazaezlargefyw0zeueppa@geopod-ismtpd-1",
+        "nm64c67839d0ac6efa4bcp_mid_prod6@email.bcp.com.pe",
+        "6aca623e.658b9900.18761f.9e9c@mx.google.com",
+        "202610101641.2540pmwr54rytfj@jw.d.sender-sib.com",
+        "202610101640.2540enf3oorytfj@ib.d.sender-sib.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln70qzjuqkgnfl7b3akszrffls5ff0kv9xw/l4fiet4ve5uv05q3/yjdt+nljkkx9jbvweuxn20cggtgbqefdau@nws.atrapalo.pe",
+        "6aca7163.7406aef7.2c980b.274c@mx.google.com",
+        "1898273.1677827787.87830453.1791652156914.danamail.1089@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -7286,9 +7296,33 @@
             "amount": 18.75,
             "currency": "USD",
             "timestamp": "2026-10-10T08:59:16.851200"
+        },
+        {
+            "msg_id": "pnkif2soqvkxyb028zwdmg@geopod-ismtpd-19",
+            "date": "Sat, 10 Oct 2026 13:00:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.2,
+            "currency": "PEN",
+            "timestamp": "2026-10-10T17:22:08.777850"
+        },
+        {
+            "msg_id": "mazaezlargefyw0zeueppa@geopod-ismtpd-1",
+            "date": "Sat, 10 Oct 2026 13:36:29 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 121.9,
+            "currency": "PEN",
+            "timestamp": "2026-10-10T17:22:13.476893"
+        },
+        {
+            "msg_id": "nm64c67839d0ac6efa4bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Sat, 10 Oct 2026 09:38:19 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-10T17:22:17.874156"
         }
     ],
-    "last_run": "2026-10-10T10:53:16.033441",
+    "last_run": "2026-10-10T17:22:42.405570",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1311.35). Sugerencia: Evaluar compra inmediata.",
