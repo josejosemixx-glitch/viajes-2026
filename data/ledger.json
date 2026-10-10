@@ -2518,7 +2518,9 @@
         "202610101640.2540enf3oorytfj@ib.d.sender-sib.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln70qzjuqkgnfl7b3akszrffls5ff0kv9xw/l4fiet4ve5uv05q3/yjdt+nljkkx9jbvweuxn20cggtgbqefdau@nws.atrapalo.pe",
         "6aca7163.7406aef7.2c980b.274c@mx.google.com",
-        "1898273.1677827787.87830453.1791652156914.danamail.1089@pacificoseguros.com.pe"
+        "1898273.1677827787.87830453.1791652156914.danamail.1089@pacificoseguros.com.pe",
+        "ook1ve3mqvg_urwoqkzdig@geopod-ismtpd-22",
+        "3094579e-f764-5d0c-83a9-7b7fb376b7df@mail.uber.com"
     ],
     "transactions": [
         {
@@ -7320,9 +7322,17 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-10-10T17:22:17.874156"
+        },
+        {
+            "msg_id": "ook1ve3mqvg_urwoqkzdig@geopod-ismtpd-22",
+            "date": "Sat, 10 Oct 2026 18:45:55 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.2,
+            "currency": "PEN",
+            "timestamp": "2026-10-10T19:23:51.103660"
         }
     ],
-    "last_run": "2026-10-10T17:22:42.405570",
+    "last_run": "2026-10-10T19:23:52.592226",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1311.35). Sugerencia: Evaluar compra inmediata.",
