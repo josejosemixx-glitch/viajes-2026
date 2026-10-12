@@ -2558,7 +2558,12 @@
         "e6cf21f764e71ceaa4648f612b3b0232cee3a5d1-20376977-337030291@google.com",
         "31304859.20261012030418.6acc4e327e3a42.37925355@mail177-21.suw61.mandrillapp.com",
         "6acc6d12.c6d84bbd.7679e.fbfc@mx.google.com",
-        "6acca02f.b906deeb.1cd909.43ab@mx.google.com"
+        "6acca02f.b906deeb.1cd909.43ab@mx.google.com",
+        "6accac23.3071105b.26851b.5dd5@mx.google.com",
+        "mdynlvvhql-lpwrmoko_ka@geopod-ismtpd-canary-0",
+        "6f16210d-53fd-53de-a85b-13862776b05f@mail.uber.com",
+        "010001a12e0b34d7-167d7f8d-f192-49ec-9ae8-cf0e43c0e6df-000000@email.amazonses.com",
+        "216axen6twoccp6i-m5o5a@geopod-ismtpd-18"
     ],
     "transactions": [
         {
@@ -7472,9 +7477,33 @@
             "amount": 82.0,
             "currency": "PEN",
             "timestamp": "2026-10-11T22:28:47.991740"
+        },
+        {
+            "msg_id": "mdynlvvhql-lpwrmoko_ka@geopod-ismtpd-canary-0",
+            "date": "Mon, 12 Oct 2026 02:23:48 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 6.2,
+            "currency": "PEN",
+            "timestamp": "2026-10-12T12:36:45.188482"
+        },
+        {
+            "msg_id": "6f16210d-53fd-53de-a85b-13862776b05f@mail.uber.com",
+            "date": "Mon, 12 Oct 2026 02:35:34 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-12T12:36:46.748071"
+        },
+        {
+            "msg_id": "216axen6twoccp6i-m5o5a@geopod-ismtpd-18",
+            "date": "Mon, 12 Oct 2026 03:04:23 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 37.74,
+            "currency": "USD",
+            "timestamp": "2026-10-12T12:36:47.963340"
         }
     ],
-    "last_run": "2026-10-12T09:45:06.045962",
+    "last_run": "2026-10-12T12:36:48.210646",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1329.83",
