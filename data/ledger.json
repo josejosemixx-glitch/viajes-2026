@@ -2595,7 +2595,9 @@
         "6ace153e884d5_1271230879c4@sharedworker-bb4c9b485-9c8qf.mail",
         "6ace2347.2f5f2073.d3553.1104@mx.google.com",
         "812772460.5802030.1791903820415@email.apple.com",
-        "nm64ea5e1b50ac77bc9bcp_mid_prod6@email.bcp.com.pe"
+        "nm64ea5e1b50ac77bc9bcp_mid_prod6@email.bcp.com.pe",
+        "6ace9847.072804a5.2b3ad2.d028@mx.google.com",
+        "6aceab14.5fb20c3f.31cb18.2fbb@mx.google.com"
     ],
     "transactions": [
         {
@@ -7607,7 +7609,7 @@
             "timestamp": "2026-10-13T20:44:54.179557"
         }
     ],
-    "last_run": "2026-10-13T20:44:54.475992",
+    "last_run": "2026-10-13T23:07:28.186608",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1286.78",
