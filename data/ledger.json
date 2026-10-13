@@ -2590,7 +2590,9 @@
         "010001a1332f358c-02e246b8-cb00-4c5a-967a-8d9bfbbd0a1e-000000@email.amazonses.com",
         "01m4sz7xgbe8vmrnehzcf43v9f@klaviyomail.com",
         "mv6fswoq.to8yjngvp95h@express.sea1.medallia.com",
-        "6acdf566.55d9540d.3d5be5.61b7@mx.google.com"
+        "6acdf566.55d9540d.3d5be5.61b7@mx.google.com",
+        "6acdfd85.dbed2252.1e9820.40d8@mx.google.com",
+        "6ace153e884d5_1271230879c4@sharedworker-bb4c9b485-9c8qf.mail"
     ],
     "transactions": [
         {
@@ -7594,7 +7596,7 @@
             "timestamp": "2026-10-13T09:44:32.964101"
         }
     ],
-    "last_run": "2026-10-13T09:44:36.197514",
+    "last_run": "2026-10-13T12:25:41.145485",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1176.13)",
