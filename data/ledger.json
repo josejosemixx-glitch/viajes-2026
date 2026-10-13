@@ -2582,7 +2582,8 @@
         "20261012215311.9a27684738afcb86@cio82276.novedadesyape.pe",
         "6acd5fe7.376870a4.27b195.b7d0@mx.google.com",
         "6acd73da.ced8aaa0.167571.2962@mx.google.com",
-        "0caf464f-8525-4137-92c6-afc47e78c1d9@iad4s12mta1215.xt.local"
+        "0caf464f-8525-4137-92c6-afc47e78c1d9@iad4s12mta1215.xt.local",
+        "6acd823a.a5690e37.2bee02.de74@mx.google.com"
     ],
     "transactions": [
         {
@@ -7578,7 +7579,7 @@
             "timestamp": "2026-10-12T21:17:17.829145"
         }
     ],
-    "last_run": "2026-10-13T00:58:33.637564",
+    "last_run": "2026-10-13T02:35:29.158277",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
