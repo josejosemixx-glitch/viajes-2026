@@ -2615,7 +2615,17 @@
         "eb.6b.46303.1244fca6@i-05873d11668935755.mta1vrest.sd.prd.sparkpost",
         "5fdee909-d2fb-47ca-871c-eb74b9fa635d@cdg3s51mta0382.xt.local",
         "20261014051106.47918153.689543@sailthru.com",
-        "vii0_-0trnm7r1uqwgnlgg@geopod-ismtpd-5"
+        "vii0_-0trnm7r1uqwgnlgg@geopod-ismtpd-5",
+        "bb702555-232a-6729-f092-b20f721949aa@account.copaair.com",
+        "reafomlgqea0nzc8tvip_w@geopod-ismtpd-3",
+        "nm64f4bfdb80ac7931abcp_mid_prod6@email.bcp.com.pe",
+        "km1ecfnesepsfuttmxahew@notifications.google.com",
+        "b708206a-a137-4af2-a811-2c7e224d188c@facebookmail.com",
+        "o4kx9fupj79hydgse2qtkg@notifications.google.com",
+        "6acfa298.8d268dd6.28947a.66a9@mx.google.com",
+        "9a.9c.59750.b36afca6@i-0e52becb0cf78da5a.mta1vrest.sd.prd.sparkpost",
+        "kwhsbd_irp6_cgf2akytoq@geopod-ismtpd-15",
+        "6acfb348.870d8f20.127c83.b722@mx.google.com"
     ],
     "transactions": [
         {
@@ -7657,9 +7667,17 @@
             "amount": 19.93,
             "currency": "USD",
             "timestamp": "2026-10-14T10:03:00.301289"
+        },
+        {
+            "msg_id": "reafomlgqea0nzc8tvip_w@geopod-ismtpd-3",
+            "date": "Wed, 14 Oct 2026 12:35:50 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 155.13,
+            "currency": "USD",
+            "timestamp": "2026-10-14T17:13:10.015272"
         }
     ],
-    "last_run": "2026-10-14T10:03:24.640771",
+    "last_run": "2026-10-14T17:13:17.515346",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1261.44",
