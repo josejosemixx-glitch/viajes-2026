@@ -2668,7 +2668,14 @@
         "0.3.9.66.1dd5cbf77323242.0@omp.contigo.bancodebogota.com.co",
         "nm650bd98ac0ac7d46cbcp_mid_prod6@email.bcp.com.pe",
         "nm650c464990ac7d47abcp_mid_prod6@email.bcp.com.pe",
-        "10ppz00000g94ubyaj_2838_109_send_email_message_action_m620|02949590c48c2a9640cc3b8ee61c1cc7a50428126b3f4fb527d611eb328a96bb.eex1y1gdmbo7lsn2m5wey57wmdmjsoupwskcwgvaoxi@comunicaciones.proteccion.com"
+        "10ppz00000g94ubyaj_2838_109_send_email_message_action_m620|02949590c48c2a9640cc3b8ee61c1cc7a50428126b3f4fb527d611eb328a96bb.eex1y1gdmbo7lsn2m5wey57wmdmjsoupwskcwgvaoxi@comunicaciones.proteccion.com",
+        "6ad1269a.a638010f.118c33.9e14@mx.google.com",
+        "010001a1410c3604-a4f2d23d-da9c-461e-9494-d945b9357021-000000@email.amazonses.com",
+        "j2_hbrpvrvs5qxnedhpyia@geopod-ismtpd-32",
+        "6ad13aed.ee551989.3cfb8d.37c7@mx.google.com",
+        "20261015204349.df099d714c51e513@cioeu98571.info.jamesedition.com",
+        "jxu8gv1-rsy5nmdevfj62g@geopod-ismtpd-8",
+        "0c41e239-9b8c-498f-a52f-902a5c1a222e@las1s04mta0395.xt.local"
     ],
     "transactions": [
         {
@@ -7798,9 +7805,17 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-10-15T19:16:40.943675"
+        },
+        {
+            "msg_id": "jxu8gv1-rsy5nmdevfj62g@geopod-ismtpd-8",
+            "date": "Thu, 15 Oct 2026 20:57:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.95,
+            "currency": "USD",
+            "timestamp": "2026-10-15T21:46:45.525321"
         }
     ],
-    "last_run": "2026-10-15T19:16:42.007494",
+    "last_run": "2026-10-15T21:46:46.509964",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
