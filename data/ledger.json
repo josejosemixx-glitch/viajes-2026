@@ -2652,7 +2652,14 @@
         "e5830bbf6d5b41d6b0d676730ebb9ec29bb13c0e-20416204-111918116@google.com",
         "6ad08124.95c05185.2d7e32.7b46@mx.google.com",
         "_sxysf-gs7cnxw3bu-s9vw@geopod-ismtpd-20",
-        "6ad085eb.0a67d0c9.bd628.7bed@mx.google.com"
+        "6ad085eb.0a67d0c9.bd628.7bed@mx.google.com",
+        "6ad09daf.97f5e63d.1384c3.ffe0@mx.google.com",
+        "og4y18kfqkac8nroezo34g@geopod-ismtpd-21",
+        "0184e171-412f-40ca-a1a9-9a3d29c82a96@atl1s07mta0658.xt.local",
+        "6ad0f0d0.a8122b97.ce723.79da@mx.google.com",
+        "e1020005-18debf12aa7893f5-73732544@shopify.com",
+        "6ad1019f.54e42a5c.3a4994.fd90@mx.google.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklnuut2sqycbywaqjlqqvnp6lfzufwnjoa/8edzfba4y7fzj+hf7rr9bjtrzbqwpy1zq/plttocrcvgr7vaa5rc4@nws.atrapalo.pe"
     ],
     "transactions": [
         {
@@ -7750,9 +7757,17 @@
             "amount": 38.11,
             "currency": "USD",
             "timestamp": "2026-10-15T09:32:28.473992"
+        },
+        {
+            "msg_id": "og4y18kfqkac8nroezo34g@geopod-ismtpd-21",
+            "date": "Thu, 15 Oct 2026 10:29:58 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 4.62,
+            "currency": "USD",
+            "timestamp": "2026-10-15T17:03:36.001207"
         }
     ],
-    "last_run": "2026-10-15T09:32:29.548553",
+    "last_run": "2026-10-15T17:03:38.997599",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
