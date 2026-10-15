@@ -2644,7 +2644,13 @@
         "932245649.606437.1792015123974@lor1-app96744.prod.linkedin.com",
         "6ad01701.2eca3aba.37f0b8.26b7@mx.google.com",
         "1900780.456011621.27492456.1792026240646.danamail.7010@pacificoseguros.com.pe",
-        "011301a13d9760f3-bc171cab-bbbe-4b45-a5b6-78b7ceb79287-000000@eu-west-3.amazonses.com"
+        "011301a13d9760f3-bc171cab-bbbe-4b45-a5b6-78b7ceb79287-000000@eu-west-3.amazonses.com",
+        "6ad04f93.aa49e27a.119850.cfe9@mx.google.com",
+        "010201a13db8977c-16645770-0c87-4e42-8866-df57072fddb3-000000@eu-west-1.amazonses.com",
+        "b0aa64f180d75466bf308e92b40c8ef1fb646f3f-10044049-110294243@google.com",
+        "1792039285233.95589465-8109-4b69-8fb7-5747df2bf94e@47814330m.email.hubspot.copa.com",
+        "e5830bbf6d5b41d6b0d676730ebb9ec29bb13c0e-20416204-111918116@google.com",
+        "6ad08124.95c05185.2d7e32.7b46@mx.google.com"
     ],
     "transactions": [
         {
@@ -7736,7 +7742,7 @@
             "timestamp": "2026-10-14T21:57:04.059180"
         }
     ],
-    "last_run": "2026-10-15T03:59:14.868575",
+    "last_run": "2026-10-15T07:51:04.807829",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1309.38",
