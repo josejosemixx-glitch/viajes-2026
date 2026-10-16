@@ -2691,7 +2691,14 @@
         "ywvjbxfxrbkzlaroa_7yoq@geopod-ismtpd-21",
         "6ad1ca45.48d69adf.8035d.0840@mx.google.com",
         "86009c3f-f192-43e6-8d0d-4e4926a73a5f@fra3s50mta0813.xt.local",
-        "6ad1d2c5.a5690e37.230c5f.b43f@mx.google.com"
+        "6ad1d2c5.a5690e37.230c5f.b43f@mx.google.com",
+        "-s5-oip7teeubovkeo0btg@geopod-ismtpd-10",
+        "bvw4kix_tq23839sqmyqgw@geopod-ismtpd-13",
+        "b3b6bb06-35e8-3a6c-a4f0-d96ca87c3c80@mail.uber.com",
+        "ss5eheuqsn-8loksuihyvq@geopod-ismtpd-4",
+        "fd7bd19b-0bd2-56a2-87d8-7a778e12b34d@mail.uber.com",
+        "010001a14585d1ef-5f4f749e-fdc8-425e-9563-6a86533d2bfb-000000@email.amazonses.com",
+        "6ad25331.321a4155.304f9d.3096@mx.google.com"
     ],
     "transactions": [
         {
@@ -7877,9 +7884,41 @@
             "amount": 5.9,
             "currency": "USD",
             "timestamp": "2026-10-16T07:31:12.408960"
+        },
+        {
+            "msg_id": "-s5-oip7teeubovkeo0btg@geopod-ismtpd-10",
+            "date": "Fri, 16 Oct 2026 10:05:30 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 9.96,
+            "currency": "USD",
+            "timestamp": "2026-10-16T16:41:43.887465"
+        },
+        {
+            "msg_id": "bvw4kix_tq23839sqmyqgw@geopod-ismtpd-13",
+            "date": "Fri, 16 Oct 2026 12:51:21 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 18.53,
+            "currency": "USD",
+            "timestamp": "2026-10-16T16:41:44.746066"
+        },
+        {
+            "msg_id": "ss5eheuqsn-8loksuihyvq@geopod-ismtpd-4",
+            "date": "Fri, 16 Oct 2026 14:11:26 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 124.9,
+            "currency": "PEN",
+            "timestamp": "2026-10-16T16:41:46.048813"
+        },
+        {
+            "msg_id": "fd7bd19b-0bd2-56a2-87d8-7a778e12b34d@mail.uber.com",
+            "date": "Fri, 16 Oct 2026 14:21:36 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-16T16:41:46.866140"
         }
     ],
-    "last_run": "2026-10-16T09:24:56.684165",
+    "last_run": "2026-10-16T16:46:33.876886",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
