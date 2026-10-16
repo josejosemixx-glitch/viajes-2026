@@ -2706,7 +2706,14 @@
         "349cca25c68340b09051aaa33afbb7be88b89fe8-20376977-337030291@google.com",
         "6ad286a6.bfeb8001.35aaea.06cc@mx.google.com",
         "97j7e2ghsmyhr4yebivzba@geopod-ismtpd-27",
-        "1902787.1946278611.30625065.1792185436052.danamail.8924@pacificoseguros.com.pe"
+        "1902787.1946278611.30625065.1792185436052.danamail.8924@pacificoseguros.com.pe",
+        "6ad29a67.bdce4de1.2caa55.27cd@mx.google.com",
+        "hnentakmresnjw1fwjxdea@geopod-ismtpd-5",
+        "fbdf013a-e7dc-4cfe-ad93-ab1762f690d4@achat-titres.iledefrance-mobilites.fr",
+        "nm6529147fd0ac8212cbcp_mid_prod6@email.bcp.com.pe",
+        "gmrog7jnt2wze1-upblkfw@geopod-ismtpd-79",
+        "bb91cca3-175c-453b-ae5b-b4a4d8f02b56@las1s04mta0393.xt.local",
+        "010001a1470809ea-2e417670-4c58-4c2f-8427-b5ecc056414e-000000@email.amazonses.com"
     ],
     "transactions": [
         {
@@ -7924,9 +7931,25 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-10-16T16:41:46.866140"
+        },
+        {
+            "msg_id": "hnentakmresnjw1fwjxdea@geopod-ismtpd-5",
+            "date": "Fri, 16 Oct 2026 21:58:37 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.96,
+            "currency": "USD",
+            "timestamp": "2026-10-16T23:39:21.209112"
+        },
+        {
+            "msg_id": "nm6529147fd0ac8212cbcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 16 Oct 2026 16:59:41 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-16T23:39:27.249558"
         }
     ],
-    "last_run": "2026-10-16T21:43:02.571498",
+    "last_run": "2026-10-16T23:39:44.949913",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
