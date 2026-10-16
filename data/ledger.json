@@ -2702,7 +2702,11 @@
         "6ad254eb.4b03f5b9.103eba.4b0c@mx.google.com",
         "20.2c.37367.9af52da6@i-0dfa16ae91a10fb5f.mta1vrest.sd.prd.sparkpost",
         "fca53de6-baef-4c3b-9f04-63dbe59a9bcc@atl1s11mta1344.xt.local",
-        "1baa_fdfqg6bnjnvvxfooa@geopod-ismtpd-0"
+        "1baa_fdfqg6bnjnvvxfooa@geopod-ismtpd-0",
+        "349cca25c68340b09051aaa33afbb7be88b89fe8-20376977-337030291@google.com",
+        "6ad286a6.bfeb8001.35aaea.06cc@mx.google.com",
+        "97j7e2ghsmyhr4yebivzba@geopod-ismtpd-27",
+        "1902787.1946278611.30625065.1792185436052.danamail.8924@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -7922,7 +7926,7 @@
             "timestamp": "2026-10-16T16:41:46.866140"
         }
     ],
-    "last_run": "2026-10-16T18:51:57.370931",
+    "last_run": "2026-10-16T21:43:02.571498",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
