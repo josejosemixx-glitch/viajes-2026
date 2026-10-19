@@ -8151,21 +8151,6 @@
     "last_run": "2026-10-19T10:25:04.640298",
     "auditLog": [
         {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-10-14T13:32:53.346879"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1228.51",
-            "status": "INFO",
-            "timestamp": "2026-10-14T13:32:53.346895"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
-            "timestamp": "2026-10-14T20:06:01.362291"
-        },
-        {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1164.57",
             "status": "INFO",
             "timestamp": "2026-10-14T20:06:01.362324"
@@ -8399,6 +8384,21 @@
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1216.43",
             "status": "INFO",
             "timestamp": "2026-10-19T04:16:19.725351"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-10-19T15:27:40.373992"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1173.54",
+            "status": "INFO",
+            "timestamp": "2026-10-19T15:27:40.374017"
+        },
+        {
+            "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1173.54)",
+            "status": "SUCCESS",
+            "timestamp": "2026-10-19T15:27:40.374022"
         }
     ]
 }
