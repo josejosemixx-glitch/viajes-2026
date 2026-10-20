@@ -2792,7 +2792,10 @@
         "6ad69119.354fedc2.e50aa.9e9d@mx.google.com",
         "6ad69bd7.5abab4da.e3b05.2ef4@mx.google.com",
         "01m5b5h1dth3f0hewe9g87rkxw@klaviyomail.com",
-        "1792449697132.73931713-9bb8-4fb4-83ad-c83ceb4f1550@50471150m.wingo.com"
+        "1792449697132.73931713-9bb8-4fb4-83ad-c83ceb4f1550@50471150m.wingo.com",
+        "6ad6b492.4fcefe71.31bf99.7d14@mx.google.com",
+        "010001a156e163ca-f8a0edf6-22b4-4d86-aad6-8830a6d6cf75-000000@email.amazonses.com",
+        "_6x5afsktc2us5-wfask_q@geopod-ismtpd-18"
     ],
     "transactions": [
         {
@@ -8226,9 +8229,17 @@
             "amount": 1000.0,
             "currency": "PEN",
             "timestamp": "2026-10-19T20:39:11.449576"
+        },
+        {
+            "msg_id": "_6x5afsktc2us5-wfask_q@geopod-ismtpd-18",
+            "date": "Tue, 20 Oct 2026 01:54:38 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.78,
+            "currency": "USD",
+            "timestamp": "2026-10-20T04:14:23.581219"
         }
     ],
-    "last_run": "2026-10-20T00:23:45.927337",
+    "last_run": "2026-10-20T04:14:23.767111",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1175.03",
