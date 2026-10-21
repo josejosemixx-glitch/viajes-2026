@@ -2816,7 +2816,11 @@
         "qyd-g4krsxezktsiyzeufg@geopod-ismtpd-7",
         "6ad7d687.453d2d35.3b8fa9.a84e@mx.google.com",
         "a42b35b4-6fa0-3a3f-855f-3057994a2d39@newsletter.lifemiles.com",
-        "20261020212413.ca65cc5d42a3ad54@cio82276.novedadesyape.pe"
+        "20261020212413.ca65cc5d42a3ad54@cio82276.novedadesyape.pe",
+        "6ad7ff64.99d0dbd8.2bc9c3.355a@mx.google.com",
+        "2079188408.679990.1792540721842@ltx1-app25762.prod.linkedin.com",
+        "010001a15c1be542-0f2aa5b1-226e-4a81-944a-dc2014e7712b-000000@email.amazonses.com",
+        "hxsjgmyasdqddg0dgqixra@geopod-ismtpd-22"
     ],
     "transactions": [
         {
@@ -8306,9 +8310,17 @@
             "amount": 30.1,
             "currency": "USD",
             "timestamp": "2026-10-20T21:52:47.977142"
+        },
+        {
+            "msg_id": "hxsjgmyasdqddg0dgqixra@geopod-ismtpd-22",
+            "date": "Wed, 21 Oct 2026 02:26:33 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 3.67,
+            "currency": "USD",
+            "timestamp": "2026-10-21T04:02:36.080892"
         }
     ],
-    "last_run": "2026-10-20T23:55:15.009438",
+    "last_run": "2026-10-21T04:02:36.262087",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1326.95). Sugerencia: Evaluar compra inmediata.",
