@@ -2842,7 +2842,15 @@
         "6ad8ee71.6ad13f2a.3d6a00.f53c@mx.google.com",
         "6ad8f304.c02443da.3bcf6a.a2fa@mx.google.com",
         "o-gah4drtpme3rlttmdipg@geopod-ismtpd-2",
-        "nm654edf8770ac8c75ebcp_mid_prod6@email.bcp.com.pe"
+        "nm654edf8770ac8c75ebcp_mid_prod6@email.bcp.com.pe",
+        "6ad9119c.3071105b.34da61.5b2c@mx.google.com",
+        "99obgu6gqjwac4db_hytjw@geopod-ismtpd-11",
+        "6ad928ac.82a2a138.aaa03.e795@mx.google.com",
+        "c17d51bc4703f6f48fd4e9286f78f460e48add5b-20416192-111914974@google.com",
+        "ahs41aswqhyxpouwhfploq@geopod-ismtpd-16",
+        "6ad9358a.6e167336.cb059.778c@mx.google.com",
+        "nmffda4563bdd3-9e6c-4edd-9830-95e3d096812d01b8799esamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "nmffda2fd77f84-6670-4ff3-8b19-8c69af8456a801b87837samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -8420,9 +8428,41 @@
             "amount": 100.0,
             "currency": "PEN",
             "timestamp": "2026-10-21T19:25:15.601101"
+        },
+        {
+            "msg_id": "99obgu6gqjwac4db_hytjw@geopod-ismtpd-11",
+            "date": "Wed, 21 Oct 2026 20:14:43 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 4.64,
+            "currency": "USD",
+            "timestamp": "2026-10-22T00:01:08.269398"
+        },
+        {
+            "msg_id": "ahs41aswqhyxpouwhfploq@geopod-ismtpd-16",
+            "date": "Wed, 21 Oct 2026 21:44:10 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 27.71,
+            "currency": "USD",
+            "timestamp": "2026-10-22T00:01:09.358440"
+        },
+        {
+            "msg_id": "nmffda4563bdd3-9e6c-4edd-9830-95e3d096812d01b8799esamsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Wed, 21 Oct 2026 22:19:10 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 213.327,
+            "currency": "USD",
+            "timestamp": "2026-10-22T00:01:10.081769"
+        },
+        {
+            "msg_id": "nmffda2fd77f84-6670-4ff3-8b19-8c69af8456a801b87837samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Wed, 21 Oct 2026 22:43:38 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 133.325,
+            "currency": "USD",
+            "timestamp": "2026-10-22T00:01:10.414858"
         }
     ],
-    "last_run": "2026-10-21T21:58:33.490385",
+    "last_run": "2026-10-22T00:01:10.603593",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1274.75",
