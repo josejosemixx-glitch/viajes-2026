@@ -2900,7 +2900,12 @@
         "ea.9a.07431.1fe8bda6@i-0ae84b9b123a58df3.mta1vrest.sd.prd.sparkpost",
         "6adb8f5e.446579d6.22bbe8.3566@mx.google.com",
         "txcgfrmarp6qc97y9dc1xa@geopod-ismtpd-7",
-        "98oi9qo0s2yo2vx_ljngpw@geopod-ismtpd-0"
+        "98oi9qo0s2yo2vx_ljngpw@geopod-ismtpd-0",
+        "wq47st_yrliujslzqhi4ca@geopod-ismtpd-0",
+        "nm6579b1a6a0ac92e0abcp_mid_prod6@email.bcp.com.pe",
+        "6adbc836.82a2a138.3598b2.eb29@mx.google.com",
+        "nm657aeffd10ac93275bcp_mid_prod6@email.bcp.com.pe",
+        "nm657bd92a10ac932c1bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -8654,9 +8659,25 @@
             "amount": 299.0,
             "currency": "PEN",
             "timestamp": "2026-10-23T17:10:54.775536"
+        },
+        {
+            "msg_id": "nm657aeffd10ac93275bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 23 Oct 2026 15:46:27 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 1000.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-23T21:40:51.018273"
+        },
+        {
+            "msg_id": "nm657bd92a10ac932c1bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 23 Oct 2026 16:20:00 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-23T21:40:51.669308"
         }
     ],
-    "last_run": "2026-10-23T19:22:18.473220",
+    "last_run": "2026-10-23T21:40:51.863854",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1151.07)",
