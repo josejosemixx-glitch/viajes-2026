@@ -2878,7 +2878,8 @@
         "nm656ab0b140ac90586bcp_mid_prod6@email.bcp.com.pe",
         "nm656db07d40ac9078ebcp_mid_prod6@email.bcp.com.pe",
         "20261022224234.4474133ab8804803@cioeu98571.info.jamesedition.com",
-        "0.0.a.f83.1dd627b09072068.0@omp.contigo.bancodebogota.com.co"
+        "0.0.a.f83.1dd627b09072068.0@omp.contigo.bancodebogota.com.co",
+        "6adaa39c.51100f89.3c9df.c584@mx.google.com"
     ],
     "transactions": [
         {
@@ -8546,7 +8547,7 @@
             "timestamp": "2026-10-23T00:00:23.249780"
         }
     ],
-    "last_run": "2026-10-23T00:00:25.840023",
+    "last_run": "2026-10-23T04:07:29.639975",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
