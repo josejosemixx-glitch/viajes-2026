@@ -2883,7 +2883,10 @@
         "6adadd83.36cccf01.14f08f.8613@mx.google.com",
         "6adb09bc.488c8742.105aac.c7e0@mx.google.com",
         "tswnvwsqr6gzgolorzezbg@geopod-ismtpd-58",
-        "2w3qrx3fsyewhg9sur5psw@geopod-ismtpd-53"
+        "2w3qrx3fsyewhg9sur5psw@geopod-ismtpd-53",
+        "6adb130b.99020481.24c83d.9bf0@mx.google.com",
+        "kfbhsrgqrqwuirssobegvw@geopod-ismtpd-5",
+        "n0hp13qashirxyoyo0hcqg@geopod-ismtpd-22"
     ],
     "transactions": [
         {
@@ -8565,9 +8568,25 @@
             "amount": 4.64,
             "currency": "USD",
             "timestamp": "2026-10-23T07:55:53.646631"
+        },
+        {
+            "msg_id": "kfbhsrgqrqwuirssobegvw@geopod-ismtpd-5",
+            "date": "Fri, 23 Oct 2026 08:00:41 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 10.21,
+            "currency": "USD",
+            "timestamp": "2026-10-23T09:41:29.169425"
+        },
+        {
+            "msg_id": "n0hp13qashirxyoyo0hcqg@geopod-ismtpd-22",
+            "date": "Fri, 23 Oct 2026 09:35:30 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 26.63,
+            "currency": "USD",
+            "timestamp": "2026-10-23T09:41:32.355093"
         }
     ],
-    "last_run": "2026-10-23T07:55:53.967858",
+    "last_run": "2026-10-23T09:41:35.740987",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1170.64)",
