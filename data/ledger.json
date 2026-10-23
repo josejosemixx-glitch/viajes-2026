@@ -2898,7 +2898,9 @@
         "6adb7eea.2a17771f.301d2c.8216@mx.google.com",
         "0.2.0.1e3.1dd630a7405973e.0@omp.contigo.bancodebogota.com.co",
         "ea.9a.07431.1fe8bda6@i-0ae84b9b123a58df3.mta1vrest.sd.prd.sparkpost",
-        "6adb8f5e.446579d6.22bbe8.3566@mx.google.com"
+        "6adb8f5e.446579d6.22bbe8.3566@mx.google.com",
+        "txcgfrmarp6qc97y9dc1xa@geopod-ismtpd-7",
+        "98oi9qo0s2yo2vx_ljngpw@geopod-ismtpd-0"
     ],
     "transactions": [
         {
@@ -8654,7 +8656,7 @@
             "timestamp": "2026-10-23T17:10:54.775536"
         }
     ],
-    "last_run": "2026-10-23T17:10:57.590344",
+    "last_run": "2026-10-23T19:22:18.473220",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1240.97",
