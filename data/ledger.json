@@ -2921,7 +2921,11 @@
         "6adcd180.9a29dac9.3cb069.55ad@mx.google.com",
         "6adcd5db.cf847633.15f5d6.c41a@mx.google.com",
         "xy01ofipqa6idzmjpjhuia@geopod-ismtpd-57",
-        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln1rpqql8unu6nig0egtwwgxwu6l4plj8w00bveswchfw3jgn88gmmshxhosoj3xiajmadbycbwdg4+bc6wpjts@nws.atrapalo.pe"
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkkln1rpqql8unu6nig0egtwwgxwu6l4plj8w00bveswchfw3jgn88gmmshxhosoj3xiajmadbycbwdg4+bc6wpjts@nws.atrapalo.pe",
+        "6adcf5c0.d47bf0d2.18ff00.ee1c@mx.google.com",
+        "ryaudu5crwsflk1dshkaiw@geopod-ismtpd-60",
+        "6add0e1e.e9977bba.1e78f6.48ab@mx.google.com",
+        "kglirtcqrd-erqkqgp46fa@geopod-ismtpd-5"
     ],
     "transactions": [
         {
@@ -8723,9 +8727,17 @@
             "amount": 11.92,
             "currency": "USD",
             "timestamp": "2026-10-24T18:15:25.526978"
+        },
+        {
+            "msg_id": "ryaudu5crwsflk1dshkaiw@geopod-ismtpd-60",
+            "date": "Sat, 24 Oct 2026 19:15:12 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 5.72,
+            "currency": "USD",
+            "timestamp": "2026-10-24T21:11:01.258437"
         }
     ],
-    "last_run": "2026-10-24T18:15:26.825453",
+    "last_run": "2026-10-24T21:11:02.832410",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
