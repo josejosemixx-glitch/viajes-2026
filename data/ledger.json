@@ -2938,7 +2938,9 @@
         "4oqtmhkgqkstrhy1gcnudg@geopod-ismtpd-78",
         "f3fac068-7194-5242-8edc-af33697d8f97@mail.uber.com",
         "6ade15c4.a8e1b8b4.1514b3.6b8b@mx.google.com",
-        "6ade252f.347e15d2.1d269.3b01@mx.google.com"
+        "6ade252f.347e15d2.1d269.3b01@mx.google.com",
+        "6ade2d5b.c71d9604.22575.69bc@mx.google.com",
+        "2tucbh5es1m1srpycidjhg@geopod-ismtpd-28"
     ],
     "transactions": [
         {
@@ -8764,9 +8766,17 @@
             "amount": 19.9,
             "currency": "PEN",
             "timestamp": "2026-10-25T16:24:56.979396"
+        },
+        {
+            "msg_id": "2tucbh5es1m1srpycidjhg@geopod-ismtpd-28",
+            "date": "Sun, 25 Oct 2026 17:38:42 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 18.17,
+            "currency": "USD",
+            "timestamp": "2026-10-25T18:29:25.296194"
         }
     ],
-    "last_run": "2026-10-25T16:24:58.354157",
+    "last_run": "2026-10-25T18:29:25.903946",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1173.54)",
