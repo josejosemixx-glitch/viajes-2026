@@ -2959,7 +2959,12 @@
         "01m5wfwhcfp4fdb3r4af4ykgd8@klaviyomail.com",
         "f1rgz3e8qpsna4imitdtla@geopod-ismtpd-6",
         "1793036953920.d55de0a4-5e34-49a2-8992-7eec9b9df75a@47814330m.email.hubspot.copa.com",
-        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazeybpyg/1793039368@github.com"
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazeybpyg/1793039368@github.com",
+        "6adfba50.64e84162.5ec24.05b3@mx.google.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazge4w6a/1793052263@github.com",
+        "41e4aa4eaf25f082bedb792c88ab86c67af25ba9-20376977-337030291@google.com",
+        "09.96.06280.ea4dfda6@i-0f5215fa5cc7454f6.mta3vrest.sd.prd.sparkpost",
+        "c9.24.61403.669dfda6@i-000113ab901b16e0a.mta3vrest.sd.prd.sparkpost"
     ],
     "transactions": [
         {
@@ -8851,7 +8856,7 @@
             "timestamp": "2026-10-26T18:41:34.919107"
         }
     ],
-    "last_run": "2026-10-26T20:38:39.566573",
+    "last_run": "2026-10-26T22:52:24.088625",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
