@@ -2950,7 +2950,9 @@
         "cva3m3eftwicsl0wruz4ha@geopod-ismtpd-92",
         "6ade8e40.9e649e5a.38166e.d69d@mx.google.com",
         "rilw4o9ksawgfhrzrho-zw@geopod-ismtpd-12",
-        "0bf1dd17eac345fc9c1f317293cd590f@birthdayalarm.com"
+        "0bf1dd17eac345fc9c1f317293cd590f@birthdayalarm.com",
+        "6aded150.d2b8f92c.3046ad.8cc9@mx.google.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaza-2laa/1793000144@github.com"
     ],
     "transactions": [
         {
@@ -8818,7 +8820,7 @@
             "timestamp": "2026-10-26T04:04:31.144124"
         }
     ],
-    "last_run": "2026-10-26T04:04:32.208648",
+    "last_run": "2026-10-26T08:07:00.189990",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1183.07",
