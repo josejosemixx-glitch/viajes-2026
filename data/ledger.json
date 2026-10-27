@@ -2972,7 +2972,9 @@
         "z_6qle6frbez0bgalvlgmq@geopod-ismtpd-14",
         "1909564.1302975010.728250.1793054586913.danamail.5881@pacificoseguros.com.pe",
         "z6mlbgshrt6sg8mmhd87vw@geopod-ismtpd-46",
-        "6adff05b.bc6be18c.340b7f.e87f@mx.google.com"
+        "6adff05b.bc6be18c.340b7f.e87f@mx.google.com",
+        "010001a17bbd1328-b780676a-225b-465e-8503-d25e6d8a67d1-000000@email.amazonses.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazixivoq/1793086402@github.com"
     ],
     "transactions": [
         {
@@ -8896,7 +8898,7 @@
             "timestamp": "2026-10-27T00:29:11.121807"
         }
     ],
-    "last_run": "2026-10-27T04:25:30.805764",
+    "last_run": "2026-10-27T08:23:07.501525",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
