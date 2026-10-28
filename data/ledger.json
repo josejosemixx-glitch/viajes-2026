@@ -2994,7 +2994,12 @@
         "010001a17f44d6d8-b791eca3-501b-41cb-988a-f89a4d6e3163-000000@email.amazonses.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaznwictw/1793136912@github.com",
         "pqprt4ogstc68onpiumokw@geopod-ismtpd-58",
-        "ee695a9b-3c34-5db9-9b76-a0bbcc1781f7@mail.uber.com"
+        "ee695a9b-3c34-5db9-9b76-a0bbcc1781f7@mail.uber.com",
+        "6ae1279f.32f5e462.2d55fe.245b@mx.google.com",
+        "nmffda1148a18d-0ff5-4b20-ace2-cc2a1214c3d101b88a09samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "1a.9a.33170.64d21ea6@i-0587469304b60e34a.mta1vrest.sd.prd.sparkpost",
+        "01m5zrkj1gdmne1g0x6y3kbz44@klaviyomail.com",
+        "1910788.1954742058.86125.1793144164249.danamail.4254@pacificoseguros.com.pe"
     ],
     "transactions": [
         {
@@ -8972,9 +8977,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-10-27T22:37:17.841761"
+        },
+        {
+            "msg_id": "nmffda1148a18d-0ff5-4b20-ace2-cc2a1214c3d101b88a09samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Tue, 27 Oct 2026 22:39:31 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 158.325,
+            "currency": "USD",
+            "timestamp": "2026-10-28T00:32:03.296598"
         }
     ],
-    "last_run": "2026-10-27T22:37:18.039188",
+    "last_run": "2026-10-28T00:32:04.351672",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1177.9)",
