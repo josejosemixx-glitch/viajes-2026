@@ -3016,7 +3016,13 @@
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaztn7ifw/1793210825@github.com",
         "2286f964-0aea-4a89-9637-b27191dc1524@fra3s50mta0840.xt.local",
         "6ae23d39.bc6be18c.2a1c41.1a11@mx.google.com",
-        "bsjklt0breyizbgxcvlclw@geopod-ismtpd-15"
+        "bsjklt0breyizbgxcvlclw@geopod-ismtpd-15",
+        "6ae25a0a.4001fe38.91ec2.1925@mx.google.com",
+        "20261028214607.07ba0eab4a9d2872@cio82276.novedadesyape.pe",
+        "1818248410.1689296.1793224723293@lor1-app157237.prod.linkedin.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazvc4odg/1793224756@github.com",
+        "nm65b3ecc000aca3427bcp_mid_prod6@email.bcp.com.pe",
+        "c8.dc.16149.1c972ea6@i-0c4d8db310bfdc9a6.mta3vrest.sd.prd.sparkpost"
     ],
     "transactions": [
         {
@@ -9042,9 +9048,17 @@
             "amount": 10.01,
             "currency": "USD",
             "timestamp": "2026-10-28T18:21:38.918800"
+        },
+        {
+            "msg_id": "nm65b3ecc000aca3427bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Wed, 28 Oct 2026 17:13:21 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 50.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-28T22:52:03.007142"
         }
     ],
-    "last_run": "2026-10-28T20:24:41.265635",
+    "last_run": "2026-10-28T22:52:04.047860",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
