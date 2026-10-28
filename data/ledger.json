@@ -3002,7 +3002,9 @@
         "1910788.1954742058.86125.1793144164249.danamail.4254@pacificoseguros.com.pe",
         "6ae14285.8c56de6c.1361d7.ed02@mx.google.com",
         "6ae1804a.39268df7.198ed8.a8d1@mx.google.com",
-        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazp-7_rg/1793174714@github.com"
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazp-7_rg/1793174714@github.com",
+        "6ae1b931.7439f5ce.2ce182.2a05@mx.google.com",
+        "20261028051137.48130346.734485@sailthru.com"
     ],
     "transactions": [
         {
@@ -8990,7 +8992,7 @@
             "timestamp": "2026-10-28T00:32:03.296598"
         }
     ],
-    "last_run": "2026-10-28T08:58:23.546308",
+    "last_run": "2026-10-28T10:54:37.947002",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1201.2",
