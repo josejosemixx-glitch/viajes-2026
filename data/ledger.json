@@ -3027,7 +3027,8 @@
         "n6xi2koisqchtaerxft2fa@geopod-ismtpd-21",
         "010201a185ee38f7-5d7ba1b0-e27d-4af5-b186-95992361dd33-000000@eu-west-1.amazonses.com",
         "jqk4ik20rlcltgp_ziygkw@geopod-ismtpd-81",
-        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazxl-uvq/1793261662@github.com"
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazxl-uvq/1793261662@github.com",
+        "mw-5kxv0rxyy7pibiu1vxq@geopod-ismtpd-69"
     ],
     "transactions": [
         {
@@ -9079,7 +9080,7 @@
             "timestamp": "2026-10-29T08:54:17.463475"
         }
     ],
-    "last_run": "2026-10-29T08:54:18.470345",
+    "last_run": "2026-10-29T11:12:03.038934",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
