@@ -3028,7 +3028,15 @@
         "010201a185ee38f7-5d7ba1b0-e27d-4af5-b186-95992361dd33-000000@eu-west-1.amazonses.com",
         "jqk4ik20rlcltgp_ziygkw@geopod-ismtpd-81",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaazxl-uvq/1793261662@github.com",
-        "mw-5kxv0rxyy7pibiu1vxq@geopod-ismtpd-69"
+        "mw-5kxv0rxyy7pibiu1vxq@geopod-ismtpd-69",
+        "6ae32a04.e5c9fe48.7120d.ca22@mx.google.com",
+        "kyabvtnwtfyi8fca37tmvg@geopod-ismtpd-18",
+        "mcjywdw9tpcaaedoxowhzw@geopod-ismtpd-41",
+        "qvom5epvrawpobgze8ysqa@geopod-ismtpd-76",
+        "nm65bfa38000aca508fbcp_mid_prod6@email.bcp.com.pe",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklozobqyu0q11pahghzuhgysxxewopv8kzgfae2vqrf7dui8bghrehavmdfftqrqolfrrmpmn2bwwmexmyqpvzvq@nws.atrapalo.pe",
+        "0.1.6.244.1dd67cfc46341a8.0@omp.contigo.bancodebogota.com.co",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaz1qxwtw/1793297678@github.com"
     ],
     "transactions": [
         {
@@ -9078,9 +9086,33 @@
             "amount": 80.55,
             "currency": "USD",
             "timestamp": "2026-10-29T08:54:17.463475"
+        },
+        {
+            "msg_id": "mcjywdw9tpcaaedoxowhzw@geopod-ismtpd-41",
+            "date": "Thu, 29 Oct 2026 13:30:09 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 79.37,
+            "currency": "USD",
+            "timestamp": "2026-10-29T18:29:24.458851"
+        },
+        {
+            "msg_id": "qvom5epvrawpobgze8ysqa@geopod-ismtpd-76",
+            "date": "Thu, 29 Oct 2026 15:12:32 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 2.09,
+            "currency": "USD",
+            "timestamp": "2026-10-29T18:29:24.918244"
+        },
+        {
+            "msg_id": "nm65bfa38000aca508fbcp_mid_prod6@email.bcp.com.pe",
+            "date": "Thu, 29 Oct 2026 12:53:51 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 100.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-29T18:29:25.767143"
         }
     ],
-    "last_run": "2026-10-29T11:12:03.038934",
+    "last_run": "2026-10-29T18:29:28.105364",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
