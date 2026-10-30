@@ -3054,7 +3054,11 @@
         "rz_6wtkprq2bqrflsspuaw@geopod-ismtpd-61",
         "6ae47a31.6e3f852a.19d8d8.1023@mx.google.com",
         "uiyyexmjqieetnmpcvzefw@geopod-ismtpd-15",
-        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaz8stqqq/1793383210@github.com"
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaz8stqqq/1793383210@github.com",
+        "6ae4db76.5a092a7f.18d9eb.4b68@mx.google.com",
+        "sopm_xwkrfcrgbq0m2hcqq@geopod-ismtpd-35",
+        "ae8b0d02-783b-5531-a9fc-c8e94dd50e50@mail.uber.com",
+        "ttb0tnwcrckspv5f8ghuta@geopod-ismtpd-40"
     ],
     "transactions": [
         {
@@ -9160,9 +9164,33 @@
             "amount": 58.7,
             "currency": "USD",
             "timestamp": "2026-10-30T18:01:24.630861"
+        },
+        {
+            "msg_id": "sopm_xwkrfcrgbq0m2hcqq@geopod-ismtpd-35",
+            "date": "Fri, 30 Oct 2026 18:22:24 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 35.1,
+            "currency": "PEN",
+            "timestamp": "2026-10-30T19:57:50.687935"
+        },
+        {
+            "msg_id": "ae8b0d02-783b-5531-a9fc-c8e94dd50e50@mail.uber.com",
+            "date": "Fri, 30 Oct 2026 18:39:53 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 2019.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-30T19:57:51.484388"
+        },
+        {
+            "msg_id": "ttb0tnwcrckspv5f8ghuta@geopod-ismtpd-40",
+            "date": "Fri, 30 Oct 2026 19:07:40 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 6.33,
+            "currency": "USD",
+            "timestamp": "2026-10-30T19:57:51.981072"
         }
     ],
-    "last_run": "2026-10-30T18:01:25.291720",
+    "last_run": "2026-10-30T19:57:52.194920",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1224.37",
