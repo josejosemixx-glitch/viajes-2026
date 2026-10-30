@@ -3058,7 +3058,13 @@
         "6ae4db76.5a092a7f.18d9eb.4b68@mx.google.com",
         "sopm_xwkrfcrgbq0m2hcqq@geopod-ismtpd-35",
         "ae8b0d02-783b-5531-a9fc-c8e94dd50e50@mail.uber.com",
-        "ttb0tnwcrckspv5f8ghuta@geopod-ismtpd-40"
+        "ttb0tnwcrckspv5f8ghuta@geopod-ismtpd-40",
+        "6ae4f6c1.bf668b44.1b4137.4c20@mx.google.com",
+        "_3v-dfrirtuujxvmlugqsa@geopod-ismtpd-50",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaz9k_u2g/1793396814@github.com",
+        "nmffdacc800c32-e8f7-4eaa-bde7-59ac05fc269a01a59f2bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "73ksd7ggqeu-qk_fthy0xg@geopod-ismtpd-40",
+        "nm65e047a1b0aca8e81bcp_mid_prod6@email.bcp.com.pe"
     ],
     "transactions": [
         {
@@ -9188,9 +9194,41 @@
             "amount": 6.33,
             "currency": "USD",
             "timestamp": "2026-10-30T19:57:51.981072"
+        },
+        {
+            "msg_id": "_3v-dfrirtuujxvmlugqsa@geopod-ismtpd-50",
+            "date": "Fri, 30 Oct 2026 21:04:02 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 61.67,
+            "currency": "USD",
+            "timestamp": "2026-10-30T22:38:51.410421"
+        },
+        {
+            "msg_id": "nmffdacc800c32-e8f7-4eaa-bde7-59ac05fc269a01a59f2bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Fri, 30 Oct 2026 22:02:37 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 191.242,
+            "currency": "USD",
+            "timestamp": "2026-10-30T22:38:52.811989"
+        },
+        {
+            "msg_id": "73ksd7ggqeu-qk_fthy0xg@geopod-ismtpd-40",
+            "date": "Fri, 30 Oct 2026 22:31:16 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 5.18,
+            "currency": "USD",
+            "timestamp": "2026-10-30T22:38:53.434015"
+        },
+        {
+            "msg_id": "nm65e047a1b0aca8e81bcp_mid_prod6@email.bcp.com.pe",
+            "date": "Fri, 30 Oct 2026 17:31:58 -0500",
+            "sender": "\"bcp comunica\" <bcpcomunica@email.bcp.com.pe>",
+            "amount": 25000.0,
+            "currency": "USD",
+            "timestamp": "2026-10-30T22:38:54.088198"
         }
     ],
-    "last_run": "2026-10-30T19:57:52.194920",
+    "last_run": "2026-10-30T22:38:54.276839",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1249.91",
