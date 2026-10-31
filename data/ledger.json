@@ -3064,7 +3064,9 @@
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaz9k_u2g/1793396814@github.com",
         "nmffdacc800c32-e8f7-4eaa-bde7-59ac05fc269a01a59f2bsamsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "73ksd7ggqeu-qk_fthy0xg@geopod-ismtpd-40",
-        "nm65e047a1b0aca8e81bcp_mid_prod6@email.bcp.com.pe"
+        "nm65e047a1b0aca8e81bcp_mid_prod6@email.bcp.com.pe",
+        "6ae51c7f.3a67f976.4c2df.a3aa@mx.google.com",
+        "8g2ftfccs52sslqjrfyscg@geopod-ismtpd-23"
     ],
     "transactions": [
         {
@@ -9226,9 +9228,17 @@
             "amount": 25000.0,
             "currency": "USD",
             "timestamp": "2026-10-30T22:38:54.088198"
+        },
+        {
+            "msg_id": "8g2ftfccs52sslqjrfyscg@geopod-ismtpd-23",
+            "date": "Fri, 30 Oct 2026 23:40:32 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 1460.0,
+            "currency": "PEN",
+            "timestamp": "2026-10-31T00:50:21.727111"
         }
     ],
-    "last_run": "2026-10-30T22:38:54.276839",
+    "last_run": "2026-10-31T00:50:24.058933",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1249.91",
