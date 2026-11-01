@@ -1959,6 +1959,19 @@
             "status": "Confirmado",
             "icon": "fa-solid fa-plane",
             "outfit": "Casual"
+        },
+        {
+            "id": "ACT-SYNC-248",
+            "tripId": "VIAJE-2026-10-12-EUROPA",
+            "day": 1,
+            "type": "flight",
+            "time": "12:00",
+            "name": "Vuelo/Reserva Encontrada: JOSE LUIS, ¡acredita tus milla...",
+            "description": "Sincronizado de correo. Revisa tus confirmaciones. Fechas encontradas: []",
+            "location": "Europa",
+            "status": "Confirmado",
+            "icon": "fa-solid fa-plane",
+            "outfit": "Casual"
         }
     ]
 }
