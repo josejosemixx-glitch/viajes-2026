@@ -3094,7 +3094,9 @@
         "010701a194f4282b-2eff4806-0dc5-433d-a215-97f5afd1d92c-000000@eu-central-1.amazonses.com",
         "029e6b0b1e204b34b0e0cc56d3e2234f@proteccion.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaadongqa/1793526978@github.com",
-        "1793523813054.00d52e17-a30b-418b-8396-886cab23c866@bf08.eu1.hubspotemail.net"
+        "1793523813054.00d52e17-a30b-418b-8396-886cab23c866@bf08.eu1.hubspotemail.net",
+        "6ae70991.963fedab.7d73.3ec8@mx.google.com",
+        "vk0fjzb2tia27dlwyomeea@geopod-ismtpd-16"
     ],
     "transactions": [
         {
@@ -9346,7 +9348,7 @@
             "timestamp": "2026-10-31T21:51:32.761441"
         }
     ],
-    "last_run": "2026-11-01T09:42:40.274113",
+    "last_run": "2026-11-01T11:35:22.937961",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
