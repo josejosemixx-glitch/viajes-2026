@@ -9348,21 +9348,6 @@
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
             "status": "WARNING",
-            "timestamp": "2026-10-25T13:06:52.738891"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1331.05",
-            "status": "INFO",
-            "timestamp": "2026-10-25T13:06:52.738912"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1331.05). Sugerencia: Evaluar compra inmediata.",
-            "status": "WARNING",
-            "timestamp": "2026-10-25T13:06:52.738916"
-        },
-        {
-            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
-            "status": "WARNING",
             "timestamp": "2026-10-25T18:51:02.032704"
         },
         {
@@ -9594,6 +9579,21 @@
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1209.22",
             "status": "INFO",
             "timestamp": "2026-10-31T23:15:27.395512"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
+            "status": "WARNING",
+            "timestamp": "2026-11-01T05:38:29.459038"
+        },
+        {
+            "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1174.01",
+            "status": "INFO",
+            "timestamp": "2026-11-01T05:38:29.459060"
+        },
+        {
+            "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1174.01)",
+            "status": "SUCCESS",
+            "timestamp": "2026-11-01T05:38:29.459064"
         }
     ]
 }
