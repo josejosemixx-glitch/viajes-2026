@@ -3159,7 +3159,10 @@
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaavl1o7w/1793745648@github.com",
         "6aea8986.184146ba.2e8f74.e939@mx.google.com",
         "nm66148b9ae0acb4641bcp_mid_prod6@email.bcp.com.pe",
-        "mw1o19yo.1non841sg364z@express.sea1.medallia.com"
+        "mw1o19yo.1non841sg364z@express.sea1.medallia.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaax450ww/1793782177@github.com",
+        "20261104051145.48249465.817447@sailthru.com",
+        "010101a1a66fe437-c06f1360-05fd-4164-a4ca-a93238916dfc-000000@us-west-2.amazonses.com"
     ],
     "transactions": [
         {
@@ -9547,7 +9550,7 @@
             "timestamp": "2026-11-03T23:41:16.336055"
         }
     ],
-    "last_run": "2026-11-04T05:38:09.980867",
+    "last_run": "2026-11-04T12:42:08.993177",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
