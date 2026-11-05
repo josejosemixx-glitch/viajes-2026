@@ -3193,7 +3193,18 @@
         "6aec1a7f.9674e226.157599.63f9@mx.google.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaaf4fjoq/1793869977@github.com",
         "6aec5149.8f9f3ad8.216122.8ac1@mx.google.com",
-        "fnyfxb6psoa8hwslz1bama@geopod-ismtpd-26"
+        "fnyfxb6psoa8hwslz1bama@geopod-ismtpd-26",
+        "tit4l11rrxiye3eqwgthww@geopod-ismtpd-88",
+        "c61eb904-3620-5a61-9277-e6ca7ef638e0@mail.uber.com",
+        "nmffda31fe98e9-a498-4635-aca0-148ba76ac29101b8a0c5samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+        "010001a1aca6ef13-95cb6976-953e-461a-91ca-41c15878afa6-000000@email.amazonses.com",
+        "yjkrfwpqqne2o49msea3cw@geopod-ismtpd-28",
+        "4e564491-cf6a-4d84-b01c-5cf2b113908e@iad4s12mta1221.xt.local",
+        "i1sfxq4dspuhzdy6otfyrg@geopod-ismtpd-5",
+        "6aecca22.31957b85.10e75e.045c@mx.google.com",
+        "010201a1ad0a074c-e4b34d41-222b-444b-afd9-9646c4e83c33-000000@eu-west-1.amazonses.com",
+        "1639079174.2047881793904834493.javamail.app@ap91-ca-ue1.prod.awspr",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaajyizra/1793907752@github.com"
     ],
     "transactions": [
         {
@@ -9627,9 +9638,41 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-11-04T23:55:23.127372"
+        },
+        {
+            "msg_id": "tit4l11rrxiye3eqwgthww@geopod-ismtpd-88",
+            "date": "Thu, 05 Nov 2026 15:31:59 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 7.1,
+            "currency": "PEN",
+            "timestamp": "2026-11-05T19:58:59.236830"
+        },
+        {
+            "msg_id": "c61eb904-3620-5a61-9277-e6ca7ef638e0@mail.uber.com",
+            "date": "Thu, 05 Nov 2026 15:48:05 +0000",
+            "sender": "recibos de uber <noreply@uber.com>",
+            "amount": 8.0,
+            "currency": "USD",
+            "timestamp": "2026-11-05T19:58:59.715436"
+        },
+        {
+            "msg_id": "nmffda31fe98e9-a498-4635-aca0-148ba76ac29101b8a0c5samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Thu, 05 Nov 2026 16:46:20 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 208.329,
+            "currency": "USD",
+            "timestamp": "2026-11-05T19:59:00.030051"
+        },
+        {
+            "msg_id": "yjkrfwpqqne2o49msea3cw@geopod-ismtpd-28",
+            "date": "Thu, 05 Nov 2026 17:14:06 +0000 (UTC)",
+            "sender": "bcp notificaciones <notificaciones@notificacionesbcp.com.pe>",
+            "amount": 48.0,
+            "currency": "PEN",
+            "timestamp": "2026-11-05T19:59:02.293442"
         }
     ],
-    "last_run": "2026-11-05T12:51:50.829320",
+    "last_run": "2026-11-05T19:59:05.698420",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
