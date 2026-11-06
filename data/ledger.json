@@ -3221,7 +3221,9 @@
         "nm66454d0a10acba414bcp_mid_prod6@email.bcp.com.pe",
         "adc7a9ce-ee77-5cf7-824d-0f71e32de297@mail.uber.com",
         "6aed2eeb.e03adaee.1cb3ae.cb6c@mx.google.com",
-        "20261106024917.6b483c51dc8651fa@cioeu98571.info.jamesedition.com"
+        "20261106024917.6b483c51dc8651fa@cioeu98571.info.jamesedition.com",
+        "6aed6b30.dc44fddb.e7c5c.a85f@mx.google.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaanigggw/1793955924@github.com"
     ],
     "transactions": [
         {
@@ -9761,7 +9763,7 @@
             "timestamp": "2026-11-06T01:35:38.279111"
         }
     ],
-    "last_run": "2026-11-06T05:52:46.349876",
+    "last_run": "2026-11-06T09:52:17.251994",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
