@@ -3231,7 +3231,9 @@
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaasfjz8q/1794004240@github.com",
         "nmffdad617b35b-d8c6-47fc-8795-52eb5f36c16001b8a430samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "6aee6329.a24a1a8d.11feea.361e@mx.google.com",
-        "77e0ebd1-4753-4930-85d6-1853c9b007a2@iad4s12mta1221.xt.local"
+        "77e0ebd1-4753-4930-85d6-1853c9b007a2@iad4s12mta1221.xt.local",
+        "6aeeb60e.90095e73.11afaa.ced0@mx.google.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaaubjfja/1794040358@github.com"
     ],
     "transactions": [
         {
@@ -9771,7 +9773,7 @@
             "timestamp": "2026-11-06T01:35:38.279111"
         }
     ],
-    "last_run": "2026-11-07T05:24:29.942703",
+    "last_run": "2026-11-07T09:14:51.944926",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
