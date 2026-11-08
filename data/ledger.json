@@ -3241,7 +3241,9 @@
         "6aef7c41.f88c94d2.1dcd14.13d7@mx.google.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaawrhynw/1794085973@github.com",
         "6aefa374.23c2a5db.245bb9.c948@mx.google.com",
-        "6aefc50e.488c8742.3802f5.f5d4@mx.google.com"
+        "6aefc50e.488c8742.3802f5.f5d4@mx.google.com",
+        "6af00744.58c11702.201880.d07d@mx.google.com",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaayh6yjq/1794127564@github.com"
     ],
     "transactions": [
         {
@@ -9781,7 +9783,7 @@
             "timestamp": "2026-11-06T01:35:38.279111"
         }
     ],
-    "last_run": "2026-11-08T05:23:14.973426",
+    "last_run": "2026-11-08T09:27:39.756304",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] \u00a1Alerta de Bajada! Precio objetivo alcanzado (EUR 1174.01)",
