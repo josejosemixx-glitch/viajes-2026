@@ -3264,7 +3264,10 @@
         "6af29120.8a6417be.c286.0fec@mx.google.com",
         "6af2bd4c.3e93d526.2f5e22.3480@mx.google.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaaa-3ltqg/1794302981@github.com",
-        "6af2f097.8ee6fb5b.2a5285.2aa9@mx.google.com"
+        "6af2f097.8ee6fb5b.2a5285.2aa9@mx.google.com",
+        "6af361b1.3e93d526.2f5e22.5986@mx.google.com",
+        "a1.62.57997.f9363fa6@i-0e6d4a911981170c4.mta1vrest.sd.prd.sparkpost",
+        "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaabcs6fnq/1794338941@github.com"
     ],
     "transactions": [
         {
@@ -9804,7 +9807,7 @@
             "timestamp": "2026-11-06T01:35:38.279111"
         }
     ],
-    "last_run": "2026-11-10T13:09:37.386089",
+    "last_run": "2026-11-10T19:45:46.080340",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1312.04). Sugerencia: Evaluar compra inmediata.",
