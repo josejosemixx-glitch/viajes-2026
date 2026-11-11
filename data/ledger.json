@@ -3274,7 +3274,8 @@
         "nmffda2f799036-1d62-4230-a702-29d9217ff67b01a5c112samsunglatam_mid_prod7-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "josejosemixx-glitch/moneyflow_alerter/check-suites/cs_kwdosznh6c8aaaabd7rspw/1794350314@github.com",
         "6af3ac19.e9a23c7b.14439d.d68c@mx.google.com",
-        "e870f89b981d32bd202c1f1cb9172a45@pd0ldwk002hud"
+        "e870f89b981d32bd202c1f1cb9172a45@pd0ldwk002hud",
+        "6af3fd74.0be967ff.90403.32a8@mx.google.com"
     ],
     "transactions": [
         {
@@ -9814,7 +9815,7 @@
             "timestamp": "2026-11-06T01:35:38.279111"
         }
     ],
-    "last_run": "2026-11-11T05:30:27.840082",
+    "last_run": "2026-11-11T09:50:03.074548",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1301.01",
