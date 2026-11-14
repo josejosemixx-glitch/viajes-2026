@@ -3301,7 +3301,9 @@
         "31ef398a5e496794031e4375f05e5f6500a2ccef-359501-644015@google.com",
         "757209d663556c6cfac38433fd00f8cd9e1cbb9a-359501-796023@google.com",
         "6af7f4f5.a24a1a8d.374ec.316f@mx.google.com",
-        "6af828a6.36cccf01.1f48b4.2a3c@mx.google.com"
+        "6af828a6.36cccf01.1f48b4.2a3c@mx.google.com",
+        "6af8a332.54fdaaba.22db91.350b@mx.google.com",
+        "nmffdaf7afc8c8-8e4f-49ea-9278-e2ae4c514ae501b8b732samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com"
     ],
     "transactions": [
         {
@@ -9839,9 +9841,17 @@
             "amount": 2019.0,
             "currency": "PEN",
             "timestamp": "2026-11-06T01:35:38.279111"
+        },
+        {
+            "msg_id": "nmffdaf7afc8c8-8e4f-49ea-9278-e2ae4c514ae501b8b732samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
+            "date": "Sat, 14 Nov 2026 18:24:30 GMT",
+            "sender": "\"samsung\" <samsunglatam@co.email.samsung.com>",
+            "amount": 266.663,
+            "currency": "USD",
+            "timestamp": "2026-11-14T19:58:59.692538"
         }
     ],
-    "last_run": "2026-11-14T18:06:41.718359",
+    "last_run": "2026-11-14T19:58:59.879370",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1163.47",
