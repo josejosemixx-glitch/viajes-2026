@@ -3318,7 +3318,13 @@
         "camhob2vq37hq=tfx8=e-3vzy8ptsbwcmzg3yyeb=wo8wve1rya@mail.gmail.com",
         "camhob2xopokpwkmkklqmvf5yykr_hzsxxo3yvm_k+rnspvbdrg@mail.gmail.com",
         "camhob2uq-zsheaghqosxsuj_4p4=dfbm++wwjm6ydjgcjdwk1a@mail.gmail.com",
-        "camhob2xh+pb5x70n8s_ob+q2vrkk4oavkwjoge7y4nkczauuyq@mail.gmail.com"
+        "camhob2xh+pb5x70n8s_ob+q2vrkk4oavkwjoge7y4nkczauuyq@mail.gmail.com",
+        "camhob2ubdqotxkhuv=c80jpd7o3-tcbjcgfcn=tgmdpb3arxha@mail.gmail.com",
+        "camhob2x6gyd8b=a25mh2_xh6uonn4khp5k3pyheu1_uf6vgvyg@mail.gmail.com",
+        "camhob2xoxfw3uqm1guzfcmcexptfrqdp0epwqpgqsx-hhhmbjq@mail.gmail.com",
+        "camhob2wu+ev3kdunwdeya92==qefgdoxcxvr1uyebvs26wcmuw@mail.gmail.com",
+        "camhob2wmajifbegqtukqyx8krfonzdsqttnpp=t+ukhxctwdzq@mail.gmail.com",
+        "camhob2xxvptu3qasfgpyvl8hymy+rdsbioauwcnddmy-_omsyw@mail.gmail.com"
     ],
     "transactions": [
         {
@@ -9866,7 +9872,7 @@
             "timestamp": "2026-11-14T19:58:59.692538"
         }
     ],
-    "last_run": "2026-11-15T20:27:14.390748",
+    "last_run": "2026-11-15T23:10:21.847851",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1334.81). Sugerencia: Evaluar compra inmediata.",
