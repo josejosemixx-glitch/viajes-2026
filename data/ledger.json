@@ -3306,7 +3306,10 @@
         "nmffdaf7afc8c8-8e4f-49ea-9278-e2ae4c514ae501b8b732samsunglatam_mid_prod8-ym91bmnlqgnvlmvtywlslnnhbxn1bmcuy29t@co.email.samsung.com",
         "6af8bd84.c817e769.2b4d85.4908@mx.google.com",
         "l-wsxyn5tws5csyyunpt6q@geopod-ismtpd-136",
-        "6af8e44e.3c73b1f2.6b3ca.b7a5@mx.google.com"
+        "6af8e44e.3c73b1f2.6b3ca.b7a5@mx.google.com",
+        "6af9052c.a438010f.29cc3.b994@mx.google.com",
+        "a1ad6de982e8f96e48dd99ed4e7e6c7fb8f6c684-10044049-110294243@google.com",
+        "000000000000774807066048ffe0@google.com"
     ],
     "transactions": [
         {
@@ -9854,7 +9857,7 @@
             "timestamp": "2026-11-14T19:58:59.692538"
         }
     ],
-    "last_run": "2026-11-15T01:04:44.101168",
+    "last_run": "2026-11-15T05:43:02.474386",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
