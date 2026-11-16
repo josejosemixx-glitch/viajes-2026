@@ -3332,7 +3332,8 @@
         "camhob2x5ra-xqhgu4y30vms3tm-_7pgoc1r=q3j1j8tcdaipxa@mail.gmail.com",
         "camhob2vhu5esqoovqhv=hzoslxqtqp84xrkwhjbujcafwsdhdw@mail.gmail.com",
         "camhob2x3fc+t4pecgqsr4jwto4up3-vek6hamhmuotditxt7gg@mail.gmail.com",
-        "camhob2xrksym9ujkptc6xmq6g8amb6bxh2uugq7hc4ocz5pt7w@mail.gmail.com"
+        "camhob2xrksym9ujkptc6xmq6g8amb6bxh2uugq7hc4ocz5pt7w@mail.gmail.com",
+        "6afa97dc.dd3f61df.1a8297.2628@mx.google.com"
     ],
     "transactions": [
         {
@@ -9880,7 +9881,7 @@
             "timestamp": "2026-11-14T19:58:59.692538"
         }
     ],
-    "last_run": "2026-11-16T05:42:51.757399",
+    "last_run": "2026-11-16T10:09:51.383667",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1272.42",
