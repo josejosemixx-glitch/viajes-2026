@@ -3442,7 +3442,9 @@
         "camhob2ve-pye4wvdtn24vfy4w5m3scy29tntmrpt+xff_s8aka@mail.gmail.com",
         "6afcfa8e.64e00aed.18eb27.259f.gmr@mx.google.com",
         "6afd13eb.a5690e37.187b09.d58e@mx.google.com",
-        "6afd3b84.f96c246a.18a539.20ed.gmr@mx.google.com"
+        "6afd3b84.f96c246a.18a539.20ed.gmr@mx.google.com",
+        "6afd4964.10abdf86.13fba1.9573@mx.google.com",
+        "20261118051153.48486274.765906@sailthru.com"
     ],
     "transactions": [
         {
@@ -9990,7 +9992,7 @@
             "timestamp": "2026-11-14T19:58:59.692538"
         }
     ],
-    "last_run": "2026-11-18T06:44:51.390460",
+    "last_run": "2026-11-18T10:43:57.085258",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Tendencia al alza detectada (EUR 1343.9). Sugerencia: Evaluar compra inmediata.",
