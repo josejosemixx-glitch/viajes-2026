@@ -3482,7 +3482,13 @@
         "camhob2w=u9eysjsv-6tgaf5yw0-m=xkg9-cmscf=uw726s-gjw@mail.gmail.com",
         "camhob2uxfjdxzvu5gemszq9pdip7takk=kbdd870fllkx+fppg@mail.gmail.com",
         "camhob2vz7g-uq=1iccwphnpuowrsj6145rzak7h5zctyfewmfg@mail.gmail.com",
-        "6afe5c4a.96d6d94b.2f5d62.684c.gmr@mx.google.com"
+        "6afe5c4a.96d6d94b.2f5d62.684c.gmr@mx.google.com",
+        "6afe608c.4408289d.1401a1.ca97@mx.google.com",
+        "camhob2v=3qbqq5mdfqjoba0pmzn16+l44u2g1rxzq2ksrxunag@mail.gmail.com",
+        "camhob2xumdxti4_nqb0ym+jxjakvjnvoqbsjzzd5o+h2-3i+bg@mail.gmail.com",
+        "camhob2vpnneqjk_qyottsgkjqdstavboa2rzxj8nosj2w-o6-q@mail.gmail.com",
+        "6afe826f.be206284.ddc35.c606.gmr@mx.google.com",
+        "6afe9136.eb8c8c37.d23ee.c36e.gmr@mx.google.com"
     ],
     "transactions": [
         {
@@ -10158,7 +10164,7 @@
             "timestamp": "2026-11-18T20:35:37.890595"
         }
     ],
-    "last_run": "2026-11-19T02:35:54.714581",
+    "last_run": "2026-11-19T06:45:56.153234",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Vuelo detectado MAD->BOG: EUR 1237.73",
