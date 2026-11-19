@@ -3492,7 +3492,11 @@
         "6afe9b25.edd7c018.1d30d3.436a@mx.google.com",
         "010001a1f2e1474e-ebb6051d-da25-4900-9ee9-73611af8e18a-000000@email.amazonses.com",
         "6afed312.1665fb6b.18b1af.f841@mx.google.com",
-        "camhob2x8motdh_gn+jsnbdc=aj0id-_oxfkpsrpmjug0lrfbxw@mail.gmail.com"
+        "camhob2x8motdh_gn+jsnbdc=aj0id-_oxfkpsrpmjug0lrfbxw@mail.gmail.com",
+        "010001a1f42c38c4-91c30335-27e3-4c75-b427-866b0671ac07-000000@email.amazonses.com",
+        "camhob2x4tup5vyprm4eyjurxrgrp6kowfnbliza-wf5bpsnjrq@mail.gmail.com",
+        "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklm1yih9pqfutalexjsplq928vmzkzgpyq9rtrcdqrjchijf5/jkmcfnfi3rl37otficc1erdsbrcm3u9l7c4jfj@nws.atrapalo.pe",
+        "camhob2v+ivvogzh+4jery4-chpobbhvoak8b6vfk-ah4otfqca@mail.gmail.com"
     ],
     "transactions": [
         {
@@ -10168,7 +10172,7 @@
             "timestamp": "2026-11-18T20:35:37.890595"
         }
     ],
-    "last_run": "2026-11-19T14:01:32.167028",
+    "last_run": "2026-11-19T20:40:31.998358",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
