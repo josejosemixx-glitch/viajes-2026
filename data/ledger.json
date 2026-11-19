@@ -3496,7 +3496,21 @@
         "010001a1f42c38c4-91c30335-27e3-4c75-b427-866b0671ac07-000000@email.amazonses.com",
         "camhob2x4tup5vyprm4eyjurxrgrp6kowfnbliza-wf5bpsnjrq@mail.gmail.com",
         "atrapalo.xserial.s56ebyvp1yqvonwqkgzmgwfoltabhdqa66tdpblyycmkklm1yih9pqfutalexjsplq928vmzkzgpyq9rtrcdqrjchijf5/jkmcfnfi3rl37otficc1erdsbrcm3u9l7c4jfj@nws.atrapalo.pe",
-        "camhob2v+ivvogzh+4jery4-chpobbhvoak8b6vfk-ah4otfqca@mail.gmail.com"
+        "camhob2v+ivvogzh+4jery4-chpobbhvoak8b6vfk-ah4otfqca@mail.gmail.com",
+        "camhob2vcfthdjupbxk8v-q+4g--57affgw9u9p+lkzf4wyuh-a@mail.gmail.com",
+        "camhob2vskk-vsk-9zkx2d8z33y30t3g5okfky9cgap6vnffbqg@mail.gmail.com",
+        "camhob2wh9uds+usaefgx-=xj9hoayrbwqbznrhq9cf1dhndxdw@mail.gmail.com",
+        "camhob2xu4uw8ai_veqf+7tz90eluhcuu-y4sqzt0ztyqx1ocyg@mail.gmail.com",
+        "camhob2uunq+8-jddqndffb+jmz1cpvtd4xgqqu7haxbqxta_4a@mail.gmail.com",
+        "camhob2vi0ggxjxspz5mf6bd4rux1dg=kluz8+42qp2xsbcvicw@mail.gmail.com",
+        "camhob2xsfpqhjuurlriofm7hz21kkzbj=acuz7cjtw=cyse2fa@mail.gmail.com",
+        "camhob2xgt7sjcukviyptyq4jdlg_se-ozxfff=447hmhkgbcaq@mail.gmail.com",
+        "camhob2u_6_xpc8fyf02w8fjc2umxpjykmjpsmlzu3aoipdi9dq@mail.gmail.com",
+        "camhob2xnoo6vcmdcbq-ew9fr_w9gzqwc3-8phwojpamut2w+kq@mail.gmail.com",
+        "camhob2uv7m_suqrugo09jrsb8frvesbsx5ctuqnfq3d=iu6i3a@mail.gmail.com",
+        "camhob2vrtsxz1sqjc1dg5xrm5ertprnpjasw_djq=i3zg4f5=w@mail.gmail.com",
+        "camhob2uymic9qx-mnnnt6l_plzauojqqxejwnan2xfkcvhr_+w@mail.gmail.com",
+        "lemcvzjctdcwak3etrtaww@geopod-ismtpd-canary-0"
     ],
     "transactions": [
         {
@@ -10172,7 +10186,7 @@
             "timestamp": "2026-11-18T20:35:37.890595"
         }
     ],
-    "last_run": "2026-11-19T20:40:31.998358",
+    "last_run": "2026-11-19T22:42:20.318568",
     "auditLog": [
         {
             "action": "[AGENTE-VUELOS] Ejecutando en modo Mock (API Keys no detectadas)",
